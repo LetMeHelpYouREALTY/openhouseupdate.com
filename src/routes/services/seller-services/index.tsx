@@ -1,7 +1,7 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
   useVisibleTask$(() => {
@@ -25,16 +25,18 @@ export default component$(() => {
         }
         
         .seller-hero {
+          position: relative;
+          overflow: hidden;
           text-align: center;
           margin-bottom: 4rem;
           padding: 4rem 1.5rem;
-          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(22, 178, 134, 0.5) 100%),
-            url('${getSiteImageUrl('seller-services')}');
-          background-size: cover;
-          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .seller-hero > :not(figure) {
+          position: relative;
+          z-index: 1;
         }
         
         .seller-hero h1 {
@@ -313,6 +315,12 @@ export default component$(() => {
       `}</style>
 
       <div class="seller-hero">
+        <HeadingImage
+          imageKey="seller-services"
+          heading="Seller Services"
+          variant="background"
+          priority
+        />
         <h1>Seller Services</h1>
         <p>
           Maximize your property's value and ensure a smooth selling process with our comprehensive

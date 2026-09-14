@@ -1,7 +1,7 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import { type DocumentHead, useLocation } from '@builder.io/qwik-city'
-import type { SiteImageKey } from '~/config/images'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
+import HeadingImage from '~/components/media/heading-image'
+import { getNeighborhoodImageKey } from '~/config/images'
 
 export default component$(() => {
   const location = useLocation()
@@ -70,25 +70,17 @@ export default component$(() => {
   }
 
   const neighborhoodName = formatNeighborhoodName(neighborhood)
-  const neighborhoodImageKey = ((): SiteImageKey => {
-    switch (neighborhood.toLowerCase()) {
-      case 'summerlin':
-        return 'summerlin'
-      case 'henderson':
-        return 'henderson'
-      case 'north-las-vegas':
-        return 'north-las-vegas'
-      case 'green-valley':
-        return 'green-valley'
-      default:
-        return 'weekend-open-houses'
-    }
-  })()
-  const heroImage = getSiteImageUrl(neighborhoodImageKey)
+  const neighborhoodImageKey = getNeighborhoodImageKey(neighborhood)
 
   return (
     <section class="neighborhood-page">
       <div class="neighborhood-hero">
+        <HeadingImage
+          imageKey={neighborhoodImageKey}
+          heading={`${neighborhoodName} Open Houses`}
+          variant="background"
+          priority
+        />
         <h1>{neighborhoodName} Open Houses</h1>
         <p class="neighborhood-subtitle">
           Discover the best properties in {neighborhoodName}, Las Vegas
@@ -118,16 +110,18 @@ export default component$(() => {
           }
           
           .neighborhood-hero {
+            position: relative;
+            overflow: hidden;
             text-align: center;
             margin-bottom: 3rem;
             padding: 3rem 1.5rem;
-            background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
-              url('${heroImage}');
-            background-size: cover;
-            background-position: center;
             color: white;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+          }
+          .neighborhood-hero > :not(figure) {
+            position: relative;
+            z-index: 1;
           }
           
           .neighborhood-hero h1 {

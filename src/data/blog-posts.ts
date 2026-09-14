@@ -1,3 +1,5 @@
+import type { SiteImageKey } from '~/config/images'
+
 export interface BlogPost {
   id: number
   slug: string
@@ -11,6 +13,7 @@ export interface BlogPost {
   keywords: string[]
   metaDescription: string
   author: string
+  imageKey: SiteImageKey
 }
 
 export const blogPosts: BlogPost[] = [
@@ -47,7 +50,7 @@ As of November 2025, Las Vegas Valley has experienced moderate price appreciatio
 Summerlin continues to be the premier master-planned community in Las Vegas Valley, with strong demand for homes in zip codes 89134, 89135, 89138, and 89144. The Ridges and other premium communities maintain strong values.
 
 ### Henderson Market Trends
-Henderson's family-friendly environment attracts buyers to zip codes 89002-89015, with Green Valley (89012, 89014) and Seven Hills (89052, 89074) seeing consistent demand.
+Henderson (89002-89015) continues to draw buyers to Green Valley (89012, 89014) and Seven Hills (89052, 89074).
 
 ### North Las Vegas Growth
 North Las Vegas (89030-89086) offers excellent value with newer construction in Skye Canyon (89084) and Centennial Hills (89031), attracting first-time buyers and families.
@@ -79,6 +82,7 @@ Contact Dr. Jan Duffy at (702) 200-3422 for a personalized market analysis of yo
     metaDescription:
       'Current Las Vegas real estate market trends for November 2025. Analysis of Summerlin, Henderson, and North Las Vegas neighborhoods with pricing insights and market indicators.',
     author: 'Dr. Jan Duffy',
+    imageKey: 'market-analysis',
   },
   {
     id: 2,
@@ -196,136 +200,76 @@ Contact Dr. Jan Duffy at (702) 200-3422 for personalized guidance on buying your
     metaDescription:
       'Complete guide to buying your first home in Las Vegas. Includes pre-approval, neighborhood recommendations, first-time buyer programs, and step-by-step process.',
     author: 'Dr. Jan Duffy',
+    imageKey: 'first-time-buyer',
   },
   {
     id: 3,
     slug: 'top-5-neighborhoods-families-las-vegas',
-    title: 'Top 5 Neighborhoods for Families in Las Vegas',
+    title: '5 Las Vegas Neighborhoods to Tour: Schools, Commutes, and Amenities',
     excerpt:
-      'Discover the best family-friendly neighborhoods in Las Vegas with great schools, safety, and amenities. Comprehensive guide to Summerlin, Henderson, Green Valley, and more.',
+      'Compare Summerlin, Green Valley, Seven Hills, Anthem, and Skye Canyon by named schools, square footage, commute times, and amenities.',
     content: `
-# Top 5 Neighborhoods for Families in Las Vegas
+# 5 Las Vegas Neighborhoods to Tour: Schools, Commutes, and Amenities
 
-Finding the perfect neighborhood for your family involves considering schools, safety, amenities, and overall quality of life. Here are the top 5 family-friendly neighborhoods in Las Vegas Valley.
+Compare housing type, named Clark County schools, commute, and recreation. Dr. Jan Duffy maps weekend open-house routes from Open House Marketplace at 760 Windover Ct, Las Vegas, NV 89138.
 
 ## 1. Summerlin (Zip Codes 89134, 89135, 89138, 89144)
 
-**Why Families Love Summerlin**:
-- **Excellent Schools**: Top-rated public and private schools (many rated 8-10/10)
-- **Master-Planned Community**: Downtown Summerlin shopping, parks, golf courses
-- **Safety**: Low crime rates, gated communities available
-- **Amenities**: Parks, trails, community centers, Red Rock Canyon access
-- **Quality of Life**: Beautiful mountain views, well-maintained neighborhoods
-
-**Price Range**: $400,000-$2M+ (luxury in The Ridges)
-
-**Best For**: Families seeking premium living with excellent schools and amenities
+- **Schools**: Palo Verde High School and West Career and Technical Academy serve large parts of 89135–89138
+- **Housing**: 1,800–4,000+ sq ft; The Ridges lists above $1M
+- **Amenities**: Downtown Summerlin, 200+ miles of trails, Red Rock Canyon access
+- **Commute**: About 20–30 minutes to the Strip via the 215 Beltway
+- **Price range**: $400,000–$2M+
 
 ## 2. Henderson - Green Valley (Zip Codes 89012, 89014)
 
-**Why Families Love Green Valley**:
-- **Family-Friendly**: Consistently ranked among safest areas
-- **Great Schools**: Highly-rated schools serving the community
-- **Shopping**: Green Valley Ranch with extensive amenities
-- **Parks & Recreation**: Excellent community parks and facilities
-- **Community Feel**: Strong neighborhood involvement
-
-**Price Range**: $500,000-$800,000
-
-**Best For**: Families wanting established, safe communities with great schools
+- **Schools**: Coronado High School and Green Valley High School
+- **Housing**: Mix of 1980s–2000s tract homes and later infill, often 1,600–3,000 sq ft
+- **Amenities**: Green Valley Ranch retail, parks, and trail connections
+- **Commute**: About 25–35 minutes to central Las Vegas via I-215
+- **Price range**: $500,000–$800,000
 
 ## 3. Henderson - Seven Hills (Zip Codes 89052, 89074)
 
-**Why Families Love Seven Hills**:
-- **Gated Community**: Additional security and exclusivity
-- **Excellent Schools**: Top-performing schools in the area
-- **Safety**: One of Henderson's safest communities
-- **Luxury Living**: Upscale homes and amenities
-- **Mountain Views**: Beautiful scenery
-
-**Price Range**: $600,000-$1.5M
-
-**Best For**: Families seeking upscale, secure communities
+- **Schools**: Coronado High School zone for much of Seven Hills
+- **Housing**: Larger lots, mountain views, many homes 2,400–5,000 sq ft
+- **Amenities**: Golf, gated entries, McCullough Mountain views
+- **Price range**: $600,000–$1.5M
 
 ## 4. Henderson - Anthem (Zip Code 89044)
 
-**Why Families Love Anthem**:
-- **Gated Community**: Strong security features
-- **Newer Construction**: Modern homes with contemporary features
-- **Community Amenities**: Parks, pools, community centers
-- **Good Schools**: Strong educational options
-- **Family-Oriented**: Designed with families in mind
+- **Housing**: 2000s master-planned floor plans, often 1,800–3,200 sq ft
+- **Amenities**: Parks, pools, and community centers inside the Anthem HOA
+- **Commute**: I-15 and the 215 Beltway to employment centers
+- **Price range**: $500,000–$900,000
 
-**Price Range**: $500,000-$900,000
+## 5. North Las Vegas - Centennial Hills / Skye Canyon (Zip Codes 89031, 89084)
 
-**Best For**: Families wanting newer homes in secure communities
+- **Housing**: Newer construction, often 1,800–2,800 sq ft at lower price points than 89134–89138
+- **Amenities**: Aliante shopping, golf, Craig Ranch Regional Park
+- **Commute**: I-15 and the 215 Beltway
+- **Price range**: $350,000–$600,000
 
-## 5. North Las Vegas - Centennial Hills/Skye Canyon (Zip Codes 89031, 89084)
+## How to choose
 
-**Why Families Love This Area**:
-- **Affordability**: More affordable than Summerlin or Henderson
-- **New Construction**: Modern homes with energy-efficient features
-- **Growing Communities**: Expanding amenities and infrastructure
-- **Good Schools**: Improving school ratings with new facilities
-- **Family-Friendly**: Community-focused developments
-
-**Price Range**: $350,000-$600,000
-
-**Best For**: Families seeking newer homes at more affordable prices
-
-## Key Factors for Families
-
-### School Quality
-Top-rated school districts include:
-- Summerlin schools (zip codes 89134-89144)
-- Henderson Green Valley schools (89012, 89014)
-- Seven Hills schools (89052, 89074)
-
-### Safety
-All listed neighborhoods have low crime rates and active neighborhood watch programs.
-
-### Amenities
-Look for:
-- Parks and playgrounds
-- Community centers
-- Shopping and dining
-- Healthcare facilities
-- Family-friendly activities
-
-### Commute
-Consider proximity to:
-- Employment centers
-- Las Vegas Strip (for work)
-- Major highways (I-15, US-95, I-215)
-
-## Making Your Decision
-
-When choosing a neighborhood:
-1. **Visit Multiple Areas**: Spend time in different neighborhoods
-2. **Check School Ratings**: Research specific schools
-3. **Consider Long-Term**: Think about resale value and future growth
-4. **Talk to Residents**: Ask current families about their experience
-5. **Work with a Local Expert**: Dr. Jan Duffy knows all Las Vegas neighborhoods
-
-## Need Help Choosing?
-
-Dr. Jan Duffy specializes in helping families find the perfect neighborhood in Las Vegas Valley. Contact her at (702) 200-3422 for personalized neighborhood recommendations based on your family's needs, budget, and priorities.
+Tour square footage, HVAC age, HOA dues, and the specific school campus on the listing. Call Dr. Jan Duffy at (702) 200-3422 to build a Saturday–Sunday open-house list.
     `,
     date: 'October 28, 2025',
     category: 'Neighborhoods',
     readTime: '8 min read',
     featured: false,
     keywords: [
-      'best neighborhoods for families Las Vegas',
-      'family-friendly Las Vegas neighborhoods',
-      'best schools Las Vegas',
-      'safe neighborhoods Las Vegas',
-      'Summerlin families',
-      'Henderson families',
+      'Las Vegas neighborhoods to tour',
+      'Summerlin homes 89138',
+      'Coronado High School Green Valley',
+      'Palo Verde High School Summerlin',
+      'Skye Canyon open houses',
+      'Henderson vs Summerlin commute',
     ],
     metaDescription:
-      'Top 5 family-friendly neighborhoods in Las Vegas with excellent schools, safety, and amenities. Guide to Summerlin, Henderson Green Valley, Seven Hills, Anthem, and more.',
+      'Tour Summerlin, Green Valley, Seven Hills, Anthem, and Skye Canyon using named schools, square footage, commute times, and amenities. Call (702) 200-3422.',
     author: 'Dr. Jan Duffy',
+    imageKey: 'neighborhood-expertise',
   },
   {
     id: 4,
@@ -471,6 +415,7 @@ Contact Dr. Jan Duffy at (702) 200-3422 for a professional market analysis and p
     metaDescription:
       'Expert pricing strategy for selling your home in Las Vegas. Learn how to price competitively for quick sale and maximum return with neighborhood-specific guidance.',
     author: 'Dr. Jan Duffy',
+    imageKey: 'seller-services',
   },
   {
     id: 5,
@@ -682,6 +627,7 @@ Contact Dr. Jan Duffy at (702) 200-3422 for investment property analysis and opp
     metaDescription:
       'Comprehensive guide to investment properties in Las Vegas for 2025. Analysis of rental market, best neighborhoods, ROI factors, and investment strategies.',
     author: 'Dr. Jan Duffy',
+    imageKey: 'luxury-open-houses',
   },
 ]
 
@@ -702,4 +648,3 @@ export const getRecentPosts = (limit = 5): BlogPost[] => {
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, limit)
 }
-

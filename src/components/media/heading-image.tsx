@@ -72,6 +72,17 @@ export default component$<HeadingImageProps>(
           .heading-image--background img {
             object-position: center;
           }
+          .heading-image--background::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+              135deg,
+              rgba(10, 37, 64, 0.78) 0%,
+              rgba(58, 141, 222, 0.48) 100%
+            );
+            pointer-events: none;
+          }
         `}</style>
         <img
           src={src}

@@ -5,11 +5,9 @@ import HeadingImage from '~/components/media/heading-image'
 import PerformanceMonitor from '~/components/performance/performance-monitor'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
   const showAdvanced = useSignal(true)
-  const heroImage = getSiteImageUrl('weekend-open-houses')
 
   const showSimpleSearch = $(() => {
     showAdvanced.value = false
@@ -63,10 +61,7 @@ export default component$(() => {
       <section class="realscout-section">
         <style>{`
           .realscout-section {
-            background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.62) 100%),
-              url('${heroImage}');
-            background-size: cover;
-            background-position: center;
+            background: #0A2540;
             color: white;
             padding: 4rem 2rem;
             text-align: center;
@@ -419,6 +414,12 @@ export default component$(() => {
           }
         `}</style>
 
+        <HeadingImage
+          imageKey="weekend-open-houses"
+          heading="Find This Weekend's Open Houses"
+          variant="background"
+          priority
+        />
         <div class="hero-content">
           <h1 class="hero-title">Find This Weekend's Open Houses</h1>
           <p class="hero-subtitle">

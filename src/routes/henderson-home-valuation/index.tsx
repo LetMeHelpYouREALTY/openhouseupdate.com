@@ -1,5 +1,6 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 
@@ -35,13 +36,18 @@ export default component$(() => {
         }
         
         .location-hero {
+          position: relative;
+          overflow: hidden;
           text-align: center;
           margin-bottom: 3rem;
-          padding: 3rem 0;
-          background: linear-gradient(135deg, #0A2540 0%, #16B286 100%);
+          padding: 3rem 1.5rem;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .location-hero > :not(figure) {
+          position: relative;
+          z-index: 1;
         }
         
         .location-hero h1 {
@@ -87,6 +93,12 @@ export default component$(() => {
       `}</style>
 
       <div class="location-hero">
+        <HeadingImage
+          imageKey="henderson"
+          heading="Henderson Home Valuation"
+          variant="background"
+          priority
+        />
         <h1>Henderson Home Valuation</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Get an accurate home valuation for your Henderson property
@@ -116,7 +128,7 @@ export default component$(() => {
           decisions.
         </p>
         <p>
-          Henderson home values are influenced by factors including school quality, community
+          Henderson home values are influenced by factors including named school campuses, community
           amenities, proximity to Green Valley Ranch or Lake Las Vegas, property condition, and
           market trends. As of November 2025, Henderson continues to see steady appreciation with
           average home prices around $550,000-$650,000.

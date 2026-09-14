@@ -1,5 +1,6 @@
 import { $, component$, useSignal } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import { getPageFAQs } from '~/data/page-faqs'
 
@@ -37,6 +38,12 @@ export default component$(() => {
               the housing market
             </p>
           </div>
+          <HeadingImage
+            imageKey="people-also-ask"
+            heading="People Also Ask"
+            variant="hero"
+            priority
+          />
           <p class="text-gray-600 max-w-3xl mx-auto text-lg">
             Expert insights from Dr. Jan Duffy, your trusted Las Vegas Open House Expert with over
             20 years of experience

@@ -74,13 +74,13 @@ export default component$(() => {
 })
 
 export const head: DocumentHead = {
-  title: 'Open House Update - Las Vegas Real Estate | Dr. Jan Duffy',
+  title: 'Open House Marketplace | Weekend Open Houses Las Vegas | Dr. Jan Duffy',
   meta: [
     // Basic SEO
     {
       name: 'description',
       content:
-        'Professional real estate services in Las Vegas. Find your perfect home with Dr. Jan Duffy. Browse listings, get home valuations, and expert guidance.',
+        'Weekend open houses and Las Vegas property viewing with Open House Marketplace. Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties, 760 Windover Ct, Las Vegas, NV 89138. Call (702) 200-3422.',
     },
     {
       name: 'keywords',
@@ -117,7 +117,7 @@ export const head: DocumentHead = {
     },
     {
       name: 'apple-mobile-web-app-title',
-      content: 'Open House Update',
+      content: 'Open House Marketplace',
     },
     {
       name: 'format-detection',
@@ -129,17 +129,17 @@ export const head: DocumentHead = {
     },
     {
       name: 'application-name',
-      content: 'Open House Update',
+      content: 'Open House Marketplace',
     },
     // Open Graph metadata
     {
       property: 'og:title',
-      content: 'Open House Update - Las Vegas Real Estate | Dr. Jan Duffy',
+      content: 'Open House Marketplace | Weekend Open Houses Las Vegas | Dr. Jan Duffy',
     },
     {
       property: 'og:description',
       content:
-        'Professional real estate services in Las Vegas. Find your perfect home with expert guidance.',
+        'Weekend open houses in Las Vegas with Dr. Jan Duffy. Open House Marketplace, 760 Windover Ct, Las Vegas, NV 89138. Call (702) 200-3422.',
     },
     {
       property: 'og:type',
@@ -151,7 +151,7 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:site_name',
-      content: 'Open House Update',
+      content: 'Open House Marketplace',
     },
     {
       property: 'og:locale',
@@ -183,7 +183,7 @@ export const head: DocumentHead = {
     },
     {
       property: 'og:image:alt',
-      content: 'Las Vegas Real Estate - Open House Update',
+      content: 'Weekend open houses in Las Vegas with Open House Marketplace',
     },
     {
       property: 'og:image:type',
@@ -196,12 +196,12 @@ export const head: DocumentHead = {
     },
     {
       name: 'twitter:title',
-      content: 'Open House Update - Las Vegas Real Estate',
+      content: 'Open House Marketplace | Weekend Open Houses Las Vegas',
     },
     {
       name: 'twitter:description',
       content:
-        'Professional real estate services in Las Vegas. Find your perfect home with expert guidance.',
+        'Weekend open houses in Las Vegas with Dr. Jan Duffy. 760 Windover Ct, Las Vegas, NV 89138. Call (702) 200-3422.',
     },
     {
       name: 'twitter:image',
@@ -209,7 +209,7 @@ export const head: DocumentHead = {
     },
     {
       name: 'twitter:image:alt',
-      content: 'Las Vegas Real Estate - Open House Update',
+      content: 'Weekend open houses in Las Vegas with Open House Marketplace',
     },
     {
       name: 'twitter:site',
@@ -320,7 +320,7 @@ export const head: DocumentHead = {
     {
       rel: 'alternate',
       type: 'application/rss+xml',
-      title: 'Open House Update RSS Feed',
+      title: 'Open House Marketplace RSS Feed',
       href: '/rss.xml',
     },
     {

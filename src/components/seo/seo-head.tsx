@@ -1,5 +1,7 @@
 import { component$ } from '@builder.io/qwik'
-import type { DocumentHead } from '@builder.io/qwik-city'
+import type { DocumentHeadValue } from '@builder.io/qwik-city'
+import { business } from '~/config/business'
+import { getOgImageUrl } from '~/lib/cloudflare-images'
 import type { StructuredData } from '../../types/realscout'
 
 export interface SEOHeadProps {
@@ -22,14 +24,14 @@ export interface SEOHeadProps {
   structuredData?: StructuredData | StructuredData[]
 }
 
-export const createSEOHead = (props: SEOHeadProps): DocumentHead => {
+export const createSEOHead = (props: SEOHeadProps): DocumentHeadValue => {
   const {
     title,
     description,
     keywords = [],
     canonicalUrl,
-    ogImage = 'https://www.openhouseupdate.com/images/og-default.jpg',
-    ogImageAlt = 'Open House Update - Las Vegas Real Estate',
+    ogImage = getOgImageUrl(),
+    ogImageAlt = 'Open House Marketplace weekend open houses in Las Vegas',
     ogType = 'website',
     articleAuthor,
     articlePublishedTime,
@@ -60,7 +62,7 @@ export const createSEOHead = (props: SEOHeadProps): DocumentHead => {
     { property: 'og:description', content: description },
     { property: 'og:type', content: ogType },
     { property: 'og:url', content: canonicalUrl || 'https://www.openhouseupdate.com' },
-    { property: 'og:site_name', content: 'Open House Update' },
+    { property: 'og:site_name', content: business.gbpName },
     { property: 'og:locale', content: 'en_US' },
     { property: 'og:locale:alternate', content: 'es_US' }, // Spanish locale for Las Vegas market
     { property: 'og:image', content: ogImage },
@@ -77,11 +79,12 @@ export const createSEOHead = (props: SEOHeadProps): DocumentHead => {
     { name: 'twitter:image', content: ogImage },
     { name: 'twitter:image:alt', content: ogImageAlt },
 
-    // Geographic
+    // Geographic — match GBP NAP. Do not use downtown 36.1699 coords (wrong for 89138).
     { name: 'geo.region', content: 'US-NV' },
-    { name: 'geo.placename', content: 'Las Vegas' },
-    { name: 'geo.position', content: '36.1699;-115.1398' },
-    { name: 'ICBM', content: '36.1699, -115.1398' },
+    {
+      name: 'geo.placename',
+      content: `${business.addressLocality}, ${business.addressRegion} ${business.postalCode}`,
+    },
   ]
 
   // Add article-specific meta tags

@@ -1,14 +1,17 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 
 export default component$(() => {
   return (
     <section class="error-404-page">
       <div class="container mx-auto px-6 py-16 text-center">
-        {/* 404 Illustration */}
-        <div class="mb-12">
-          <div class="text-8xl md:text-9xl font-bold text-blue-600 mb-4">404</div>
-          <div class="text-6xl mb-8">🏠</div>
+        <div class="mb-12 max-w-3xl mx-auto">
+          <HeadingImage
+            imageKey="weekend-open-houses"
+            heading="Page not found — Las Vegas open houses"
+            variant="hero"
+          />
         </div>
 
         {/* Error Message */}

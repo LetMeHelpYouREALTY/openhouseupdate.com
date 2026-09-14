@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 
@@ -14,13 +15,18 @@ export default component$(() => {
         }
         
         .comparison-hero {
+          position: relative;
+          overflow: hidden;
           text-align: center;
           margin-bottom: 3rem;
-          padding: 3rem 0;
-          background: linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%);
+          padding: 3rem 1.5rem;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .comparison-hero > :not(figure) {
+          position: relative;
+          z-index: 1;
         }
         
         .comparison-hero h1 {
@@ -153,6 +159,12 @@ export default component$(() => {
       `}</style>
 
       <div class="comparison-hero">
+        <HeadingImage
+          imageKey="comparison"
+          heading="Summerlin vs Henderson: Complete Comparison"
+          variant="background"
+          priority
+        />
         <h1>Summerlin vs Henderson: Complete Comparison</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Which Las Vegas community is right for you? Compare Summerlin and Henderson to make an
@@ -187,17 +199,17 @@ export default component$(() => {
             </tr>
             <tr>
               <td>
-                <strong>School Ratings</strong>
+                <strong>Named high schools</strong>
               </td>
-              <td>8-10/10 (Top-rated)</td>
-              <td>7-9/10 (Excellent)</td>
+              <td>Palo Verde High / West Career and Technical Academy</td>
+              <td>Coronado High / Green Valley High</td>
             </tr>
             <tr>
               <td>
-                <strong>Safety Ranking</strong>
+                <strong>Recreation</strong>
               </td>
-              <td>Very Safe</td>
-              <td>Very Safe (#2 Safest City in NV)</td>
+              <td>Red Rock Canyon, 200+ miles of trails</td>
+              <td>Lake Las Vegas, Green Valley Ranch, parks</td>
             </tr>
             <tr>
               <td>
@@ -234,17 +246,17 @@ export default component$(() => {
       <div class="section">
         <h2>Summerlin Overview</h2>
         <p>
-          Summerlin (zip codes 89134, 89135, 89138, 89144) is Las Vegas's premier master-planned
-          community, known for its luxury amenities, excellent schools, and beautiful mountain
-          views. Located on the west side of Las Vegas Valley, Summerlin offers a resort-style
-          lifestyle with world-class golf courses, parks, and Downtown Summerlin shopping.
+          Summerlin (zip codes 89134, 89135, 89138, 89144) is a Howard Hughes master-planned
+          community on the west side of the valley with Red Rock Canyon views, Downtown Summerlin
+          shopping, golf, and 200+ miles of trails. Named high schools include Palo Verde High and
+          West Career and Technical Academy.
         </p>
 
         <div class="pros-cons">
           <div class="pros">
             <h4>Pros of Summerlin</h4>
             <ul>
-              <li>Top-rated schools (8-10/10 ratings)</li>
+              <li>Palo Verde High and West Career and Technical Academy</li>
               <li>Beautiful mountain views of Red Rock Canyon</li>
               <li>Downtown Summerlin shopping and dining</li>
               <li>Extensive park system (150+ parks, 200+ miles trails)</li>
@@ -270,10 +282,10 @@ export default component$(() => {
       <div class="section">
         <h2>Henderson Overview</h2>
         <p>
-          Henderson (zip codes 89002, 89011, 89012, 89014, 89015, 89052, 89074) is consistently
-          ranked as one of the safest cities in America, offering excellent schools, family-friendly
-          atmosphere, and more affordable housing than Summerlin. Henderson has a strong sense of
-          community and established neighborhoods with diverse housing options.
+          Henderson (zip codes 89002, 89011, 89012, 89014, 89015, 89052, 89074) is Nevada’s
+          second-largest city, with Green Valley Ranch, Lake Las Vegas, Coronado High School, and
+          more mid-range housing than 89134–89138. Commute to central Las Vegas is typically 20–30
+          minutes via I-215.
         </p>
 
         <div class="pros-cons">
@@ -281,9 +293,8 @@ export default component$(() => {
             <h4>Pros of Henderson</h4>
             <ul>
               <li>More affordable than Summerlin ($550K-$650K average)</li>
-              <li>Ranked #2 Safest City in Nevada</li>
-              <li>Excellent schools (7-9/10 ratings)</li>
-              <li>Family-friendly atmosphere</li>
+              <li>Coronado High and Green Valley High</li>
+              <li>Green Valley Ranch, Lake Las Vegas, and city parks</li>
               <li>Diverse communities (Green Valley, Seven Hills, Lake Las Vegas)</li>
               <li>Good value for money</li>
               <li>Strong community feel</li>
@@ -307,7 +318,7 @@ export default component$(() => {
 
         <h3>Choose Summerlin If:</h3>
         <ul>
-          <li>You prioritize top-rated schools (8-10/10)</li>
+          <li>You want Palo Verde High / West Career and Technical Academy campuses</li>
           <li>Budget allows for $650K+ home prices</li>
           <li>You want luxury amenities and resort-style living</li>
           <li>Mountain views and proximity to Red Rock Canyon are important</li>
@@ -318,8 +329,8 @@ export default component$(() => {
         <h3>Choose Henderson If:</h3>
         <ul>
           <li>You want better value and more affordable options</li>
-          <li>Safety is a top priority (ranked #2 safest city)</li>
-          <li>You prefer family-friendly, established communities</li>
+          <li>You want Coronado High or Green Valley High campuses</li>
+          <li>You prefer Green Valley Ranch, Lake Las Vegas, or 1950s–1990s housing stock</li>
           <li>Budget is $550K-$650K range</li>
           <li>You want diverse community options (Green Valley, Seven Hills, etc.)</li>
           <li>Access to Lake Las Vegas recreation is appealing</li>
@@ -329,10 +340,9 @@ export default component$(() => {
       <div class="section">
         <h2>Bottom Line</h2>
         <p>
-          Both Summerlin and Henderson are excellent choices for Las Vegas living, each with
-          distinct advantages. Summerlin offers premium amenities and top-rated schools at higher
-          prices, while Henderson provides excellent value, safety, and family-friendly communities.
-          The best choice depends on your budget, priorities, and lifestyle preferences.
+          Both Summerlin and Henderson offer trail systems, named high schools, and weekend open
+          houses. Summerlin sits against Red Rock with higher average prices; Henderson offers more
+          mid-range inventory around Green Valley Ranch and Lake Las Vegas.
         </p>
         <p>
           Dr. Jan Duffy can help you explore both communities, compare specific neighborhoods, and

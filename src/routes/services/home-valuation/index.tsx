@@ -1,8 +1,8 @@
 import { $, component$, useSignal, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
   const propertyAddress = useSignal('')
@@ -76,16 +76,18 @@ export default component$(() => {
         }
         
         .valuation-hero {
+          position: relative;
+          overflow: hidden;
           text-align: center;
           margin-bottom: 3rem;
           padding: 4rem 1.5rem;
-          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
-            url('${getSiteImageUrl('home-valuation')}');
-          background-size: cover;
-          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .valuation-hero > :not(figure) {
+          position: relative;
+          z-index: 1;
         }
         
         .valuation-hero h1 {
@@ -258,6 +260,12 @@ export default component$(() => {
       `}</style>
 
       <div class="valuation-hero">
+        <HeadingImage
+          imageKey="home-valuation"
+          heading="Free Home Valuation"
+          variant="background"
+          priority
+        />
         <h1>Free Home Valuation</h1>
         <p>
           Get an accurate assessment of your property's current market value with our comprehensive

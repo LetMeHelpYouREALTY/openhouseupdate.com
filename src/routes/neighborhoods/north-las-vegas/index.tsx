@@ -193,8 +193,8 @@ export default component$(() => {
               and modern amenities
             </li>
             <li>
-              <strong>Centennial Hills (89031):</strong> Established area with good schools and
-              shopping
+              <strong>Centennial Hills (89031):</strong> 1990s–2000s housing near Centennial Hills
+              Hospital and shopping along the 215 Beltway
             </li>
             <li>
               <strong>Aliante:</strong> Community with shopping center, golf course, and parks
@@ -216,10 +216,9 @@ export default component$(() => {
 
           <h3>Schools in North Las Vegas</h3>
           <p>
-            North Las Vegas is served by the Clark County School District. While school ratings
-            vary, newer communities like Skye Canyon and Centennial Hills have newer schools with
-            improving ratings. Many families are attracted to the area for its affordability and new
-            construction options.
+            North Las Vegas is served by the Clark County School District, including campuses near
+            Skye Canyon (89084) and Centennial Hills (89031). Confirm the specific school listed on
+            each MLS sheet before you tour.
           </p>
 
           <h3>Growth & Development</h3>

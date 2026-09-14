@@ -1,6 +1,7 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import { type DocumentHead, useLocation } from '@builder.io/qwik-city'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
+import HeadingImage from '~/components/media/heading-image'
+import type { SiteImageKey } from '~/config/images'
 
 export default component$(() => {
   const location = useLocation()
@@ -78,10 +79,20 @@ export default component$(() => {
   }
 
   const priceInfo = parsePriceRange(priceRange)
+  const priceImageKey: SiteImageKey =
+    priceRange === 'over-1m' || priceRange === '800k-1m'
+      ? 'luxury-open-houses'
+      : 'weekend-open-houses'
 
   return (
     <section class="price-range-page">
       <div class="price-hero">
+        <HeadingImage
+          imageKey={priceImageKey}
+          heading={priceInfo.title}
+          variant="background"
+          priority
+        />
         <h1>{priceInfo.title}</h1>
         <p class="price-subtitle">Discover quality homes in your price range in Las Vegas</p>
       </div>
@@ -115,16 +126,18 @@ export default component$(() => {
           }
           
           .price-hero {
+            position: relative;
+            overflow: hidden;
             text-align: center;
             margin-bottom: 3rem;
             padding: 3rem 1.5rem;
-            background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
-              url('${getSiteImageUrl(priceRange === 'over-1m' ? 'luxury-open-houses' : 'weekend-open-houses')}');
-            background-size: cover;
-            background-position: center;
             color: white;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+          }
+          .price-hero > :not(figure) {
+            position: relative;
+            z-index: 1;
           }
           
           .price-hero h1 {
@@ -286,10 +299,11 @@ export default component$(() => {
           </p>
           <p>
             Properties in this range typically feature updated kitchens and bathrooms, spacious
-            layouts perfect for families, energy-efficient systems, and access to excellent schools,
-            shopping, and recreational facilities. Whether you're looking for a starter home,
-            upgrading to a larger property, or making an investment, {priceInfo.display} homes in
-            Las Vegas provide outstanding opportunities.
+            layouts with 1,600–2,400 sq ft typical, energy-efficient HVAC for desert summers, and
+            access to named schools such as Palo Verde High (Summerlin) or Coronado High (Green
+            Valley), plus shopping and trail systems. shopping, and recreational facilities. Whether
+            you're looking for a starter home, upgrading to a larger property, or making an
+            investment, {priceInfo.display} homes in Las Vegas provide outstanding opportunities.
           </p>
         </div>
 
@@ -302,10 +316,10 @@ export default component$(() => {
           </p>
           <p>
             Properties often feature updated kitchens, spacious layouts, modern amenities, and
-            access to top-rated schools and recreational facilities. Neighborhoods with homes in
-            this range typically offer strong community features, well-maintained infrastructure,
-            and convenient access to major employment centers, shopping, dining, and entertainment
-            throughout the Las Vegas metropolitan area.
+            access to named schools and recreational facilities. Neighborhoods with homes in this
+            range typically offer HOA amenities, well-maintained infrastructure, and convenient
+            access to major employment centers, shopping, dining, and entertainment throughout the
+            Las Vegas metropolitan area.
           </p>
         </div>
 

@@ -1,10 +1,12 @@
 import { $, component$, useSignal } from '@builder.io/qwik'
+import type { SiteImageKey } from '~/config/images'
+import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 interface NeighborhoodGuide {
   id: string
   name: string
   description: string
-  image: string
+  imageKey: SiteImageKey
   downloadUrl: string
   features: string[]
   priceRange: string
@@ -25,24 +27,29 @@ export default component$(() => {
       id: 'summerlin',
       name: 'Summerlin Neighborhood Guide',
       description:
-        "Complete guide to Las Vegas' premier master-planned community with luxury homes, top-rated schools, and world-class amenities.",
-      image: '/images/neighborhoods/summerlin.jpg',
+        'Complete guide to Summerlin with Downtown Summerlin, Red Rock Canyon trails, and Palo Verde High School.',
+      imageKey: 'summerlin',
       downloadUrl: '/downloads/summerlin-guide.pdf',
-      features: ['Luxury Homes', 'Top Schools', 'Golf Courses', 'Shopping Centers'],
+      features: [
+        '1,800–4,000+ sq ft homes',
+        'Palo Verde High',
+        'Golf courses',
+        'Downtown Summerlin',
+      ],
       priceRange: '$500K - $2M+',
-      schools: '9/10 Average Rating',
+      schools: 'Palo Verde High / West Career and Technical Academy',
       amenities: ['Red Rock Casino', 'Downtown Summerlin', 'Red Rock Canyon', 'Golf Courses'],
     },
     {
       id: 'henderson',
       name: 'Henderson Living Guide',
       description:
-        "Everything you need to know about Henderson, Nevada's second-largest city with family-friendly neighborhoods and excellent schools.",
-      image: '/images/neighborhoods/henderson.jpg',
+        "Guide to Henderson, Nevada's second-largest city, covering Green Valley Ranch, Lake Las Vegas, and Coronado High School.",
+      imageKey: 'henderson',
       downloadUrl: '/downloads/henderson-guide.pdf',
-      features: ['Family-Friendly', 'Excellent Schools', 'Parks & Recreation', 'Low Crime'],
+      features: ['Green Valley Ranch', 'Coronado High', 'Parks & trails', 'Lake Las Vegas'],
       priceRange: '$300K - $800K',
-      schools: '8/10 Average Rating',
+      schools: 'Coronado High / Green Valley High',
       amenities: ['Green Valley Ranch', 'Lake Las Vegas', 'Anthem', 'Seven Hills'],
     },
     {
@@ -50,23 +57,23 @@ export default component$(() => {
       name: 'North Las Vegas Community Guide',
       description:
         'Discover the fastest-growing area of Las Vegas with new construction, affordable homes, and modern amenities.',
-      image: '/images/neighborhoods/north-las-vegas.jpg',
+      imageKey: 'north-las-vegas',
       downloadUrl: '/downloads/north-las-vegas-guide.pdf',
       features: ['New Construction', 'Affordable Prices', 'Growing Community', 'Modern Amenities'],
       priceRange: '$250K - $600K',
-      schools: '7/10 Average Rating',
+      schools: 'Campuses near Skye Canyon and Centennial Hills',
       amenities: ['Aliante Casino', 'Craig Ranch Regional Park', 'Skye Canyon', 'Centennial Hills'],
     },
     {
       id: 'spring-valley',
       name: 'Spring Valley Area Guide',
       description:
-        "Comprehensive guide to Spring Valley's diverse neighborhoods, from established communities to new developments.",
-      image: '/images/neighborhoods/spring-valley.jpg',
+        "Guide to Spring Valley's mix of 1970s–2000s housing, Rhodes Ranch, and Mountain's Edge.",
+      imageKey: 'spring-valley',
       downloadUrl: '/downloads/spring-valley-guide.pdf',
       features: ['Diverse Communities', 'Established Areas', 'New Developments', 'Great Value'],
       priceRange: '$200K - $700K',
-      schools: '7/10 Average Rating',
+      schools: 'Campuses near Skye Canyon and Centennial Hills',
       amenities: ['Red Rock Casino', 'Spring Valley', 'Rhodes Ranch', "Mountain's Edge"],
     },
     {
@@ -74,11 +81,11 @@ export default component$(() => {
       name: 'Enterprise Neighborhood Guide',
       description:
         "Explore Enterprise's unique blend of rural charm and urban convenience, perfect for those seeking space and privacy.",
-      image: '/images/neighborhoods/enterprise.jpg',
+      imageKey: 'enterprise',
       downloadUrl: '/downloads/enterprise-guide.pdf',
       features: ['Rural Charm', 'Large Lots', 'Privacy', 'Urban Convenience'],
       priceRange: '$400K - $1.2M',
-      schools: '8/10 Average Rating',
+      schools: 'Confirm campus on each MLS listing',
       amenities: ["Mountain's Edge", 'Inspirada', 'Southern Highlands', 'Enterprise'],
     },
   ]
@@ -219,9 +226,14 @@ export default component$(() => {
                     : 'border-gray-200 hover:border-blue-300'
                 }`}
               >
-                <div class="guide-image h-32 rounded-lg mb-3 flex items-center justify-center text-white text-2xl">
-                  🏘️
-                </div>
+                <img
+                  src={getSiteImageUrl(guide.imageKey)}
+                  alt={`${guide.name} in Las Vegas`}
+                  width={640}
+                  height={256}
+                  loading="lazy"
+                  class="h-32 w-full object-cover rounded-lg mb-3"
+                />
                 <h4 class="font-bold text-gray-900 mb-2">{guide.name}</h4>
                 <p class="text-sm text-gray-600 mb-3">{guide.description}</p>
                 <div class="space-y-1">

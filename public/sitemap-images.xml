@@ -94,4 +94,44 @@
       <image:caption>Front door of a Las Vegas home for first-time buyers</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/summerlin-vs-henderson/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-comparison-summerlin-henderson.jpg</image:loc>
+      <image:title>Summerlin vs Henderson</image:title>
+      <image:caption>Summerlin Red Rock homes beside Henderson Green Valley homes</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/people-also-ask/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-people-also-ask.jpg</image:loc>
+      <image:title>People Also Ask</image:title>
+      <image:caption>Open House Marketplace office desk with Las Vegas Valley neighborhood maps</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/neighborhoods/spring-valley/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-spring-valley-homes.jpg</image:loc>
+      <image:title>Spring Valley Real Estate</image:title>
+      <image:caption>Spring Valley Las Vegas homes with tile roofs and desert landscaping</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/neighborhoods/enterprise/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-enterprise-homes.jpg</image:loc>
+      <image:title>Enterprise Real Estate</image:title>
+      <image:caption>Enterprise Las Vegas homes on larger lots near the Spring Mountains</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/blog/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-market-analysis.jpg</image:loc>
+      <image:title>Las Vegas Real Estate Blog</image:title>
+      <image:caption>Las Vegas Valley skyline used for market analysis articles</image:caption>
+    </image:image>
+  </url>
 </urlset>

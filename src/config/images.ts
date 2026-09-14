@@ -125,6 +125,30 @@ export const siteImages = {
     width: 1600,
     height: 900,
   },
+  comparison: {
+    file: 'heading-comparison-summerlin-henderson.jpg',
+    alt: 'Summerlin Red Rock homes beside Henderson Green Valley homes in Las Vegas Valley',
+    width: 1600,
+    height: 900,
+  },
+  'people-also-ask': {
+    file: 'heading-people-also-ask.jpg',
+    alt: 'Open House Marketplace office desk with Las Vegas Valley neighborhood maps',
+    width: 1600,
+    height: 900,
+  },
+  'spring-valley': {
+    file: 'heading-spring-valley-homes.jpg',
+    alt: 'Spring Valley Las Vegas homes with tile roofs and desert landscaping',
+    width: 1600,
+    height: 900,
+  },
+  enterprise: {
+    file: 'heading-enterprise-homes.jpg',
+    alt: 'Enterprise Las Vegas homes on larger lots near the Spring Mountains',
+    width: 1600,
+    height: 900,
+  },
   logo: {
     file: 'logo.png',
     alt: 'Open House Marketplace logo',
@@ -134,3 +158,22 @@ export const siteImages = {
 } as const
 
 export type SiteImageKey = keyof typeof siteImages
+
+export const getNeighborhoodImageKey = (slug: string): SiteImageKey => {
+  switch (slug.toLowerCase()) {
+    case 'summerlin':
+      return 'summerlin'
+    case 'henderson':
+      return 'henderson'
+    case 'north-las-vegas':
+      return 'north-las-vegas'
+    case 'green-valley':
+      return 'green-valley'
+    case 'spring-valley':
+      return 'spring-valley'
+    case 'enterprise':
+      return 'enterprise'
+    default:
+      return 'weekend-open-houses'
+  }
+}

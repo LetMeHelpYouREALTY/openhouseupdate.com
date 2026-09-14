@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import RelatedContent from '~/components/seo/related-content'
 
@@ -10,6 +11,12 @@ export default component$(() => {
         <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-center">
           Summerlin vs Henderson: Complete Comparison Guide
         </h1>
+        <HeadingImage
+          imageKey="comparison"
+          heading="Summerlin vs Henderson: Complete Comparison Guide"
+          variant="hero"
+          priority
+        />
         <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
           Comparing Las Vegas's two premier communities - Summerlin and Henderson - to help you
           choose the right neighborhood for your lifestyle and budget.
@@ -60,17 +67,25 @@ export default component$(() => {
                   </tr>
                   <tr class="bg-gray-50">
                     <td class="border border-gray-300 px-4 py-3">
-                      <strong>Schools</strong>
+                      <strong>Named high schools</strong>
                     </td>
-                    <td class="border border-gray-300 px-4 py-3">Excellent (8-10/10 ratings)</td>
-                    <td class="border border-gray-300 px-4 py-3">Excellent (7-9/10 ratings)</td>
+                    <td class="border border-gray-300 px-4 py-3">
+                      Palo Verde High / West Career and Technical Academy
+                    </td>
+                    <td class="border border-gray-300 px-4 py-3">
+                      Coronado High / Green Valley High
+                    </td>
                   </tr>
                   <tr>
                     <td class="border border-gray-300 px-4 py-3">
-                      <strong>Safety</strong>
+                      <strong>Recreation</strong>
                     </td>
-                    <td class="border border-gray-300 px-4 py-3">Very Safe</td>
-                    <td class="border border-gray-300 px-4 py-3">Very Safe</td>
+                    <td class="border border-gray-300 px-4 py-3">
+                      Red Rock Canyon, 200+ miles of trails
+                    </td>
+                    <td class="border border-gray-300 px-4 py-3">
+                      Lake Las Vegas, Green Valley Ranch
+                    </td>
                   </tr>
                   <tr class="bg-gray-50">
                     <td class="border border-gray-300 px-4 py-3">
@@ -147,9 +162,8 @@ export default component$(() => {
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Best For</h3>
             <p class="text-lg text-gray-700 mb-4">
-              Summerlin is ideal for: Families seeking excellent schools, professionals wanting
-              premium living, retirees seeking active lifestyle, buyers prioritizing master-planned
-              community amenities, and those wanting proximity to Red Rock Canyon.
+              Summerlin is a fit if you want Red Rock Canyon access, Downtown Summerlin retail, and
+              campuses such as Palo Verde High. Budget for $600,000+ on many mid-range listings.
             </p>
           </div>
 
@@ -168,8 +182,8 @@ export default component$(() => {
             </p>
             <ul class="list-disc pl-6 text-lg text-gray-700 mb-4">
               <li>
-                <strong>Green Valley</strong> (89012, 89014): $500,000-$800,000 - family-friendly
-                with excellent schools
+                <strong>Green Valley</strong> (89012, 89014): $500,000-$800,000 — Coronado High
+                School zone, Green Valley Ranch retail
               </li>
               <li>
                 <strong>Seven Hills</strong> (89052, 89074): $600,000-$1.5M - luxury gated community
@@ -191,26 +205,24 @@ export default component$(() => {
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Schools & Education</h3>
             <p class="text-lg text-gray-700 mb-4">
               Henderson schools, particularly in Green Valley (89012, 89014) and Seven Hills (89052,
-              89074), have highly-rated schools with many rated 7-9/10. Coronado High School and
-              other top-performing schools serve the area. Henderson consistently ranks as one of
-              the safest cities in Nevada.
+              89074), include Coronado High School. Amenities include Green Valley Ranch, Lake Las
+              Vegas, and I-215 / I-515 access.
             </p>
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Amenities & Lifestyle</h3>
             <ul class="list-disc pl-6 text-lg text-gray-700 mb-4">
               <li>Green Valley Ranch shopping and entertainment</li>
-              <li>Family-friendly environment with parks</li>
+              <li>Parks, trails, and Lake Las Vegas recreation</li>
               <li>Lake Las Vegas resort amenities</li>
               <li>Easy access to I-215 and I-515</li>
               <li>Strong community involvement</li>
-              <li>Lower crime rates than Las Vegas city proper</li>
+              <li>Easy access to I-215 and I-515</li>
             </ul>
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Best For</h3>
             <p class="text-lg text-gray-700 mb-4">
-              Henderson is ideal for: Families prioritizing safety and schools, buyers seeking
-              family-friendly communities, those wanting slightly lower prices than Summerlin,
-              retirees in areas like Green Valley, and professionals seeking balanced lifestyle.
+              Henderson is a fit if you want Coronado High or Green Valley High, Green Valley Ranch
+              or Lake Las Vegas amenities, and typically lower average prices than 89134–89138.
             </p>
           </div>
 
@@ -223,7 +235,7 @@ export default component$(() => {
                 <li>You want premier master-planned community</li>
                 <li>Budget allows $600,000+ for mid-range options</li>
                 <li>Red Rock Canyon proximity is important</li>
-                <li>You prioritize top-tier schools (8-10/10)</li>
+                <li>You want Palo Verde High or West Career and Technical Academy</li>
                 <li>Luxury living in The Ridges appeals to you</li>
                 <li>Downtown Summerlin lifestyle is desired</li>
               </ul>
@@ -232,9 +244,9 @@ export default component$(() => {
             <div class="bg-white border-2 border-green-200 rounded-lg p-6">
               <h3 class="text-2xl font-bold text-green-600 mb-4">Choose Henderson If:</h3>
               <ul class="list-disc pl-6 text-gray-700">
-                <li>You want excellent value with great schools</li>
+                <li>You want Coronado High or Green Valley High campuses</li>
                 <li>Budget is $500,000-$700,000 for quality homes</li>
-                <li>Family-friendly, safe environment is priority</li>
+                <li>Green Valley Ranch or Lake Las Vegas is on your tour list</li>
                 <li>Green Valley or Seven Hills appeal to you</li>
                 <li>Lake Las Vegas lifestyle interests you</li>
                 <li>You want city identity beyond Las Vegas</li>
@@ -266,9 +278,9 @@ export default component$(() => {
           <p class="text-lg text-gray-700 mb-6">
             When choosing between Summerlin and Henderson, consider: your budget (Summerlin tends to
             be pricier), commute requirements, school priorities, lifestyle preferences, and
-            long-term plans. Both communities offer excellent quality of life, great schools, and
-            strong property values. Visiting both areas and working with a knowledgeable agent like
-            Dr. Jan Duffy can help you make the best decision for your situation.
+            long-term plans. Both communities offer HOA amenities, named high schools, and weekend
+            open houses. Visiting both areas with Dr. Jan Duffy can help you match square footage,
+            commute, and budget.
           </p>
         </div>
 
@@ -287,9 +299,9 @@ export default component$(() => {
               description: 'Discover Henderson homes and communities',
             },
             {
-              title: 'Top Neighborhoods for Families',
+              title: 'Las Vegas Neighborhoods to Tour',
               url: '/blog/top-5-neighborhoods-families-las-vegas',
-              description: 'Best family-friendly neighborhoods in Las Vegas',
+              description: 'Compare Summerlin, Green Valley, Seven Hills, Anthem, and Skye Canyon',
             },
             {
               title: 'Property Search',

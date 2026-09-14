@@ -2,10 +2,8 @@ import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
 import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
-  const weekendHero = getSiteImageUrl('weekend-open-houses')
   // Initialize RealScout widget
   useVisibleTask$(() => {
     if (typeof window !== 'undefined') {
@@ -42,13 +40,15 @@ export default component$(() => {
         }
 
         .weekend-header {
-          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
-            url('${weekendHero}');
-          background-size: cover;
-          background-position: center;
+          position: relative;
+          overflow: hidden;
           color: white;
           padding: 3rem 2rem;
           text-align: center;
+        }
+        .weekend-header > :not(figure) {
+          position: relative;
+          z-index: 1;
         }
 
         .weekend-title {
@@ -159,6 +159,12 @@ export default component$(() => {
       `}</style>
 
       <div class="weekend-header">
+        <HeadingImage
+          imageKey="weekend-open-houses"
+          heading="This Weekend's Open Houses"
+          variant="background"
+          priority
+        />
         <h1 class="weekend-title">This Weekend's Open Houses</h1>
         <p class="weekend-subtitle">Find the perfect properties to visit this weekend</p>
       </div>

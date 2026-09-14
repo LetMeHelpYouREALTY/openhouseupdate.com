@@ -75,22 +75,7 @@ export default component$(() => {
                 key={post.id}
                 class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div class="bg-gradient-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center">
-                  <div class="text-center">
-                    <div class="text-4xl mb-2">
-                      {post.category === 'Buyer Tips'
-                        ? '🏠'
-                        : post.category === 'Seller Tips'
-                          ? '💰'
-                          : post.category === 'Neighborhoods'
-                            ? '🏘️'
-                            : post.category === 'Investment'
-                              ? '📊'
-                              : '📝'}
-                    </div>
-                    <div class="text-sm text-gray-600">{post.category}</div>
-                  </div>
-                </div>
+                <HeadingImage imageKey={post.imageKey} heading={post.title} variant="card" />
                 <div class="p-6">
                   <div class="flex items-center space-x-4 mb-4">
                     <span class="bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full">
