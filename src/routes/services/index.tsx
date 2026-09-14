@@ -1,8 +1,11 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
+import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
+  const heroImage = getSiteImageUrl('buyer-services')
   return (
     <div class="services-page">
       <style>{`
@@ -15,8 +18,11 @@ export default component$(() => {
         .services-hero {
           text-align: center;
           margin-bottom: 4rem;
-          padding: 3rem 0;
-          background: linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%);
+          padding: 4rem 1.5rem;
+          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
+            url('${heroImage}');
+          background-size: cover;
+          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -48,10 +54,11 @@ export default component$(() => {
         .service-card {
           background: white;
           border-radius: 12px;
-          padding: 2rem;
+          padding: 0 0 2rem;
           box-shadow: 0 4px 20px rgba(0,0,0,0.08);
           transition: transform 0.3s ease, box-shadow 0.3s ease;
           border-top: 4px solid #3A8DDE;
+          overflow: hidden;
         }
         
         .service-card:hover {
@@ -59,7 +66,15 @@ export default component$(() => {
           box-shadow: 0 8px 30px rgba(0,0,0,0.12);
         }
         
+        .service-card h3,
+        .service-card p,
+        .service-card ul,
+        .service-card a {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
         .service-card h3 {
+          margin-top: 1.25rem;
           color: #0A2540;
           font-size: 1.5rem;
           font-weight: 600;
@@ -186,7 +201,8 @@ export default component$(() => {
 
       <div class="services-grid">
         <div class="service-card">
-          <h3>🏠 Home Valuation</h3>
+          <HeadingImage imageKey="home-valuation" heading="Home Valuation" variant="card" />
+          <h3>Home Valuation</h3>
           <p>
             Get an accurate assessment of your property's current market value with our
             comprehensive home valuation service.
@@ -204,7 +220,8 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <h3>🛒 Buyer Services</h3>
+          <HeadingImage imageKey="buyer-services" heading="Buyer Services" variant="card" />
+          <h3>Buyer Services</h3>
           <p>
             Complete support throughout your home buying journey, from initial search to closing
             day.
@@ -216,13 +233,19 @@ export default component$(() => {
             <li>Inspection coordination</li>
             <li>Closing assistance</li>
           </ul>
-          <a href="http://drjanduffy.realscout.com/onboarding" target="_blank" rel="noopener noreferrer" class="service-link">
+          <a
+            href="http://drjanduffy.realscout.com/onboarding"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-link"
+          >
             Start Your Search
           </a>
         </div>
 
         <div class="service-card">
-          <h3>🏡 Seller Services</h3>
+          <HeadingImage imageKey="seller-services" heading="Seller Services" variant="card" />
+          <h3>Seller Services</h3>
           <p>
             Maximize your property's value and ensure a smooth selling process with our expert
             seller services.
@@ -240,7 +263,8 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <h3>📊 Market Analysis</h3>
+          <HeadingImage imageKey="market-analysis" heading="Market Analysis" variant="card" />
+          <h3>Market Analysis</h3>
           <p>
             Stay informed with detailed market reports and trends analysis for informed
             decision-making.
@@ -268,7 +292,12 @@ export default component$(() => {
           <a href="/contact" class="cta-button">
             Contact Dr. Duffy
           </a>
-          <a href="http://drjanduffy.realscout.com/onboarding" target="_blank" rel="noopener noreferrer" class="cta-button secondary">
+          <a
+            href="http://drjanduffy.realscout.com/onboarding"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cta-button secondary"
+          >
             Start Property Search
           </a>
         </div>

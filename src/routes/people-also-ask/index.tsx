@@ -1,8 +1,7 @@
 import { $, component$, useSignal } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import { getPageFAQs } from '~/data/page-faqs'
-import EnhancedPageSEO from '~/components/seo/enhanced-page-seo'
-import { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 
 export default component$(() => {
   const openFAQ = useSignal<number | null>(null)
@@ -39,8 +38,8 @@ export default component$(() => {
             </p>
           </div>
           <p class="text-gray-600 max-w-3xl mx-auto text-lg">
-            Expert insights from Dr. Jan Duffy, your trusted Las Vegas Open House Expert with over 20
-            years of experience
+            Expert insights from Dr. Jan Duffy, your trusted Las Vegas Open House Expert with over
+            20 years of experience
           </p>
         </div>
 
@@ -78,8 +77,8 @@ export default component$(() => {
         <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl shadow-xl p-10 text-white text-center mb-16">
           <h2 class="text-3xl font-bold mb-4">Have More Questions?</h2>
           <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Dr. Jan Duffy is here to provide personalized answers and expert guidance for your Las Vegas
-            real estate needs
+            Dr. Jan Duffy is here to provide personalized answers and expert guidance for your Las
+            Vegas real estate needs
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -135,5 +134,9 @@ export default component$(() => {
   )
 })
 
-export const head: DocumentHead = createOptimizedHead('people-also-ask', undefined, undefined, undefined)
-
+export const head: DocumentHead = createOptimizedHead(
+  'people-also-ask',
+  undefined,
+  undefined,
+  undefined
+)

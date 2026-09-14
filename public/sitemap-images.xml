@@ -4,17 +4,94 @@
   <url>
     <loc>https://www.openhouseupdate.com/</loc>
     <image:image>
-      <image:loc>https://www.openhouseupdate.com/images/og-image.jpg</image:loc>
-      <image:title>Las Vegas Real Estate - Open House Update</image:title>
-      <image:caption>Professional real estate services in Las Vegas</image:caption>
+      <image:loc>https://www.openhouseupdate.com/images/hero-weekend-open-houses.jpg</image:loc>
+      <image:title>Find This Weekend's Open Houses</image:title>
+      <image:caption>Weekend open house at a Summerlin Las Vegas home with Red Rock Canyon views</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/og-default.jpg</image:loc>
+      <image:title>Open House Marketplace Las Vegas</image:title>
+      <image:caption>Las Vegas weekend open houses with Dr. Jan Duffy</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://www.openhouseupdate.com/about</loc>
+    <loc>https://www.openhouseupdate.com/this-weekend/</loc>
     <image:image>
-      <image:loc>https://www.openhouseupdate.com/images/dr-janet-duffy.jpg</image:loc>
-      <image:title>Dr. Jan Duffy - Real Estate Agent</image:title>
-      <image:caption>Professional real estate agent specializing in Las Vegas properties</image:caption>
+      <image:loc>https://www.openhouseupdate.com/images/hero-weekend-open-houses.jpg</image:loc>
+      <image:title>This Weekend's Open Houses</image:title>
+      <image:caption>Las Vegas homes holding weekend open houses</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/about/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-about-agent.jpg</image:loc>
+      <image:title>About Dr. Jan Duffy</image:title>
+      <image:caption>Open House Marketplace office in Summerlin Las Vegas</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/contact/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-contact-office.jpg</image:loc>
+      <image:title>Contact Dr. Jan Duffy</image:title>
+      <image:caption>Open House Marketplace at 760 Windover Ct, Las Vegas NV 89138</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/neighborhoods/summerlin/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-summerlin-homes.jpg</image:loc>
+      <image:title>Summerlin Real Estate</image:title>
+      <image:caption>Summerlin Las Vegas homes along Red Rock Canyon</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/neighborhoods/henderson/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-henderson-homes.jpg</image:loc>
+      <image:title>Henderson Real Estate</image:title>
+      <image:caption>Henderson Nevada homes with mountain views</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/neighborhoods/north-las-vegas/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-north-las-vegas-homes.jpg</image:loc>
+      <image:title>North Las Vegas Real Estate</image:title>
+      <image:caption>Newer North Las Vegas homes in a master-planned community</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/neighborhoods/green-valley/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-green-valley-homes.jpg</image:loc>
+      <image:title>Green Valley Real Estate</image:title>
+      <image:caption>Green Valley Henderson homes with desert landscaping</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/services/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-buyer-services.jpg</image:loc>
+      <image:title>Professional Real Estate Services</image:title>
+      <image:caption>Las Vegas buyer and seller services from Dr. Jan Duffy</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/services/home-valuation/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-home-valuation.jpg</image:loc>
+      <image:title>Free Home Valuation</image:title>
+      <image:caption>Las Vegas home prepared for a professional market valuation</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/how-to-buy-first-home-las-vegas/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-first-time-buyer.jpg</image:loc>
+      <image:title>First-Time Homebuyer Guide</image:title>
+      <image:caption>Front door of a Las Vegas home for first-time buyers</image:caption>
     </image:image>
   </url>
 </urlset>

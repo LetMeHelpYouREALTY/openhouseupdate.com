@@ -94,28 +94,32 @@ export default component$(() => {
       </div>
 
       <div class="valuation-section">
-        <h2 style="color: #0A2540; margin-bottom: 1rem; text-align: center;">Get Your Instant Home Value</h2>
+        <h2 style="color: #0A2540; margin-bottom: 1rem; text-align: center;">
+          Get Your Instant Home Value
+        </h2>
         <realscout-home-value agent-encoded-id="QWdlbnQtMjI1MDUw" />
       </div>
 
       <div class="info-section">
         <h2>Henderson Home Valuation</h2>
         <p>
-          Get an accurate home valuation for your Henderson property. Located in zip codes 89002, 89011, 89012, 
-          89014, 89015, 89052, and 89074, Henderson home values vary by community, with Green Valley (89012, 
-          89014), Seven Hills (89052, 89074), and Lake Las Vegas (89011) commanding premium prices.
+          Get an accurate home valuation for your Henderson property. Located in zip codes 89002,
+          89011, 89012, 89014, 89015, 89052, and 89074, Henderson home values vary by community,
+          with Green Valley (89012, 89014), Seven Hills (89052, 89074), and Lake Las Vegas (89011)
+          commanding premium prices.
         </p>
         <p>
-          Dr. Jan Duffy provides comprehensive home valuations for Henderson properties, analyzing comparable 
-          sales, current market trends, neighborhood-specific data, and property features. Whether you're in 
-          Green Valley, Seven Hills, Anthem, or other Henderson communities, we provide accurate market value 
-          estimates to help you make informed decisions.
+          Dr. Jan Duffy provides comprehensive home valuations for Henderson properties, analyzing
+          comparable sales, current market trends, neighborhood-specific data, and property
+          features. Whether you're in Green Valley, Seven Hills, Anthem, or other Henderson
+          communities, we provide accurate market value estimates to help you make informed
+          decisions.
         </p>
         <p>
-          Henderson home values are influenced by factors including school quality, community amenities, 
-          proximity to Green Valley Ranch or Lake Las Vegas, property condition, and market trends. As of 
-          November 2025, Henderson continues to see steady appreciation with average home prices around 
-          $550,000-$650,000.
+          Henderson home values are influenced by factors including school quality, community
+          amenities, proximity to Green Valley Ranch or Lake Las Vegas, property condition, and
+          market trends. As of November 2025, Henderson continues to see steady appreciation with
+          average home prices around $550,000-$650,000.
         </p>
       </div>
 
@@ -148,11 +152,7 @@ export default component$(() => {
       />
 
       {/* FAQ Section */}
-      <EnhancedPageSEO
-        pageKey="henderson-home-valuation"
-        showFAQs={false}
-        className="mt-8"
-      />
+      <EnhancedPageSEO pageKey="henderson-home-valuation" showFAQs={false} className="mt-8" />
     </div>
   )
 })
@@ -178,4 +178,3 @@ export const head: DocumentHead = {
     },
   ],
 }
-

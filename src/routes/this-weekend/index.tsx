@@ -1,8 +1,11 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
+import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
+  const weekendHero = getSiteImageUrl('weekend-open-houses')
   // Initialize RealScout widget
   useVisibleTask$(() => {
     if (typeof window !== 'undefined') {
@@ -39,7 +42,10 @@ export default component$(() => {
         }
 
         .weekend-header {
-          background: linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%);
+          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
+            url('${weekendHero}');
+          background-size: cover;
+          background-position: center;
           color: white;
           padding: 3rem 2rem;
           text-align: center;
@@ -112,10 +118,11 @@ export default component$(() => {
 
         .feature-card {
           background: white;
-          padding: 2rem;
+          padding: 0 0 2rem;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
           text-align: center;
+          overflow: hidden;
         }
 
         .feature-icon {
@@ -127,12 +134,13 @@ export default component$(() => {
           font-size: 1.3rem;
           font-weight: 600;
           color: #0A2540;
-          margin-bottom: 1rem;
+          margin: 1.25rem 1.25rem 1rem;
         }
 
         .feature-description {
           color: #666;
           line-height: 1.6;
+          padding: 0 1.25rem;
         }
 
         @media (max-width: 768px) {
@@ -170,7 +178,7 @@ export default component$(() => {
 
         <div class="features-section">
           <div class="feature-card">
-            <div class="feature-icon">🏠</div>
+            <HeadingImage imageKey="map-search" heading="Comprehensive Search" variant="card" />
             <h3 class="feature-title">Comprehensive Search</h3>
             <p class="feature-description">
               Search thousands of properties with advanced filters including price range, bedrooms,
@@ -179,7 +187,7 @@ export default component$(() => {
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">📍</div>
+            <HeadingImage imageKey="summerlin" heading="Location-Based" variant="card" />
             <h3 class="feature-title">Location-Based</h3>
             <p class="feature-description">
               Find properties in your preferred neighborhoods with detailed location information and
@@ -188,7 +196,7 @@ export default component$(() => {
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">📅</div>
+            <HeadingImage imageKey="weekend-open-houses" heading="Weekend Focused" variant="card" />
             <h3 class="feature-title">Weekend Focused</h3>
             <p class="feature-description">
               Discover properties with open houses scheduled for this weekend, making it easy to

@@ -12,8 +12,8 @@ export interface SEOConfig {
 
 export const seoConfig: SEOConfig = {
   siteName: 'Open House Update',
-  siteUrl: 'https://openhouseupdate.com',
-  defaultImage: 'https://openhouseupdate.com/images/og-default.jpg',
+  siteUrl: 'https://www.openhouseupdate.com',
+  defaultImage: 'https://www.openhouseupdate.com/images/og-default.jpg',
   defaultImageAlt: 'Open House Update - Las Vegas Real Estate',
   author: 'Dr. Jan Duffy',
   locale: 'en_US',

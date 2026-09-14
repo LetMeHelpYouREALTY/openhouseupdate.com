@@ -1,4 +1,6 @@
 import { component$ } from '@builder.io/qwik'
+import { business } from '~/config/business'
+import { getAbsoluteImageUrl } from '~/lib/cloudflare-images'
 
 interface EnhancedStructuredDataProps {
   type:
@@ -26,7 +28,15 @@ interface EnhancedStructuredDataProps {
 }
 
 export default component$<EnhancedStructuredDataProps>(
-  ({ type, data = {}, pageType = 'general', propertyData = {}, breadcrumbs = [], faqs = [], reviews = [] }) => {
+  ({
+    type,
+    data = {},
+    pageType = 'general',
+    propertyData = {},
+    breadcrumbs = [],
+    faqs = [],
+    reviews = [],
+  }) => {
     // Use parameters to avoid linting errors
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const _pageType = pageType
@@ -43,24 +53,20 @@ export default component$<EnhancedStructuredDataProps>(
             jobTitle: 'Open House Expert',
             description:
               'Professional Open House Expert with Nevada License #S.0197614 specializing in Las Vegas properties with over 20 years of experience in open house marketing, lead generation, and buyer conversion',
-            url: 'https://www.openhouseupdate.com',
-            telephone: '+1-702-200-3422',
-            email: 'DrDuffy@OpenHouseUpdate.com',
-            image: 'https://www.openhouseupdate.com/images/dr-janet-duffy.jpg',
-            logo: 'https://www.openhouseupdate.com/images/logo.png',
+            url: business.siteUrl,
+            telephone: business.phoneE164,
+            email: business.email,
+            image: getAbsoluteImageUrl('about'),
+            logo: getAbsoluteImageUrl('logo'),
             address: {
               '@type': 'PostalAddress',
-              streetAddress: '123 Main Street',
-              addressLocality: 'Las Vegas',
-              addressRegion: 'NV',
-              postalCode: '89101',
-              addressCountry: 'US',
+              streetAddress: business.streetAddress,
+              addressLocality: business.addressLocality,
+              addressRegion: business.addressRegion,
+              postalCode: business.postalCode,
+              addressCountry: business.addressCountry,
             },
-            geo: {
-              '@type': 'GeoCoordinates',
-              latitude: '36.1699',
-              longitude: '-115.1398',
-            },
+            hasMap: business.mapsUrl,
             areaServed: [
               {
                 '@type': 'City',
@@ -164,9 +170,9 @@ export default component$<EnhancedStructuredDataProps>(
             alternateName: 'Dr. Jan Duffy Real Estate',
             description:
               'Professional real estate services in Las Vegas, Nevada. Expert guidance for buying and selling homes.',
-            url: 'https://www.openhouseupdate.com',
-            logo: 'https://www.openhouseupdate.com/images/logo.png',
-            image: 'https://www.openhouseupdate.com/images/og-default.jpg',
+            url: business.siteUrl,
+            logo: getAbsoluteImageUrl('logo'),
+            image: getAbsoluteImageUrl('og-default'),
             provider: {
               '@type': 'RealEstateAgent',
               name: 'Dr. Jan Duffy',
@@ -252,22 +258,24 @@ export default component$<EnhancedStructuredDataProps>(
           return {
             '@context': 'https://schema.org',
             '@type': 'Organization',
-            name: 'Dr. Jan Duffy Real Estate',
-            alternateName: 'Open House Update',
-            url: 'https://www.openhouseupdate.com',
-            logo: 'https://www.openhouseupdate.com/images/logo.png',
-            description: 'Professional real estate services in Las Vegas, Nevada',
+            name: business.gbpName,
+            alternateName: business.siteName,
+            url: business.siteUrl,
+            logo: getAbsoluteImageUrl('logo'),
+            description: business.description,
             address: {
               '@type': 'PostalAddress',
-              addressLocality: 'Las Vegas',
-              addressRegion: 'NV',
-              addressCountry: 'US',
+              streetAddress: business.streetAddress,
+              addressLocality: business.addressLocality,
+              addressRegion: business.addressRegion,
+              postalCode: business.postalCode,
+              addressCountry: business.addressCountry,
             },
             contactPoint: {
               '@type': 'ContactPoint',
-              telephone: '+1-702-200-3422',
+              telephone: business.phoneE164,
               contactType: 'customer service',
-              email: 'DrDuffy@OpenHouseUpdate.com',
+              email: business.email,
               availableLanguage: ['English', 'Spanish'],
             },
             sameAs: [
@@ -280,32 +288,41 @@ export default component$<EnhancedStructuredDataProps>(
         case 'LocalBusiness':
           return {
             '@context': 'https://schema.org',
-            '@type': 'RealEstateAgent',
-            name: 'Dr. Jan Duffy Real Estate',
-            image: 'https://www.openhouseupdate.com/images/dr-janet-duffy.jpg',
-            telephone: '+1-702-200-3422',
-            email: 'DrDuffy@OpenHouseUpdate.com',
+            '@type': ['RealEstateAgent', 'LocalBusiness'],
+            '@id': `${business.siteUrl}/#localbusiness`,
+            name: business.gbpName,
+            alternateName: [business.siteName, business.agentName],
+            image: [
+              getAbsoluteImageUrl('og-default'),
+              getAbsoluteImageUrl('about'),
+              getAbsoluteImageUrl('weekend-open-houses'),
+            ],
+            logo: getAbsoluteImageUrl('logo'),
+            telephone: business.phoneE164,
+            email: business.email,
             address: {
               '@type': 'PostalAddress',
-              streetAddress: '123 Main Street',
-              addressLocality: 'Las Vegas',
-              addressRegion: 'NV',
-              postalCode: '89101',
-              addressCountry: 'US',
+              streetAddress: business.streetAddress,
+              addressLocality: business.addressLocality,
+              addressRegion: business.addressRegion,
+              postalCode: business.postalCode,
+              addressCountry: business.addressCountry,
             },
-            geo: {
-              '@type': 'GeoCoordinates',
-              latitude: '36.1699',
-              longitude: '-115.1398',
-            },
-            url: 'https://www.openhouseupdate.com',
-            openingHours: 'Mo-Fr 09:00-18:00,Sa 10:00-16:00',
+            hasMap: business.mapsUrl,
+            url: business.siteUrl,
+            openingHours: business.openingHours,
+            openingHoursSpecification: business.openingHoursSpecification.map((hours) => ({
+              '@type': 'OpeningHoursSpecification',
+              dayOfWeek: hours.dayOfWeek,
+              opens: hours.opens,
+              closes: hours.closes,
+            })),
             priceRange: '$$',
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '4.9',
-              reviewCount: '127',
-            },
+            areaServed: business.areaServed.map((name) => ({
+              '@type': 'City',
+              name,
+            })),
+            sameAs: business.sameAs,
           }
 
         case 'BreadcrumbList':
@@ -423,8 +440,11 @@ export default component$<EnhancedStructuredDataProps>(
           }
         }
 
-        default:
+        default: {
+          const _exhaustive: never = type
+          void _exhaustive
           return data
+        }
       }
     }
 
@@ -439,10 +459,10 @@ export default component$<EnhancedStructuredDataProps>(
           {structuredData.map((data, index) => {
             const dataString = JSON.stringify(data)
             return (
-              // biome-ignore lint/security/noDangerouslySetInnerHtml: Structured data JSON is safe and controlled
               <script
                 key={`structured-data-${dataString.substring(0, 50)}-${index}`}
                 type="application/ld+json"
+                // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD is generated from typed data
                 dangerouslySetInnerHTML={dataString}
               />
             )
@@ -453,9 +473,9 @@ export default component$<EnhancedStructuredDataProps>(
 
     const dataString = JSON.stringify(structuredData)
     return (
-      // biome-ignore lint/security/noDangerouslySetInnerHtml: Structured data JSON is safe and controlled
       <script
         type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD is generated from typed data
         dangerouslySetInnerHTML={dataString}
       />
     )

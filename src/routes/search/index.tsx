@@ -1,5 +1,6 @@
 import { $, component$, useSignal, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 
 export default component$(() => {
@@ -224,6 +225,14 @@ export default component$(() => {
             {showFilters.value ? 'Hide Filters' : 'Show Filters'}
           </button>
         </div>
+      </div>
+      <div class="px-6 pt-4 max-w-6xl mx-auto">
+        <HeadingImage
+          imageKey="map-search"
+          heading="Property Search Results"
+          variant="hero"
+          priority
+        />
       </div>
 
       <div class="search-results-layout">

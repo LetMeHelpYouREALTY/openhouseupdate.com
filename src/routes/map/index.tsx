@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import RealScoutMap from '~/components/realscout/RealScoutMap'
 
 export default component$(() => {
@@ -85,6 +86,11 @@ export default component$(() => {
           <div class="map-title-section">
             <h2>Interactive Property Map</h2>
             <p>Explore properties in Las Vegas with our interactive map powered by RealScout</p>
+            <HeadingImage
+              imageKey="map-search"
+              heading="Interactive Property Map"
+              variant="section"
+            />
           </div>
 
           <RealScoutMap geoType="city" geoId="3240000" height="600px" width="100%" />

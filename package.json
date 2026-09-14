@@ -41,7 +41,8 @@
     "cache:clear": "rm -rf node_modules/.cache tmp .tsbuildinfo",
     "cache:clean": "pnpm store prune && pnpm cache:clear",
     "deps:update": "pnpm update --interactive --latest",
-    "deps:audit": "pnpm audit --audit-level moderate"
+    "deps:audit": "pnpm audit --audit-level moderate",
+    "images:upload": "node scripts/upload-cloudflare-images.mjs"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.0.6",

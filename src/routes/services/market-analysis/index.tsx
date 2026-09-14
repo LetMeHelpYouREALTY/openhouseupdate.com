@@ -1,6 +1,7 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
+import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
   useVisibleTask$(() => {
@@ -26,8 +27,11 @@ export default component$(() => {
         .market-hero {
           text-align: center;
           margin-bottom: 4rem;
-          padding: 3rem 0;
-          background: linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%);
+          padding: 4rem 1.5rem;
+          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
+            url('${getSiteImageUrl('market-analysis')}');
+          background-size: cover;
+          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);

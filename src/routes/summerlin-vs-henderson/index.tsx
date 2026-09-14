@@ -155,7 +155,8 @@ export default component$(() => {
       <div class="comparison-hero">
         <h1>Summerlin vs Henderson: Complete Comparison</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
-          Which Las Vegas community is right for you? Compare Summerlin and Henderson to make an informed decision.
+          Which Las Vegas community is right for you? Compare Summerlin and Henderson to make an
+          informed decision.
         </p>
       </div>
 
@@ -171,42 +172,58 @@ export default component$(() => {
           </thead>
           <tbody>
             <tr>
-              <td><strong>Average Home Price</strong></td>
+              <td>
+                <strong>Average Home Price</strong>
+              </td>
               <td>$650K - $750K</td>
               <td>$550K - $650K</td>
             </tr>
             <tr>
-              <td><strong>Location</strong></td>
+              <td>
+                <strong>Location</strong>
+              </td>
               <td>West Las Vegas (zip codes 89134-89144)</td>
               <td>Southeast Las Vegas (zip codes 89002-89074)</td>
             </tr>
             <tr>
-              <td><strong>School Ratings</strong></td>
+              <td>
+                <strong>School Ratings</strong>
+              </td>
               <td>8-10/10 (Top-rated)</td>
               <td>7-9/10 (Excellent)</td>
             </tr>
             <tr>
-              <td><strong>Safety Ranking</strong></td>
+              <td>
+                <strong>Safety Ranking</strong>
+              </td>
               <td>Very Safe</td>
               <td>Very Safe (#2 Safest City in NV)</td>
             </tr>
             <tr>
-              <td><strong>Commute to Las Vegas</strong></td>
+              <td>
+                <strong>Commute to Las Vegas</strong>
+              </td>
               <td>15-25 minutes</td>
               <td>20-30 minutes</td>
             </tr>
             <tr>
-              <td><strong>Established</strong></td>
+              <td>
+                <strong>Established</strong>
+              </td>
               <td>1990</td>
               <td>1953 (older, more established)</td>
             </tr>
             <tr>
-              <td><strong>Master-Planned</strong></td>
+              <td>
+                <strong>Master-Planned</strong>
+              </td>
               <td>Yes (Howard Hughes)</td>
               <td>Multiple communities</td>
             </tr>
             <tr>
-              <td><strong>Best For</strong></td>
+              <td>
+                <strong>Best For</strong>
+              </td>
               <td>Luxury buyers, professionals, families</td>
               <td>Families, value seekers, retirees</td>
             </tr>
@@ -217,12 +234,12 @@ export default component$(() => {
       <div class="section">
         <h2>Summerlin Overview</h2>
         <p>
-          Summerlin (zip codes 89134, 89135, 89138, 89144) is Las Vegas's premier master-planned community, 
-          known for its luxury amenities, excellent schools, and beautiful mountain views. Located on the west 
-          side of Las Vegas Valley, Summerlin offers a resort-style lifestyle with world-class golf courses, 
-          parks, and Downtown Summerlin shopping.
+          Summerlin (zip codes 89134, 89135, 89138, 89144) is Las Vegas's premier master-planned
+          community, known for its luxury amenities, excellent schools, and beautiful mountain
+          views. Located on the west side of Las Vegas Valley, Summerlin offers a resort-style
+          lifestyle with world-class golf courses, parks, and Downtown Summerlin shopping.
         </p>
-        
+
         <div class="pros-cons">
           <div class="pros">
             <h4>Pros of Summerlin</h4>
@@ -253,12 +270,12 @@ export default component$(() => {
       <div class="section">
         <h2>Henderson Overview</h2>
         <p>
-          Henderson (zip codes 89002, 89011, 89012, 89014, 89015, 89052, 89074) is consistently ranked as 
-          one of the safest cities in America, offering excellent schools, family-friendly atmosphere, and 
-          more affordable housing than Summerlin. Henderson has a strong sense of community and established 
-          neighborhoods with diverse housing options.
+          Henderson (zip codes 89002, 89011, 89012, 89014, 89015, 89052, 89074) is consistently
+          ranked as one of the safest cities in America, offering excellent schools, family-friendly
+          atmosphere, and more affordable housing than Summerlin. Henderson has a strong sense of
+          community and established neighborhoods with diverse housing options.
         </p>
-        
+
         <div class="pros-cons">
           <div class="pros">
             <h4>Pros of Henderson</h4>
@@ -287,7 +304,7 @@ export default component$(() => {
 
       <div class="section">
         <h2>Which is Better for You?</h2>
-        
+
         <h3>Choose Summerlin If:</h3>
         <ul>
           <li>You prioritize top-rated schools (8-10/10)</li>
@@ -297,7 +314,7 @@ export default component$(() => {
           <li>You value master-planned community design</li>
           <li>You want strong long-term property value appreciation</li>
         </ul>
-        
+
         <h3>Choose Henderson If:</h3>
         <ul>
           <li>You want better value and more affordable options</li>
@@ -312,15 +329,15 @@ export default component$(() => {
       <div class="section">
         <h2>Bottom Line</h2>
         <p>
-          Both Summerlin and Henderson are excellent choices for Las Vegas living, each with distinct advantages. 
-          Summerlin offers premium amenities and top-rated schools at higher prices, while Henderson provides 
-          excellent value, safety, and family-friendly communities. The best choice depends on your budget, 
-          priorities, and lifestyle preferences.
+          Both Summerlin and Henderson are excellent choices for Las Vegas living, each with
+          distinct advantages. Summerlin offers premium amenities and top-rated schools at higher
+          prices, while Henderson provides excellent value, safety, and family-friendly communities.
+          The best choice depends on your budget, priorities, and lifestyle preferences.
         </p>
         <p>
-          Dr. Jan Duffy can help you explore both communities, compare specific neighborhoods, and find the 
-          perfect home for your needs and budget. Contact us to schedule neighborhood tours and get expert 
-          guidance on choosing between Summerlin and Henderson.
+          Dr. Jan Duffy can help you explore both communities, compare specific neighborhoods, and
+          find the perfect home for your needs and budget. Contact us to schedule neighborhood tours
+          and get expert guidance on choosing between Summerlin and Henderson.
         </p>
       </div>
 
@@ -353,11 +370,7 @@ export default component$(() => {
       />
 
       {/* FAQ Section */}
-      <EnhancedPageSEO
-        pageKey="comparison"
-        showFAQs={false}
-        className="mt-8"
-      />
+      <EnhancedPageSEO pageKey="comparison" showFAQs={false} className="mt-8" />
     </div>
   )
 })
@@ -396,4 +409,3 @@ export const head: DocumentHead = {
     },
   ],
 }
-

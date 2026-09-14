@@ -1,11 +1,15 @@
 import { $, component$, useSignal, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import GoogleMapEmbed from '~/components/local-seo/google-map-embed'
+import HeadingImage from '~/components/media/heading-image'
 import PerformanceMonitor from '~/components/performance/performance-monitor'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
+import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
   const showAdvanced = useSignal(true)
+  const heroImage = getSiteImageUrl('weekend-open-houses')
 
   const showSimpleSearch = $(() => {
     showAdvanced.value = false
@@ -59,7 +63,10 @@ export default component$(() => {
       <section class="realscout-section">
         <style>{`
           .realscout-section {
-            background: linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%);
+            background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.62) 100%),
+              url('${heroImage}');
+            background-size: cover;
+            background-position: center;
             color: white;
             padding: 4rem 2rem;
             text-align: center;
@@ -152,11 +159,12 @@ export default component$(() => {
 
           .specialist-card {
             background: white;
-            padding: 2rem;
+            padding: 0 0 2rem;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: transform 0.3s ease;
+            overflow: hidden;
           }
 
           .specialist-card:hover {
@@ -172,12 +180,13 @@ export default component$(() => {
             font-size: 1.5rem;
             font-weight: 700;
             color: #0A2540;
-            margin-bottom: 1rem;
+            margin: 1.25rem 1.25rem 1rem;
           }
 
           .card-description {
             color: #64748b;
             line-height: 1.6;
+            padding: 0 1.25rem;
           }
 
           .specialist-stats {
@@ -478,7 +487,11 @@ export default component$(() => {
 
           <div class="grid md:grid-cols-3 gap-8 mb-12">
             <div class="specialist-card">
-              <div class="card-icon">📊</div>
+              <HeadingImage
+                imageKey="conversion-rates"
+                heading="Proven Conversion Rates"
+                variant="card"
+              />
               <h3 class="card-title">Proven Conversion Rates</h3>
               <p class="card-description">
                 Dr. Jan Duffy consistently achieves 15-20% higher conversion rates at open houses
@@ -488,7 +501,11 @@ export default component$(() => {
             </div>
 
             <div class="specialist-card">
-              <div class="card-icon">🎯</div>
+              <HeadingImage
+                imageKey="strategic-marketing"
+                heading="Strategic Marketing"
+                variant="card"
+              />
               <h3 class="card-title">Strategic Marketing</h3>
               <p class="card-description">
                 Specialized in targeted open house marketing, neighborhood analysis, and optimal
@@ -497,7 +514,11 @@ export default component$(() => {
             </div>
 
             <div class="specialist-card">
-              <div class="card-icon">🏆</div>
+              <HeadingImage
+                imageKey="industry-recognition"
+                heading="Industry Recognition"
+                variant="card"
+              />
               <h3 class="card-title">Industry Recognition</h3>
               <p class="card-description">
                 Licensed Nevada real estate agent affiliated with Berkshire Hathaway HomeServices,
@@ -533,6 +554,11 @@ export default component$(() => {
             </h3>
             <div class="expertise-grid">
               <div class="expertise-item">
+                <HeadingImage
+                  imageKey="property-staging"
+                  heading="Property Staging & Presentation"
+                  variant="section"
+                />
                 <h4>Property Staging & Presentation</h4>
                 <p>
                   Professional staging consultation to maximize property appeal and buyer interest
@@ -540,6 +566,11 @@ export default component$(() => {
                 </p>
               </div>
               <div class="expertise-item">
+                <HeadingImage
+                  imageKey="lead-followup"
+                  heading="Lead Capture & Follow-up"
+                  variant="section"
+                />
                 <h4>Lead Capture & Follow-up</h4>
                 <p>
                   Advanced lead management systems and personalized follow-up strategies to convert
@@ -547,6 +578,11 @@ export default component$(() => {
                 </p>
               </div>
               <div class="expertise-item">
+                <HeadingImage
+                  imageKey="market-analysis"
+                  heading="Market Analysis & Pricing"
+                  variant="section"
+                />
                 <h4>Market Analysis & Pricing</h4>
                 <p>
                   Comprehensive market analysis to ensure optimal pricing strategies that attract
@@ -554,6 +590,11 @@ export default component$(() => {
                 </p>
               </div>
               <div class="expertise-item">
+                <HeadingImage
+                  imageKey="neighborhood-expertise"
+                  heading="Neighborhood Expertise"
+                  variant="section"
+                />
                 <h4>Neighborhood Expertise</h4>
                 <p>
                   Deep knowledge of Las Vegas Valley neighborhoods including Summerlin, Henderson,
@@ -564,6 +605,8 @@ export default component$(() => {
           </div>
         </div>
       </section>
+
+      <GoogleMapEmbed title="Open House Marketplace — 760 Windover Ct, Las Vegas, NV 89138" />
 
       {/* FAQ Section */}
       <EnhancedPageSEO
@@ -585,7 +628,7 @@ export default component$(() => {
           {
             title: 'Summerlin vs Henderson Comparison',
             url: '/summerlin-vs-henderson/',
-            description: 'Compare two of Las Vegas\'s top communities',
+            description: "Compare two of Las Vegas's top communities",
           },
           {
             title: 'First-Time Homebuyer Guide',

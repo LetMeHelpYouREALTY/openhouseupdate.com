@@ -1,5 +1,6 @@
 import { $, component$, useSignal } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 
 export default component$(() => {
   const openFAQ = useSignal<number | null>(null)
@@ -25,9 +26,9 @@ export default component$(() => {
         'Typical selling costs include real estate commission (usually 5-6% total), closing costs (1-3%), and any repairs or staging expenses. Dr. Duffy provides a detailed cost breakdown during your initial consultation and can help you maximize your net proceeds through strategic pricing and marketing.',
     },
     {
-      question: 'What neighborhoods are best for families in Las Vegas?',
+      question: 'Which Las Vegas areas should I tour first?',
       answer:
-        "Popular family-friendly neighborhoods include Summerlin (excellent schools, master-planned community), Henderson (great amenities, family-oriented), and parts of North Las Vegas (newer construction, good value). Each area has unique benefits, and Dr. Duffy can help you find the perfect fit for your family's needs.",
+        'Start with commute and housing type. Summerlin (89134–89144) sits against Red Rock Canyon with 200+ miles of trails. Henderson (89002–89074) includes Green Valley Ranch and Lake Las Vegas. North Las Vegas (89084 Skye Canyon) has more new construction. Dr. Jan Duffy can map a weekend open-house route that matches your budget and square-footage needs.',
     },
     {
       question: 'How long does the home buying process take?',
@@ -69,10 +70,16 @@ export default component$(() => {
           <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Frequently Asked <span class="text-blue-600">Questions</span>
           </h1>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Get answers to common questions about buying and selling real estate in Las Vegas. Can't
             find what you're looking for? Contact Dr. Jan Duffy for personalized assistance.
           </p>
+          <HeadingImage
+            imageKey="about"
+            heading="Frequently Asked Questions"
+            variant="hero"
+            priority
+          />
         </div>
 
         {/* FAQ Accordion */}

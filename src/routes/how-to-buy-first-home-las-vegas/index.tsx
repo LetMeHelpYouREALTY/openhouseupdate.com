@@ -1,7 +1,9 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
+import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
   return (
@@ -16,8 +18,11 @@ export default component$(() => {
         .guide-hero {
           text-align: center;
           margin-bottom: 3rem;
-          padding: 3rem 0;
-          background: linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%);
+          padding: 4rem 1.5rem;
+          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
+            url('${getSiteImageUrl('first-time-buyer')}');
+          background-size: cover;
+          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -128,12 +133,21 @@ export default component$(() => {
         </p>
       </div>
 
+      <HeadingImage
+        imageKey="first-time-buyer"
+        heading="Complete Guide to Buying Your First Home in Las Vegas"
+        variant="section"
+      />
+
       <div class="step-section">
-        <h2><span class="step-number">1</span>Get Pre-Approved for a Mortgage</h2>
+        <h2>
+          <span class="step-number">1</span>Get Pre-Approved for a Mortgage
+        </h2>
         <p>
-          Before you start house hunting in Las Vegas Valley, get pre-approved for a mortgage. This tells you 
-          exactly how much you can afford and shows sellers you're a serious buyer. Pre-approval is essential 
-          in competitive markets like Summerlin (zip codes 89134-89144) or Henderson (89002-89015).
+          Before you start house hunting in Las Vegas Valley, get pre-approved for a mortgage. This
+          tells you exactly how much you can afford and shows sellers you're a serious buyer.
+          Pre-approval is essential in competitive markets like Summerlin (zip codes 89134-89144) or
+          Henderson (89002-89015).
         </p>
         <h3>What You'll Need:</h3>
         <ul>
@@ -144,52 +158,78 @@ export default component$(() => {
           <li>Down payment documentation</li>
         </ul>
         <div class="tip-box">
-          <strong>Tip:</strong> First-time homebuyer programs in Las Vegas like Home Is Possible (HIP) can help 
-          with down payment assistance. Dr. Jan Duffy can connect you with qualified lenders familiar with 
-          Nevada first-time buyer programs.
+          <strong>Tip:</strong> First-time homebuyer programs in Las Vegas like Home Is Possible
+          (HIP) can help with down payment assistance. Dr. Jan Duffy can connect you with qualified
+          lenders familiar with Nevada first-time buyer programs.
         </div>
       </div>
 
       <div class="step-section">
-        <h2><span class="step-number">2</span>Determine Your Budget and Preferences</h2>
+        <h2>
+          <span class="step-number">2</span>Determine Your Budget and Preferences
+        </h2>
         <p>
-          Calculate your total monthly housing budget (mortgage, insurance, property taxes, HOA fees, utilities). 
-          In Las Vegas, property taxes are low (0.6%-1.2% of assessed value), but HOA fees vary by neighborhood. 
-          Consider what's important: schools, commute, amenities, neighborhood safety.
+          Calculate your total monthly housing budget (mortgage, insurance, property taxes, HOA
+          fees, utilities). In Las Vegas, property taxes are low (0.6%-1.2% of assessed value), but
+          HOA fees vary by neighborhood. Consider what's important: schools, commute, amenities,
+          neighborhood safety.
         </p>
         <h3>Las Vegas Budget Considerations:</h3>
         <ul>
-          <li><strong>Entry-level ($250K-$400K):</strong> North Las Vegas (89030-89086), Spring Valley (89103-89147)</li>
-          <li><strong>Mid-range ($400K-$700K):</strong> Henderson (89002-89015), some Summerlin areas</li>
-          <li><strong>Luxury ($700K+):</strong> Summerlin The Ridges, Henderson Seven Hills, Lake Las Vegas</li>
+          <li>
+            <strong>Entry-level ($250K-$400K):</strong> North Las Vegas (89030-89086), Spring Valley
+            (89103-89147)
+          </li>
+          <li>
+            <strong>Mid-range ($400K-$700K):</strong> Henderson (89002-89015), some Summerlin areas
+          </li>
+          <li>
+            <strong>Luxury ($700K+):</strong> Summerlin The Ridges, Henderson Seven Hills, Lake Las
+            Vegas
+          </li>
         </ul>
       </div>
 
       <div class="step-section">
-        <h2><span class="step-number">3</span>Find the Right Neighborhood</h2>
+        <h2>
+          <span class="step-number">3</span>Find the Right Neighborhood
+        </h2>
         <p>
-          Las Vegas Valley offers diverse neighborhoods, each with unique character. Research areas based on 
-          your priorities: schools, safety, amenities, commute, and lifestyle preferences.
+          Las Vegas Valley offers diverse neighborhoods, each with unique character. Research areas
+          based on your priorities: schools, safety, amenities, commute, and lifestyle preferences.
         </p>
         <h3>Top Neighborhoods for First-Time Buyers:</h3>
         <ul>
-          <li><strong>North Las Vegas:</strong> Affordable, new construction, growing (Skye Canyon, Centennial Hills)</li>
-          <li><strong>Spring Valley:</strong> Established, diverse, good value</li>
-          <li><strong>Henderson:</strong> Family-friendly, excellent schools, safe</li>
-          <li><strong>Summerlin:</strong> Premium amenities, top schools (higher price range)</li>
+          <li>
+            <strong>North Las Vegas:</strong> Affordable, new construction, growing (Skye Canyon,
+            Centennial Hills)
+          </li>
+          <li>
+            <strong>Spring Valley:</strong> Established, diverse, good value
+          </li>
+          <li>
+            <strong>Henderson:</strong> Green Valley Ranch, parks, and a 15–20 minute Strip commute
+          </li>
+          <li>
+            <strong>Summerlin:</strong> Premium amenities, top schools (higher price range)
+          </li>
         </ul>
         <div class="tip-box">
-          <strong>Tip:</strong> Visit neighborhoods at different times of day to experience traffic, noise levels, 
-          and community activity. Dr. Jan Duffy provides neighborhood tours to help you find the perfect area.
+          <strong>Tip:</strong> Visit neighborhoods at different times of day to experience traffic,
+          noise levels, and community activity. Dr. Jan Duffy provides neighborhood tours to help
+          you find the perfect area.
         </div>
       </div>
 
       <div class="step-section">
-        <h2><span class="step-number">4</span>Start Your Property Search</h2>
+        <h2>
+          <span class="step-number">4</span>Start Your Property Search
+        </h2>
         <p>
-          Use our advanced search tool to browse available properties, filter by price, location, bedrooms, 
-          and features. Attend open houses (especially weekend open houses) to see properties in person. 
-          View at least 3-5 properties before making an offer to understand market values.
+          Use our advanced search tool to browse available properties, filter by price, location,
+          bedrooms, and features. Attend open houses (especially weekend open houses) to see
+          properties in person. View at least 3-5 properties before making an offer to understand
+          market values.
         </p>
         <h3>What to Look For:</h3>
         <ul>
@@ -203,11 +243,13 @@ export default component$(() => {
       </div>
 
       <div class="step-section">
-        <h2><span class="step-number">5</span>Make an Offer</h2>
+        <h2>
+          <span class="step-number">5</span>Make an Offer
+        </h2>
         <p>
-          Once you find the right property, work with Dr. Jan Duffy to craft a competitive offer. In November 2025, 
-          Las Vegas market conditions vary by neighborhood - some areas see multiple offers, while others offer 
-          more negotiation room.
+          Once you find the right property, work with Dr. Jan Duffy to craft a competitive offer. In
+          November 2025, Las Vegas market conditions vary by neighborhood - some areas see multiple
+          offers, while others offer more negotiation room.
         </p>
         <h3>Your Offer Should Include:</h3>
         <ul>
@@ -221,35 +263,55 @@ export default component$(() => {
       </div>
 
       <div class="step-section">
-        <h2><span class="step-number">6</span>Home Inspection</h2>
+        <h2>
+          <span class="step-number">6</span>Home Inspection
+        </h2>
         <p>
-          After offer acceptance, schedule a professional home inspection. In Las Vegas, pay special attention to:
+          After offer acceptance, schedule a professional home inspection. In Las Vegas, pay special
+          attention to:
         </p>
         <ul>
-          <li><strong>HVAC System:</strong> Essential for 110°F+ summers - replacement costs $5,000-$15,000+</li>
-          <li><strong>Roof:</strong> Check for sun damage, proper insulation, ventilation</li>
-          <li><strong>Foundation:</strong> Desert soil conditions require proper foundation</li>
-          <li><strong>Plumbing:</strong> Hard water can affect pipes and appliances</li>
-          <li><strong>Electrical:</strong> Ensure capacity for air conditioning loads</li>
+          <li>
+            <strong>HVAC System:</strong> Essential for 110°F+ summers - replacement costs
+            $5,000-$15,000+
+          </li>
+          <li>
+            <strong>Roof:</strong> Check for sun damage, proper insulation, ventilation
+          </li>
+          <li>
+            <strong>Foundation:</strong> Desert soil conditions require proper foundation
+          </li>
+          <li>
+            <strong>Plumbing:</strong> Hard water can affect pipes and appliances
+          </li>
+          <li>
+            <strong>Electrical:</strong> Ensure capacity for air conditioning loads
+          </li>
         </ul>
         <div class="tip-box">
-          <strong>Tip:</strong> Dr. Jan Duffy can recommend trusted Las Vegas inspectors familiar with desert 
-          climate considerations.
+          <strong>Tip:</strong> Dr. Jan Duffy can recommend trusted Las Vegas inspectors familiar
+          with desert climate considerations.
         </div>
       </div>
 
       <div class="step-section">
-        <h2><span class="step-number">7</span>Finalize Financing</h2>
+        <h2>
+          <span class="step-number">7</span>Finalize Financing
+        </h2>
         <p>
-          Work with your lender to finalize your mortgage. Provide any additional documentation requested. 
-          The lender will order an appraisal to ensure the property value supports the loan amount.
+          Work with your lender to finalize your mortgage. Provide any additional documentation
+          requested. The lender will order an appraisal to ensure the property value supports the
+          loan amount.
         </p>
       </div>
 
       <div class="step-section">
-        <h2><span class="step-number">8</span>Closing Process</h2>
+        <h2>
+          <span class="step-number">8</span>Closing Process
+        </h2>
         <p>
-          Typically 30-45 days after offer acceptance, you'll close on your new Las Vegas home. Closing involves:
+          Typically 30-45 days after offer acceptance, you'll close on your new Las Vegas home.
+          Closing involves:
         </p>
         <ul>
           <li>Final walkthrough to verify property condition</li>
@@ -258,18 +320,26 @@ export default component$(() => {
           <li>Receive keys to your new home</li>
         </ul>
         <div class="tip-box">
-          <strong>Tip:</strong> Nevada is a title insurance state, so title insurance protects your ownership. 
-          Dr. Jan Duffy will guide you through the entire closing process.
+          <strong>Tip:</strong> Nevada is a title insurance state, so title insurance protects your
+          ownership. Dr. Jan Duffy will guide you through the entire closing process.
         </div>
       </div>
 
       <div class="cta-box">
         <h2>Ready to Buy Your First Home in Las Vegas?</h2>
         <p>
-          Dr. Jan Duffy specializes in helping first-time homebuyers navigate the Las Vegas market. Get expert 
-          guidance, access to first-time buyer programs, and personalized support throughout your home buying journey.
+          Dr. Jan Duffy specializes in helping first-time homebuyers navigate the Las Vegas market.
+          Get expert guidance, access to first-time buyer programs, and personalized support
+          throughout your home buying journey.
         </p>
-        <a href="http://drjanduffy.realscout.com/onboarding" target="_blank" rel="noopener noreferrer" class="cta-button">Get Started Today</a>
+        <a
+          href="http://drjanduffy.realscout.com/onboarding"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="cta-button"
+        >
+          Get Started Today
+        </a>
       </div>
 
       {/* Internal Linking */}
@@ -301,11 +371,7 @@ export default component$(() => {
       />
 
       {/* FAQ Section */}
-      <EnhancedPageSEO
-        pageKey="first-time-buyer-guide"
-        showFAQs={false}
-        className="mt-8"
-      />
+      <EnhancedPageSEO pageKey="first-time-buyer-guide" showFAQs={false} className="mt-8" />
     </div>
   )
 })

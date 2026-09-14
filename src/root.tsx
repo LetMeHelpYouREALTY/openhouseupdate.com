@@ -22,6 +22,12 @@ export default component$(() => {
 
           {/* Preconnect to external domains for performance */}
           <link rel="preconnect" href="https://em.realscout.com" crossOrigin="anonymous" />
+          <link rel="preconnect" href="https://imagedelivery.net" crossOrigin="anonymous" />
+          <link
+            rel="preconnect"
+            href="https://images.openhouseupdate.com"
+            crossOrigin="anonymous"
+          />
           <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
           <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
 
@@ -35,10 +41,7 @@ export default component$(() => {
           <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
 
           {/* Google tag (gtag.js) */}
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q9X8KED9X0"
-          />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9X8KED9X0" />
           <script
             dangerouslySetInnerHTML={`
               window.dataLayer = window.dataLayer || [];

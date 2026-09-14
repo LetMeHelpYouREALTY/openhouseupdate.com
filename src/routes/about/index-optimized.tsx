@@ -288,7 +288,12 @@ export default component$(() => {
           <a href="/services/" class="cta-button">
             View Services
           </a>
-          <a href="http://drjanduffy.realscout.com/onboarding" target="_blank" rel="noopener noreferrer" class="cta-button">
+          <a
+            href="http://drjanduffy.realscout.com/onboarding"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cta-button"
+          >
             Search Properties
           </a>
         </div>

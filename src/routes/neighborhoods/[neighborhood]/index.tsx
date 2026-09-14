@@ -1,5 +1,7 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import { type DocumentHead, useLocation } from '@builder.io/qwik-city'
+import type { SiteImageKey } from '~/config/images'
+import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
   const location = useLocation()
@@ -68,6 +70,21 @@ export default component$(() => {
   }
 
   const neighborhoodName = formatNeighborhoodName(neighborhood)
+  const neighborhoodImageKey = ((): SiteImageKey => {
+    switch (neighborhood.toLowerCase()) {
+      case 'summerlin':
+        return 'summerlin'
+      case 'henderson':
+        return 'henderson'
+      case 'north-las-vegas':
+        return 'north-las-vegas'
+      case 'green-valley':
+        return 'green-valley'
+      default:
+        return 'weekend-open-houses'
+    }
+  })()
+  const heroImage = getSiteImageUrl(neighborhoodImageKey)
 
   return (
     <section class="neighborhood-page">
@@ -103,8 +120,11 @@ export default component$(() => {
           .neighborhood-hero {
             text-align: center;
             margin-bottom: 3rem;
-            padding: 2rem 0;
-            background: linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%);
+            padding: 3rem 1.5rem;
+            background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
+              url('${heroImage}');
+            background-size: cover;
+            background-position: center;
             color: white;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);

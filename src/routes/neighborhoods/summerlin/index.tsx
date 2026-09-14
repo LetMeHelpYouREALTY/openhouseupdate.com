@@ -1,9 +1,12 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
+import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
+  const heroImage = getSiteImageUrl('summerlin')
   return (
     <div class="neighborhood-page">
       <style>{`
@@ -16,8 +19,11 @@ export default component$(() => {
         .neighborhood-hero {
           text-align: center;
           margin-bottom: 3rem;
-          padding: 3rem 0;
-          background: linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%);
+          padding: 4rem 1.5rem;
+          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.5) 100%),
+            url('${heroImage}');
+          background-size: cover;
+          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -107,56 +113,91 @@ export default component$(() => {
       <div class="neighborhood-hero">
         <h1>Summerlin Real Estate - Las Vegas</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
-          Discover luxury living in Summerlin, one of Las Vegas's premier master-planned communities
+          Open houses in Summerlin Centre, The Paseos, The Vistas, and Stonebridge — zip codes
+          89134, 89135, 89138, and 89144
         </p>
       </div>
 
       <div class="neighborhood-content">
         <div class="main-content">
           <h2>About Summerlin</h2>
+          <HeadingImage imageKey="summerlin" heading="About Summerlin" variant="section" />
           <p>
-            Summerlin is Las Vegas's premier master-planned community, located in zip codes 89134, 89135, 89138, and 89144. 
-            Known for its beautiful mountain views, world-class amenities, and excellent schools, Summerlin consistently 
-            ranks as one of the best places to live in Las Vegas Valley.
+            Summerlin is a 22,500-acre master-planned community in zip codes 89134, 89135, 89138,
+            and 89144. Downtown Summerlin shopping, Red Rock Canyon trailheads, and 200+ miles of
+            paths sit minutes from most villages. Open House Marketplace at 760 Windover Ct (89138)
+            is the local base for weekend property tours with Dr. Jan Duffy.
           </p>
-          
+
           <h3>Why Choose Summerlin?</h3>
           <ul>
-            <li><strong>Master-Planned Community:</strong> Thoughtfully designed neighborhoods with parks, trails, and amenities</li>
-            <li><strong>Excellent Schools:</strong> Top-rated schools in Clark County School District, with many rated 8-10/10</li>
-            <li><strong>Shopping & Dining:</strong> Downtown Summerlin offers premium shopping and dining experiences</li>
-            <li><strong>Recreation:</strong> 150+ parks, 200+ miles of trails, golf courses, and community centers</li>
-            <li><strong>Mountain Views:</strong> Beautiful views of Red Rock Canyon and Spring Mountains</li>
-            <li><strong>Safety:</strong> Consistently ranked among the safest communities in Las Vegas</li>
+            <li>
+              <strong>Master-Planned Community:</strong> Parks, trails, and village amenities
+              designed by the Howard Hughes Corporation
+            </li>
+            <li>
+              <strong>Schools:</strong> Public campuses include Bonner Elementary, Goolsby
+              Elementary, and Palo Verde High School
+            </li>
+            <li>
+              <strong>Shopping & Dining:</strong> Downtown Summerlin and Red Rock Casino Resort &
+              Spa along Charleston Boulevard
+            </li>
+            <li>
+              <strong>Recreation:</strong> 150+ parks, 200+ miles of trails, golf courses, and
+              community centers
+            </li>
+            <li>
+              <strong>Mountain Views:</strong> Red Rock Canyon and the Spring Mountains from many
+              89135–89138 streets
+            </li>
+            <li>
+              <strong>Commute:</strong> Approximately 20–25 minutes to the Las Vegas Strip via the
+              215 Beltway
+            </li>
           </ul>
 
           <h3>Home Prices in Summerlin</h3>
           <p>
-            Summerlin offers diverse housing options from entry-level homes to luxury estates. Prices typically range from 
-            $400,000 to over $2 million, with premium communities like The Ridges and The Summit featuring luxury properties 
-            exceeding $3 million. The average home price in Summerlin is approximately $650,000-$750,000 as of November 2025.
+            Summerlin offers diverse housing options from entry-level homes to luxury estates.
+            Prices typically range from $400,000 to over $2 million, with premium communities like
+            The Ridges and The Summit featuring luxury properties exceeding $3 million. The average
+            home price in Summerlin is approximately $650,000-$750,000 as of November 2025.
           </p>
 
           <h3>Top Communities in Summerlin</h3>
           <ul>
-            <li><strong>The Ridges:</strong> Ultra-luxury gated community with resort-style living</li>
-            <li><strong>The Summit:</strong> Exclusive community with custom homes and mountain views</li>
-            <li><strong>Red Rock Country Club:</strong> Golf community with championship course</li>
-            <li><strong>Willows:</strong> Established community with mature landscaping</li>
-            <li><strong>Trails Village:</strong> Active lifestyle community with extensive trail system</li>
+            <li>
+              <strong>The Ridges:</strong> Ultra-luxury gated community with resort-style living
+            </li>
+            <li>
+              <strong>The Summit:</strong> Exclusive community with custom homes and mountain views
+            </li>
+            <li>
+              <strong>Red Rock Country Club:</strong> Golf community with championship course
+            </li>
+            <li>
+              <strong>Willows:</strong> Established community with mature landscaping
+            </li>
+            <li>
+              <strong>Trails Village:</strong> Active lifestyle community with extensive trail
+              system
+            </li>
           </ul>
 
           <h3>Schools in Summerlin</h3>
           <p>
-            Summerlin is served by excellent public and private schools. Many schools in Summerlin consistently rank 
-            among the top in Clark County, with strong academic programs, extracurricular activities, and parent involvement. 
-            School quality is a major factor driving Summerlin home values.
+            Summerlin is served by Clark County School District campuses including Bonner
+            Elementary, Goolsby Elementary, Rogich Middle School, and Palo Verde High School, plus
+            nearby private options. Ask Dr. Jan Duffy for the attendance zone that matches a
+            specific listing before you tour.
           </p>
 
           <h3>Search Summerlin Properties</h3>
           <p>
-            Ready to find your dream home in Summerlin? Use our advanced search to browse available properties, view open 
-            houses, and get expert guidance from Dr. Jan Duffy, your Summerlin real estate specialist.
+            Ready to find your dream home in Summerlin? Use our advanced search to browse available
+            properties, view open houses, and get expert guidance from Dr. Jan Duffy, your Summerlin
+            real estate specialist.
           </p>
         </div>
 
@@ -169,8 +210,8 @@ export default component$(() => {
                 <div class="stat-label">Avg Home Price</div>
               </div>
               <div class="stat-item">
-                <div class="stat-value">4.8/5</div>
-                <div class="stat-label">School Rating</div>
+                <div class="stat-value">22.5K</div>
+                <div class="stat-label">Acres</div>
               </div>
               <div class="stat-item">
                 <div class="stat-value">150+</div>
@@ -181,16 +222,29 @@ export default component$(() => {
                 <div class="stat-label">Miles of Trails</div>
               </div>
             </div>
-            <p><strong>Zip Codes:</strong> 89134, 89135, 89138, 89144</p>
-            <p><strong>Established:</strong> 1990</p>
-            <p><strong>Developer:</strong> The Howard Hughes Corporation</p>
+            <p>
+              <strong>Zip Codes:</strong> 89134, 89135, 89138, 89144
+            </p>
+            <p>
+              <strong>Established:</strong> 1990
+            </p>
+            <p>
+              <strong>Developer:</strong> The Howard Hughes Corporation
+            </p>
           </div>
 
           <div class="info-card">
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert Summerlin real estate guidance</p>
-            <p><strong>Phone:</strong> (702) 200-3422</p>
-            <a href="http://drjanduffy.realscout.com/onboarding" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: #3A8DDE; color: white; border-radius: 6px; text-decoration: none;">
+            <p>
+              <strong>Phone:</strong> (702) 200-3422
+            </p>
+            <a
+              href="http://drjanduffy.realscout.com/onboarding"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: #3A8DDE; color: white; border-radius: 6px; text-decoration: none;"
+            >
               Get Started
             </a>
           </div>
@@ -204,7 +258,8 @@ export default component$(() => {
           {
             title: 'Henderson Real Estate',
             url: '/neighborhoods/henderson/',
-            description: 'Family-friendly community with excellent schools and amenities',
+            description:
+              'Green Valley, Anthem, and Lake Las Vegas homes with parks and trail systems',
           },
           {
             title: 'North Las Vegas Properties',
@@ -237,4 +292,3 @@ export default component$(() => {
 })
 
 export const head: DocumentHead = createOptimizedHead('summerlin')
-

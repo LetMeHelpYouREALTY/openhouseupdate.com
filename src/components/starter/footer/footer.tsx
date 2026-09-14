@@ -1,8 +1,8 @@
 import { component$ } from '@builder.io/qwik'
+import { business } from '~/config/business'
 import styles from './footer.module.css'
 
 export default component$(() => {
-
   return (
     <footer class={styles.footer}>
       <div class={styles.container}>
@@ -10,17 +10,51 @@ export default component$(() => {
         <div class={styles.footerContent}>
           {/* Company Info */}
           <div class={styles.footerSection}>
-            <h3 class={styles.footerTitle}>Open House Update</h3>
+            <h3 class={styles.footerTitle}>{business.gbpName}</h3>
             <p class={styles.footerDescription}>
-              Professional real estate services in Las Vegas. Find your perfect home with expert
-              guidance from Dr. Jan Duffy.
+              Weekend open houses and Las Vegas property viewing with {business.agentName},{' '}
+              {business.brokerage}. Nevada License #{business.license}.
             </p>
             <div class={styles.contactInfo}>
               <p>
-                <strong>Dr. Jan Duffy</strong>
+                <strong>{business.agentName}</strong>
               </p>
-              <p>Open House Expert</p>
-              <p>Las Vegas, Nevada</p>
+              <p>
+                <a href={`tel:${business.phoneTel}`} class={styles.footerLink}>
+                  {business.phoneDisplay}
+                </a>
+              </p>
+              <p>
+                <a href={business.mapsUrl} class={styles.footerLink}>
+                  {business.streetAddress}
+                  <br />
+                  {business.addressLocality}, {business.addressRegion} {business.postalCode}
+                </a>
+              </p>
+              <p>{business.hoursDisplay}</p>
+              <p>
+                <a href={`tel:${business.phoneTel}`} class={styles.footerLink}>
+                  Call
+                </a>
+                {' · '}
+                <a
+                  href={business.directionsUrl}
+                  class={styles.footerLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Directions
+                </a>
+                {' · '}
+                <a
+                  href={business.reviewsUrl}
+                  class={styles.footerLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Google Reviews
+                </a>
+              </p>
             </div>
           </div>
 
@@ -29,7 +63,12 @@ export default component$(() => {
             <h4 class={styles.footerSubtitle}>Property Search</h4>
             <ul class={styles.footerLinks}>
               <li>
-                <a href="http://drjanduffy.realscout.com/onboarding" target="_blank" rel="noopener noreferrer" class={styles.footerLink}>
+                <a
+                  href="http://drjanduffy.realscout.com/onboarding"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class={styles.footerLink}
+                >
                   Home Search
                 </a>
               </li>
@@ -177,8 +216,18 @@ export default component$(() => {
         <div class={styles.footerBottom}>
           <div class={styles.footerBottomContent}>
             <div class={styles.copyright}>
-              <p>&copy; {new Date().getFullYear()} Open House Update. All rights reserved.</p>
-              <p>Open House Expert Dr. Jan Duffy - Nevada License #S.0197614</p>
+              <p>
+                &copy; {new Date().getFullYear()} {business.gbpName}. All rights reserved.
+              </p>
+              <p>
+                {business.agentName} · {business.brokerage} · Nevada License #{business.license}
+              </p>
+              <p>
+                Listing information is provided for consumer convenience and is deemed reliable but
+                not guaranteed. Always verify listing details, open house times, and property
+                information with the listing broker and Greater Las Vegas Association of REALTORS®
+                MLS.
+              </p>
             </div>
             <div class={styles.footerBottomLinks}>
               <a href="/privacy-policy" class={styles.footerBottomLink}>

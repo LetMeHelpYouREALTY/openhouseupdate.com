@@ -1,11 +1,11 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
-import { blogPosts } from '~/data/blog-posts'
-import RelatedContent from '~/components/seo/related-content'
+import HeadingImage from '~/components/media/heading-image'
 import { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
+import RelatedContent from '~/components/seo/related-content'
+import { blogPosts } from '~/data/blog-posts'
 
 export default component$(() => {
-
   const featuredPost = blogPosts.find((post) => post.featured)
   const regularPosts = blogPosts.filter((post) => !post.featured)
 
@@ -17,10 +17,16 @@ export default component$(() => {
           <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Las Vegas <span class="text-blue-600">Real Estate Blog</span>
           </h1>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Stay informed with the latest market insights, neighborhood updates, and expert advice
             from Dr. Jan Duffy.
           </p>
+          <HeadingImage
+            imageKey="market-analysis"
+            heading="Las Vegas Real Estate Blog"
+            variant="hero"
+            priority
+          />
         </div>
 
         {/* Featured Post */}
@@ -29,11 +35,12 @@ export default component$(() => {
             <h2 class="text-2xl font-bold text-gray-900 mb-8">Featured Article</h2>
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
               <div class="md:flex">
-                <div class="md:w-1/2 bg-gradient-to-br from-blue-600 to-green-600 p-8 text-white flex items-center justify-center">
-                  <div class="text-center">
-                    <div class="text-6xl mb-4">📈</div>
-                    <div class="text-sm opacity-90">{featuredPost.category}</div>
-                  </div>
+                <div class="md:w-1/2">
+                  <HeadingImage
+                    imageKey="market-analysis"
+                    heading={featuredPost.title}
+                    variant="card"
+                  />
                 </div>
                 <div class="md:w-1/2 p-8">
                   <div class="flex items-center space-x-4 mb-4">
@@ -188,7 +195,8 @@ export default component$(() => {
             {
               title: 'Seller Services',
               url: '/services/seller-services',
-              description: 'Professional marketing and selling services to maximize your home value',
+              description:
+                'Professional marketing and selling services to maximize your home value',
             },
             {
               title: 'Market Analysis',

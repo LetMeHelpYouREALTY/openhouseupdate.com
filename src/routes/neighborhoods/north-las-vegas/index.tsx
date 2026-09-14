@@ -1,9 +1,12 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
+import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
+  const heroImage = getSiteImageUrl('north-las-vegas')
   return (
     <div class="neighborhood-page">
       <style>{`
@@ -16,8 +19,11 @@ export default component$(() => {
         .neighborhood-hero {
           text-align: center;
           margin-bottom: 3rem;
-          padding: 3rem 0;
-          background: linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%);
+          padding: 4rem 1.5rem;
+          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.5) 100%),
+            url('${heroImage}');
+          background-size: cover;
+          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -141,51 +147,86 @@ export default component$(() => {
       <div class="neighborhood-content">
         <div class="main-content">
           <h2>About North Las Vegas</h2>
+          <HeadingImage
+            imageKey="north-las-vegas"
+            heading="About North Las Vegas"
+            variant="section"
+          />
           <p>
-            North Las Vegas, located in zip codes 89030, 89031, 89032, 89081, 89084, and 89086, is one of the 
-            fastest-growing areas in Las Vegas Valley. Known for its new construction, affordable housing options, 
-            and improving amenities, North Las Vegas offers excellent value for homebuyers.
+            North Las Vegas, located in zip codes 89030, 89031, 89032, 89081, 89084, and 89086, is
+            one of the fastest-growing areas in Las Vegas Valley. Known for its new construction,
+            affordable housing options, and improving amenities, North Las Vegas offers excellent
+            value for homebuyers.
           </p>
-          
+
           <h3>Why Choose North Las Vegas?</h3>
           <ul>
-            <li><strong>Affordability:</strong> More affordable housing options than many Las Vegas areas</li>
-            <li><strong>New Construction:</strong> Active new home construction in communities like Skye Canyon and Centennial Hills</li>
-            <li><strong>Growing Amenities:</strong> Shopping centers, restaurants, and services expanding</li>
-            <li><strong>Good Value:</strong> More square footage for your money</li>
-            <li><strong>Easy Access:</strong> Good highway access to Las Vegas and employment centers</li>
-            <li><strong>Family-Friendly:</strong> Safe neighborhoods suitable for families</li>
+            <li>
+              <strong>Affordability:</strong> More affordable housing options than many Las Vegas
+              areas
+            </li>
+            <li>
+              <strong>New Construction:</strong> Active new home construction in communities like
+              Skye Canyon and Centennial Hills
+            </li>
+            <li>
+              <strong>Growing Amenities:</strong> Shopping centers, restaurants, and services
+              expanding
+            </li>
+            <li>
+              <strong>Good Value:</strong> More square footage for your money
+            </li>
+            <li>
+              <strong>Highway Access:</strong> I-15 and the 215 Beltway to the Strip and employment
+              centers
+            </li>
+            <li>
+              <strong>Square Footage:</strong> Newer floor plans often 1,800–2,800 sq ft at lower
+              price points than 89134–89138
+            </li>
           </ul>
 
           <h3>Top Communities in North Las Vegas</h3>
           <ul>
-            <li><strong>Skye Canyon (89084):</strong> Master-planned community with new construction and modern amenities</li>
-            <li><strong>Centennial Hills (89031):</strong> Established area with good schools and shopping</li>
-            <li><strong>Aliante:</strong> Community with shopping center, golf course, and parks</li>
-            <li><strong>Eldorado:</strong> Established neighborhood with affordable options</li>
+            <li>
+              <strong>Skye Canyon (89084):</strong> Master-planned community with new construction
+              and modern amenities
+            </li>
+            <li>
+              <strong>Centennial Hills (89031):</strong> Established area with good schools and
+              shopping
+            </li>
+            <li>
+              <strong>Aliante:</strong> Community with shopping center, golf course, and parks
+            </li>
+            <li>
+              <strong>Eldorado:</strong> Established neighborhood with affordable options
+            </li>
           </ul>
 
           <h3>Home Prices in North Las Vegas</h3>
           <p>
-            North Las Vegas offers some of the most affordable housing in Las Vegas Valley. Entry-level homes 
-            start around $250,000-$350,000, while mid-range homes typically range from $350,000-$500,000. Newer 
-            communities like Skye Canyon may have homes up to $600,000+. The average home price in North Las Vegas 
-            is approximately $400,000-$450,000 as of November 2025, making it an excellent option for first-time 
-            buyers and those seeking value.
+            North Las Vegas offers some of the most affordable housing in Las Vegas Valley.
+            Entry-level homes start around $250,000-$350,000, while mid-range homes typically range
+            from $350,000-$500,000. Newer communities like Skye Canyon may have homes up to
+            $600,000+. The average home price in North Las Vegas is approximately $400,000-$450,000
+            as of November 2025, making it an excellent option for first-time buyers and those
+            seeking value.
           </p>
 
           <h3>Schools in North Las Vegas</h3>
           <p>
-            North Las Vegas is served by the Clark County School District. While school ratings vary, newer 
-            communities like Skye Canyon and Centennial Hills have newer schools with improving ratings. Many 
-            families are attracted to the area for its affordability and new construction options.
+            North Las Vegas is served by the Clark County School District. While school ratings
+            vary, newer communities like Skye Canyon and Centennial Hills have newer schools with
+            improving ratings. Many families are attracted to the area for its affordability and new
+            construction options.
           </p>
 
           <h3>Growth & Development</h3>
           <p>
-            North Las Vegas is experiencing significant growth and development, with new shopping centers, 
-            restaurants, and services opening regularly. This growth brings improved amenities and property 
-            value appreciation potential for homeowners.
+            North Las Vegas is experiencing significant growth and development, with new shopping
+            centers, restaurants, and services opening regularly. This growth brings improved
+            amenities and property value appreciation potential for homeowners.
           </p>
         </div>
 
@@ -210,16 +251,29 @@ export default component$(() => {
                 <div class="stat-label">Affordable</div>
               </div>
             </div>
-            <p><strong>Zip Codes:</strong> 89030, 89031, 89032, 89081, 89084, 89086</p>
-            <p><strong>Population:</strong> ~260,000</p>
-            <p><strong>Best For:</strong> First-time buyers, families seeking value</p>
+            <p>
+              <strong>Zip Codes:</strong> 89030, 89031, 89032, 89081, 89084, 89086
+            </p>
+            <p>
+              <strong>Population:</strong> ~260,000
+            </p>
+            <p>
+              <strong>Best For:</strong> First-time buyers, families seeking value
+            </p>
           </div>
 
           <div class="info-card">
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert North Las Vegas real estate guidance</p>
-            <p><strong>Phone:</strong> (702) 200-3422</p>
-            <a href="http://drjanduffy.realscout.com/onboarding" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: #3A8DDE; color: white; border-radius: 6px; text-decoration: none;">
+            <p>
+              <strong>Phone:</strong> (702) 200-3422
+            </p>
+            <a
+              href="http://drjanduffy.realscout.com/onboarding"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: #3A8DDE; color: white; border-radius: 6px; text-decoration: none;"
+            >
               Get Started
             </a>
           </div>
@@ -238,7 +292,8 @@ export default component$(() => {
           {
             title: 'Henderson Properties',
             url: '/neighborhoods/henderson/',
-            description: 'Family-friendly community with excellent schools',
+            description:
+              'Green Valley, Anthem, and Lake Las Vegas homes with parks and trail systems',
           },
           {
             title: 'Green Valley Real Estate',
@@ -266,4 +321,3 @@ export default component$(() => {
 })
 
 export const head: DocumentHead = createOptimizedHead('north-las-vegas')
-

@@ -1,9 +1,14 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import GoogleMapEmbed from '~/components/local-seo/google-map-embed'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
+import { business } from '~/config/business'
+import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
+  const aboutHero = getSiteImageUrl('about')
   return (
     <div class="about-page">
       <style>{`
@@ -16,8 +21,11 @@ export default component$(() => {
         .about-hero {
           text-align: center;
           margin-bottom: 3rem;
-          padding: 3rem 0;
-          background: linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%);
+          padding: 4rem 1.5rem;
+          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
+            url('${aboutHero}');
+          background-size: cover;
+          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -181,8 +189,8 @@ export default component$(() => {
       <div class="about-hero">
         <h1>About Dr. Jan Duffy</h1>
         <p>
-          Your trusted Las Vegas real estate professional with over 15 years of experience helping
-          clients achieve their real estate goals.
+          Open House Marketplace at {business.fullAddress}. Licensed Nevada REALTOR® #
+          {business.license} helping buyers tour Las Vegas open houses this weekend.
         </p>
       </div>
 
@@ -239,6 +247,15 @@ export default component$(() => {
           </div>
         </div>
       </div>
+
+      <HeadingImage
+        imageKey="about"
+        heading="About Dr. Jan Duffy"
+        alt="Dr. Jan Duffy office for Open House Marketplace in Summerlin Las Vegas"
+        variant="section"
+      />
+
+      <GoogleMapEmbed title="Visit Open House Marketplace at 760 Windover Ct, Las Vegas NV 89138" />
 
       <div class="cta-section">
         <h2>Ready to Work Together?</h2>

@@ -1,9 +1,9 @@
 import { component$, Slot, useStyles$ } from '@builder.io/qwik'
 import { type DocumentHead, routeLoader$ } from '@builder.io/qwik-city'
 import { inject } from '@vercel/analytics'
-// import EnhancedErrorBoundary from '~/components/error-boundary/enhanced-error-boundary';
 import EnhancedAnalytics from '~/components/analytics/enhanced-analytics'
 import StickyHeader from '~/components/layout/header'
+import GbpBar from '~/components/local-seo/gbp-bar'
 import { MobileSearchButton } from '~/components/modals'
 import CrawlerManagement from '~/components/seo/crawler-management'
 import EnhancedStructuredData from '~/components/seo/enhanced-structured-data'
@@ -53,6 +53,7 @@ export default component$(() => {
       <main>
         <Slot />
       </main>
+      <GbpBar />
       <Footer />
       <MobileSearchButton />
 
@@ -225,15 +226,7 @@ export const head: DocumentHead = {
     },
     {
       name: 'geo.placename',
-      content: 'Las Vegas',
-    },
-    {
-      name: 'geo.position',
-      content: '36.1699;-115.1398',
-    },
-    {
-      name: 'ICBM',
-      content: '36.1699, -115.1398',
+      content: 'Las Vegas, NV 89138',
     },
     {
       name: 'rating',
@@ -286,6 +279,14 @@ export const head: DocumentHead = {
     {
       rel: 'preconnect',
       href: 'https://em.realscout.com',
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://images.openhouseupdate.com',
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://imagedelivery.net',
     },
     {
       rel: 'preconnect',

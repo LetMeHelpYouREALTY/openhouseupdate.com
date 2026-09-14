@@ -16,8 +16,7 @@ Disallow: /_vercel/
 Disallow: /build/
 Disallow: /node_modules/
 
-# Block query parameters and fragments
-Disallow: /*?*
+# Block query parameters and fragments that are not useful to search
 Disallow: /*#*
 
 # Block JSON files

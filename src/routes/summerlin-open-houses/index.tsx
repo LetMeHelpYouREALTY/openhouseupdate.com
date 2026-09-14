@@ -1,7 +1,9 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
+import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
   useVisibleTask$(() => {
@@ -42,8 +44,11 @@ export default component$(() => {
         .location-hero {
           text-align: center;
           margin-bottom: 3rem;
-          padding: 3rem 0;
-          background: linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%);
+          padding: 4rem 1.5rem;
+          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
+            url('${getSiteImageUrl('summerlin')}');
+          background-size: cover;
+          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -106,17 +111,24 @@ export default component$(() => {
 
       <div class="info-section">
         <h2>About Summerlin Open Houses</h2>
+        <HeadingImage
+          imageKey="summerlin"
+          heading="About Summerlin Open Houses"
+          variant="section"
+        />
         <p>
-          Summerlin open houses offer the opportunity to explore Las Vegas's premier master-planned community. 
-          Located in zip codes 89134, 89135, 89138, and 89144, Summerlin features luxury homes, top-rated schools, 
-          and world-class amenities. Weekend open houses in Summerlin are popular, especially in communities like 
-          The Ridges, The Summit, and established neighborhoods throughout the area.
+          Summerlin open houses offer the opportunity to explore Las Vegas's premier master-planned
+          community. Located in zip codes 89134, 89135, 89138, and 89144, Summerlin features luxury
+          homes, top-rated schools, and world-class amenities. Weekend open houses in Summerlin are
+          popular, especially in communities like The Ridges, The Summit, and established
+          neighborhoods throughout the area.
         </p>
         <p>
-          Dr. Jan Duffy, an Open House Expert, hosts numerous open houses throughout Summerlin, providing visitors 
-          with expert insights about neighborhoods, schools, amenities, and market conditions. Whether you're 
-          looking for a luxury estate in The Ridges or a family home in an established Summerlin neighborhood, 
-          attending open houses helps you explore your options.
+          Dr. Jan Duffy, an Open House Expert, hosts numerous open houses throughout Summerlin,
+          providing visitors with expert insights about neighborhoods, schools, amenities, and
+          market conditions. Whether you're looking for a luxury estate in The Ridges or a family
+          home in an established Summerlin neighborhood, attending open houses helps you explore
+          your options.
         </p>
       </div>
 
@@ -149,11 +161,7 @@ export default component$(() => {
       />
 
       {/* FAQ Section */}
-      <EnhancedPageSEO
-        pageKey="summerlin-open-houses"
-        showFAQs={false}
-        className="mt-8"
-      />
+      <EnhancedPageSEO pageKey="summerlin-open-houses" showFAQs={false} className="mt-8" />
     </div>
   )
 })
@@ -179,4 +187,3 @@ export const head: DocumentHead = {
     },
   ],
 }
-

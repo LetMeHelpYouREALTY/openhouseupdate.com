@@ -1,6 +1,9 @@
 import { $, component$, useSignal } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import GoogleMapEmbed from '~/components/local-seo/google-map-embed'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
+import { business } from '~/config/business'
 
 export default component$(() => {
   const name = useSignal('')
@@ -39,10 +42,19 @@ export default component$(() => {
           <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Contact <span class="text-blue-600">Dr. Jan Duffy</span>
           </h1>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to buy or sell your Las Vegas home? Get expert guidance from a licensed real
-            estate professional with years of local market experience.
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+            Visit {business.gbpName} at {business.fullAddress}. Call{' '}
+            <a class="text-blue-600 underline" href={`tel:${business.phoneTel}`}>
+              {business.phoneDisplay}
+            </a>{' '}
+            to tour Las Vegas open houses this weekend.
           </p>
+          <HeadingImage
+            imageKey="contact"
+            heading="Contact Dr. Jan Duffy"
+            variant="hero"
+            priority
+          />
         </div>
 
         <div class="grid md:grid-cols-2 gap-12">
@@ -184,8 +196,20 @@ export default component$(() => {
                 <div class="flex items-start space-x-4">
                   <div class="text-blue-600 text-2xl">📍</div>
                   <div>
-                    <h4 class="font-semibold text-gray-900">Service Area</h4>
-                    <p class="text-gray-600">Las Vegas, Nevada and surrounding areas</p>
+                    <h4 class="font-semibold text-gray-900">Office</h4>
+                    <p class="text-gray-600">
+                      {business.gbpName}
+                      <br />
+                      {business.streetAddress}
+                      <br />
+                      {business.addressLocality}, {business.addressRegion} {business.postalCode}
+                    </p>
+                    <p class="text-gray-600 mt-2">
+                      <a class="text-blue-600 underline" href={`tel:${business.phoneTel}`}>
+                        {business.phoneDisplay}
+                      </a>
+                    </p>
+                    <p class="text-gray-600">{business.hoursDisplay}</p>
                   </div>
                 </div>
 
@@ -204,33 +228,37 @@ export default component$(() => {
               <h3 class="text-2xl font-bold mb-4">Quick Actions</h3>
               <div class="space-y-4">
                 <a
-                  href="/home-valuation"
+                  href={`tel:${business.phoneTel}`}
                   class="block bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg p-4 transition-colors"
                 >
-                  <div class="font-semibold">Get Home Valuation</div>
-                  <div class="text-sm opacity-90">Find out what your home is worth</div>
+                  <div class="font-semibold">Call {business.phoneDisplay}</div>
+                  <div class="text-sm opacity-90">Talk with Dr. Jan Duffy</div>
                 </a>
                 <a
-                  href="http://drjanduffy.realscout.com/onboarding"
+                  href={business.directionsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   class="block bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg p-4 transition-colors"
                 >
-                  <div class="font-semibold">Search Properties</div>
-                  <div class="text-sm opacity-90">Find your perfect home</div>
+                  <div class="font-semibold">Get Directions</div>
+                  <div class="text-sm opacity-90">{business.fullAddress}</div>
                 </a>
                 <a
-                  href="/this-weekend"
+                  href={business.reviewsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   class="block bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg p-4 transition-colors"
                 >
-                  <div class="font-semibold">Open Houses</div>
-                  <div class="text-sm opacity-90">This weekend's open houses</div>
+                  <div class="font-semibold">View Google Reviews</div>
+                  <div class="text-sm opacity-90">See {business.gbpName} on Google Maps</div>
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <GoogleMapEmbed title="Open House Marketplace Google Map pin at 760 Windover Ct, Las Vegas NV 89138" />
 
       {/* FAQ Section */}
       <EnhancedPageSEO

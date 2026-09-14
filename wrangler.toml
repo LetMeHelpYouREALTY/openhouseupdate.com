@@ -1,0 +1,10 @@
+name = "openhouseupdate-images"
+compatibility_date = "2026-09-14"
+account_id = ""
+
+# R2 holds production images. Git /public/images is the backup.
+# Do not orange-cloud the Vercel apex; serve this bucket on a separate
+# hostname such as images.openhouseupdate.com (DNS only / custom domain on R2).
+[[r2_buckets]]
+binding = "IMAGES"
+bucket_name = "openhouseupdate-images"

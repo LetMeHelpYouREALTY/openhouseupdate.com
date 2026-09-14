@@ -51,15 +51,16 @@ export default component$<EnhancedSitemapProps>(
           images: includeImages
             ? [
                 {
-                  loc: 'https://www.openhouseupdate.com/images/hero-las-vegas.jpg',
-                  caption: 'Las Vegas Real Estate - Open House Update',
-                  title: 'Las Vegas Real Estate Services',
+                  loc: 'https://www.openhouseupdate.com/images/hero-weekend-open-houses.jpg',
+                  caption:
+                    'Weekend open house at a Summerlin Las Vegas home with Red Rock Canyon views',
+                  title: "Find This Weekend's Open Houses",
                   license: 'https://www.openhouseupdate.com/license',
                 },
                 {
-                  loc: 'https://www.openhouseupdate.com/images/dr-janet-duffy.jpg',
-                  caption: 'Dr. Jan Duffy - Real Estate Agent',
-                  title: 'Dr. Jan Duffy Professional Headshot',
+                  loc: 'https://www.openhouseupdate.com/images/heading-about-agent.jpg',
+                  caption: 'Open House Marketplace office in Summerlin Las Vegas',
+                  title: 'Dr. Jan Duffy - Open House Marketplace',
                 },
               ]
             : undefined,
@@ -397,9 +398,10 @@ export const generateEnhancedSitemap = (
       images: includeImages
         ? [
             {
-              loc: 'https://www.openhouseupdate.com/images/hero-las-vegas.jpg',
-              caption: 'Las Vegas Real Estate - Open House Update',
-              title: 'Las Vegas Real Estate Services',
+              loc: 'https://www.openhouseupdate.com/images/hero-weekend-open-houses.jpg',
+              caption:
+                'Weekend open house at a Summerlin Las Vegas home with Red Rock Canyon views',
+              title: "Find This Weekend's Open Houses",
               license: 'https://www.openhouseupdate.com/license',
             },
           ]

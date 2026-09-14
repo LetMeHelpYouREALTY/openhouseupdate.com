@@ -46,6 +46,8 @@ export default defineConfig(({ mode }) => {
       include: ['@builder.io/qwik', '@builder.io/qwik-city', '@vercel/analytics'],
     },
 
+    envPrefix: ['VITE_', 'PUBLIC_'],
+
     preview: {
       headers: {
         'Cache-Control': 'public, max-age=600',

@@ -1,4 +1,5 @@
 import { component$ } from '@builder.io/qwik'
+import { business } from '~/config/business'
 
 interface StructuredDataProps {
   type: 'RealEstateAgent' | 'RealEstateService' | 'WebSite'
@@ -15,14 +16,16 @@ export default component$<StructuredDataProps>(({ type, data }) => {
           name: 'Dr. Jan Duffy',
           description:
             'Open House Expert with Nevada License #S.0197614 specializing in Las Vegas properties',
-          url: 'https://www.openhouseupdate.com',
-          telephone: '+1-702-200-3422',
-          email: 'DrDuffy@OpenHouseUpdate.com',
+          url: business.siteUrl,
+          telephone: business.phoneE164,
+          email: business.email,
           address: {
             '@type': 'PostalAddress',
-            addressLocality: 'Las Vegas',
-            addressRegion: 'NV',
-            addressCountry: 'US',
+            streetAddress: business.streetAddress,
+            addressLocality: business.addressLocality,
+            addressRegion: business.addressRegion,
+            postalCode: business.postalCode,
+            addressCountry: business.addressCountry,
           },
           areaServed: {
             '@type': 'City',
@@ -106,8 +109,11 @@ export default component$<StructuredDataProps>(({ type, data }) => {
           },
         }
 
-      default:
+      default: {
+        const _exhaustive: never = type
+        void _exhaustive
         return data
+      }
     }
   }
 

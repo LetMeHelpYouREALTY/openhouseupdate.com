@@ -1,9 +1,12 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
+import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
+  const heroImage = getSiteImageUrl('henderson')
   return (
     <div class="neighborhood-page">
       <style>{`
@@ -16,8 +19,11 @@ export default component$(() => {
         .neighborhood-hero {
           text-align: center;
           margin-bottom: 3rem;
-          padding: 3rem 0;
-          background: linear-gradient(135deg, #0A2540 0%, #16B286 100%);
+          padding: 4rem 1.5rem;
+          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(22, 178, 134, 0.5) 100%),
+            url('${heroImage}');
+          background-size: cover;
+          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -134,62 +140,96 @@ export default component$(() => {
       <div class="neighborhood-hero">
         <h1>Henderson Real Estate - Las Vegas</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
-          Family-friendly community consistently ranked among the safest cities in America
+          Weekend open houses in Green Valley, Anthem, Seven Hills, and Lake Las Vegas
         </p>
       </div>
 
       <div class="neighborhood-content">
         <div class="main-content">
           <h2>About Henderson</h2>
+          <HeadingImage imageKey="henderson" heading="About Henderson" variant="section" />
           <p>
-            Henderson, Nevada, located in zip codes 89002, 89011, 89012, 89014, 89015, 89052, and 89074, 
-            is one of the most desirable places to live in Las Vegas Valley. Known for its excellent schools, 
-            low crime rates, and family-friendly atmosphere, Henderson consistently ranks as one of the safest 
-            cities in America.
+            Henderson, Nevada covers zip codes 89002, 89011, 89012, 89014, 89015, 89052, and 89074.
+            Green Valley Ranch, Lake Las Vegas, and the 215 Beltway give buyers parks, shopping, and
+            a typical 15–20 minute drive to the Las Vegas Strip. Tour weekend open houses with Dr.
+            Jan Duffy.
           </p>
-          
+
           <h3>Why Choose Henderson?</h3>
           <ul>
-            <li><strong>Safety:</strong> Consistently ranked among the safest cities in America</li>
-            <li><strong>Excellent Schools:</strong> Top-rated schools with strong academic programs</li>
-            <li><strong>Master-Planned Communities:</strong> Green Valley, Seven Hills, Anthem, and Inspirada</li>
-            <li><strong>Recreation:</strong> Parks, trails, Lake Las Vegas, and outdoor activities</li>
-            <li><strong>Employment:</strong> Growing job market with diverse opportunities</li>
-            <li><strong>Affordability:</strong> Better value than many comparable communities</li>
+            <li>
+              <strong>Schools:</strong> Campuses include Coronado High School, Green Valley High
+              School, and nearby elementary schools — confirm the attendance zone for each listing
+            </li>
+            <li>
+              <strong>Master-Planned Communities:</strong> Green Valley, Seven Hills, Anthem, and
+              Inspirada
+            </li>
+            <li>
+              <strong>Recreation:</strong> Parks, trails, and Lake Las Vegas waterfront paths
+            </li>
+            <li>
+              <strong>Employment:</strong> St. Rose Parkway medical and office corridor plus
+              Henderson Executive Airport
+            </li>
+            <li>
+              <strong>Value:</strong> Wider inventory of 1,800–3,000 sq ft homes than comparable
+              Summerlin villages
+            </li>
+            <li>
+              <strong>Commute:</strong> I-215 and St. Rose Parkway connect to the Strip and
+              McCarran/Harry Reid
+            </li>
           </ul>
 
           <h3>Top Henderson Communities</h3>
           <ul>
-            <li><strong>Green Valley (89012, 89014):</strong> Established community with excellent schools and amenities</li>
-            <li><strong>Seven Hills (89052, 89074):</strong> Gated luxury community with mountain views</li>
-            <li><strong>Lake Las Vegas (89011):</strong> Resort-style community with waterfront properties</li>
-            <li><strong>Anthem (89044):</strong> Gated community with strong security and family focus</li>
-            <li><strong>Inspirada (89044):</strong> Modern master-planned community with new construction</li>
-            <li><strong>Macdonald Highlands (89052):</strong> Luxury gated community with estate homes</li>
+            <li>
+              <strong>Green Valley (89012, 89014):</strong> Established streets near Green Valley
+              Ranch and Coronado High School
+            </li>
+            <li>
+              <strong>Seven Hills (89052, 89074):</strong> Gated luxury community with mountain
+              views
+            </li>
+            <li>
+              <strong>Lake Las Vegas (89011):</strong> Resort-style community with waterfront
+              properties
+            </li>
+            <li>
+              <strong>Anthem (89044):</strong> Gated community with strong security and family focus
+            </li>
+            <li>
+              <strong>Inspirada (89044):</strong> Modern master-planned community with new
+              construction
+            </li>
+            <li>
+              <strong>Macdonald Highlands (89052):</strong> Luxury gated community with estate homes
+            </li>
           </ul>
 
           <h3>Home Prices in Henderson</h3>
           <p>
-            Henderson offers diverse housing options from affordable starter homes to luxury estates. Entry-level 
-            homes start around $300,000-$400,000, while mid-range homes typically range from $400,000-$700,000. 
-            Luxury communities like Seven Hills, Lake Las Vegas, and Macdonald Highlands feature homes from 
-            $700,000 to over $3 million. The average home price in Henderson is approximately $550,000-$650,000 
-            as of November 2025.
+            Henderson offers diverse housing options from affordable starter homes to luxury
+            estates. Entry-level homes start around $300,000-$400,000, while mid-range homes
+            typically range from $400,000-$700,000. Luxury communities like Seven Hills, Lake Las
+            Vegas, and Macdonald Highlands feature homes from $700,000 to over $3 million. The
+            average home price in Henderson is approximately $550,000-$650,000 as of November 2025.
           </p>
 
           <h3>Schools in Henderson</h3>
           <p>
-            Henderson is served by the Clark County School District, with many schools in Green Valley and Seven 
-            Hills consistently ranking among the top in the district. Schools like Coronado High School and 
-            various elementary and middle schools are highly sought after by families. Private school options 
-            are also available throughout Henderson.
+            Henderson is served by the Clark County School District, with many schools in Green
+            Valley and Seven Hills consistently ranking among the top in the district. Schools like
+            Coronado High School and various elementary and middle schools are highly sought after
+            by families. Private school options are also available throughout Henderson.
           </p>
 
           <h3>Commute to Las Vegas</h3>
           <p>
-            Henderson offers easy access to Las Vegas with a typical commute of 20-30 minutes depending on your 
-            destination. Highway access via I-215 and I-515 provides efficient travel to Las Vegas employment 
-            centers, the Strip, and McCarran International Airport.
+            Henderson offers easy access to Las Vegas with a typical commute of 20-30 minutes
+            depending on your destination. Highway access via I-215 and I-515 provides efficient
+            travel to Las Vegas employment centers, the Strip, and McCarran International Airport.
           </p>
         </div>
 
@@ -214,16 +254,29 @@ export default component$(() => {
                 <div class="stat-label">To Las Vegas</div>
               </div>
             </div>
-            <p><strong>Zip Codes:</strong> 89002, 89011, 89012, 89014, 89015, 89052, 89074</p>
-            <p><strong>Population:</strong> ~320,000</p>
-            <p><strong>Founded:</strong> 1953</p>
+            <p>
+              <strong>Zip Codes:</strong> 89002, 89011, 89012, 89014, 89015, 89052, 89074
+            </p>
+            <p>
+              <strong>Population:</strong> ~320,000
+            </p>
+            <p>
+              <strong>Founded:</strong> 1953
+            </p>
           </div>
 
           <div class="info-card">
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert Henderson real estate guidance</p>
-            <p><strong>Phone:</strong> (702) 200-3422</p>
-            <a href="http://drjanduffy.realscout.com/onboarding" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: #16B286; color: white; border-radius: 6px; text-decoration: none;">
+            <p>
+              <strong>Phone:</strong> (702) 200-3422
+            </p>
+            <a
+              href="http://drjanduffy.realscout.com/onboarding"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: #16B286; color: white; border-radius: 6px; text-decoration: none;"
+            >
               Get Started
             </a>
           </div>
@@ -247,7 +300,8 @@ export default component$(() => {
           {
             title: 'Green Valley Real Estate',
             url: '/neighborhoods/green-valley/',
-            description: 'Upscale Henderson community with excellent schools',
+            description:
+              'Green Valley Ranch, Coronado High School area, and 89012–89014 open houses',
           },
           {
             title: 'Search Henderson Properties',
@@ -270,4 +324,3 @@ export default component$(() => {
 })
 
 export const head: DocumentHead = createOptimizedHead('henderson')
-

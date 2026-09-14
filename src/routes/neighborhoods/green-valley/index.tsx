@@ -1,9 +1,12 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
+import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
+  const heroImage = getSiteImageUrl('green-valley')
   return (
     <div class="neighborhood-page">
       <style>{`
@@ -16,8 +19,11 @@ export default component$(() => {
         .neighborhood-hero {
           text-align: center;
           margin-bottom: 3rem;
-          padding: 3rem 0;
-          background: linear-gradient(135deg, #16B286 0%, #3A8DDE 100%);
+          padding: 4rem 1.5rem;
+          background: linear-gradient(135deg, rgba(22, 178, 134, 0.7) 0%, rgba(58, 141, 222, 0.5) 100%),
+            url('${heroImage}');
+          background-size: cover;
+          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -134,56 +140,85 @@ export default component$(() => {
       <div class="neighborhood-hero">
         <h1>Green Valley Real Estate - Henderson</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
-          Upscale Henderson community with excellent schools, amenities, and luxury homes
+          Upscale Henderson community near Green Valley Ranch, Coronado High School, and zip codes
+          89012–89014
         </p>
       </div>
 
       <div class="neighborhood-content">
         <div class="main-content">
           <h2>About Green Valley</h2>
+          <HeadingImage imageKey="green-valley" heading="About Green Valley" variant="section" />
           <p>
-            Green Valley, located in Henderson zip codes 89012 and 89014, is one of Henderson's most desirable 
-            and established communities. Known for its excellent schools, beautiful parks, and upscale amenities, 
-            Green Valley offers a premium living experience while maintaining a family-friendly atmosphere.
+            Green Valley, located in Henderson zip codes 89012 and 89014, is an established village
+            around Green Valley Ranch. Paseos, parks, and the 215 Beltway put most streets within a
+            15–20 minute drive of the Las Vegas Strip. Tour weekend open houses with Dr. Jan Duffy.
           </p>
-          
+
           <h3>Why Choose Green Valley?</h3>
           <ul>
-            <li><strong>Excellent Schools:</strong> Top-rated schools including Coronado High School and highly-rated elementary schools</li>
-            <li><strong>Green Valley Ranch:</strong> Premium shopping, dining, and entertainment destination</li>
-            <li><strong>Safety:</strong> Consistently ranked among the safest areas in Henderson</li>
-            <li><strong>Parks & Recreation:</strong> Beautiful parks, trails, and recreational facilities</li>
-            <li><strong>Established Community:</strong> Mature neighborhoods with well-maintained properties</li>
-            <li><strong>Luxury Options:</strong> Range from mid-range to luxury homes</li>
+            <li>
+              <strong>Schools:</strong> Coronado High School and nearby elementary campuses —
+              confirm the attendance zone for each listing
+            </li>
+            <li>
+              <strong>Green Valley Ranch:</strong> Shopping, dining, and the resort along Green
+              Valley Parkway
+            </li>
+            <li>
+              <strong>Parks & Recreation:</strong> Neighborhood parks, trails, and the District at
+              GVR
+            </li>
+            <li>
+              <strong>Established Streets:</strong> Mature landscaping and 1,800–3,500 sq ft floor
+              plans
+            </li>
+            <li>
+              <strong>Housing Mix:</strong> Mid-range to luxury homes including golf-adjacent
+              properties
+            </li>
+            <li>
+              <strong>Commute:</strong> I-215 east to Henderson and west toward the airport and
+              Strip
+            </li>
           </ul>
 
           <h3>Green Valley Communities</h3>
           <ul>
-            <li><strong>Green Valley Ranch:</strong> Master-planned community with resort-style amenities</li>
-            <li><strong>Coronado Country Club:</strong> Golf community with championship course</li>
-            <li><strong>Various Established Neighborhoods:</strong> Well-maintained communities throughout Green Valley</li>
+            <li>
+              <strong>Green Valley Ranch:</strong> Master-planned community with resort-style
+              amenities
+            </li>
+            <li>
+              <strong>Coronado Country Club:</strong> Golf community with championship course
+            </li>
+            <li>
+              <strong>Various Established Neighborhoods:</strong> Well-maintained communities
+              throughout Green Valley
+            </li>
           </ul>
 
           <h3>Home Prices in Green Valley</h3>
           <p>
-            Green Valley offers a range of housing options from established mid-range homes to luxury properties. 
-            Entry-level homes start around $400,000-$500,000, while mid-range homes typically range from 
-            $500,000-$800,000. Luxury homes and custom estates can exceed $1 million. The average home price 
-            in Green Valley is approximately $650,000-$750,000 as of November 2025.
+            Green Valley offers a range of housing options from established mid-range homes to
+            luxury properties. Entry-level homes start around $400,000-$500,000, while mid-range
+            homes typically range from $500,000-$800,000. Luxury homes and custom estates can exceed
+            $1 million. The average home price in Green Valley is approximately $650,000-$750,000 as
+            of November 2025.
           </p>
 
           <h3>Schools in Green Valley</h3>
           <p>
-            Green Valley is home to some of Henderson's top-rated schools, including Coronado High School, 
-            which consistently ranks among the best in Clark County. Elementary and middle schools in Green 
-            Valley also have excellent ratings, making it a top choice for families prioritizing education.
+            Green Valley listings often fall in the Coronado High School attendance area, with
+            nearby elementary and middle campuses in the Clark County School District. Confirm the
+            zone for a specific address with Dr. Jan Duffy before you tour.
           </p>
 
           <h3>Green Valley Ranch</h3>
           <p>
-            Green Valley Ranch is a major shopping and entertainment destination featuring premium retailers, 
-            restaurants, movie theater, and events. This hub provides residents with convenient access to 
-            shopping and dining without traveling to the Las Vegas Strip.
+            Green Valley Ranch is a major shopping and entertainment destination featuring premium
+            retailers, restaurants, movie theater, and events. This hub provides residents with
+            convenient access to shopping and dining without traveling to the Las Vegas Strip.
           </p>
         </div>
 
@@ -208,30 +243,42 @@ export default component$(() => {
                 <div class="stat-label">1980s</div>
               </div>
             </div>
-            <p><strong>Zip Codes:</strong> 89012, 89014</p>
-            <p><strong>City:</strong> Henderson</p>
-            <p><strong>Best For:</strong> Families, professionals, luxury buyers</p>
+            <p>
+              <strong>Zip Codes:</strong> 89012, 89014
+            </p>
+            <p>
+              <strong>City:</strong> Henderson
+            </p>
+            <p>
+              <strong>Best For:</strong> Families, professionals, luxury buyers
+            </p>
           </div>
 
           <div class="info-card">
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert Green Valley real estate guidance</p>
-            <p><strong>Phone:</strong> (702) 200-3422</p>
-            <a href="http://drjanduffy.realscout.com/onboarding" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: #16B286; color: white; border-radius: 6px; text-decoration: none;">
+            <p>
+              <strong>Phone:</strong> (702) 200-3422
+            </p>
+            <a
+              href="http://drjanduffy.realscout.com/onboarding"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: #16B286; color: white; border-radius: 6px; text-decoration: none;"
+            >
               Get Started
             </a>
           </div>
         </div>
       </div>
-
-      {/* Internal Linking */}
       <InternalLinking
         title="Explore More Las Vegas Neighborhoods"
         links={[
           {
             title: 'Henderson Real Estate',
             url: '/neighborhoods/henderson/',
-            description: 'Family-friendly community with excellent schools',
+            description:
+              'Green Valley, Anthem, and Lake Las Vegas homes with parks and trail systems',
           },
           {
             title: 'Summerlin Properties',
@@ -251,8 +298,6 @@ export default component$(() => {
         ]}
         className="mt-8"
       />
-
-      {/* FAQ Section */}
       <EnhancedPageSEO
         pageKey="green-valley"
         showFAQs={true}
@@ -264,4 +309,3 @@ export default component$(() => {
 })
 
 export const head: DocumentHead = createOptimizedHead('green-valley')
-
