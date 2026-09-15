@@ -10,6 +10,7 @@ import EnhancedStructuredData from '~/components/seo/enhanced-structured-data'
 import JavaScriptCrawling from '~/components/seo/javascript-crawling'
 import Footer from '~/components/starter/footer/footer'
 import Header from '~/components/starter/header/header'
+import { business } from '~/config/business'
 
 import styles from './styles.css?inline'
 
@@ -73,23 +74,28 @@ export default component$(() => {
   )
 })
 
-export const head: DocumentHead = {
-  title: 'Open House Marketplace | Weekend Open Houses Las Vegas | Dr. Jan Duffy',
-  meta: [
-    // Basic SEO
-    {
-      name: 'description',
-      content:
-        'Weekend open houses and Las Vegas property viewing with Open House Marketplace. Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties, 760 Windover Ct, Las Vegas, NV 89138. Call (702) 200-3422.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'Las Vegas real estate, Nevada homes, property search, home valuation, real estate agent, Dr. Jan Duffy, open house, property listings, Summerlin, Henderson, North Las Vegas',
-    },
+const defaultTitle = 'Open House Marketplace | Weekend Open Houses Las Vegas | Dr. Jan Duffy'
+const defaultDescription = `Weekend open houses and Las Vegas property viewing with ${business.gbpName}. ${business.agentName}, ${business.brokerage}, ${business.fullAddress}. Call ${business.phoneDisplay}.`
+
+export const head: DocumentHead = ({ head, url }) => {
+  const title = head.title || defaultTitle
+  const hasMeta = (name?: string, property?: string) =>
+    head.meta.some((item) => (name ? item.name === name : item.property === property))
+  const hasCanonical = head.links.some((item) => item.rel === 'canonical')
+  const pageUrl = `${business.siteUrl}${url.pathname}`
+
+  const meta = [
+    ...(!hasMeta('description')
+      ? [
+          {
+            name: 'description',
+            content: defaultDescription,
+          },
+        ]
+      : []),
     {
       name: 'author',
-      content: 'Dr. Jan Duffy',
+      content: business.agentName,
     },
     {
       name: 'robots',
@@ -117,7 +123,7 @@ export const head: DocumentHead = {
     },
     {
       name: 'apple-mobile-web-app-title',
-      content: 'Open House Marketplace',
+      content: business.gbpName,
     },
     {
       name: 'format-detection',
@@ -129,49 +135,47 @@ export const head: DocumentHead = {
     },
     {
       name: 'application-name',
-      content: 'Open House Marketplace',
+      content: business.gbpName,
     },
-    // Open Graph metadata
-    {
-      property: 'og:title',
-      content: 'Open House Marketplace | Weekend Open Houses Las Vegas | Dr. Jan Duffy',
-    },
-    {
-      property: 'og:description',
-      content:
-        'Weekend open houses in Las Vegas with Dr. Jan Duffy. Open House Marketplace, 760 Windover Ct, Las Vegas, NV 89138. Call (702) 200-3422.',
-    },
+    ...(!hasMeta(undefined, 'og:title')
+      ? [
+          {
+            property: 'og:title',
+            content: title,
+          },
+        ]
+      : []),
+    ...(!hasMeta(undefined, 'og:description')
+      ? [
+          {
+            property: 'og:description',
+            content: defaultDescription,
+          },
+        ]
+      : []),
     {
       property: 'og:type',
       content: 'website',
     },
-    {
-      property: 'og:url',
-      content: 'https://www.openhouseupdate.com/',
-    },
+    ...(!hasMeta(undefined, 'og:url')
+      ? [
+          {
+            property: 'og:url',
+            content: pageUrl,
+          },
+        ]
+      : []),
     {
       property: 'og:site_name',
-      content: 'Open House Marketplace',
+      content: business.gbpName,
     },
     {
       property: 'og:locale',
       content: 'en_US',
     },
     {
-      property: 'og:locale:alternate',
-      content: 'es_US',
-    },
-    {
-      property: 'og:determiner',
-      content: 'auto',
-    },
-    {
       property: 'og:image',
-      content: 'https://www.openhouseupdate.com/images/og-default.jpg',
-    },
-    {
-      property: 'og:image:secure_url',
-      content: 'https://www.openhouseupdate.com/images/og-default.jpg',
+      content: `${business.siteUrl}/images/og-default.jpg`,
     },
     {
       property: 'og:image:width',
@@ -185,41 +189,22 @@ export const head: DocumentHead = {
       property: 'og:image:alt',
       content: 'Weekend open houses in Las Vegas with Open House Marketplace',
     },
-    {
-      property: 'og:image:type',
-      content: 'image/jpeg',
-    },
-    // Twitter Card metadata
+    ...(!hasMeta('twitter:title')
+      ? [
+          {
+            name: 'twitter:title',
+            content: title,
+          },
+        ]
+      : []),
     {
       name: 'twitter:card',
       content: 'summary_large_image',
     },
     {
-      name: 'twitter:title',
-      content: 'Open House Marketplace | Weekend Open Houses Las Vegas',
-    },
-    {
-      name: 'twitter:description',
-      content:
-        'Weekend open houses in Las Vegas with Dr. Jan Duffy. 760 Windover Ct, Las Vegas, NV 89138. Call (702) 200-3422.',
-    },
-    {
-      name: 'twitter:image',
-      content: 'https://www.openhouseupdate.com/images/og-default.jpg',
-    },
-    {
-      name: 'twitter:image:alt',
-      content: 'Weekend open houses in Las Vegas with Open House Marketplace',
-    },
-    {
       name: 'twitter:site',
       content: '@drjanetduffy',
     },
-    {
-      name: 'twitter:creator',
-      content: '@drjanetduffy',
-    },
-    // Additional SEO meta tags
     {
       name: 'geo.region',
       content: 'US-NV',
@@ -229,40 +214,20 @@ export const head: DocumentHead = {
       content: 'Las Vegas, NV 89138',
     },
     {
-      name: 'rating',
-      content: 'general',
-    },
-    {
-      name: 'distribution',
-      content: 'global',
-    },
-    {
-      name: 'language',
-      content: 'en-US',
-    },
-    {
-      name: 'revisit-after',
-      content: '1 days',
-    },
-    {
-      name: 'expires',
-      content: 'never',
-    },
-    {
-      name: 'cache-control',
-      content: 'public',
-    },
-    // Google Site Verification
-    {
       name: 'google-site-verification',
       content: '3MLLpJH2Mfg7igpQ-qC_wpBTzvBGvsOUe7V_pJdYAcM',
     },
-  ],
-  links: [
-    {
-      rel: 'canonical',
-      href: 'https://www.openhouseupdate.com/',
-    },
+  ]
+
+  const links = [
+    ...(!hasCanonical
+      ? [
+          {
+            rel: 'canonical',
+            href: pageUrl,
+          },
+        ]
+      : []),
     {
       rel: 'icon',
       type: 'image/svg+xml',
@@ -293,40 +258,19 @@ export const head: DocumentHead = {
       href: 'https://www.googletagmanager.com',
     },
     {
-      rel: 'preconnect',
-      href: 'https://fonts.googleapis.com',
-    },
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.gstatic.com',
-      crossorigin: 'anonymous',
-    },
-    {
       rel: 'dns-prefetch',
       href: 'https://em.realscout.com',
     },
     {
-      rel: 'dns-prefetch',
-      href: 'https://www.googletagmanager.com',
-    },
-    {
-      rel: 'dns-prefetch',
-      href: 'https://fonts.googleapis.com',
-    },
-    {
-      rel: 'dns-prefetch',
-      href: 'https://fonts.gstatic.com',
-    },
-    {
-      rel: 'alternate',
-      type: 'application/rss+xml',
-      title: 'Open House Marketplace RSS Feed',
-      href: '/rss.xml',
-    },
-    {
       rel: 'sitemap',
       type: 'application/xml',
-      href: '/sitemap.xml',
+      href: '/sitemap-index.xml',
     },
-  ],
+  ]
+
+  return {
+    title,
+    meta,
+    links,
+  }
 }
