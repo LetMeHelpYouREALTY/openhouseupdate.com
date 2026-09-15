@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 
 export default component$(() => {
   return (
@@ -31,6 +32,12 @@ export default component$(() => {
           <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Loading Your Perfect Home Search
           </h1>
+          <HeadingImage
+            imageKey="map-search"
+            heading="Loading Your Perfect Home Search"
+            variant="section"
+            alt="Map search tools for Las Vegas Valley open houses while listings load"
+          />
           <p class="text-xl text-gray-600 mb-8">
             We're gathering the latest Las Vegas property listings and market data for you...
           </p>
@@ -75,7 +82,8 @@ export default component$(() => {
               <div class="text-4xl mb-4">🏘️</div>
               <h3 class="text-lg font-semibold text-gray-900 mb-2">Popular Areas</h3>
               <p class="text-gray-600 text-sm">
-                Summerlin and Henderson remain top choices for families
+                Summerlin (89134–89144) and Henderson (89002–89074) hold frequent weekend open
+                houses
               </p>
             </div>
             <div class="text-center">

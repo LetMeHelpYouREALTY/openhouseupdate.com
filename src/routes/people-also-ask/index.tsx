@@ -21,29 +21,36 @@ export default component$(() => {
           min-height: 100vh;
           background: linear-gradient(to bottom, #f8fafc 0%, #ffffff 100%);
         }
-        .hero-gradient {
-          background: linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%);
+        .paa-hero {
+          position: relative;
+          overflow: hidden;
+          border-radius: 1rem;
+          padding: 3rem 1.5rem;
+          color: white;
+          margin-bottom: 2rem;
+        }
+        .paa-hero > :not(figure) {
+          position: relative;
+          z-index: 1;
         }
       `}</style>
 
       <div class="container mx-auto px-6 py-16">
         {/* Hero Section */}
         <div class="text-center mb-16">
-          <div class="hero-gradient rounded-2xl shadow-xl p-12 mb-8 text-white">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">
-              People Also <span class="text-yellow-300">Ask</span>
-            </h1>
+          <div class="paa-hero">
+            <HeadingImage
+              imageKey="people-also-ask"
+              heading="People Also Ask"
+              variant="background"
+              priority
+            />
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">People Also Ask</h1>
             <p class="text-xl md:text-2xl max-w-3xl mx-auto opacity-90">
               Get answers to the most common questions about Las Vegas real estate, open houses, and
               the housing market
             </p>
           </div>
-          <HeadingImage
-            imageKey="people-also-ask"
-            heading="People Also Ask"
-            variant="hero"
-            priority
-          />
           <p class="text-gray-600 max-w-3xl mx-auto text-lg">
             Expert insights from Dr. Jan Duffy, your trusted Las Vegas Open House Expert with over
             20 years of experience
@@ -109,27 +116,27 @@ export default component$(() => {
           <div class="grid md:grid-cols-3 gap-6">
             <a
               href="/faq"
-              class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow border-2 border-transparent hover:border-blue-600"
+              class="bg-white rounded-lg shadow-lg overflow-hidden text-center hover:shadow-xl transition-shadow border-2 border-transparent hover:border-blue-600"
             >
-              <div class="text-4xl mb-4">❓</div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Full FAQ</h3>
-              <p class="text-gray-600 text-sm">Browse all frequently asked questions</p>
+              <HeadingImage imageKey="people-also-ask" heading="Full FAQ" variant="card" />
+              <h3 class="text-lg font-bold text-gray-900 mb-2 mt-4 px-4">Full FAQ</h3>
+              <p class="text-gray-600 text-sm px-4 pb-6">Browse all frequently asked questions</p>
             </a>
             <a
               href="/services"
-              class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow border-2 border-transparent hover:border-blue-600"
+              class="bg-white rounded-lg shadow-lg overflow-hidden text-center hover:shadow-xl transition-shadow border-2 border-transparent hover:border-blue-600"
             >
-              <div class="text-4xl mb-4">🏠</div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Our Services</h3>
-              <p class="text-gray-600 text-sm">Learn about buyer and seller services</p>
+              <HeadingImage imageKey="buyer-services" heading="Our Services" variant="card" />
+              <h3 class="text-lg font-bold text-gray-900 mb-2 mt-4 px-4">Our Services</h3>
+              <p class="text-gray-600 text-sm px-4 pb-6">Learn about buyer and seller services</p>
             </a>
             <a
               href="/about"
-              class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow border-2 border-transparent hover:border-blue-600"
+              class="bg-white rounded-lg shadow-lg overflow-hidden text-center hover:shadow-xl transition-shadow border-2 border-transparent hover:border-blue-600"
             >
-              <div class="text-4xl mb-4">👩‍💼</div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">About Dr. Duffy</h3>
-              <p class="text-gray-600 text-sm">Meet your Open House Expert</p>
+              <HeadingImage imageKey="about" heading="About Dr. Duffy" variant="card" />
+              <h3 class="text-lg font-bold text-gray-900 mb-2 mt-4 px-4">About Dr. Duffy</h3>
+              <p class="text-gray-600 text-sm px-4 pb-6">Meet your Open House Expert</p>
             </a>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import { $, component$, useSignal } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
 import HeadingImage from '~/components/media/heading-image'
+import EnhancedStructuredData from '~/components/seo/enhanced-structured-data'
 
 export default component$(() => {
   const openFAQ = useSignal<number | null>(null)
@@ -64,6 +65,7 @@ export default component$(() => {
 
   return (
     <section class="faq-page">
+      <EnhancedStructuredData type="FAQPage" faqs={faqs} />
       <div class="container mx-auto px-6 py-16">
         {/* Hero Section */}
         <div class="text-center mb-16">
@@ -112,9 +114,9 @@ export default component$(() => {
         <div class="mb-16">
           <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">Browse by Topic</h2>
           <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-              <div class="text-4xl mb-4">🏠</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">Buying a Home</h3>
+            <div class="bg-white rounded-lg shadow-lg p-6 text-center overflow-hidden">
+              <HeadingImage imageKey="buyer-services" heading="Buying a Home" variant="card" />
+              <h3 class="text-xl font-bold text-gray-900 mb-3 mt-4">Buying a Home</h3>
               <p class="text-gray-600 mb-4">
                 Everything you need to know about purchasing your Las Vegas home
               </p>
@@ -126,9 +128,9 @@ export default component$(() => {
               </ul>
             </div>
 
-            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-              <div class="text-4xl mb-4">💰</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">Selling a Home</h3>
+            <div class="bg-white rounded-lg shadow-lg p-6 text-center overflow-hidden">
+              <HeadingImage imageKey="seller-services" heading="Selling a Home" variant="card" />
+              <h3 class="text-xl font-bold text-gray-900 mb-3 mt-4">Selling a Home</h3>
               <p class="text-gray-600 mb-4">Expert guidance for selling your Las Vegas property</p>
               <ul class="text-sm text-gray-600 space-y-1">
                 <li>• Home preparation</li>
@@ -138,9 +140,9 @@ export default component$(() => {
               </ul>
             </div>
 
-            <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-              <div class="text-4xl mb-4">📊</div>
-              <h3 class="text-xl font-bold text-gray-900 mb-3">Market & Services</h3>
+            <div class="bg-white rounded-lg shadow-lg p-6 text-center overflow-hidden">
+              <HeadingImage imageKey="market-analysis" heading="Market & Services" variant="card" />
+              <h3 class="text-xl font-bold text-gray-900 mb-3 mt-4">Market & Services</h3>
               <p class="text-gray-600 mb-4">Understanding the Las Vegas market and our services</p>
               <ul class="text-sm text-gray-600 space-y-1">
                 <li>• Market trends</li>
@@ -189,10 +191,9 @@ export default component$(() => {
               <div class="font-semibold text-gray-900">Search Properties</div>
             </a>
             <a
-              href="/neighborhoods"
+              href="/neighborhoods/"
               class="bg-white rounded-lg shadow-lg p-4 text-center hover:shadow-xl transition-shadow"
             >
-              <div class="text-2xl mb-2">🏘️</div>
               <div class="font-semibold text-gray-900">Neighborhoods</div>
             </a>
             <a

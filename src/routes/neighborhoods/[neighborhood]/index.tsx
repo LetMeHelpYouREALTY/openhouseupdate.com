@@ -219,16 +219,14 @@ export default component$(() => {
         <div class="info-card">
           <h4>About {neighborhoodName}</h4>
           <p>
-            {neighborhoodName} is one of Las Vegas's premier neighborhoods, offering exceptional
-            amenities, top-rated schools, and beautiful homes. This vibrant community combines the
-            excitement of Las Vegas with the comfort of a residential neighborhood, making it ideal
-            for families, professionals, and retirees alike.
+            {neighborhoodName} sits in the Las Vegas Valley with shopping, parks, and a mix of
+            housing types. Confirm the named school campus on each MLS sheet, commute via I-15 or
+            I-215, square footage, and HOA dues before you tour.
           </p>
           <p>
-            Residents enjoy convenient access to shopping centers, restaurants, parks, and
-            recreational facilities. The neighborhood's well-maintained streets, diverse housing
-            options, and strong sense of community make {neighborhoodName} a highly sought-after
-            location for homebuyers in the Las Vegas area.
+            Shopping, restaurants, parks, and trailheads sit within typical Las Vegas Valley drive
+            times. Compare square footage, HOA dues, HVAC age, and the named school campus on each
+            MLS sheet before you tour {neighborhoodName}.
           </p>
         </div>
 
@@ -274,7 +272,8 @@ export default component$(() => {
           <p>
             Whether you're searching for a single-family home, townhouse, or condo in{' '}
             {neighborhoodName}, our comprehensive property search tools and expert guidance make it
-            easy to find your dream home in this desirable Las Vegas neighborhood.
+            easy to find a listing that matches your budget and square-footage needs in{' '}
+            {neighborhoodName}.
           </p>
         </div>
       </div>

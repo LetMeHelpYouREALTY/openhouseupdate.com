@@ -2,6 +2,7 @@ import { component$ } from '@builder.io/qwik'
 import { type DocumentHead, routeLoader$ } from '@builder.io/qwik-city'
 import BuilderContent from '~/components/builder/builder-content'
 import BuilderPreview from '~/components/builder/builder-preview'
+import HeadingImage from '~/components/media/heading-image'
 import { type BuilderPageData, getBuilderPage, isPreviewMode } from '~/services/builder-service'
 
 // Load Builder.io page content on the server
@@ -40,6 +41,12 @@ export default component$(() => {
     return (
       <div class="container mx-auto px-6 py-16 text-center">
         <h1 class="text-4xl font-bold text-gray-900 mb-4">Page Not Found</h1>
+        <HeadingImage
+          imageKey="weekend-open-houses"
+          heading="Page Not Found"
+          variant="section"
+          alt="Las Vegas weekend open houses while this content page is missing"
+        />
         <p class="text-xl text-gray-600 mb-8">
           The page you're looking for doesn't exist or hasn't been created in Builder.io yet.
         </p>

@@ -3,7 +3,6 @@ import type { DocumentHead } from '@builder.io/qwik-city'
 import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
   return (
@@ -16,16 +15,18 @@ export default component$(() => {
         }
         
         .guide-hero {
+          position: relative;
+          overflow: hidden;
           text-align: center;
           margin-bottom: 3rem;
           padding: 4rem 1.5rem;
-          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
-            url('${getSiteImageUrl('first-time-buyer')}');
-          background-size: cover;
-          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .guide-hero > :not(figure) {
+          position: relative;
+          z-index: 1;
         }
         
         .guide-hero h1 {
@@ -127,22 +128,27 @@ export default component$(() => {
       `}</style>
 
       <div class="guide-hero">
+        <HeadingImage
+          imageKey="first-time-buyer"
+          heading="Complete Guide to Buying Your First Home in Las Vegas"
+          variant="background"
+          priority
+        />
         <h1>Complete Guide to Buying Your First Home in Las Vegas</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Step-by-step guide from pre-approval to closing with expert tips from Dr. Jan Duffy
         </p>
       </div>
 
-      <HeadingImage
-        imageKey="first-time-buyer"
-        heading="Complete Guide to Buying Your First Home in Las Vegas"
-        variant="section"
-      />
-
       <div class="step-section">
         <h2>
           <span class="step-number">1</span>Get Pre-Approved for a Mortgage
         </h2>
+        <HeadingImage
+          imageKey="buyer-services"
+          heading="Get Pre-Approved for a Mortgage"
+          variant="section"
+        />
         <p>
           Before you start house hunting in Las Vegas Valley, get pre-approved for a mortgage. This
           tells you exactly how much you can afford and shows sellers you're a serious buyer.
@@ -168,11 +174,16 @@ export default component$(() => {
         <h2>
           <span class="step-number">2</span>Determine Your Budget and Preferences
         </h2>
+        <HeadingImage
+          imageKey="home-valuation"
+          heading="Determine Your Budget and Preferences"
+          variant="section"
+        />
         <p>
           Calculate your total monthly housing budget (mortgage, insurance, property taxes, HOA
           fees, utilities). In Las Vegas, property taxes are low (0.6%-1.2% of assessed value), but
-          HOA fees vary by neighborhood. Consider what's important: schools, commute, amenities,
-          neighborhood safety.
+          HOA fees vary by neighborhood. Compare named school campuses on each MLS sheet, commute
+          via I-15 / I-215, square footage, and HVAC age.
         </p>
         <h3>Las Vegas Budget Considerations:</h3>
         <ul>
@@ -194,24 +205,31 @@ export default component$(() => {
         <h2>
           <span class="step-number">3</span>Find the Right Neighborhood
         </h2>
+        <HeadingImage
+          imageKey="neighborhood-expertise"
+          heading="Find the Right Neighborhood"
+          variant="section"
+        />
         <p>
-          Las Vegas Valley offers diverse neighborhoods, each with unique character. Research areas
-          based on your priorities: schools, safety, amenities, commute, and lifestyle preferences.
+          Las Vegas Valley neighborhoods differ by zip code, housing type, and commute. Compare Palo
+          Verde High, Coronado High, Green Valley High, square footage, HOA dues, and I-15 / I-215
+          drive times. Open House Marketplace does not rank areas as safest.
         </p>
-        <h3>Top Neighborhoods for First-Time Buyers:</h3>
+        <h3>First-time buyer inventory by area:</h3>
         <ul>
           <li>
-            <strong>North Las Vegas:</strong> Affordable, new construction, growing (Skye Canyon,
-            Centennial Hills)
+            <strong>North Las Vegas:</strong> Newer construction in Skye Canyon (89084) and
+            Centennial Hills (89031)
           </li>
           <li>
-            <strong>Spring Valley:</strong> Established, diverse, good value
+            <strong>Spring Valley:</strong> 1,400–2,400 sq ft tile-roof homes in 89103–89147
           </li>
           <li>
             <strong>Henderson:</strong> Green Valley Ranch, parks, and a 15–20 minute Strip commute
           </li>
           <li>
-            <strong>Summerlin:</strong> Premium amenities, top schools (higher price range)
+            <strong>Summerlin:</strong> Downtown Summerlin, Palo Verde High School, higher typical
+            list prices in 89134–89144
           </li>
         </ul>
         <div class="tip-box">
@@ -225,6 +243,11 @@ export default component$(() => {
         <h2>
           <span class="step-number">4</span>Start Your Property Search
         </h2>
+        <HeadingImage
+          imageKey="weekend-open-houses"
+          heading="Start Your Property Search"
+          variant="section"
+        />
         <p>
           Use our advanced search tool to browse available properties, filter by price, location,
           bedrooms, and features. Attend open houses (especially weekend open houses) to see
@@ -246,6 +269,7 @@ export default component$(() => {
         <h2>
           <span class="step-number">5</span>Make an Offer
         </h2>
+        <HeadingImage imageKey="contact" heading="Make an Offer" variant="section" />
         <p>
           Once you find the right property, work with Dr. Jan Duffy to craft a competitive offer. In
           November 2025, Las Vegas market conditions vary by neighborhood - some areas see multiple
@@ -266,6 +290,7 @@ export default component$(() => {
         <h2>
           <span class="step-number">6</span>Home Inspection
         </h2>
+        <HeadingImage imageKey="property-staging" heading="Home Inspection" variant="section" />
         <p>
           After offer acceptance, schedule a professional home inspection. In Las Vegas, pay special
           attention to:
@@ -298,6 +323,7 @@ export default component$(() => {
         <h2>
           <span class="step-number">7</span>Finalize Financing
         </h2>
+        <HeadingImage imageKey="market-analysis" heading="Finalize Financing" variant="section" />
         <p>
           Work with your lender to finalize your mortgage. Provide any additional documentation
           requested. The lender will order an appraisal to ensure the property value supports the
@@ -309,6 +335,7 @@ export default component$(() => {
         <h2>
           <span class="step-number">8</span>Closing Process
         </h2>
+        <HeadingImage imageKey="about" heading="Closing Process" variant="section" />
         <p>
           Typically 30-45 days after offer acceptance, you'll close on your new Las Vegas home.
           Closing involves:

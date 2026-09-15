@@ -2,10 +2,8 @@ import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
 import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
-  const heroImage = getSiteImageUrl('buyer-services')
   return (
     <div class="services-page">
       <style>{`
@@ -16,16 +14,18 @@ export default component$(() => {
         }
         
         .services-hero {
+          position: relative;
+          overflow: hidden;
           text-align: center;
           margin-bottom: 4rem;
           padding: 4rem 1.5rem;
-          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
-            url('${heroImage}');
-          background-size: cover;
-          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .services-hero > :not(figure) {
+          position: relative;
+          z-index: 1;
         }
         
         .services-hero h1 {
@@ -192,6 +192,12 @@ export default component$(() => {
       `}</style>
 
       <div class="services-hero">
+        <HeadingImage
+          imageKey="buyer-services"
+          heading="Professional Real Estate Services"
+          variant="background"
+          priority
+        />
         <h1>Professional Real Estate Services</h1>
         <p>
           Expert guidance and comprehensive services to help you navigate the Las Vegas real estate

@@ -48,7 +48,7 @@ export default component$(() => {
           </a>
 
           <a
-            href="/neighborhoods"
+            href="/neighborhoods/"
             class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow text-center"
           >
             <div class="text-4xl mb-4">🏘️</div>

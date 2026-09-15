@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 
 export default component$(() => {
   return (
@@ -13,12 +14,17 @@ export default component$(() => {
         }
         
         .sitemap-header {
+          position: relative;
+          overflow: hidden;
           text-align: center;
           margin-bottom: 3rem;
-          padding: 2rem 0;
-          background: linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%);
+          padding: 2rem 1.5rem;
           color: white;
           border-radius: 12px;
+        }
+        .sitemap-header > :not(figure) {
+          position: relative;
+          z-index: 1;
         }
         
         .sitemap-header h1 {
@@ -112,14 +118,19 @@ export default component$(() => {
       `}</style>
 
       <div class="sitemap-header">
+        <HeadingImage imageKey="map-search" heading="Site Map" variant="background" priority />
         <h1>Site Map</h1>
-        <p>Find all pages and sections of Open House Update</p>
+        <p>
+          Find all pages and sections of Open House Marketplace at 760 Windover Ct, Las Vegas NV
+          89138
+        </p>
       </div>
 
       <div class="sitemap-section">
         <h2>Main Pages</h2>
         <div class="sitemap-links">
           <a href="/">Home</a>
+          <a href="/neighborhoods/">Las Vegas Neighborhoods</a>
           <a href="/about/">About Dr. Jan Duffy</a>
           <a href="/services/">Real Estate Services</a>
           <a href="/contact/">Contact Us</a>
@@ -159,8 +170,10 @@ export default component$(() => {
       <div class="sitemap-section">
         <h2>Neighborhoods</h2>
         <div class="sitemap-links">
+          <a href="/neighborhoods/">All Neighborhoods</a>
           <a href="/neighborhoods/summerlin/">Summerlin</a>
           <a href="/neighborhoods/henderson/">Henderson</a>
+          <a href="/neighborhoods/green-valley/">Green Valley</a>
           <a href="/neighborhoods/north-las-vegas/">North Las Vegas</a>
           <a href="/neighborhoods/spring-valley/">Spring Valley</a>
           <a href="/neighborhoods/enterprise/">Enterprise</a>
