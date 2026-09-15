@@ -44,7 +44,7 @@ export default component$(() => {
     {
       question: 'What should I look for in a Las Vegas home?',
       answer:
-        'Key considerations include location (schools, commute, amenities), condition of HVAC systems (important in desert climate), energy efficiency, HOA fees and restrictions, and future development plans in the area. Dr. Duffy can help you identify potential issues and opportunities during showings.',
+        'Key considerations include commute, named school campuses on the MLS sheet, square footage, HVAC in the desert climate, energy use, HOA dues, and nearby retail. Dr. Duffy can help you identify issues and opportunities during showings.',
     },
     {
       question: 'How do I get a home valuation?',
@@ -86,6 +86,11 @@ export default component$(() => {
 
         {/* FAQ Accordion */}
         <div class="max-w-4xl mx-auto mb-16">
+          <HeadingImage
+            imageKey="about"
+            heading="Frequently asked Las Vegas real estate questions"
+            variant="section"
+          />
           <div class="space-y-4">
             {faqs.map((faq, index) => (
               <div

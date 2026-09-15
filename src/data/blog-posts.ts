@@ -42,7 +42,7 @@ As of November 2025, Las Vegas Valley has experienced moderate price appreciatio
 - **North Las Vegas** (89030-89086): More affordable options $350,000-$550,000, with newer developments like Skye Canyon (89084) and Centennial Hills (89031) gaining popularity
 - **Spring Valley** (89103-89147): Diverse pricing $400,000-$600,000
 
-**Days on Market**: Average 30-45 days for well-priced properties, faster in desirable neighborhoods.
+**Days on Market**: Average 30-45 days for well-priced properties, often faster in Summerlin (89134–89144) and Henderson (89002–89074) when list price matches recent comps.
 
 ## Neighborhood Spotlight
 

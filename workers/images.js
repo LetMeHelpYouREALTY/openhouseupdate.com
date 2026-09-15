@@ -4,8 +4,9 @@
  * Git copies on https://www.openhouseupdate.com/images remain the backup.
  *
  * Optional R2 binding IMAGES can sit in front of assets after the account is claimed.
- * Do not orange-cloud the Vercel apex; serve this Worker on workers.dev or a
- * DNS-only hostname such as images.openhouseupdate.com.
+ * Do not orange-cloud the Vercel apex. Do not use workers.dev as the live
+ * <img> origin (Bot Fight Mode 403). Serve a DNS-only hostname such as
+ * images.openhouseupdate.com on the same Cloudflare account as the zone.
  */
 const GIT_ORIGIN = 'https://www.openhouseupdate.com/images'
 

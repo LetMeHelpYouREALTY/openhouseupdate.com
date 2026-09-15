@@ -185,7 +185,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
   // Neighborhood-specific FAQs
   summerlin: [
     {
-      question: 'What makes Summerlin a desirable neighborhood?',
+      question: 'What amenities and zip codes define Summerlin?',
       answer:
         'Summerlin offers Howard Hughes master-planned villages, Downtown Summerlin shopping, Red Rock Canyon access, golf, and named high schools including Palo Verde High and West Career and Technical Academy. Zip codes include 89134, 89135, 89138, and 89144. The Ridges and The Summit list luxury inventory; other villages cover mid-range square footage. Call Dr. Jan Duffy at (702) 200-3422 to tour weekend open houses from 760 Windover Ct.',
     },
