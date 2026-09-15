@@ -278,6 +278,7 @@ export default component$(() => {
 
       <div class="cta-section">
         <h2>Ready to Work Together?</h2>
+        <HeadingImage imageKey="contact" heading="Ready to Work Together?" variant="section" />
         <p>
           Let Dr. Jan Duffy guide you through your real estate journey with professional expertise
           and personalized service.

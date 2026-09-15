@@ -97,6 +97,16 @@ export default component$<HeadingImageProps>(
           height={image.height}
           loading={priority ? 'eager' : 'lazy'}
           decoding="async"
+          data-git-src={`/images/${image.file}`}
+          onError$={(event) => {
+            const el = event.target as HTMLImageElement
+            const gitSrc = el.dataset.gitSrc
+            if (gitSrc && el.src !== gitSrc && !el.dataset.fallback) {
+              el.dataset.fallback = '1'
+              el.removeAttribute('srcset')
+              el.src = gitSrc
+            }
+          }}
         />
       </figure>
     )

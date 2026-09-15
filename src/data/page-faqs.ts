@@ -280,7 +280,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'Are weekend open houses more crowded than weekday showings?',
       answer:
-        "Yes, weekend open houses in Las Vegas Valley typically see higher attendance than weekday showings, especially on Saturdays. This is common throughout Las Vegas neighborhoods in zip codes 89103-89148 (Las Vegas), 89002-89074 (Henderson), and 89030-89086 (North Las Vegas). Weekend open houses are popular because most people have free time, families can view together, and buyers often dedicate weekends to property searching. Popular areas like Summerlin (89134-89144) and Henderson's Green Valley (89012, 89014) may see particularly busy weekend open houses. Arriving early can help you view properties before crowds, and scheduling private showings during the week is also an option.",
+        "Yes, weekend open houses in Las Vegas Valley typically see higher attendance than weekday showings, especially on Saturdays. This is common throughout Las Vegas neighborhoods in zip codes 89103-89148 (Las Vegas), 89002-89074 (Henderson), and 89030-89086 (North Las Vegas). Weekend open houses are popular because most people have free time and buyers often dedicate Saturdays and Sundays to property searching. Popular areas like Summerlin (89134-89144) and Henderson's Green Valley (89012, 89014) may see particularly busy weekend open houses. Arriving early can help you view properties before crowds, and scheduling private showings during the week is also an option.",
     },
     {
       question: 'Can I attend multiple open houses this weekend?',

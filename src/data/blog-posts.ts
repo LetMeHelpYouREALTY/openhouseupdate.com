@@ -53,7 +53,7 @@ Summerlin continues to be the premier master-planned community in Las Vegas Vall
 Henderson (89002-89015) continues to draw buyers to Green Valley (89012, 89014) and Seven Hills (89052, 89074).
 
 ### North Las Vegas Growth
-North Las Vegas (89030-89086) offers excellent value with newer construction in Skye Canyon (89084) and Centennial Hills (89031), attracting first-time buyers and families.
+North Las Vegas (89030-89086) offers newer construction in Skye Canyon (89084) and Centennial Hills (89031) at lower entry prices than 89134–89138.
 
 ## What This Means for Buyers and Sellers
 
@@ -451,7 +451,7 @@ As of November 2025, Las Vegas investment property market offers:
 
 ### 2. Spring Valley (Zip Codes 89103-89147)
 **Investment Appeal**:
-- Established neighborhoods with steady demand
+- 1980s–2000s housing stock with steady rental demand
 - Diverse housing options
 - Central location
 - Affordable entry points
@@ -463,7 +463,7 @@ As of November 2025, Las Vegas investment property market offers:
 **Investment Appeal**:
 - More affordable than premium Henderson areas
 - Growing rental market
-- Family-friendly attracts long-term tenants
+- Longer average tenancy on 3-bedroom floor plans
 - Potential for appreciation
 
 **ROI Considerations**: Moderate cash flow, good for long-term appreciation strategy
@@ -482,7 +482,7 @@ As of November 2025, Las Vegas investment property market offers:
 ### Single-Family Homes
 **Pros**: 
 - Strong appreciation potential
-- Attractive to families (long-term tenants)
+- Longer typical leases on 3-bedroom homes
 - Easier financing
 
 **Best For**: Long-term buy-and-hold investors

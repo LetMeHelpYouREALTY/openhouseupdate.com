@@ -70,6 +70,7 @@ export default component$(() => {
         {/* Tips While Loading */}
         <div class="bg-gray-50 rounded-lg p-8 mb-12">
           <h2 class="text-2xl font-bold text-gray-900 mb-6">While You Wait...</h2>
+          <HeadingImage imageKey="market-analysis" heading="While You Wait" variant="section" />
           <div class="grid md:grid-cols-3 gap-6">
             <div class="text-center">
               <div class="text-4xl mb-4">📊</div>
@@ -97,6 +98,7 @@ export default component$(() => {
         {/* Contact Information */}
         <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-lg shadow-lg p-8 text-white">
           <h2 class="text-2xl font-bold mb-4">Need Immediate Assistance?</h2>
+          <HeadingImage imageKey="contact" heading="Need Immediate Assistance?" variant="section" />
           <p class="text-xl mb-6 opacity-90">
             While the page loads, feel free to contact Dr. Jan Duffy directly.
           </p>
