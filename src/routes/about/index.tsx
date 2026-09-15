@@ -5,10 +5,8 @@ import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 import { business } from '~/config/business'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
-  const aboutHero = getSiteImageUrl('about')
   return (
     <div class="about-page">
       <style>{`
@@ -19,16 +17,18 @@ export default component$(() => {
         }
         
         .about-hero {
+          position: relative;
+          overflow: hidden;
           text-align: center;
           margin-bottom: 3rem;
           padding: 4rem 1.5rem;
-          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
-            url('${aboutHero}');
-          background-size: cover;
-          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .about-hero > :not(figure) {
+          position: relative;
+          z-index: 1;
         }
         
         .about-hero h1 {
@@ -187,6 +187,12 @@ export default component$(() => {
       `}</style>
 
       <div class="about-hero">
+        <HeadingImage
+          imageKey="about"
+          heading="About Dr. Jan Duffy"
+          variant="background"
+          priority
+        />
         <h1>About Dr. Jan Duffy</h1>
         <p>
           Open House Marketplace at {business.fullAddress}. Licensed Nevada REALTOR® #
@@ -237,13 +243,20 @@ export default component$(() => {
           </div>
 
           <div class="credential-item">
-            <h3>Top Producer Recognition</h3>
-            <p>Consistently ranked among top-performing agents in the Las Vegas market</p>
+            <h3>BHHS Nevada Properties</h3>
+            <p>
+              Affiliated with {business.brokerage}. Nevada license #{business.license}.
+            </p>
           </div>
 
           <div class="credential-item">
-            <h3>Client Satisfaction Excellence</h3>
-            <p>Maintains 5-star rating with over 200 successful transactions</p>
+            <h3>Google Reviews</h3>
+            <p>
+              Read Google reviews for Open House Marketplace or write one after your tour at{' '}
+              <a href={business.reviewsUrl} target="_blank" rel="noopener noreferrer">
+                Google Maps
+              </a>
+            </p>
           </div>
         </div>
       </div>

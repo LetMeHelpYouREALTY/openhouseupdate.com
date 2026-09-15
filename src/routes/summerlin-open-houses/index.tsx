@@ -3,7 +3,6 @@ import type { DocumentHead } from '@builder.io/qwik-city'
 import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
   useVisibleTask$(() => {
@@ -42,16 +41,18 @@ export default component$(() => {
         }
         
         .location-hero {
+          position: relative;
+          overflow: hidden;
           text-align: center;
           margin-bottom: 3rem;
           padding: 4rem 1.5rem;
-          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(58, 141, 222, 0.55) 100%),
-            url('${getSiteImageUrl('summerlin')}');
-          background-size: cover;
-          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .location-hero > :not(figure) {
+          position: relative;
+          z-index: 1;
         }
         
         .location-hero h1 {
@@ -98,6 +99,12 @@ export default component$(() => {
       `}</style>
 
       <div class="location-hero">
+        <HeadingImage
+          imageKey="summerlin"
+          heading="Summerlin Open Houses"
+          variant="background"
+          priority
+        />
         <h1>Summerlin Open Houses</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Find open houses in Summerlin, Las Vegas's premier master-planned community
@@ -118,17 +125,17 @@ export default component$(() => {
         />
         <p>
           Summerlin open houses offer the opportunity to explore Las Vegas's premier master-planned
-          community. Located in zip codes 89134, 89135, 89138, and 89144, Summerlin features luxury
-          homes, top-rated schools, and world-class amenities. Weekend open houses in Summerlin are
-          popular, especially in communities like The Ridges, The Summit, and established
-          neighborhoods throughout the area.
+          community. Located in zip codes 89134, 89135, 89138, and 89144, Summerlin features
+          1,800–4,000+ sq ft homes, Palo Verde High School, West Career and Technical Academy,
+          Downtown Summerlin, and Red Rock Canyon trailheads. Weekend open houses are common in The
+          Ridges, The Summit, and villages throughout 89134–89144.
         </p>
         <p>
           Dr. Jan Duffy, an Open House Expert, hosts numerous open houses throughout Summerlin,
           providing visitors with expert insights about neighborhoods, schools, amenities, and
-          market conditions. Whether you're looking for a luxury estate in The Ridges or a family
-          home in an established Summerlin neighborhood, attending open houses helps you explore
-          your options.
+          market conditions. Whether you're looking for a luxury estate in The Ridges or a
+          2,000–3,000 sq ft home elsewhere in Summerlin, weekend open houses let you compare
+          inventory in person.
         </p>
       </div>
 

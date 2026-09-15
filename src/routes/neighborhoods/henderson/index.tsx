@@ -3,10 +3,8 @@ import type { DocumentHead } from '@builder.io/qwik-city'
 import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
-  const heroImage = getSiteImageUrl('henderson')
   return (
     <div class="neighborhood-page">
       <style>{`
@@ -17,16 +15,18 @@ export default component$(() => {
         }
         
         .neighborhood-hero {
+          position: relative;
+          overflow: hidden;
           text-align: center;
           margin-bottom: 3rem;
           padding: 4rem 1.5rem;
-          background: linear-gradient(135deg, rgba(10, 37, 64, 0.78) 0%, rgba(22, 178, 134, 0.5) 100%),
-            url('${heroImage}');
-          background-size: cover;
-          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .neighborhood-hero > :not(figure) {
+          position: relative;
+          z-index: 1;
         }
         
         .neighborhood-hero h1 {
@@ -138,6 +138,12 @@ export default component$(() => {
       `}</style>
 
       <div class="neighborhood-hero">
+        <HeadingImage
+          imageKey="henderson"
+          heading="Henderson Real Estate - Las Vegas"
+          variant="background"
+          priority
+        />
         <h1>Henderson Real Estate - Las Vegas</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Weekend open houses in Green Valley, Anthem, Seven Hills, and Lake Las Vegas

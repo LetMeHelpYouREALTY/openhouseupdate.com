@@ -155,19 +155,15 @@ export default component$<EnhancedStructuredDataProps>(
                 },
               ],
             },
-            sameAs: [
-              'https://www.facebook.com/drjanetduffy',
-              'https://www.linkedin.com/in/drjanetduffy',
-              'https://www.instagram.com/drjanetduffy',
-            ],
+            sameAs: [...business.sameAs],
           }
 
         case 'RealEstateService':
           return {
             '@context': 'https://schema.org',
             '@type': 'RealEstateService',
-            name: 'Open House Update - Las Vegas Real Estate',
-            alternateName: 'Dr. Jan Duffy Real Estate',
+            name: 'Open House Marketplace - Las Vegas Real Estate',
+            alternateName: [business.siteName, business.agentName],
             description:
               'Professional real estate services in Las Vegas, Nevada. Expert guidance for buying and selling homes.',
             url: business.siteUrl,
@@ -229,9 +225,9 @@ export default component$<EnhancedStructuredDataProps>(
           return {
             '@context': 'https://schema.org',
             '@type': 'WebSite',
-            name: 'Open House Update',
-            alternateName: 'Dr. Jan Duffy Real Estate',
-            url: 'https://www.openhouseupdate.com',
+            name: business.gbpName,
+            alternateName: business.siteName,
+            url: business.siteUrl,
             description:
               'Las Vegas real estate services - Find your perfect home with expert guidance',
             inLanguage: 'en-US',
@@ -250,7 +246,7 @@ export default component$<EnhancedStructuredDataProps>(
             },
             mainEntity: {
               '@type': 'RealEstateService',
-              name: 'Open House Update - Las Vegas Real Estate',
+              name: 'Open House Marketplace - Las Vegas Real Estate',
             },
           }
 
@@ -278,11 +274,7 @@ export default component$<EnhancedStructuredDataProps>(
               email: business.email,
               availableLanguage: ['English', 'Spanish'],
             },
-            sameAs: [
-              'https://www.facebook.com/drjanetduffy',
-              'https://www.linkedin.com/in/drjanetduffy',
-              'https://www.instagram.com/drjanetduffy',
-            ],
+            sameAs: [...business.sameAs],
           }
 
         case 'LocalBusiness':
@@ -416,16 +408,7 @@ export default component$<EnhancedStructuredDataProps>(
 
         case 'AggregateRating': {
           if (reviews.length === 0) {
-            // Default aggregate rating
-            return {
-              '@context': 'https://schema.org',
-              '@type': 'AggregateRating',
-              '@id': 'https://www.openhouseupdate.com/#aggregateRating',
-              ratingValue: '4.9',
-              reviewCount: '127',
-              bestRating: '5',
-              worstRating: '1',
-            }
+            return null
           }
           const totalRating = reviews.reduce((sum, r) => sum + r.rating, 0)
           const averageRating = totalRating / reviews.length

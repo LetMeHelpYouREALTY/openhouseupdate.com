@@ -1,11 +1,18 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import HeadingImage from '~/components/media/heading-image'
 
 export default component$(() => {
   return (
     <section class="terms-of-service-page">
       <div class="container mx-auto px-6 py-16 max-w-4xl">
         <h1 class="text-4xl font-bold text-gray-900 mb-8">Terms of Service</h1>
+        <HeadingImage
+          imageKey="about"
+          heading="Terms of Service"
+          variant="section"
+          alt="Open House Marketplace office for Las Vegas weekend open houses"
+        />
 
         <div class="prose prose-lg max-w-none">
           <p class="text-gray-600 mb-8">

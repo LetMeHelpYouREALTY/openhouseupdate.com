@@ -127,6 +127,11 @@ export default component$(() => {
             <h4 class={styles.footerSubtitle}>Popular Neighborhoods</h4>
             <ul class={styles.footerLinks}>
               <li>
+                <a href="/neighborhoods/" class={styles.footerLink}>
+                  All Neighborhoods
+                </a>
+              </li>
+              <li>
                 <a href="/neighborhoods/summerlin" class={styles.footerLink}>
                   Summerlin
                 </a>
@@ -134,6 +139,11 @@ export default component$(() => {
               <li>
                 <a href="/neighborhoods/henderson" class={styles.footerLink}>
                   Henderson
+                </a>
+              </li>
+              <li>
+                <a href="/neighborhoods/green-valley" class={styles.footerLink}>
+                  Green Valley
                 </a>
               </li>
               <li>

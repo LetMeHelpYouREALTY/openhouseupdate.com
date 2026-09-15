@@ -144,10 +144,9 @@ export default component$(() => {
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Schools & Education</h3>
             <p class="text-lg text-gray-700 mb-4">
-              Summerlin schools consistently rank among the top in Clark County School District,
-              with many rated 8-10/10. The area offers both public and private school options with
-              strong academic programs and parent involvement. School quality is a major factor
-              driving Summerlin home values.
+              Summerlin public campuses include Palo Verde High School and West Career and Technical
+              Academy. Confirm the campus printed on each listing rather than using a neighborhood
+              rating.
             </p>
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Amenities & Lifestyle</h3>

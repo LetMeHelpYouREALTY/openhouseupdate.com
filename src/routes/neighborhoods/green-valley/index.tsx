@@ -3,10 +3,8 @@ import type { DocumentHead } from '@builder.io/qwik-city'
 import HeadingImage from '~/components/media/heading-image'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 export default component$(() => {
-  const heroImage = getSiteImageUrl('green-valley')
   return (
     <div class="neighborhood-page">
       <style>{`
@@ -17,16 +15,18 @@ export default component$(() => {
         }
         
         .neighborhood-hero {
+          position: relative;
+          overflow: hidden;
           text-align: center;
           margin-bottom: 3rem;
           padding: 4rem 1.5rem;
-          background: linear-gradient(135deg, rgba(22, 178, 134, 0.7) 0%, rgba(58, 141, 222, 0.5) 100%),
-            url('${heroImage}');
-          background-size: cover;
-          background-position: center;
           color: white;
           border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .neighborhood-hero > :not(figure) {
+          position: relative;
+          z-index: 1;
         }
         
         .neighborhood-hero h1 {
@@ -138,6 +138,12 @@ export default component$(() => {
       `}</style>
 
       <div class="neighborhood-hero">
+        <HeadingImage
+          imageKey="green-valley"
+          heading="Green Valley Real Estate - Henderson"
+          variant="background"
+          priority
+        />
         <h1>Green Valley Real Estate - Henderson</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Upscale Henderson community near Green Valley Ranch, Coronado High School, and zip codes
@@ -150,9 +156,9 @@ export default component$(() => {
           <h2>About Green Valley</h2>
           <HeadingImage imageKey="green-valley" heading="About Green Valley" variant="section" />
           <p>
-            Green Valley, located in Henderson zip codes 89012 and 89014, is an established village
-            around Green Valley Ranch. Paseos, parks, and the 215 Beltway put most streets within a
-            15–20 minute drive of the Las Vegas Strip. Tour weekend open houses with Dr. Jan Duffy.
+            Green Valley, located in Henderson zip codes 89012 and 89014, sits around Green Valley
+            Ranch. Paseos, parks, and the 215 Beltway put most streets within a 15–20 minute drive
+            of the Las Vegas Strip. Tour weekend open houses with Dr. Jan Duffy.
           </p>
 
           <h3>Why Choose Green Valley?</h3>

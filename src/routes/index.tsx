@@ -5,6 +5,8 @@ import HeadingImage from '~/components/media/heading-image'
 import PerformanceMonitor from '~/components/performance/performance-monitor'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
+import ClientTestimonials from '~/components/testimonials/client-testimonials'
+import { business } from '~/config/business'
 
 export default component$(() => {
   const showAdvanced = useSignal(true)
@@ -481,8 +483,9 @@ export default component$(() => {
               Why Choose Dr. Jan Duffy as Your Open House Expert?
             </h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-              With over 20 years of Las Vegas real estate experience, Dr. Jan Duffy has mastered the
-              art of open house marketing, lead generation, and buyer conversion.
+              With Las Vegas open-house hosting across Summerlin, Henderson, and North Las Vegas,
+              Dr. Jan Duffy focuses buyers on weekend tours, named school campuses, and square
+              footage — not invented rankings.
             </p>
           </div>
 
@@ -495,9 +498,8 @@ export default component$(() => {
               />
               <h3 class="card-title">Proven Conversion Rates</h3>
               <p class="card-description">
-                Dr. Jan Duffy consistently achieves 15-20% higher conversion rates at open houses
-                compared to industry averages, with over 300 successful transactions in Las Vegas
-                Valley.
+                Weekend open-house hosting with follow-up on every sign-in so Summerlin, Henderson,
+                and North Las Vegas buyers can tour the same week.
               </p>
             </div>
 
@@ -531,23 +533,25 @@ export default component$(() => {
           <div class="specialist-stats">
             <div class="stats-grid">
               <div class="stat-item">
-                <div class="stat-number">300+</div>
-                <div class="stat-label">Successful Transactions</div>
+                <div class="stat-number">{business.license}</div>
+                <div class="stat-label">Nevada License</div>
               </div>
               <div class="stat-item">
-                <div class="stat-number">20+</div>
-                <div class="stat-label">Years Experience</div>
+                <div class="stat-number">9–5</div>
+                <div class="stat-label">Daily Office Hours</div>
               </div>
               <div class="stat-item">
-                <div class="stat-number">95%</div>
-                <div class="stat-label">Client Satisfaction</div>
+                <div class="stat-number">89138</div>
+                <div class="stat-label">760 Windover Ct</div>
               </div>
               <div class="stat-item">
-                <div class="stat-number">15</div>
-                <div class="stat-label">Las Vegas Neighborhoods</div>
+                <div class="stat-number">6</div>
+                <div class="stat-label">Valley Neighborhood Hubs</div>
               </div>
             </div>
           </div>
+
+          <ClientTestimonials />
 
           <div class="specialist-expertise">
             <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">

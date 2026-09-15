@@ -134,4 +134,36 @@
       <image:caption>Las Vegas Valley skyline used for market analysis articles</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/neighborhoods/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-neighborhood-expertise.jpg</image:loc>
+      <image:title>Las Vegas Neighborhood Open Houses</image:title>
+      <image:caption>Las Vegas Valley neighborhoods including trails, golf communities, and Red Rock views</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/faq/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-about-agent.jpg</image:loc>
+      <image:title>Frequently Asked Questions</image:title>
+      <image:caption>Open House Marketplace office for Las Vegas weekend open house questions</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/sitemap/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-map-search.jpg</image:loc>
+      <image:title>Site Map</image:title>
+      <image:caption>Map search tools for Las Vegas Valley open houses and homes for sale</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.openhouseupdate.com/summerlin-open-houses/</loc>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-summerlin-homes.jpg</image:loc>
+      <image:title>Summerlin Open Houses</image:title>
+      <image:caption>Summerlin Las Vegas homes along Red Rock Canyon in zip codes 89134 to 89138</image:caption>
+    </image:image>
+  </url>
 </urlset>
