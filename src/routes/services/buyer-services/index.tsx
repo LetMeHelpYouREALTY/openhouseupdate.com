@@ -260,7 +260,7 @@ export default component$(() => {
           <HeadingImage imageKey="map-search" heading="Property Search & Matching" variant="card" />
           <h3>Property Search & Matching</h3>
           <p>
-            Find the perfect home that matches your criteria, lifestyle, and budget with our
+            Find a home that matches square footage, commute, HVAC age, and budget with our
             comprehensive search services.
           </p>
           <ul>
@@ -396,8 +396,8 @@ export default component$(() => {
           <div class="process-step">
             <h3>Property Search</h3>
             <p>
-              Set up custom searches and alerts to find properties that match your criteria and
-              lifestyle.
+              Set up custom searches and alerts to find properties that match your criteria,
+              commute, and budget.
             </p>
           </div>
 
@@ -436,6 +436,11 @@ export default component$(() => {
       </div>
 
       <div class="cta-section">
+        <HeadingImage
+          imageKey="contact"
+          heading="Ready to Start Your Home Search?"
+          variant="section"
+        />
         <h2>Ready to Start Your Home Search?</h2>
         <p>
           Let Dr. Jan Duffy guide you through the entire home buying process with personalized

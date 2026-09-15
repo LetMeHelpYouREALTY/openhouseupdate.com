@@ -562,6 +562,7 @@ export default component$(() => {
       </div>
 
       <div class="cta-section">
+        <HeadingImage imageKey="contact" heading="Ready to Sell Your Home?" variant="section" />
         <h2>Ready to Sell Your Home?</h2>
         <p>
           Let Dr. Jan Duffy help you maximize your property's value and achieve a successful sale

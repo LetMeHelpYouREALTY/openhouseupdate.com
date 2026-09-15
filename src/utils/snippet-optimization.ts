@@ -188,7 +188,7 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
   summerlin: {
     title: 'Summerlin Real Estate - Homes for Sale | Dr. Jan Duffy',
     description:
-      'Find your dream home in Summerlin, Las Vegas. Browse Summerlin homes for sale, learn about neighborhoods, and work with Dr. Jan Duffy for expert guidance.',
+      'Tour Summerlin open houses in 89134–89144. Compare Palo Verde High, Red Rock Canyon access, square footage, and list prices with Dr. Jan Duffy.',
     keywords: [
       'Summerlin real estate',
       'Summerlin homes for sale',

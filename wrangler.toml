@@ -1,10 +1,19 @@
 name = "openhouseupdate-images"
+main = "workers/images.js"
 compatibility_date = "2026-09-14"
-account_id = ""
+workers_dev = true
 
-# R2 holds production images. Git /public/images is the backup.
-# Do not orange-cloud the Vercel apex; serve this bucket on a separate
-# hostname such as images.openhouseupdate.com (DNS only / custom domain on R2).
-[[r2_buckets]]
-binding = "IMAGES"
-bucket_name = "openhouseupdate-images"
+# Git JPEGs in public/images are copied onto Cloudflare as Worker static assets.
+# That makes Cloudflare the image origin. The same files stay in git as backup.
+# Do not orange-cloud the Vercel apex. After claiming the account, attach a
+# DNS-only custom domain such as images.openhouseupdate.com and set
+# PUBLIC_CLOUDFLARE_IMAGES_BASE on Vercel.
+[assets]
+directory = "./public/images"
+binding = "ASSETS"
+run_worker_first = true
+
+# Optional after a claimed Cloudflare account (R2 is not available on temporary preview accounts):
+# [[r2_buckets]]
+# binding = "IMAGES"
+# bucket_name = "openhouseupdate-images"

@@ -216,15 +216,20 @@ export default component$(() => {
           </p>
 
           <h3>Search Summerlin Properties</h3>
+          <HeadingImage
+            imageKey="weekend-open-houses"
+            heading="Search Summerlin Properties"
+            variant="section"
+          />
           <p>
-            Ready to find your dream home in Summerlin? Use our advanced search to browse available
-            properties, view open houses, and get expert guidance from Dr. Jan Duffy, your Summerlin
-            real estate specialist.
+            Ready to tour Summerlin listings in 89134–89144? Use our advanced search to browse
+            available properties, view open houses, and get expert guidance from Dr. Jan Duffy.
           </p>
         </div>
 
         <div class="sidebar">
           <div class="info-card">
+            <HeadingImage imageKey="summerlin" heading="Summerlin Quick Facts" variant="card" />
             <h3>Quick Facts</h3>
             <div class="stat-grid">
               <div class="stat-item">
@@ -256,6 +261,7 @@ export default component$(() => {
           </div>
 
           <div class="info-card">
+            <HeadingImage imageKey="contact" heading="Contact Dr. Jan Duffy" variant="card" />
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert Summerlin real estate guidance</p>
             <p>
@@ -291,7 +297,7 @@ export default component$(() => {
           {
             title: 'Green Valley Real Estate',
             url: '/neighborhoods/green-valley/',
-            description: 'Upscale Henderson community with luxury homes',
+            description: 'Green Valley Ranch, Coronado High, and 89012–89014 listings',
           },
           {
             title: 'Search All Properties',

@@ -113,6 +113,11 @@ export default component$(() => {
 
         {/* Related Topics */}
         <div class="max-w-4xl mx-auto">
+          <HeadingImage
+            imageKey="people-also-ask"
+            heading="Explore More Topics"
+            variant="section"
+          />
           <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">Explore More Topics</h2>
           <div class="grid md:grid-cols-3 gap-6">
             <a

@@ -22,6 +22,7 @@ export default component$(() => {
           <div class="space-y-8">
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
+              <HeadingImage imageKey="about" heading="Acceptance of Terms" variant="section" />
               <p class="text-gray-600">
                 By accessing and using Open House Update ("the Website"), you accept and agree to be
                 bound by the terms and provision of this agreement. If you do not agree to abide by
@@ -156,6 +157,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">13. Contact Information</h2>
+              <HeadingImage imageKey="contact" heading="Contact Information" variant="section" />
               <p class="text-gray-600 mb-4">
                 If you have any questions about these Terms of Service, please contact us:
               </p>

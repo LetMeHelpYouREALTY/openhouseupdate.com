@@ -262,6 +262,11 @@ export default component$(() => {
 
         <div class="sidebar">
           <div class="info-card">
+            <HeadingImage
+              imageKey="north-las-vegas"
+              heading="North Las Vegas Quick Facts"
+              variant="card"
+            />
             <h3>Quick Facts</h3>
             <div class="stat-grid">
               <div class="stat-item">
@@ -293,6 +298,7 @@ export default component$(() => {
           </div>
 
           <div class="info-card">
+            <HeadingImage imageKey="contact" heading="Contact Dr. Jan Duffy" variant="card" />
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert North Las Vegas real estate guidance</p>
             <p>
@@ -328,7 +334,7 @@ export default component$(() => {
           {
             title: 'Green Valley Real Estate',
             url: '/neighborhoods/green-valley/',
-            description: 'Upscale Henderson community',
+            description: 'Green Valley Ranch, Coronado High, and 89012–89014 listings',
           },
           {
             title: 'Search All Properties',

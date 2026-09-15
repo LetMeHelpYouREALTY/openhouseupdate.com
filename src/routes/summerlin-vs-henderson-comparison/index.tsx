@@ -120,6 +120,7 @@ export default component$(() => {
           <HeadingImage imageKey="summerlin" heading="Summerlin Overview" variant="section" />
           <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
             <h3 class="text-2xl font-semibold text-gray-900 mb-3">Location & Zip Codes</h3>
+            <HeadingImage imageKey="map-search" heading="Location & Zip Codes" variant="section" />
             <p class="text-lg text-gray-700 mb-4">
               Summerlin is located in the western part of Las Vegas Valley, covering zip codes
               89134, 89135, 89138, and 89144. It's a master-planned community with Downtown
@@ -127,10 +128,11 @@ export default component$(() => {
             </p>
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Housing & Pricing</h3>
+            <HeadingImage imageKey="home-valuation" heading="Housing & Pricing" variant="section" />
             <p class="text-lg text-gray-700 mb-4">Summerlin offers diverse housing options:</p>
             <ul class="list-disc pl-6 text-lg text-gray-700 mb-4">
               <li>
-                <strong>Entry-Level</strong>: $400,000-$600,000 in established areas
+                <strong>Entry-Level</strong>: $400,000-$600,000 in 89134–89138
               </li>
               <li>
                 <strong>Mid-Range</strong>: $600,000-$1,000,000 in prime locations
@@ -145,13 +147,19 @@ export default component$(() => {
             </p>
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Schools & Education</h3>
+            <HeadingImage imageKey="map-search" heading="Schools & Education" variant="section" />
             <p class="text-lg text-gray-700 mb-4">
               Summerlin public campuses include Palo Verde High School and West Career and Technical
               Academy. Confirm the campus printed on each listing rather than using a neighborhood
               rating.
             </p>
 
-            <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Amenities & Lifestyle</h3>
+            <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Amenities & Recreation</h3>
+            <HeadingImage
+              imageKey="neighborhood-expertise"
+              heading="Amenities & Recreation"
+              variant="section"
+            />
             <ul class="list-disc pl-6 text-lg text-gray-700 mb-4">
               <li>Downtown Summerlin shopping and entertainment</li>
               <li>Red Rock Canyon National Conservation Area access</li>
@@ -162,6 +170,7 @@ export default component$(() => {
             </ul>
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Fit if you want</h3>
+            <HeadingImage imageKey="comparison" heading="Fit if you want" variant="section" />
             <p class="text-lg text-gray-700 mb-4">
               Summerlin is a fit if you want Red Rock Canyon access, Downtown Summerlin retail, and
               campuses such as Palo Verde High. Budget for $600,000+ on many mid-range listings.
@@ -172,6 +181,7 @@ export default component$(() => {
           <HeadingImage imageKey="henderson" heading="Henderson Overview" variant="section" />
           <div class="bg-green-50 border-l-4 border-green-500 p-6 mb-6">
             <h3 class="text-2xl font-semibold text-gray-900 mb-3">Location & Zip Codes</h3>
+            <HeadingImage imageKey="map-search" heading="Location & Zip Codes" variant="section" />
             <p class="text-lg text-gray-700 mb-4">
               Henderson is located southeast of Las Vegas, covering zip codes 89002, 89011, 89012,
               89014, 89015, 89052, and 89074. It's Nevada's second-largest city with its own
@@ -179,6 +189,7 @@ export default component$(() => {
             </p>
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Housing & Pricing</h3>
+            <HeadingImage imageKey="home-valuation" heading="Housing & Pricing" variant="section" />
             <p class="text-lg text-gray-700 mb-4">
               Henderson offers diverse housing across different areas:
             </p>
@@ -205,13 +216,19 @@ export default component$(() => {
             </ul>
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Schools & Education</h3>
+            <HeadingImage imageKey="map-search" heading="Schools & Education" variant="section" />
             <p class="text-lg text-gray-700 mb-4">
               Henderson schools, particularly in Green Valley (89012, 89014) and Seven Hills (89052,
               89074), include Coronado High School. Amenities include Green Valley Ranch, Lake Las
               Vegas, and I-215 / I-515 access.
             </p>
 
-            <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Amenities & Lifestyle</h3>
+            <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Amenities & Recreation</h3>
+            <HeadingImage
+              imageKey="neighborhood-expertise"
+              heading="Amenities & Recreation"
+              variant="section"
+            />
             <ul class="list-disc pl-6 text-lg text-gray-700 mb-4">
               <li>Green Valley Ranch shopping and entertainment</li>
               <li>Parks, trails, and Lake Las Vegas recreation</li>
@@ -222,6 +239,7 @@ export default component$(() => {
             </ul>
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Fit if you want</h3>
+            <HeadingImage imageKey="comparison" heading="Fit if you want" variant="section" />
             <p class="text-lg text-gray-700 mb-4">
               Henderson is a fit if you want Coronado High or Green Valley High, Green Valley Ranch
               or Lake Las Vegas amenities, and typically lower average prices than 89134–89138.
@@ -234,6 +252,7 @@ export default component$(() => {
           <div class="grid md:grid-cols-2 gap-6 mb-8">
             <div class="bg-white border-2 border-blue-200 rounded-lg p-6">
               <h3 class="text-2xl font-bold text-blue-600 mb-4">Choose Summerlin If:</h3>
+              <HeadingImage imageKey="summerlin" heading="Choose Summerlin If" variant="section" />
               <ul class="list-disc pl-6 text-gray-700">
                 <li>You want premier master-planned community</li>
                 <li>Budget allows $600,000+ for mid-range options</li>
@@ -246,6 +265,7 @@ export default component$(() => {
 
             <div class="bg-white border-2 border-green-200 rounded-lg p-6">
               <h3 class="text-2xl font-bold text-green-600 mb-4">Choose Henderson If:</h3>
+              <HeadingImage imageKey="henderson" heading="Choose Henderson If" variant="section" />
               <ul class="list-disc pl-6 text-gray-700">
                 <li>You want Coronado High or Green Valley High campuses</li>
                 <li>Budget is $500,000-$700,000 for quality homes</li>
@@ -260,6 +280,11 @@ export default component$(() => {
           <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">
             Market Comparison (November 2025)
           </h2>
+          <HeadingImage
+            imageKey="market-analysis"
+            heading="Market Comparison (November 2025)"
+            variant="section"
+          />
           <p class="text-lg text-gray-700 mb-4">
             Both Summerlin (zip codes 89134-89144) and Henderson (89002-89015) maintain strong
             property values with steady appreciation. Market conditions as of November 2025:

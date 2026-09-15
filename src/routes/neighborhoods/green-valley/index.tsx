@@ -146,8 +146,7 @@ export default component$(() => {
         />
         <h1>Green Valley Real Estate - Henderson</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
-          Upscale Henderson community near Green Valley Ranch, Coronado High School, and zip codes
-          89012–89014
+          Henderson homes near Green Valley Ranch, Coronado High School, and zip codes 89012–89014
         </p>
       </div>
 
@@ -247,6 +246,11 @@ export default component$(() => {
 
         <div class="sidebar">
           <div class="info-card">
+            <HeadingImage
+              imageKey="green-valley"
+              heading="Green Valley Quick Facts"
+              variant="card"
+            />
             <h3>Quick Facts</h3>
             <div class="stat-grid">
               <div class="stat-item">
@@ -254,12 +258,12 @@ export default component$(() => {
                 <div class="stat-label">Avg Home Price</div>
               </div>
               <div class="stat-item">
-                <div class="stat-value">4.8/5</div>
-                <div class="stat-label">School Rating</div>
+                <div class="stat-value">Coronado</div>
+                <div class="stat-label">Named High School</div>
               </div>
               <div class="stat-item">
-                <div class="stat-value">Upscale</div>
-                <div class="stat-label">Community</div>
+                <div class="stat-value">GVR</div>
+                <div class="stat-label">Green Valley Ranch</div>
               </div>
               <div class="stat-item">
                 <div class="stat-value">Est.</div>
@@ -278,6 +282,7 @@ export default component$(() => {
           </div>
 
           <div class="info-card">
+            <HeadingImage imageKey="contact" heading="Contact Dr. Jan Duffy" variant="card" />
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert Green Valley real estate guidance</p>
             <p>
@@ -306,7 +311,7 @@ export default component$(() => {
           {
             title: 'Summerlin Properties',
             url: '/neighborhoods/summerlin/',
-            description: 'Premier master-planned community',
+            description: 'Red Rock Canyon views and Downtown Summerlin retail in 89134–89144',
           },
           {
             title: 'Seven Hills Real Estate',

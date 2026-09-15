@@ -1,17 +1,44 @@
-name: Upload Cloudflare Images
+name: Cloudflare Image Delivery
 
 on:
   push:
     branches: [main]
     paths:
       - 'public/images/**'
+      - 'workers/images.js'
+      - 'wrangler.toml'
       - 'scripts/upload-cloudflare-images.mjs'
       - '.github/workflows/cloudflare-images.yml'
   workflow_dispatch:
 
 jobs:
-  upload:
-    name: Upload git image backups to Cloudflare
+  deploy-worker:
+    name: Deploy Cloudflare image Worker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Deploy Worker with git image assets
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "Cloudflare credentials not set. Skipping Worker deploy."
+            echo "Git backups remain in public/images/."
+            exit 0
+          fi
+          npm install -g wrangler@4
+          wrangler deploy --config wrangler.toml
+
+  upload-images-api:
+    name: Upload git image backups to Cloudflare Images
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

@@ -93,7 +93,7 @@ Contact Dr. Jan Duffy at (702) 200-3422 for a personalized market analysis of yo
     content: `
 # First-Time Homebuyer Guide: Las Vegas Edition
 
-Buying your first home in Las Vegas is an exciting journey! This comprehensive guide walks you through every step, from getting pre-approved to closing on your dream home.
+Buying your first home in Las Vegas is an exciting journey! This comprehensive guide walks you through every step, from getting pre-approved to closing on a listing.
 
 ## Step 1: Get Pre-Approved
 

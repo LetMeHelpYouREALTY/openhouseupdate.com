@@ -196,6 +196,11 @@ export default component$(() => {
       </div>
 
       <div class="xml-sitemap">
+        <HeadingImage
+          imageKey="map-search"
+          heading="XML Sitemap for Search Engines"
+          variant="section"
+        />
         <h3>XML Sitemap for Search Engines</h3>
         <p>For search engines and developers:</p>
         <a href="/sitemap-index.xml" target="_blank" rel="noopener">

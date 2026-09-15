@@ -32,6 +32,7 @@ export default component$(() => {
         {/* Featured Post */}
         {featuredPost && (
           <div class="mb-16">
+            <HeadingImage imageKey="market-analysis" heading="Featured Article" variant="section" />
             <h2 class="text-2xl font-bold text-gray-900 mb-8">Featured Article</h2>
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
               <div class="md:flex">
@@ -68,6 +69,11 @@ export default component$(() => {
 
         {/* Blog Posts Grid */}
         <div class="mb-16">
+          <HeadingImage
+            imageKey="neighborhood-expertise"
+            heading="Latest Articles"
+            variant="section"
+          />
           <h2 class="text-2xl font-bold text-gray-900 mb-8">Latest Articles</h2>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {regularPosts.map((post) => (
@@ -102,6 +108,7 @@ export default component$(() => {
 
         {/* Newsletter Signup */}
         <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-lg shadow-lg p-8 text-white text-center">
+          <HeadingImage imageKey="lead-followup" heading="Stay Updated" variant="section" />
           <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
           <p class="text-xl mb-8 opacity-90">
             Get the latest Las Vegas real estate insights delivered to your inbox.
@@ -124,6 +131,7 @@ export default component$(() => {
 
         {/* Categories */}
         <div class="mt-16">
+          <HeadingImage imageKey="map-search" heading="Browse by Category" variant="section" />
           <h2 class="text-2xl font-bold text-gray-900 mb-8">Browse by Category</h2>
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {['Market Updates', 'Buyer Tips', 'Seller Tips', 'Neighborhoods', 'Investment'].map(
@@ -175,7 +183,7 @@ export default component$(() => {
             {
               title: 'Buyer Services',
               url: '/services/buyer-services',
-              description: 'Expert guidance for buying your dream home in Las Vegas',
+              description: 'Guidance for buying a Las Vegas home, from weekend tours to closing',
             },
             {
               title: 'Seller Services',
