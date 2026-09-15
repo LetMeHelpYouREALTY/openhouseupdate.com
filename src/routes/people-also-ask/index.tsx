@@ -59,6 +59,11 @@ export default component$(() => {
 
         {/* FAQ Accordion */}
         <div class="max-w-4xl mx-auto mb-16">
+          <HeadingImage
+            imageKey="about"
+            heading="Common Las Vegas real estate questions"
+            variant="section"
+          />
           <div class="space-y-4">
             {peopleAlsoAsk.map((faq, index) => (
               <div

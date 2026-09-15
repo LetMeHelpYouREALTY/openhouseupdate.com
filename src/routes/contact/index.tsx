@@ -39,7 +39,13 @@ export default component$(() => {
       <div class="container mx-auto px-6 py-16">
         {/* Hero Section */}
         <div class="text-center mb-16">
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <HeadingImage
+            imageKey="contact"
+            heading="Contact Dr. Jan Duffy"
+            variant="hero"
+            priority
+          />
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 mt-6">
             Contact <span class="text-blue-600">Dr. Jan Duffy</span>
           </h1>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
@@ -49,12 +55,6 @@ export default component$(() => {
             </a>{' '}
             to tour Las Vegas open houses this weekend.
           </p>
-          <HeadingImage
-            imageKey="contact"
-            heading="Contact Dr. Jan Duffy"
-            variant="hero"
-            priority
-          />
         </div>
 
         <div class="grid md:grid-cols-2 gap-12">

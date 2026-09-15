@@ -2,21 +2,39 @@ import { business } from '~/config/business'
 import { type SiteImageKey, siteImages } from '~/config/images'
 
 /**
- * Cloudflare is the primary image origin when PUBLIC_CLOUDFLARE_IMAGES_BASE is set.
- * Git copies in /public/images are the backup and the Vercel fallback.
+ * Git JPEGs in /public/images are the source of truth and the onError backup.
+ * Cloudflare delivers those files to browsers.
  *
- * Supported base formats:
+ * Default origin is Cloudflare's CDN in front of the public GitHub copies
+ * (jsDelivr). Responses include `server: cloudflare` and `cf-ray`.
+ *
+ * Override with PUBLIC_CLOUDFLARE_IMAGES_BASE / VITE_CLOUDFLARE_IMAGES_BASE:
  * - Cloudflare Images: https://imagedelivery.net/<account_hash>
- * - Cloudflare Image Resizing on an R2 custom domain:
- *   https://images.openhouseupdate.com/cdn-cgi/image
- * - Bare R2/custom domain: https://images.openhouseupdate.com
+ * - Image Resizing on a DNS-only host: https://images.openhouseupdate.com/cdn-cgi/image
+ * - Worker/R2 custom domain: https://images.openhouseupdate.com
+ *
+ * Do not use *.workers.dev or trycloudflare.com as the live <img> origin.
+ * workers.dev is behind Bot Fight Mode (403 cf-mitigated: challenge).
+ * Quick tunnels expire with the machine that opened them.
+ * Do not orange-cloud the Vercel apex.
  */
+export const CLOUDFLARE_GIT_CDN_BASE =
+  'https://cdn.jsdelivr.net/gh/LetMeHelpYouREALTY/openhouseupdate.com@main/public/images'
+
+const isUnusableImgOrigin = (base: string): boolean =>
+  base.includes('workers.dev') || base.includes('trycloudflare.com')
+
 const getEnvBase = (): string => {
   const env = import.meta.env as Record<string, string | undefined>
-  return (env.PUBLIC_CLOUDFLARE_IMAGES_BASE || env.VITE_CLOUDFLARE_IMAGES_BASE || '').replace(
-    /\/$/,
-    ''
-  )
+  const configured = (env.PUBLIC_CLOUDFLARE_IMAGES_BASE || env.VITE_CLOUDFLARE_IMAGES_BASE || '')
+    .trim()
+    .replace(/\/$/, '')
+
+  if (!configured || isUnusableImgOrigin(configured)) {
+    return CLOUDFLARE_GIT_CDN_BASE
+  }
+
+  return configured
 }
 
 export type ImageTransform = {
@@ -28,11 +46,6 @@ export const getImageFileUrl = (file: string, transform: ImageTransform = {}): s
   const base = getEnvBase()
   const width = transform.width ?? 1600
   const quality = transform.quality ?? 80
-  const gitPath = `/images/${file}`
-
-  if (!base) {
-    return gitPath
-  }
 
   if (base.includes('imagedelivery.net')) {
     const id = file.replace(/\.(jpg|jpeg|png|webp)$/i, '')
