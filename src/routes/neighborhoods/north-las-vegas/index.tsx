@@ -166,6 +166,11 @@ export default component$(() => {
           </p>
 
           <h3>Why Choose North Las Vegas?</h3>
+          <HeadingImage
+            imageKey="neighborhood-expertise"
+            heading="Why Choose North Las Vegas?"
+            variant="section"
+          />
           <ul>
             <li>
               <strong>Affordability:</strong> More affordable housing options than many Las Vegas
@@ -193,6 +198,11 @@ export default component$(() => {
           </ul>
 
           <h3>Top Communities in North Las Vegas</h3>
+          <HeadingImage
+            imageKey="luxury-open-houses"
+            heading="Top Communities in North Las Vegas"
+            variant="section"
+          />
           <ul>
             <li>
               <strong>Skye Canyon (89084):</strong> Master-planned community with new construction
@@ -211,6 +221,11 @@ export default component$(() => {
           </ul>
 
           <h3>Home Prices in North Las Vegas</h3>
+          <HeadingImage
+            imageKey="home-valuation"
+            heading="Home Prices in North Las Vegas"
+            variant="section"
+          />
           <p>
             North Las Vegas offers some of the most affordable housing in Las Vegas Valley.
             Entry-level homes start around $250,000-$350,000, while mid-range homes typically range
@@ -221,6 +236,11 @@ export default component$(() => {
           </p>
 
           <h3>Schools in North Las Vegas</h3>
+          <HeadingImage
+            imageKey="map-search"
+            heading="Schools in North Las Vegas"
+            variant="section"
+          />
           <p>
             North Las Vegas is served by the Clark County School District, including campuses near
             Skye Canyon (89084) and Centennial Hills (89031). Confirm the specific school listed on
@@ -228,6 +248,11 @@ export default component$(() => {
           </p>
 
           <h3>Growth & Development</h3>
+          <HeadingImage
+            imageKey="north-las-vegas"
+            heading="Growth & Development"
+            variant="section"
+          />
           <p>
             North Las Vegas is experiencing significant growth and development, with new shopping
             centers, restaurants, and services opening regularly. This growth brings improved
@@ -263,7 +288,7 @@ export default component$(() => {
               <strong>Population:</strong> ~260,000
             </p>
             <p>
-              <strong>Best For:</strong> First-time buyers, families seeking value
+              <strong>Typical inventory:</strong> Newer construction from the $250Ks in 89030–89086
             </p>
           </div>
 

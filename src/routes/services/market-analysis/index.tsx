@@ -65,15 +65,23 @@ export default component$(() => {
         .analysis-card {
           background: white;
           border-radius: 12px;
-          padding: 2rem;
+          padding: 0 0 2rem;
           box-shadow: 0 4px 20px rgba(0,0,0,0.08);
           transition: transform 0.3s ease, box-shadow 0.3s ease;
           border-top: 4px solid #3A8DDE;
+          overflow: hidden;
         }
         
         .analysis-card:hover {
           transform: translateY(-4px);
           box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .analysis-card h3,
+        .analysis-card p,
+        .analysis-card ul {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
         }
         
         .analysis-card h3 {
@@ -227,10 +235,11 @@ export default component$(() => {
         .neighborhood-card {
           background: white;
           border-radius: 12px;
-          padding: 2rem;
+          padding: 0 0 1.5rem;
           text-align: center;
           box-shadow: 0 4px 20px rgba(0,0,0,0.08);
           transition: transform 0.3s ease;
+          overflow: hidden;
         }
         
         .neighborhood-card:hover {
@@ -241,7 +250,8 @@ export default component$(() => {
           color: #0A2540;
           font-size: 1.3rem;
           font-weight: 600;
-          margin-bottom: 1rem;
+          margin: 1rem 0;
+          padding: 0 1rem;
         }
         
         .neighborhood-card .avg-price {
@@ -366,7 +376,12 @@ export default component$(() => {
 
       <div class="analysis-overview">
         <div class="analysis-card">
-          <h3>📊 Monthly Market Reports</h3>
+          <HeadingImage
+            imageKey="market-analysis"
+            heading="Monthly Market Reports"
+            variant="card"
+          />
+          <h3>Monthly Market Reports</h3>
           <p>
             Comprehensive monthly reports covering market trends, inventory levels, and pricing
             movements across Las Vegas.
@@ -381,7 +396,12 @@ export default component$(() => {
         </div>
 
         <div class="analysis-card">
-          <h3>🏘️ Neighborhood Analysis</h3>
+          <HeadingImage
+            imageKey="neighborhood-expertise"
+            heading="Neighborhood Analysis"
+            variant="card"
+          />
+          <h3>Neighborhood Analysis</h3>
           <p>
             Detailed analysis of specific neighborhoods, including market performance, amenities,
             and investment potential.
@@ -396,7 +416,12 @@ export default component$(() => {
         </div>
 
         <div class="analysis-card">
-          <h3>💰 Investment Analysis</h3>
+          <HeadingImage
+            imageKey="luxury-open-houses"
+            heading="Investment Analysis"
+            variant="card"
+          />
+          <h3>Investment Analysis</h3>
           <p>
             Strategic investment analysis to identify opportunities and assess potential returns in
             the Las Vegas market.
@@ -411,7 +436,8 @@ export default component$(() => {
         </div>
 
         <div class="analysis-card">
-          <h3>📈 Trend Forecasting</h3>
+          <HeadingImage imageKey="conversion-rates" heading="Trend Forecasting" variant="card" />
+          <h3>Trend Forecasting</h3>
           <p>
             Forward-looking analysis to help you anticipate market changes and make proactive
             decisions.
@@ -530,36 +556,42 @@ export default component$(() => {
         <h2>Neighborhood Market Overview</h2>
         <div class="neighborhoods-grid">
           <div class="neighborhood-card">
+            <HeadingImage imageKey="summerlin" heading="Summerlin" variant="card" />
             <h3>Summerlin</h3>
             <div class="avg-price">$785,000</div>
             <div class="trend up">+4.2% this quarter</div>
           </div>
 
           <div class="neighborhood-card">
+            <HeadingImage imageKey="henderson" heading="Henderson" variant="card" />
             <h3>Henderson</h3>
             <div class="avg-price">$625,000</div>
             <div class="trend up">+2.8% this quarter</div>
           </div>
 
           <div class="neighborhood-card">
+            <HeadingImage imageKey="north-las-vegas" heading="North Las Vegas" variant="card" />
             <h3>North Las Vegas</h3>
             <div class="avg-price">$425,000</div>
             <div class="trend up">+3.5% this quarter</div>
           </div>
 
           <div class="neighborhood-card">
+            <HeadingImage imageKey="spring-valley" heading="Spring Valley" variant="card" />
             <h3>Spring Valley</h3>
             <div class="avg-price">$485,000</div>
             <div class="trend up">+2.1% this quarter</div>
           </div>
 
           <div class="neighborhood-card">
+            <HeadingImage imageKey="enterprise" heading="Enterprise" variant="card" />
             <h3>Enterprise</h3>
             <div class="avg-price">$695,000</div>
             <div class="trend up">+3.8% this quarter</div>
           </div>
 
           <div class="neighborhood-card">
+            <HeadingImage imageKey="weekend-open-houses" heading="Downtown" variant="card" />
             <h3>Downtown</h3>
             <div class="avg-price">$385,000</div>
             <div class="trend up">+5.2% this quarter</div>

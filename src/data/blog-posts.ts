@@ -204,7 +204,7 @@ Contact Dr. Jan Duffy at (702) 200-3422 for personalized guidance on buying your
   },
   {
     id: 3,
-    slug: 'top-5-neighborhoods-families-las-vegas',
+    slug: 'las-vegas-neighborhoods-to-tour',
     title: '5 Las Vegas Neighborhoods to Tour: Schools, Commutes, and Amenities',
     excerpt:
       'Compare Summerlin, Green Valley, Seven Hills, Anthem, and Skye Canyon by named schools, square footage, commute times, and amenities.',
@@ -422,7 +422,7 @@ Contact Dr. Jan Duffy at (702) 200-3422 for a professional market analysis and p
     slug: 'investment-properties-las-vegas-2025-outlook',
     title: 'Investment Properties in Las Vegas: 2025 Outlook',
     excerpt:
-      'Analysis of rental market trends and investment opportunities in the Las Vegas area. ROI analysis, best neighborhoods for investors, and market outlook for 2025.',
+      'Analysis of rental market trends and investment opportunities in the Las Vegas area. ROI analysis, lower-entry-price zip codes, and market outlook for 2025.',
     content: `
 # Investment Properties in Las Vegas: 2025 Outlook
 
@@ -625,7 +625,7 @@ Contact Dr. Jan Duffy at (702) 200-3422 for investment property analysis and opp
       'Las Vegas rental market',
     ],
     metaDescription:
-      'Comprehensive guide to investment properties in Las Vegas for 2025. Analysis of rental market, best neighborhoods, ROI factors, and investment strategies.',
+      'Comprehensive guide to investment properties in Las Vegas for 2025. Analysis of rental market, lower-entry-price zip codes, ROI factors, and investment strategies.',
     author: 'Dr. Jan Duffy',
     imageKey: 'luxury-open-houses',
   },

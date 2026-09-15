@@ -276,6 +276,7 @@ export default component$(() => {
       <div class="valuation-content">
         <div class="valuation-info">
           <h2>What You'll Receive</h2>
+          <HeadingImage imageKey="home-valuation" heading="What You'll Receive" variant="section" />
           <ul>
             <li>Detailed Comparative Market Analysis (CMA)</li>
             <li>Current market trends and pricing insights</li>
@@ -286,6 +287,11 @@ export default component$(() => {
           </ul>
 
           <h2>Why Choose Our Valuation?</h2>
+          <HeadingImage
+            imageKey="market-analysis"
+            heading="Why Choose Our Valuation?"
+            variant="section"
+          />
           <ul>
             <li>Local market expertise</li>
             <li>Up-to-date market data</li>

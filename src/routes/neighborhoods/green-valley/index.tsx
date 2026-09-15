@@ -162,6 +162,11 @@ export default component$(() => {
           </p>
 
           <h3>Why Choose Green Valley?</h3>
+          <HeadingImage
+            imageKey="neighborhood-expertise"
+            heading="Why Choose Green Valley?"
+            variant="section"
+          />
           <ul>
             <li>
               <strong>Schools:</strong> Coronado High School and nearby elementary campuses —
@@ -190,6 +195,11 @@ export default component$(() => {
           </ul>
 
           <h3>Green Valley Communities</h3>
+          <HeadingImage
+            imageKey="luxury-open-houses"
+            heading="Green Valley Communities"
+            variant="section"
+          />
           <ul>
             <li>
               <strong>Green Valley Ranch:</strong> Master-planned community with resort-style
@@ -199,12 +209,17 @@ export default component$(() => {
               <strong>Coronado Country Club:</strong> Golf community with championship course
             </li>
             <li>
-              <strong>Various Established Neighborhoods:</strong> Well-maintained communities
-              throughout Green Valley
+              <strong>Various 1980s–2000s streets:</strong> Mature landscaping and 1,800–3,500 sq ft
+              floor plans throughout Green Valley
             </li>
           </ul>
 
           <h3>Home Prices in Green Valley</h3>
+          <HeadingImage
+            imageKey="home-valuation"
+            heading="Home Prices in Green Valley"
+            variant="section"
+          />
           <p>
             Green Valley offers a range of housing options from established mid-range homes to
             luxury properties. Entry-level homes start around $400,000-$500,000, while mid-range
@@ -214,6 +229,7 @@ export default component$(() => {
           </p>
 
           <h3>Schools in Green Valley</h3>
+          <HeadingImage imageKey="map-search" heading="Schools in Green Valley" variant="section" />
           <p>
             Green Valley listings often fall in the Coronado High School attendance area, with
             nearby elementary and middle campuses in the Clark County School District. Confirm the
@@ -221,6 +237,7 @@ export default component$(() => {
           </p>
 
           <h3>Green Valley Ranch</h3>
+          <HeadingImage imageKey="green-valley" heading="Green Valley Ranch" variant="section" />
           <p>
             Green Valley Ranch is a major shopping and entertainment destination featuring premium
             retailers, restaurants, movie theater, and events. This hub provides residents with
@@ -256,7 +273,7 @@ export default component$(() => {
               <strong>City:</strong> Henderson
             </p>
             <p>
-              <strong>Best For:</strong> Families, professionals, luxury buyers
+              <strong>Typical inventory:</strong> 1,800–3,500 sq ft homes near Green Valley Ranch
             </p>
           </div>
 

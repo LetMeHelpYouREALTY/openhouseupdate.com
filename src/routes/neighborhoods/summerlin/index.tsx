@@ -136,6 +136,11 @@ export default component$(() => {
           </p>
 
           <h3>Why Choose Summerlin?</h3>
+          <HeadingImage
+            imageKey="neighborhood-expertise"
+            heading="Why Choose Summerlin?"
+            variant="section"
+          />
           <ul>
             <li>
               <strong>Master-Planned Community:</strong> Parks, trails, and village amenities
@@ -164,6 +169,11 @@ export default component$(() => {
           </ul>
 
           <h3>Home Prices in Summerlin</h3>
+          <HeadingImage
+            imageKey="home-valuation"
+            heading="Home Prices in Summerlin"
+            variant="section"
+          />
           <p>
             Summerlin offers diverse housing options from entry-level homes to luxury estates.
             Prices typically range from $400,000 to over $2 million, with premium communities like
@@ -172,6 +182,11 @@ export default component$(() => {
           </p>
 
           <h3>Top Communities in Summerlin</h3>
+          <HeadingImage
+            imageKey="luxury-open-houses"
+            heading="Top Communities in Summerlin"
+            variant="section"
+          />
           <ul>
             <li>
               <strong>The Ridges:</strong> Ultra-luxury gated community with resort-style living
@@ -187,12 +202,12 @@ export default component$(() => {
               stock
             </li>
             <li>
-              <strong>Trails Village:</strong> Active lifestyle community with extensive trail
-              system
+              <strong>Trails Village:</strong> Village with 200+ miles of connected trails
             </li>
           </ul>
 
           <h3>Schools in Summerlin</h3>
+          <HeadingImage imageKey="map-search" heading="Schools in Summerlin" variant="section" />
           <p>
             Summerlin is served by Clark County School District campuses including Bonner
             Elementary, Goolsby Elementary, Rogich Middle School, and Palo Verde High School, plus

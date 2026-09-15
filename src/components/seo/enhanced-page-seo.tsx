@@ -1,15 +1,13 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
 import { getPageFAQs } from '~/data/page-faqs'
+import { canonicalUrlForPageKey } from '~/lib/canonical'
+import { createSEOOptimizedOG, getPageOGMetadata } from '~/utils/og-seo-optimizer'
 import {
   generateMetaDescription,
   generateTitle,
   getPageSnippet,
 } from '~/utils/snippet-optimization'
-import {
-  createSEOOptimizedOG,
-  getPageOGMetadata,
-} from '~/utils/og-seo-optimizer'
 import EnhancedStructuredData from './enhanced-structured-data'
 import FAQSection from './faq-section'
 
@@ -106,7 +104,7 @@ export const createOptimizedHead = (
     links: [
       {
         rel: 'canonical',
-        href: `https://www.openhouseupdate.com/${pageKey === 'homepage' ? '/' : `${pageKey}/`}`,
+        href: canonicalUrlForPageKey(pageKey),
       },
     ],
   }
