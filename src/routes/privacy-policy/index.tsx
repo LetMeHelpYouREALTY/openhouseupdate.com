@@ -22,6 +22,11 @@ export default component$(() => {
           <div class="space-y-8">
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">1. Information We Collect</h2>
+              <HeadingImage
+                imageKey="lead-followup"
+                heading="Information We Collect"
+                variant="section"
+              />
               <p class="text-gray-600 mb-4">
                 We collect information you provide directly to us, such as when you:
               </p>
@@ -139,6 +144,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">10. Contact Us</h2>
+              <HeadingImage imageKey="contact" heading="Contact Us" variant="section" />
               <p class="text-gray-600 mb-4">
                 If you have any questions about this Privacy Policy, please contact us:
               </p>

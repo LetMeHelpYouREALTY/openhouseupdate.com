@@ -112,6 +112,7 @@ export default component$(() => {
 
         {/* Categories */}
         <div class="mb-16">
+          <HeadingImage imageKey="people-also-ask" heading="Browse by Topic" variant="section" />
           <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">Browse by Topic</h2>
           <div class="grid md:grid-cols-3 gap-6">
             <div class="bg-white rounded-lg shadow-lg p-6 text-center overflow-hidden">

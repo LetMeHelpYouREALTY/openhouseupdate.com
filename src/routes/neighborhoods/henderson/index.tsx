@@ -213,7 +213,8 @@ export default component$(() => {
               properties
             </li>
             <li>
-              <strong>Anthem (89044):</strong> Gated community with strong security and family focus
+              <strong>Anthem (89044):</strong> Gated Anthem listings with clubhouse, golf, and 89044
+              zip code
             </li>
             <li>
               <strong>Inspirada (89044):</strong> Modern master-planned community with new
@@ -257,6 +258,7 @@ export default component$(() => {
 
         <div class="sidebar">
           <div class="info-card">
+            <HeadingImage imageKey="henderson" heading="Henderson Quick Facts" variant="card" />
             <h3>Quick Facts</h3>
             <div class="stat-grid">
               <div class="stat-item">
@@ -264,12 +266,12 @@ export default component$(() => {
                 <div class="stat-label">Avg Home Price</div>
               </div>
               <div class="stat-item">
-                <div class="stat-value">#2</div>
-                <div class="stat-label">Safest City NV</div>
+                <div class="stat-value">I-215</div>
+                <div class="stat-label">Beltway Access</div>
               </div>
               <div class="stat-item">
-                <div class="stat-value">4.6/5</div>
-                <div class="stat-label">School Rating</div>
+                <div class="stat-value">Coronado</div>
+                <div class="stat-label">Named High School</div>
               </div>
               <div class="stat-item">
                 <div class="stat-value">25min</div>
@@ -288,6 +290,7 @@ export default component$(() => {
           </div>
 
           <div class="info-card">
+            <HeadingImage imageKey="contact" heading="Contact Dr. Jan Duffy" variant="card" />
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert Henderson real estate guidance</p>
             <p>

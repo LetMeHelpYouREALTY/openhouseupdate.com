@@ -18,7 +18,7 @@ export default component$<BuilderContentProps>(({ content, className = '' }) => 
   // Render on server-side first, then on client if needed
   useTask$(({ track }) => {
     track(() => content)
-    
+
     if (!content) {
       isLoading.value = false
       return
@@ -54,7 +54,9 @@ export default component$<BuilderContentProps>(({ content, className = '' }) => 
       <div class={`builder-content error ${className}`}>
         <div class="text-center py-8">
           <p class="text-red-600">Error loading content: {error.value}</p>
-          <p class="text-gray-600 text-sm mt-2">Please check that the page is published in Builder.io.</p>
+          <p class="text-gray-600 text-sm mt-2">
+            Please check that the page is published in Builder.io.
+          </p>
         </div>
       </div>
     )
@@ -65,7 +67,9 @@ export default component$<BuilderContentProps>(({ content, className = '' }) => 
       <div class={`builder-content empty ${className}`}>
         <div class="text-center py-8">
           <p class="text-gray-600">No content found for this page.</p>
-          <p class="text-gray-600 text-sm mt-2">Please add content in Builder.io and publish the page.</p>
+          <p class="text-gray-600 text-sm mt-2">
+            Please add content in Builder.io and publish the page.
+          </p>
         </div>
       </div>
     )
@@ -103,12 +107,14 @@ function renderBuilderContent(content: any): string {
 
     if (blocks.length > 0) {
       // Render blocks to HTML
-      return blocks
-        // biome-ignore lint/suspicious/noExplicitAny: Builder.io block structure is dynamic
-        .map((block: any, index: number) => {
-          return renderBlockToHTML(block, index)
-        })
-        .join('')
+      return (
+        blocks
+          // biome-ignore lint/suspicious/noExplicitAny: Builder.io block structure is dynamic
+          .map((block: any, index: number) => {
+            return renderBlockToHTML(block, index)
+          })
+          .join('')
+      )
     }
 
     // If no blocks, check for other content structures

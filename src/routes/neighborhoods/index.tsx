@@ -173,6 +173,11 @@ export default component$(() => {
       </div>
 
       <div class="hub-cta">
+        <HeadingImage
+          imageKey="comparison"
+          heading="Compare inventory in person"
+          variant="section"
+        />
         <h2>Compare inventory in person</h2>
         <p>
           Open House Marketplace does not rank neighborhoods as safest or best for any group.

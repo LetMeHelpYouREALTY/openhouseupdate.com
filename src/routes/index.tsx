@@ -479,6 +479,11 @@ export default component$(() => {
       <section class="specialist-section">
         <div class="container mx-auto px-6 py-16 max-w-6xl">
           <div class="text-center mb-12">
+            <HeadingImage
+              imageKey="about"
+              heading="Why Choose Dr. Jan Duffy as Your Open House Expert?"
+              variant="section"
+            />
             <h2 class="text-4xl font-bold text-gray-900 mb-4">
               Why Choose Dr. Jan Duffy as Your Open House Expert?
             </h2>
@@ -557,6 +562,11 @@ export default component$(() => {
             <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">
               Open House Expert Expertise Areas
             </h3>
+            <HeadingImage
+              imageKey="neighborhood-expertise"
+              heading="Open House Expert Expertise Areas"
+              variant="section"
+            />
             <div class="expertise-grid">
               <div class="expertise-item">
                 <HeadingImage

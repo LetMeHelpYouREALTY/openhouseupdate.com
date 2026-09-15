@@ -42,7 +42,8 @@
     "cache:clean": "pnpm store prune && pnpm cache:clear",
     "deps:update": "pnpm update --interactive --latest",
     "deps:audit": "pnpm audit --audit-level moderate",
-    "images:upload": "node scripts/upload-cloudflare-images.mjs"
+    "images:upload": "node scripts/upload-cloudflare-images.mjs",
+    "images:cf-deploy": "wrangler deploy --config wrangler.toml"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.0.6",

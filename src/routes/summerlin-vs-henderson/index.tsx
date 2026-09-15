@@ -173,6 +173,7 @@ export default component$(() => {
       </div>
 
       <div class="comparison-table">
+        <HeadingImage imageKey="comparison" heading="Quick Comparison" variant="section" />
         <h2 style="margin-bottom: 1.5rem; color: #0A2540;">Quick Comparison</h2>
         <table>
           <thead>
@@ -299,7 +300,7 @@ export default component$(() => {
               <li>Green Valley Ranch, Lake Las Vegas, and city parks</li>
               <li>Diverse communities (Green Valley, Seven Hills, Lake Las Vegas)</li>
               <li>Good value for money</li>
-              <li>Strong community feel</li>
+              <li>Green Valley Ranch, Lake Las Vegas, and city parks</li>
               <li>Access to Lake Las Vegas and outdoor recreation</li>
             </ul>
           </div>
@@ -308,7 +309,7 @@ export default component$(() => {
             <ul>
               <li>Slightly longer commute to Las Vegas (20-30 min)</li>
               <li>Less centralized shopping than Downtown Summerlin</li>
-              <li>School ratings slightly lower than Summerlin</li>
+              <li>Confirm Coronado High or Green Valley High on each MLS sheet</li>
               <li>Older established areas may need updates</li>
             </ul>
           </div>
@@ -324,6 +325,7 @@ export default component$(() => {
         />
 
         <h3>Choose Summerlin If:</h3>
+        <HeadingImage imageKey="summerlin" heading="Choose Summerlin If" variant="section" />
         <ul>
           <li>You want Palo Verde High / West Career and Technical Academy campuses</li>
           <li>Budget allows for $650K+ home prices</li>
@@ -334,6 +336,7 @@ export default component$(() => {
         </ul>
 
         <h3>Choose Henderson If:</h3>
+        <HeadingImage imageKey="henderson" heading="Choose Henderson If" variant="section" />
         <ul>
           <li>You want better value and more affordable options</li>
           <li>You want Coronado High or Green Valley High campuses</li>
@@ -346,6 +349,7 @@ export default component$(() => {
 
       <div class="section">
         <h2>Bottom Line</h2>
+        <HeadingImage imageKey="comparison" heading="Bottom Line" variant="section" />
         <p>
           Both Summerlin and Henderson offer trail systems, named high schools, and weekend open
           houses. Summerlin sits against Red Rock with higher average prices; Henderson offers more

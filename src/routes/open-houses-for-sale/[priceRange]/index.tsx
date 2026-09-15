@@ -333,7 +333,7 @@ export default component$(() => {
           </p>
           <p>
             Get expert market insights, comprehensive property analysis, and skilled negotiation
-            support to secure your dream home. Dr. Duffy's experience with {priceInfo.display}{' '}
+            support to close on a listing. Dr. Duffy's experience with {priceInfo.display}{' '}
             properties ensures you understand all aspects of potential purchases, from initial
             search through closing, making your home buying journey smooth and successful.
           </p>
