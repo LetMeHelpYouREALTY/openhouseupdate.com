@@ -228,6 +228,7 @@ export default component$(() => {
             {/* Quick Actions */}
             <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-lg shadow-lg p-8 text-white">
               <h3 class="text-2xl font-bold mb-4">Quick Actions</h3>
+              <HeadingImage imageKey="contact" heading="Quick Actions" variant="section" />
               <div class="space-y-4">
                 <a
                   href={`tel:${business.phoneTel}`}

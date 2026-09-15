@@ -18,14 +18,15 @@ export default component$(() => {
           priority
         />
         <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-          Comparing Las Vegas's two premier communities - Summerlin and Henderson - to help you
-          choose the right neighborhood for your lifestyle and budget.
+          Comparing Las Vegas's two premier communities — Summerlin and Henderson — by price, named
+          school campuses, commute, and weekend open-house inventory.
         </p>
 
         <div class="prose prose-lg max-w-none">
           {/* Overview Table */}
           <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-6">Quick Comparison</h2>
+            <HeadingImage imageKey="comparison" heading="Quick Comparison" variant="section" />
             <div class="overflow-x-auto">
               <table class="min-w-full border-collapse">
                 <thead>
@@ -228,6 +229,7 @@ export default component$(() => {
           </div>
 
           <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Key Differences</h2>
+          <HeadingImage imageKey="comparison" heading="Key Differences" variant="section" />
 
           <div class="grid md:grid-cols-2 gap-6 mb-8">
             <div class="bg-white border-2 border-blue-200 rounded-lg p-6">
@@ -238,7 +240,7 @@ export default component$(() => {
                 <li>Red Rock Canyon proximity is important</li>
                 <li>You want Palo Verde High or West Career and Technical Academy</li>
                 <li>Luxury living in The Ridges appeals to you</li>
-                <li>Downtown Summerlin lifestyle is desired</li>
+                <li>Downtown Summerlin retail is desired</li>
               </ul>
             </div>
 
@@ -249,7 +251,7 @@ export default component$(() => {
                 <li>Budget is $500,000-$700,000 for quality homes</li>
                 <li>Green Valley Ranch or Lake Las Vegas is on your tour list</li>
                 <li>Green Valley or Seven Hills appeal to you</li>
-                <li>Lake Las Vegas lifestyle interests you</li>
+                <li>Lake Las Vegas waterfront listings interest you</li>
                 <li>You want city identity beyond Las Vegas</li>
               </ul>
             </div>
@@ -276,12 +278,12 @@ export default component$(() => {
           </ul>
 
           <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Making Your Decision</h2>
+          <HeadingImage imageKey="contact" heading="Making Your Decision" variant="section" />
           <p class="text-lg text-gray-700 mb-6">
-            When choosing between Summerlin and Henderson, consider: your budget (Summerlin tends to
-            be pricier), commute requirements, school priorities, lifestyle preferences, and
-            long-term plans. Both communities offer HOA amenities, named high schools, and weekend
-            open houses. Visiting both areas with Dr. Jan Duffy can help you match square footage,
-            commute, and budget.
+            When choosing between Summerlin and Henderson, consider your budget (Summerlin tends to
+            be pricier), commute via I-215, named campuses on the MLS sheet, HOA dues, and square
+            footage. Both communities list weekend open houses. Tour both with Dr. Jan Duffy to
+            match inventory to your budget.
           </p>
         </div>
 

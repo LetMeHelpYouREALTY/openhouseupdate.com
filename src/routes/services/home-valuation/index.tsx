@@ -303,6 +303,11 @@ export default component$(() => {
 
         <div class="instant-valuation">
           <h2>Get Your Instant Home Value</h2>
+          <HeadingImage
+            imageKey="home-valuation"
+            heading="Get Your Instant Home Value"
+            variant="section"
+          />
           <p>Enter your address below for an immediate market estimate:</p>
 
           <style>{`
@@ -324,6 +329,11 @@ export default component$(() => {
 
         <div class="valuation-form">
           <h2>Request Your Detailed Valuation</h2>
+          <HeadingImage
+            imageKey="lead-followup"
+            heading="Request Your Detailed Valuation"
+            variant="section"
+          />
           <p>
             For a comprehensive analysis with personalized recommendations, please fill out the form
             below:

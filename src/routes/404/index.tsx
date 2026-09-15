@@ -69,6 +69,7 @@ export default component$(() => {
         {/* Popular Pages */}
         <div class="bg-gray-50 rounded-lg p-8 mb-12">
           <h2 class="text-2xl font-bold text-gray-900 mb-6">Popular Pages</h2>
+          <HeadingImage imageKey="map-search" heading="Popular Pages" variant="section" />
           <div class="grid md:grid-cols-3 gap-6">
             <div>
               <h3 class="text-lg font-semibold text-gray-900 mb-3">Services</h3>
@@ -181,6 +182,11 @@ export default component$(() => {
         {/* Contact CTA */}
         <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-lg shadow-lg p-8 text-white">
           <h2 class="text-2xl font-bold mb-4">Need Help Finding Something?</h2>
+          <HeadingImage
+            imageKey="contact"
+            heading="Need Help Finding Something?"
+            variant="section"
+          />
           <p class="text-xl mb-6 opacity-90">
             Dr. Jan Duffy is here to help you find exactly what you're looking for.
           </p>

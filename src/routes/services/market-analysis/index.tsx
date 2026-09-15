@@ -454,6 +454,7 @@ export default component$(() => {
 
       <div class="market-data-section">
         <h2>Current Market Data</h2>
+        <HeadingImage imageKey="market-analysis" heading="Current Market Data" variant="section" />
         <div class="data-grid">
           <div class="data-card">
             <div class="metric">$485,000</div>
@@ -495,6 +496,7 @@ export default component$(() => {
 
       <div class="reports-section">
         <h2>Available Reports</h2>
+        <HeadingImage imageKey="lead-followup" heading="Available Reports" variant="section" />
         <div class="reports-grid">
           <div class="report-card">
             <h3>Monthly Market Summary</h3>
@@ -601,6 +603,7 @@ export default component$(() => {
 
       <div class="cta-section">
         <h2>Get Your Market Analysis</h2>
+        <HeadingImage imageKey="contact" heading="Get Your Market Analysis" variant="section" />
         <p>
           Stay ahead of the market with detailed analysis and insights from Dr. Jan Duffy's expert
           market knowledge.

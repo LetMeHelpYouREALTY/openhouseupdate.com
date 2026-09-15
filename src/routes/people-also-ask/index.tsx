@@ -90,6 +90,7 @@ export default component$(() => {
         {/* Expert CTA */}
         <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl shadow-xl p-10 text-white text-center mb-16">
           <h2 class="text-3xl font-bold mb-4">Have More Questions?</h2>
+          <HeadingImage imageKey="contact" heading="Have More Questions?" variant="section" />
           <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             Dr. Jan Duffy is here to provide personalized answers and expert guidance for your Las
             Vegas real estate needs

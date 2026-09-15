@@ -157,6 +157,7 @@ export default component$(() => {
         {/* Contact CTA */}
         <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-lg shadow-lg p-8 text-white text-center">
           <h2 class="text-3xl font-bold mb-4">Still Have Questions?</h2>
+          <HeadingImage imageKey="contact" heading="Still Have Questions?" variant="section" />
           <p class="text-xl mb-8 opacity-90">
             Dr. Jan Duffy is here to provide personalized answers and expert guidance for your real
             estate needs.
@@ -180,6 +181,7 @@ export default component$(() => {
         {/* Quick Links */}
         <div class="mt-16">
           <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">Quick Links</h2>
+          <HeadingImage imageKey="map-search" heading="Quick Links" variant="section" />
           <div class="grid md:grid-cols-4 gap-4">
             <a
               href="http://drjanduffy.realscout.com/onboarding"

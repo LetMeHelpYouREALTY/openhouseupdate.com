@@ -375,6 +375,7 @@ export default component$(() => {
 
       <div class="process-section">
         <h2>Our Buyer Process</h2>
+        <HeadingImage imageKey="first-time-buyer" heading="Our Buyer Process" variant="section" />
         <div class="process-steps">
           <div class="process-step">
             <h3>Initial Consultation</h3>

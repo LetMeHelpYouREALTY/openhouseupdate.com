@@ -455,6 +455,7 @@ export default component$(() => {
 
       <div class="pricing-section">
         <h2>Service Packages</h2>
+        <HeadingImage imageKey="seller-services" heading="Service Packages" variant="section" />
         <div class="pricing-grid">
           <div class="pricing-card">
             <h3>Essential Package</h3>
@@ -498,6 +499,11 @@ export default component$(() => {
 
       <div class="process-section">
         <h2>Our Selling Process</h2>
+        <HeadingImage
+          imageKey="strategic-marketing"
+          heading="Our Selling Process"
+          variant="section"
+        />
         <div class="process-steps">
           <div class="process-step">
             <h3>Initial Consultation</h3>
