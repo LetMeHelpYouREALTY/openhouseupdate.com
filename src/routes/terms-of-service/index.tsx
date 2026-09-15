@@ -23,6 +23,7 @@ export default component$(() => {
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
               <HeadingImage imageKey="about" heading="Acceptance of Terms" variant="section" />
+              <HeadingImage imageKey="about" heading="Acceptance of Terms" variant="section" />
               <p class="text-gray-600">
                 By accessing and using Open House Update ("the Website"), you accept and agree to be
                 bound by the terms and provision of this agreement. If you do not agree to abide by
@@ -32,6 +33,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">2. Description of Service</h2>
+              <HeadingImage imageKey="about" heading="Description of Service" variant="section" />
               <p class="text-gray-600 mb-4">
                 Open House Update provides real estate services including but not limited to:
               </p>
@@ -46,6 +48,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">3. Real Estate License</h2>
+              <HeadingImage imageKey="about" heading="Real Estate License" variant="section" />
               <p class="text-gray-600 mb-4">
                 Dr. Jan Duffy is an Open House Expert with Nevada License #S.0197614. All real
                 estate services are provided in accordance with Nevada real estate laws and
@@ -60,6 +63,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">4. User Responsibilities</h2>
+              <HeadingImage imageKey="about" heading="User Responsibilities" variant="section" />
               <p class="text-gray-600 mb-4">As a user of this website, you agree to:</p>
               <ul class="list-disc pl-6 text-gray-600 space-y-2">
                 <li>Provide accurate and truthful information</li>
@@ -72,6 +76,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">5. Property Information</h2>
+              <HeadingImage imageKey="about" heading="Property Information" variant="section" />
               <p class="text-gray-600 mb-4">
                 Property information provided on this website is obtained from various sources and
                 is believed to be accurate but is not guaranteed. Users should:
@@ -86,6 +91,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">6. Limitation of Liability</h2>
+              <HeadingImage imageKey="about" heading="Limitation of Liability" variant="section" />
               <p class="text-gray-600">
                 Open House Update and Dr. Jan Duffy shall not be liable for any direct, indirect,
                 incidental, special, or consequential damages resulting from the use or inability to
@@ -96,6 +102,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">7. Professional Services</h2>
+              <HeadingImage imageKey="about" heading="Professional Services" variant="section" />
               <p class="text-gray-600 mb-4">
                 Real estate services are provided on a professional basis. Clients should understand
                 that:
@@ -110,6 +117,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">8. Intellectual Property</h2>
+              <HeadingImage imageKey="about" heading="Intellectual Property" variant="section" />
               <p class="text-gray-600">
                 The content, organization, graphics, design, compilation, magnetic translation,
                 digital conversion, and other matters related to the website are protected under
@@ -120,6 +128,11 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">9. Privacy and Data Protection</h2>
+              <HeadingImage
+                imageKey="about"
+                heading="Privacy and Data Protection"
+                variant="section"
+              />
               <p class="text-gray-600">
                 Your privacy is important to us. Please review our Privacy Policy, which also
                 governs your use of the website, to understand our practices regarding the
@@ -129,6 +142,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">10. Third-Party Services</h2>
+              <HeadingImage imageKey="about" heading="Third-Party Services" variant="section" />
               <p class="text-gray-600 mb-4">
                 This website integrates with third-party services including RealScout for property
                 listings. These services have their own terms and conditions, which users should
@@ -138,6 +152,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">11. Modifications</h2>
+              <HeadingImage imageKey="about" heading="Modifications" variant="section" />
               <p class="text-gray-600">
                 Open House Update reserves the right to modify these terms at any time. Changes will
                 be posted on this page with an updated revision date. Continued use of the website
@@ -147,6 +162,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">12. Governing Law</h2>
+              <HeadingImage imageKey="about" heading="Governing Law" variant="section" />
               <p class="text-gray-600">
                 These terms shall be governed by and construed in accordance with the laws of the
                 state of Nevada, without regard to its conflict of law provisions. Any disputes
@@ -157,6 +173,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">13. Contact Information</h2>
+              <HeadingImage imageKey="about" heading="Contact Information" variant="section" />
               <HeadingImage imageKey="contact" heading="Contact Information" variant="section" />
               <p class="text-gray-600 mb-4">
                 If you have any questions about these Terms of Service, please contact us:

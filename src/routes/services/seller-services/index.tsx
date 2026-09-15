@@ -458,6 +458,7 @@ export default component$(() => {
         <HeadingImage imageKey="seller-services" heading="Service Packages" variant="section" />
         <div class="pricing-grid">
           <div class="pricing-card">
+            <HeadingImage imageKey="seller-services" heading="Essential Package" variant="card" />
             <h3>Essential Package</h3>
             <div class="price">5.5%</div>
             <ul>
@@ -470,6 +471,7 @@ export default component$(() => {
           </div>
 
           <div class="pricing-card featured">
+            <HeadingImage imageKey="strategic-marketing" heading="Premium Package" variant="card" />
             <h3>Premium Package</h3>
             <div class="price">6.0%</div>
             <ul>
@@ -483,6 +485,7 @@ export default component$(() => {
           </div>
 
           <div class="pricing-card">
+            <HeadingImage imageKey="luxury-open-houses" heading="Luxury Package" variant="card" />
             <h3>Luxury Package</h3>
             <div class="price">6.5%</div>
             <ul>
@@ -506,6 +509,7 @@ export default component$(() => {
         />
         <div class="process-steps">
           <div class="process-step">
+            <HeadingImage imageKey="contact" heading="Initial Consultation" variant="card" />
             <h3>Initial Consultation</h3>
             <p>
               We assess your property and discuss your goals to create a customized selling
@@ -514,6 +518,7 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="market-analysis" heading="Market Analysis" variant="card" />
             <h3>Market Analysis</h3>
             <p>
               Conduct a comprehensive market analysis to determine the optimal listing price and
@@ -522,6 +527,11 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage
+              imageKey="property-staging"
+              heading="Property Preparation"
+              variant="card"
+            />
             <h3>Property Preparation</h3>
             <p>
               Guide you through staging and preparation to maximize your home's appeal to buyers.
@@ -529,6 +539,11 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage
+              imageKey="strategic-marketing"
+              heading="Marketing Launch"
+              variant="card"
+            />
             <h3>Marketing Launch</h3>
             <p>
               Execute a comprehensive marketing campaign to reach the maximum number of qualified
@@ -537,6 +552,11 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage
+              imageKey="weekend-open-houses"
+              heading="Showings & Feedback"
+              variant="card"
+            />
             <h3>Showings & Feedback</h3>
             <p>
               Coordinate showings and collect feedback to continuously optimize your selling
@@ -545,16 +565,19 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="lead-followup" heading="Offer Negotiation" variant="card" />
             <h3>Offer Negotiation</h3>
             <p>Evaluate offers and negotiate on your behalf to secure the best possible terms.</p>
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="about" heading="Transaction Management" variant="card" />
             <h3>Transaction Management</h3>
             <p>Manage all aspects of the transaction from contract to closing.</p>
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="home-valuation" heading="Closing & Beyond" variant="card" />
             <h3>Closing & Beyond</h3>
             <p>Ensure a smooth closing and provide ongoing support for any post-sale needs.</p>
           </div>

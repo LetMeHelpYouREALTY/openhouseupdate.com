@@ -75,6 +75,7 @@ export default component$(() => {
       `}</style>
 
       <div class="map-header">
+        <HeadingImage imageKey="map-search" heading="Property Map" variant="section" />
         <h1 class="map-title">Property Map</h1>
         <a href="/" class="back-btn">
           ← Back to Search

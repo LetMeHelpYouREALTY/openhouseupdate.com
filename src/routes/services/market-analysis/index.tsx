@@ -499,6 +499,11 @@ export default component$(() => {
         <HeadingImage imageKey="lead-followup" heading="Available Reports" variant="section" />
         <div class="reports-grid">
           <div class="report-card">
+            <HeadingImage
+              imageKey="market-analysis"
+              heading="Monthly Market Summary"
+              variant="card"
+            />
             <h3>Monthly Market Summary</h3>
             <p>
               Comprehensive overview of Las Vegas real estate market performance including sales,
@@ -508,6 +513,11 @@ export default component$(() => {
           </div>
 
           <div class="report-card">
+            <HeadingImage
+              imageKey="neighborhood-expertise"
+              heading="Neighborhood Spotlight"
+              variant="card"
+            />
             <h3>Neighborhood Spotlight</h3>
             <p>
               In-depth analysis of specific neighborhoods including market trends, amenities, and
@@ -517,6 +527,7 @@ export default component$(() => {
           </div>
 
           <div class="report-card">
+            <HeadingImage imageKey="home-valuation" heading="Price Range Analysis" variant="card" />
             <h3>Price Range Analysis</h3>
             <p>
               Detailed breakdown of market performance across different price ranges and property
@@ -526,6 +537,11 @@ export default component$(() => {
           </div>
 
           <div class="report-card">
+            <HeadingImage
+              imageKey="conversion-rates"
+              heading="Investment Opportunities"
+              variant="card"
+            />
             <h3>Investment Opportunities</h3>
             <p>
               Strategic analysis of investment potential including ROI projections and market timing
@@ -535,6 +551,7 @@ export default component$(() => {
           </div>
 
           <div class="report-card">
+            <HeadingImage imageKey="market-analysis" heading="Forecasting Report" variant="card" />
             <h3>Forecasting Report</h3>
             <p>
               Forward-looking analysis with predictions for market trends, pricing, and investment
@@ -544,6 +561,7 @@ export default component$(() => {
           </div>
 
           <div class="report-card">
+            <HeadingImage imageKey="lead-followup" heading="Custom Analysis" variant="card" />
             <h3>Custom Analysis</h3>
             <p>
               Tailored market analysis for specific properties, neighborhoods, or investment
@@ -556,6 +574,11 @@ export default component$(() => {
 
       <div class="neighborhoods-section">
         <h2>Neighborhood Market Overview</h2>
+        <HeadingImage
+          imageKey="neighborhood-expertise"
+          heading="Neighborhood Market Overview"
+          variant="section"
+        />
         <div class="neighborhoods-grid">
           <div class="neighborhood-card">
             <HeadingImage imageKey="summerlin" heading="Summerlin" variant="card" />

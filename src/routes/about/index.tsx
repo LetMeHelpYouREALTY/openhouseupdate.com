@@ -232,11 +232,21 @@ export default component$(() => {
           />
 
           <div class="credential-item">
+            <HeadingImage
+              imageKey="industry-recognition"
+              heading="Doctorate in Business Administration"
+              variant="card"
+            />
             <h3>Doctorate in Business Administration</h3>
             <p>Specialized focus on real estate market analysis and investment strategies</p>
           </div>
 
           <div class="credential-item">
+            <HeadingImage
+              imageKey="weekend-open-houses"
+              heading="Open House Expert"
+              variant="card"
+            />
             <h3>Open House Expert</h3>
             <p>
               Nevada License #S.0197614 with continuing education in market trends and regulations
@@ -244,11 +254,17 @@ export default component$(() => {
           </div>
 
           <div class="credential-item">
+            <HeadingImage
+              imageKey="seller-services"
+              heading="Certified Property Manager"
+              variant="card"
+            />
             <h3>Certified Property Manager</h3>
             <p>Professional certification in property management and investment analysis</p>
           </div>
 
           <div class="credential-item">
+            <HeadingImage imageKey="about" heading="BHHS Nevada Properties" variant="card" />
             <h3>BHHS Nevada Properties</h3>
             <p>
               Affiliated with {business.brokerage}. Nevada license #{business.license}.
@@ -256,6 +272,7 @@ export default component$(() => {
           </div>
 
           <div class="credential-item">
+            <HeadingImage imageKey="contact" heading="Google Reviews" variant="card" />
             <h3>Google Reviews</h3>
             <p>
               Read Google reviews for Open House Marketplace or write one after your tour at{' '}

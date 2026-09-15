@@ -149,7 +149,7 @@ export default component$(() => {
               </form>
             ) : (
               <div class="text-center py-8">
-                <div class="text-green-600 text-6xl mb-4">✓</div>
+                <HeadingImage imageKey="contact" heading="Message Sent" variant="section" />
                 <h3 class="text-2xl font-bold text-gray-900 mb-4">Message Sent!</h3>
                 <p class="text-gray-600 mb-6">
                   Thank you for reaching out. Dr. Jan Duffy will get back to you within 24 hours.

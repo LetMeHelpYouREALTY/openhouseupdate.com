@@ -14,6 +14,7 @@ export default component$(() => {
   if (!post) {
     return (
       <section class="container mx-auto px-6 py-16 text-center">
+        <HeadingImage imageKey="people-also-ask" heading="Article not found" variant="section" />
         <h1 class="text-3xl font-bold text-gray-900 mb-4">Article not found</h1>
         <p class="text-gray-600 mb-6">That blog post is not published on Open House Marketplace.</p>
         <a href="/blog" class="text-blue-600 font-semibold">

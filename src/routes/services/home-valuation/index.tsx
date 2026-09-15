@@ -443,6 +443,7 @@ export default component$(() => {
             </form>
           ) : (
             <div class="success-message">
+              <HeadingImage imageKey="contact" heading="Thank You" variant="section" />
               <h3>Thank You!</h3>
               <p>
                 Your valuation request has been submitted. Dr. Jan Duffy will contact you within 24
@@ -455,7 +456,8 @@ export default component$(() => {
 
       <div class="benefits-grid">
         <div class="benefit-card">
-          <h3>🏠 Accurate Valuations</h3>
+          <HeadingImage imageKey="home-valuation" heading="Accurate Valuations" variant="card" />
+          <h3>Accurate Valuations</h3>
           <p>
             Our valuations are based on current market data and local expertise to give you the most
             accurate assessment.
@@ -463,7 +465,8 @@ export default component$(() => {
         </div>
 
         <div class="benefit-card">
-          <h3>📊 Market Insights</h3>
+          <HeadingImage imageKey="market-analysis" heading="Market Insights" variant="card" />
+          <h3>Market Insights</h3>
           <p>
             Get detailed insights into your neighborhood's market trends and how they affect your
             property's value.
@@ -471,12 +474,14 @@ export default component$(() => {
         </div>
 
         <div class="benefit-card">
-          <h3>⚡ Quick Turnaround</h3>
+          <HeadingImage imageKey="lead-followup" heading="Quick Turnaround" variant="card" />
+          <h3>Quick Turnaround</h3>
           <p>Receive your comprehensive valuation report within 24-48 hours of your request.</p>
         </div>
 
         <div class="benefit-card">
-          <h3>💼 Professional Service</h3>
+          <HeadingImage imageKey="about" heading="Professional Service" variant="card" />
+          <h3>Professional Service</h3>
           <p>
             Work with Dr. Jan Duffy, a licensed real estate professional with extensive local market
             knowledge.

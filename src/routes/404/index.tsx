@@ -16,6 +16,11 @@ export default component$(() => {
 
         {/* Error Message */}
         <div class="max-w-2xl mx-auto mb-12">
+          <HeadingImage
+            imageKey="weekend-open-houses"
+            heading="Oops! This Page Doesn't Exist"
+            variant="section"
+          />
           <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Oops! This Page Doesn't Exist
           </h1>
@@ -34,6 +39,7 @@ export default component$(() => {
             class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow text-center"
           >
             <div class="text-4xl mb-4">🏠</div>
+            <HeadingImage imageKey="map-search" heading="Home Search" variant="card" />
             <h3 class="text-lg font-semibold text-gray-900 mb-2">Home Search</h3>
             <p class="text-gray-600 text-sm">Find your perfect Las Vegas home</p>
           </a>
@@ -43,6 +49,7 @@ export default component$(() => {
             class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow text-center"
           >
             <div class="text-4xl mb-4">🔍</div>
+            <HeadingImage imageKey="map-search" heading="Advanced Search" variant="card" />
             <h3 class="text-lg font-semibold text-gray-900 mb-2">Advanced Search</h3>
             <p class="text-gray-600 text-sm">Search with detailed criteria</p>
           </a>
@@ -52,6 +59,11 @@ export default component$(() => {
             class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow text-center"
           >
             <div class="text-4xl mb-4">🏘️</div>
+            <HeadingImage
+              imageKey="neighborhood-expertise"
+              heading="Neighborhoods"
+              variant="card"
+            />
             <h3 class="text-lg font-semibold text-gray-900 mb-2">Neighborhoods</h3>
             <p class="text-gray-600 text-sm">Explore Las Vegas areas</p>
           </a>
@@ -61,6 +73,7 @@ export default component$(() => {
             class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow text-center"
           >
             <div class="text-4xl mb-4">📞</div>
+            <HeadingImage imageKey="contact" heading="Contact Us" variant="card" />
             <h3 class="text-lg font-semibold text-gray-900 mb-2">Contact Us</h3>
             <p class="text-gray-600 text-sm">Get expert help</p>
           </a>
@@ -72,6 +85,7 @@ export default component$(() => {
           <HeadingImage imageKey="map-search" heading="Popular Pages" variant="section" />
           <div class="grid md:grid-cols-3 gap-6">
             <div>
+              <HeadingImage imageKey="buyer-services" heading="Services" variant="card" />
               <h3 class="text-lg font-semibold text-gray-900 mb-3">Services</h3>
               <ul class="space-y-2 text-left">
                 <li>
@@ -97,6 +111,7 @@ export default component$(() => {
               </ul>
             </div>
             <div>
+              <HeadingImage imageKey="home-valuation" heading="Browse by Price" variant="card" />
               <h3 class="text-lg font-semibold text-gray-900 mb-3">Browse by Price</h3>
               <ul class="space-y-2 text-left">
                 <li>
@@ -131,6 +146,11 @@ export default component$(() => {
               </ul>
             </div>
             <div>
+              <HeadingImage
+                imageKey="neighborhood-expertise"
+                heading="Neighborhoods"
+                variant="card"
+              />
               <h3 class="text-lg font-semibold text-gray-900 mb-3">Neighborhoods</h3>
               <ul class="space-y-2 text-left">
                 <li>
@@ -163,6 +183,7 @@ export default component$(() => {
 
         {/* Search Box */}
         <div class="max-w-md mx-auto mb-12">
+          <HeadingImage imageKey="map-search" heading="Search Our Site" variant="section" />
           <h3 class="text-lg font-semibold text-gray-900 mb-4">Search Our Site</h3>
           <div class="flex gap-2">
             <input
