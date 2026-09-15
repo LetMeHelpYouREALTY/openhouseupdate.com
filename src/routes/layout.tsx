@@ -174,22 +174,26 @@ export const head: DocumentHead = ({ head, url }) => {
       property: 'og:locale',
       content: 'en_US',
     },
-    {
-      property: 'og:image',
-      content: `${business.siteUrl}/images/og-default.jpg`,
-    },
-    {
-      property: 'og:image:width',
-      content: '1200',
-    },
-    {
-      property: 'og:image:height',
-      content: '630',
-    },
-    {
-      property: 'og:image:alt',
-      content: 'Weekend open houses in Las Vegas with Open House Marketplace',
-    },
+    ...(!hasMeta(undefined, 'og:image')
+      ? [
+          {
+            property: 'og:image',
+            content: `${business.siteUrl}/images/og-default.jpg`,
+          },
+          {
+            property: 'og:image:width',
+            content: '1200',
+          },
+          {
+            property: 'og:image:height',
+            content: '630',
+          },
+          {
+            property: 'og:image:alt',
+            content: 'Weekend open houses in Las Vegas with Open House Marketplace',
+          },
+        ]
+      : []),
     ...(!hasMeta('twitter:title')
       ? [
           {
