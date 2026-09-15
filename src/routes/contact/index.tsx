@@ -61,6 +61,7 @@ export default component$(() => {
           {/* Contact Form */}
           <div class="bg-white rounded-lg shadow-lg p-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Send a Message</h2>
+            <HeadingImage imageKey="lead-followup" heading="Send a Message" variant="section" />
 
             {!isSubmitted.value ? (
               <form preventdefault:submit onSubmit$={handleSubmit}>
@@ -175,6 +176,7 @@ export default component$(() => {
           <div class="space-y-8">
             <div class="bg-white rounded-lg shadow-lg p-8">
               <h3 class="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
+              <HeadingImage imageKey="contact" heading="Get in Touch" variant="section" />
 
               <div class="space-y-6">
                 <div class="flex items-start space-x-4">

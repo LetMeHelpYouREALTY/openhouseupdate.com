@@ -11,6 +11,7 @@ import JavaScriptCrawling from '~/components/seo/javascript-crawling'
 import Footer from '~/components/starter/footer/footer'
 import Header from '~/components/starter/header/header'
 import { business } from '~/config/business'
+import { toCanonicalUrl } from '~/lib/canonical'
 
 import styles from './styles.css?inline'
 
@@ -82,7 +83,7 @@ export const head: DocumentHead = ({ head, url }) => {
   const hasMeta = (name?: string, property?: string) =>
     head.meta.some((item) => (name ? item.name === name : item.property === property))
   const hasCanonical = head.links.some((item) => item.rel === 'canonical')
-  const pageUrl = `${business.siteUrl}${url.pathname}`
+  const pageUrl = toCanonicalUrl(url.pathname)
 
   const meta = [
     ...(!hasMeta('description')

@@ -203,6 +203,7 @@ export default component$(() => {
       <div class="about-content">
         <div class="about-info">
           <h2>Professional Background</h2>
+          <HeadingImage imageKey="about" heading="Professional Background" variant="section" />
           <p>
             Dr. Jan Duffy brings a unique combination of academic excellence and real-world
             experience to the Las Vegas real estate market. With a doctorate in business
@@ -224,6 +225,11 @@ export default component$(() => {
 
         <div class="credentials">
           <h2>Credentials & Achievements</h2>
+          <HeadingImage
+            imageKey="industry-recognition"
+            heading="Credentials & Achievements"
+            variant="section"
+          />
 
           <div class="credential-item">
             <h3>Doctorate in Business Administration</h3>

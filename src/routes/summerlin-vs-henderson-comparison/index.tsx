@@ -116,6 +116,7 @@ export default component$(() => {
           </div>
 
           <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Summerlin Overview</h2>
+          <HeadingImage imageKey="summerlin" heading="Summerlin Overview" variant="section" />
           <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
             <h3 class="text-2xl font-semibold text-gray-900 mb-3">Location & Zip Codes</h3>
             <p class="text-lg text-gray-700 mb-4">
@@ -159,7 +160,7 @@ export default component$(() => {
               <li>Mountain views and natural beauty</li>
             </ul>
 
-            <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Best For</h3>
+            <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Fit if you want</h3>
             <p class="text-lg text-gray-700 mb-4">
               Summerlin is a fit if you want Red Rock Canyon access, Downtown Summerlin retail, and
               campuses such as Palo Verde High. Budget for $600,000+ on many mid-range listings.
@@ -167,6 +168,7 @@ export default component$(() => {
           </div>
 
           <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Henderson Overview</h2>
+          <HeadingImage imageKey="henderson" heading="Henderson Overview" variant="section" />
           <div class="bg-green-50 border-l-4 border-green-500 p-6 mb-6">
             <h3 class="text-2xl font-semibold text-gray-900 mb-3">Location & Zip Codes</h3>
             <p class="text-lg text-gray-700 mb-4">
@@ -218,7 +220,7 @@ export default component$(() => {
               <li>Easy access to I-215 and I-515</li>
             </ul>
 
-            <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Best For</h3>
+            <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Fit if you want</h3>
             <p class="text-lg text-gray-700 mb-4">
               Henderson is a fit if you want Coronado High or Green Valley High, Green Valley Ranch
               or Lake Las Vegas amenities, and typically lower average prices than 89134–89138.
@@ -299,7 +301,7 @@ export default component$(() => {
             },
             {
               title: 'Las Vegas Neighborhoods to Tour',
-              url: '/blog/top-5-neighborhoods-families-las-vegas',
+              url: '/blog/las-vegas-neighborhoods-to-tour',
               description: 'Compare Summerlin, Green Valley, Seven Hills, Anthem, and Skye Canyon',
             },
             {

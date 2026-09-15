@@ -100,6 +100,46 @@
       "source": "/about",
       "destination": "/about/",
       "permanent": true
+    },
+    {
+      "source": "/summerlin",
+      "destination": "/neighborhoods/summerlin/",
+      "permanent": true
+    },
+    {
+      "source": "/henderson",
+      "destination": "/neighborhoods/henderson/",
+      "permanent": true
+    },
+    {
+      "source": "/green-valley",
+      "destination": "/neighborhoods/green-valley/",
+      "permanent": true
+    },
+    {
+      "source": "/north-las-vegas",
+      "destination": "/neighborhoods/north-las-vegas/",
+      "permanent": true
+    },
+    {
+      "source": "/spring-valley",
+      "destination": "/neighborhoods/spring-valley/",
+      "permanent": true
+    },
+    {
+      "source": "/enterprise",
+      "destination": "/neighborhoods/enterprise/",
+      "permanent": true
+    },
+    {
+      "source": "/summerlin-vs-henderson-comparison",
+      "destination": "/summerlin-vs-henderson/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-5-neighborhoods-families-las-vegas",
+      "destination": "/blog/las-vegas-neighborhoods-to-tour/",
+      "permanent": true
     }
   ],
   "crons": [

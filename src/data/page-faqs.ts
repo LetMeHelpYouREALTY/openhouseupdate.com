@@ -223,12 +223,12 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'What makes North Las Vegas a good place to buy a home?',
       answer:
-        'North Las Vegas offers excellent value for homebuyers with more affordable housing options than many Las Vegas areas. Located in zip codes 89030, 89031, 89032, 89081, 89084, and 89086, North Las Vegas features active new construction in communities like Skye Canyon (89084) and Centennial Hills (89031), providing modern homes with energy-efficient features. The area offers more square footage for your money, good highway access to Las Vegas employment centers, and growing amenities including shopping centers and restaurants. As one of the fastest-growing areas in Las Vegas Valley, North Las Vegas presents good appreciation potential and value for first-time buyers and families seeking affordable options.',
+        'North Las Vegas listings in 89030, 89031, 89032, 89081, 89084, and 89086 often price below comparable Summerlin (89134–89144) square footage. Skye Canyon (89084) and Centennial Hills (89031) have newer floor plans and 215 Beltway access. Compare HVAC age, HOA dues, and commute with Dr. Jan Duffy at (702) 200-3422.',
     },
     {
       question: 'What are the best neighborhoods in North Las Vegas?',
       answer:
-        'Top neighborhoods in North Las Vegas include Skye Canyon (zip code 89084) - a master-planned community with new construction, Centennial Hills (89031) - 1990s–2000s housing near shopping on the 215 Beltway, Aliante - shopping center, golf, and parks, and Eldorado - lower price-point inventory. Dr. Jan Duffy can match budget and square footage.',
+        'Compare named villages rather than a ranked list: Skye Canyon (89084) new construction, Centennial Hills (89031) 1990s–2000s housing on the 215 Beltway, Aliante shopping and golf, and Eldorado lower price-point inventory. Dr. Jan Duffy can match budget and square footage at (702) 200-3422.',
     },
     {
       question: 'Are home prices in North Las Vegas affordable?',
@@ -238,7 +238,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'How are the schools in North Las Vegas?',
       answer:
-        "North Las Vegas is served by the Clark County School District. School ratings vary by area, with newer communities like Skye Canyon (89084) and Centennial Hills (89031) having newer schools with improving ratings. Many families are attracted to North Las Vegas for its affordability and new construction options, with schools continuing to develop as the area grows. While school ratings may not be as high as premium areas like Summerlin or Henderson's Green Valley, the area offers good value and families often choose North Las Vegas for the combination of affordable housing and developing school systems. Dr. Jan Duffy can provide specific school information for North Las Vegas neighborhoods you're considering.",
+        'North Las Vegas is served by the Clark County School District. Confirm the campus printed on each listing — including newer campuses near Skye Canyon (89084) and Centennial Hills (89031). This site does not rank school quality. Ask Dr. Jan Duffy for the attendance zone before you tour.',
     },
   ],
 
@@ -416,7 +416,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'What decreases property value the most?',
       answer:
-        "Several factors can significantly decrease property value in Las Vegas Valley neighborhoods: poor location factors like high crime rates, busy highways (like I-15, US-95, or Boulder Highway), or proximity to undesirable facilities; structural problems including foundation issues (especially important in desert climate), roof damage, or major system failures; significant deferred maintenance and visible disrepair; environmental hazards such as mold, asbestos, or contaminated soil; unfavorable neighborhood conditions like declining schools or increasing crime in specific zip codes; outdated or non-functional features requiring major updates; bad odors from pets, smoking, or other sources; excessive noise from traffic, McCarran International Airport (now Harry Reid International Airport), or neighbors; property condition issues like water damage, pest infestations, or safety hazards; and external factors like new construction blocking mountain views in Summerlin (zip codes 89134-89144) or Henderson (89002-89015). In areas like The Ridges, Lake Las Vegas, or Macdonald Highlands, blocked views can significantly impact luxury property values. Some of these are fixable (maintenance, updates, odors) while others are location-based and harder to change. Dr. Jan Duffy can help identify value-decreasing factors specific to your neighborhood in zip codes 89103-89148 (Las Vegas), 89002-89074 (Henderson), or 89030-89086 (North Las Vegas) and recommend solutions to maximize your property's value.",
+        'Several factors can decrease a Las Vegas Valley sale price: highway noise along I-15, US-95, or Boulder Highway; blocked mountain views after new construction in Summerlin (89134–89144) or Henderson (89002–89015); foundation, roof, or HVAC failures in desert heat; deferred maintenance; water damage; and hard-water plumbing issues. Confirm named school campuses (Palo Verde High, Coronado High, Green Valley High) on the MLS sheet rather than using a neighborhood ranking. Open House Marketplace does not rank areas by crime. Dr. Jan Duffy can walk a listing at (702) 200-3422 and compare square footage, HOA dues, and commute via I-15 / I-215.',
     },
     {
       question: 'What are common selling mistakes?',

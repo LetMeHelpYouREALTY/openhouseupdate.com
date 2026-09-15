@@ -220,10 +220,10 @@ export default component$(() => {
             </tr>
             <tr>
               <td>
-                <strong>Established</strong>
+                <strong>Founded</strong>
               </td>
               <td>1990</td>
-              <td>1953 (older, more established)</td>
+              <td>1953</td>
             </tr>
             <tr>
               <td>
@@ -234,10 +234,10 @@ export default component$(() => {
             </tr>
             <tr>
               <td>
-                <strong>Best For</strong>
+                <strong>Fit if you want</strong>
               </td>
-              <td>Luxury buyers, professionals, families</td>
-              <td>Families, value seekers, retirees</td>
+              <td>Red Rock access, Downtown Summerlin, $600K+ mid-range</td>
+              <td>Green Valley Ranch, Lake Las Vegas, $500K–$700K mid-range</td>
             </tr>
           </tbody>
         </table>
@@ -245,6 +245,7 @@ export default component$(() => {
 
       <div class="section">
         <h2>Summerlin Overview</h2>
+        <HeadingImage imageKey="summerlin" heading="Summerlin Overview" variant="section" />
         <p>
           Summerlin (zip codes 89134, 89135, 89138, 89144) is a Howard Hughes master-planned
           community on the west side of the valley with Red Rock Canyon views, Downtown Summerlin
@@ -281,6 +282,7 @@ export default component$(() => {
 
       <div class="section">
         <h2>Henderson Overview</h2>
+        <HeadingImage imageKey="henderson" heading="Henderson Overview" variant="section" />
         <p>
           Henderson (zip codes 89002, 89011, 89012, 89014, 89015, 89052, 89074) is Nevada’s
           second-largest city, with Green Valley Ranch, Lake Las Vegas, Coronado High School, and
@@ -315,6 +317,11 @@ export default component$(() => {
 
       <div class="section">
         <h2>Which is Better for You?</h2>
+        <HeadingImage
+          imageKey="comparison"
+          heading="How to compare Summerlin and Henderson"
+          variant="section"
+        />
 
         <h3>Choose Summerlin If:</h3>
         <ul>
@@ -391,7 +398,7 @@ export const head: DocumentHead = {
     {
       name: 'description',
       content:
-        'Compare Summerlin vs Henderson Las Vegas. Detailed comparison of home prices, schools, safety, amenities, and lifestyle to help you choose the right community.',
+        'Compare Summerlin vs Henderson Las Vegas on home prices, named school campuses, commute times, HOA dues, and weekend open-house inventory.',
     },
     {
       name: 'keywords',
@@ -405,7 +412,7 @@ export const head: DocumentHead = {
     {
       property: 'og:description',
       content:
-        'Compare Summerlin vs Henderson Las Vegas. Detailed comparison of home prices, schools, safety, amenities, and lifestyle to help you choose the right community.',
+        'Compare Summerlin vs Henderson Las Vegas on home prices, named school campuses, commute times, HOA dues, and weekend open-house inventory.',
     },
     {
       property: 'og:type',
