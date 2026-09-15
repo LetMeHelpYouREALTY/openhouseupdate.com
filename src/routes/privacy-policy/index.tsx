@@ -27,6 +27,11 @@ export default component$(() => {
                 heading="Information We Collect"
                 variant="section"
               />
+              <HeadingImage
+                imageKey="lead-followup"
+                heading="Information We Collect"
+                variant="section"
+              />
               <p class="text-gray-600 mb-4">
                 We collect information you provide directly to us, such as when you:
               </p>
@@ -44,6 +49,11 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">2. How We Use Your Information</h2>
+              <HeadingImage
+                imageKey="lead-followup"
+                heading="How We Use Your Information"
+                variant="section"
+              />
               <p class="text-gray-600 mb-4">We use the information we collect to:</p>
               <ul class="list-disc pl-6 text-gray-600 space-y-2">
                 <li>Provide real estate services and respond to your inquiries</li>
@@ -56,6 +66,11 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">3. Information Sharing</h2>
+              <HeadingImage
+                imageKey="lead-followup"
+                heading="Information Sharing"
+                variant="section"
+              />
               <p class="text-gray-600 mb-4">
                 We do not sell, trade, or otherwise transfer your personal information to third
                 parties without your consent, except:
@@ -69,6 +84,11 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">4. Cookies and Tracking</h2>
+              <HeadingImage
+                imageKey="lead-followup"
+                heading="Cookies and Tracking"
+                variant="section"
+              />
               <p class="text-gray-600 mb-4">
                 We use cookies and similar technologies to enhance your experience on our website.
                 This includes:
@@ -85,6 +105,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">5. Data Security</h2>
+              <HeadingImage imageKey="lead-followup" heading="Data Security" variant="section" />
               <p class="text-gray-600">
                 We implement appropriate security measures to protect your personal information
                 against unauthorized access, alteration, disclosure, or destruction. However, no
@@ -94,6 +115,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">6. Your Rights</h2>
+              <HeadingImage imageKey="lead-followup" heading="Your Rights" variant="section" />
               <p class="text-gray-600 mb-4">You have the right to:</p>
               <ul class="list-disc pl-6 text-gray-600 space-y-2">
                 <li>Access and update your personal information</li>
@@ -105,6 +127,11 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">7. Third-Party Services</h2>
+              <HeadingImage
+                imageKey="lead-followup"
+                heading="Third-Party Services"
+                variant="section"
+              />
               <p class="text-gray-600 mb-4">
                 Our website integrates with third-party services including:
               </p>
@@ -126,6 +153,11 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">8. Children's Privacy</h2>
+              <HeadingImage
+                imageKey="lead-followup"
+                heading="Children's Privacy"
+                variant="section"
+              />
               <p class="text-gray-600">
                 Our services are not directed to children under 13. We do not knowingly collect
                 personal information from children under 13. If we become aware that we have
@@ -135,6 +167,11 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">9. Changes to This Policy</h2>
+              <HeadingImage
+                imageKey="lead-followup"
+                heading="Changes to This Policy"
+                variant="section"
+              />
               <p class="text-gray-600">
                 We may update this Privacy Policy from time to time. We will notify you of any
                 changes by posting the new Privacy Policy on this page and updating the "Last
@@ -144,6 +181,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">10. Contact Us</h2>
+              <HeadingImage imageKey="lead-followup" heading="Contact Us" variant="section" />
               <HeadingImage imageKey="contact" heading="Contact Us" variant="section" />
               <p class="text-gray-600 mb-4">
                 If you have any questions about this Privacy Policy, please contact us:

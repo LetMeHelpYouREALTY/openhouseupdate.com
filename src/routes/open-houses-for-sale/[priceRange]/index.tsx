@@ -100,6 +100,11 @@ export default component$(() => {
       {/* Advanced Search with Price Pre-set */}
       <div class="price-search">
         <h3>Search Homes {priceInfo.display}</h3>
+        <HeadingImage
+          imageKey={priceImageKey}
+          heading={`Search Homes ${priceInfo.display}`}
+          variant="section"
+        />
 
         <style>{`
           .price-search realscout-advanced-search {

@@ -378,6 +378,7 @@ export default component$(() => {
         <HeadingImage imageKey="first-time-buyer" heading="Our Buyer Process" variant="section" />
         <div class="process-steps">
           <div class="process-step">
+            <HeadingImage imageKey="contact" heading="Initial Consultation" variant="card" />
             <h3>Initial Consultation</h3>
             <p>
               We start with understanding your needs, budget, and preferences to create a
@@ -386,6 +387,11 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage
+              imageKey="home-valuation"
+              heading="Pre-Approval & Budget"
+              variant="card"
+            />
             <h3>Pre-Approval & Budget</h3>
             <p>
               Help you get pre-approved and establish a realistic budget based on your financial
@@ -394,6 +400,7 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="map-search" heading="Property Search" variant="card" />
             <h3>Property Search</h3>
             <p>
               Set up custom searches and alerts to find properties that match your criteria,
@@ -402,6 +409,7 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="weekend-open-houses" heading="Property Tours" variant="card" />
             <h3>Property Tours</h3>
             <p>
               Schedule and accompany you on property tours, providing expert insights and analysis.
@@ -409,6 +417,7 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="lead-followup" heading="Offer & Negotiation" variant="card" />
             <h3>Offer & Negotiation</h3>
             <p>
               Develop competitive offer strategies and negotiate on your behalf to secure the best
@@ -417,11 +426,17 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage
+              imageKey="property-staging"
+              heading="Inspection & Due Diligence"
+              variant="card"
+            />
             <h3>Inspection & Due Diligence</h3>
             <p>Coordinate inspections and ensure all due diligence is completed before closing.</p>
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="about" heading="Closing" variant="card" />
             <h3>Closing</h3>
             <p>
               Guide you through the closing process and ensure all documents are properly executed.
@@ -429,6 +444,7 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="first-time-buyer" heading="Post-Closing" variant="card" />
             <h3>Post-Closing</h3>
             <p>Provide ongoing support and referrals for services you may need in your new home.</p>
           </div>
