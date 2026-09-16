@@ -44,7 +44,7 @@ export default component$(() => {
     {
       question: 'What should I look for in a Las Vegas home?',
       answer:
-        'Key considerations include location (schools, commute, amenities), condition of HVAC systems (important in desert climate), energy efficiency, HOA fees and restrictions, and future development plans in the area. Dr. Duffy can help you identify potential issues and opportunities during showings.',
+        'Key considerations include commute, named school campuses on the MLS sheet, square footage, HVAC in the desert climate, energy use, HOA dues, and nearby retail. Dr. Duffy can help you identify issues and opportunities during showings.',
     },
     {
       question: 'How do I get a home valuation?',
@@ -86,6 +86,11 @@ export default component$(() => {
 
         {/* FAQ Accordion */}
         <div class="max-w-4xl mx-auto mb-16">
+          <HeadingImage
+            imageKey="about"
+            heading="Frequently asked Las Vegas real estate questions"
+            variant="section"
+          />
           <div class="space-y-4">
             {faqs.map((faq, index) => (
               <div
@@ -112,6 +117,7 @@ export default component$(() => {
 
         {/* Categories */}
         <div class="mb-16">
+          <HeadingImage imageKey="people-also-ask" heading="Browse by Topic" variant="section" />
           <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">Browse by Topic</h2>
           <div class="grid md:grid-cols-3 gap-6">
             <div class="bg-white rounded-lg shadow-lg p-6 text-center overflow-hidden">
@@ -157,6 +163,7 @@ export default component$(() => {
         {/* Contact CTA */}
         <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-lg shadow-lg p-8 text-white text-center">
           <h2 class="text-3xl font-bold mb-4">Still Have Questions?</h2>
+          <HeadingImage imageKey="contact" heading="Still Have Questions?" variant="section" />
           <p class="text-xl mb-8 opacity-90">
             Dr. Jan Duffy is here to provide personalized answers and expert guidance for your real
             estate needs.
@@ -180,6 +187,7 @@ export default component$(() => {
         {/* Quick Links */}
         <div class="mt-16">
           <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">Quick Links</h2>
+          <HeadingImage imageKey="map-search" heading="Quick Links" variant="section" />
           <div class="grid md:grid-cols-4 gap-4">
             <a
               href="http://drjanduffy.realscout.com/onboarding"

@@ -65,15 +65,23 @@ export default component$(() => {
         .service-card {
           background: white;
           border-radius: 12px;
-          padding: 2rem;
+          padding: 0 0 2rem;
           box-shadow: 0 4px 20px rgba(0,0,0,0.08);
           transition: transform 0.3s ease, box-shadow 0.3s ease;
           border-top: 4px solid #16B286;
+          overflow: hidden;
         }
         
         .service-card:hover {
           transform: translateY(-4px);
           box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .service-card h3,
+        .service-card p,
+        .service-card ul {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
         }
         
         .service-card h3 {
@@ -330,7 +338,12 @@ export default component$(() => {
 
       <div class="services-overview">
         <div class="service-card">
-          <h3>💰 Market Pricing Strategy</h3>
+          <HeadingImage
+            imageKey="home-valuation"
+            heading="Market Pricing Strategy"
+            variant="card"
+          />
+          <h3>Market Pricing Strategy</h3>
           <p>
             Get the optimal listing price with our comprehensive market analysis and pricing
             strategy.
@@ -345,7 +358,12 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <h3>🏠 Home Staging & Preparation</h3>
+          <HeadingImage
+            imageKey="property-staging"
+            heading="Home Staging & Preparation"
+            variant="card"
+          />
+          <h3>Home Staging & Preparation</h3>
           <p>
             Present your home in its best light with professional staging recommendations and
             preparation guidance.
@@ -360,7 +378,12 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <h3>📸 Professional Marketing</h3>
+          <HeadingImage
+            imageKey="strategic-marketing"
+            heading="Professional Marketing"
+            variant="card"
+          />
+          <h3>Professional Marketing</h3>
           <p>
             Reach the right buyers with our comprehensive marketing strategy and professional
             presentation.
@@ -375,7 +398,12 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <h3>🔍 Showings Coordination</h3>
+          <HeadingImage
+            imageKey="weekend-open-houses"
+            heading="Showings Coordination"
+            variant="card"
+          />
+          <h3>Showings Coordination</h3>
           <p>
             Manage property showings efficiently while maintaining security and maximizing exposure.
           </p>
@@ -389,7 +417,8 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <h3>📋 Transaction Management</h3>
+          <HeadingImage imageKey="lead-followup" heading="Transaction Management" variant="card" />
+          <h3>Transaction Management</h3>
           <p>
             Navigate the complex selling process with professional transaction management and
             support.
@@ -404,7 +433,12 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <h3>📊 Market Analysis & Reporting</h3>
+          <HeadingImage
+            imageKey="market-analysis"
+            heading="Market Analysis & Reporting"
+            variant="card"
+          />
+          <h3>Market Analysis & Reporting</h3>
           <p>
             Stay informed with regular market updates and detailed performance reports throughout
             the selling process.
@@ -421,8 +455,10 @@ export default component$(() => {
 
       <div class="pricing-section">
         <h2>Service Packages</h2>
+        <HeadingImage imageKey="seller-services" heading="Service Packages" variant="section" />
         <div class="pricing-grid">
           <div class="pricing-card">
+            <HeadingImage imageKey="seller-services" heading="Essential Package" variant="card" />
             <h3>Essential Package</h3>
             <div class="price">5.5%</div>
             <ul>
@@ -435,6 +471,7 @@ export default component$(() => {
           </div>
 
           <div class="pricing-card featured">
+            <HeadingImage imageKey="strategic-marketing" heading="Premium Package" variant="card" />
             <h3>Premium Package</h3>
             <div class="price">6.0%</div>
             <ul>
@@ -448,6 +485,7 @@ export default component$(() => {
           </div>
 
           <div class="pricing-card">
+            <HeadingImage imageKey="luxury-open-houses" heading="Luxury Package" variant="card" />
             <h3>Luxury Package</h3>
             <div class="price">6.5%</div>
             <ul>
@@ -464,8 +502,14 @@ export default component$(() => {
 
       <div class="process-section">
         <h2>Our Selling Process</h2>
+        <HeadingImage
+          imageKey="strategic-marketing"
+          heading="Our Selling Process"
+          variant="section"
+        />
         <div class="process-steps">
           <div class="process-step">
+            <HeadingImage imageKey="contact" heading="Initial Consultation" variant="card" />
             <h3>Initial Consultation</h3>
             <p>
               We assess your property and discuss your goals to create a customized selling
@@ -474,6 +518,7 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="market-analysis" heading="Market Analysis" variant="card" />
             <h3>Market Analysis</h3>
             <p>
               Conduct a comprehensive market analysis to determine the optimal listing price and
@@ -482,6 +527,11 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage
+              imageKey="property-staging"
+              heading="Property Preparation"
+              variant="card"
+            />
             <h3>Property Preparation</h3>
             <p>
               Guide you through staging and preparation to maximize your home's appeal to buyers.
@@ -489,6 +539,11 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage
+              imageKey="strategic-marketing"
+              heading="Marketing Launch"
+              variant="card"
+            />
             <h3>Marketing Launch</h3>
             <p>
               Execute a comprehensive marketing campaign to reach the maximum number of qualified
@@ -497,6 +552,11 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage
+              imageKey="weekend-open-houses"
+              heading="Showings & Feedback"
+              variant="card"
+            />
             <h3>Showings & Feedback</h3>
             <p>
               Coordinate showings and collect feedback to continuously optimize your selling
@@ -505,16 +565,19 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="lead-followup" heading="Offer Negotiation" variant="card" />
             <h3>Offer Negotiation</h3>
             <p>Evaluate offers and negotiate on your behalf to secure the best possible terms.</p>
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="about" heading="Transaction Management" variant="card" />
             <h3>Transaction Management</h3>
             <p>Manage all aspects of the transaction from contract to closing.</p>
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="home-valuation" heading="Closing & Beyond" variant="card" />
             <h3>Closing & Beyond</h3>
             <p>Ensure a smooth closing and provide ongoing support for any post-sale needs.</p>
           </div>
@@ -522,6 +585,7 @@ export default component$(() => {
       </div>
 
       <div class="cta-section">
+        <HeadingImage imageKey="contact" heading="Ready to Sell Your Home?" variant="section" />
         <h2>Ready to Sell Your Home?</h2>
         <p>
           Let Dr. Jan Duffy help you maximize your property's value and achieve a successful sale

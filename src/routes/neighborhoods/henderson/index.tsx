@@ -162,6 +162,11 @@ export default component$(() => {
           </p>
 
           <h3>Why Choose Henderson?</h3>
+          <HeadingImage
+            imageKey="neighborhood-expertise"
+            heading="Why Choose Henderson?"
+            variant="section"
+          />
           <ul>
             <li>
               <strong>Schools:</strong> Campuses include Coronado High School, Green Valley High
@@ -189,6 +194,11 @@ export default component$(() => {
           </ul>
 
           <h3>Top Henderson Communities</h3>
+          <HeadingImage
+            imageKey="luxury-open-houses"
+            heading="Top Henderson Communities"
+            variant="section"
+          />
           <ul>
             <li>
               <strong>Green Valley (89012, 89014):</strong> Established streets near Green Valley
@@ -203,7 +213,8 @@ export default component$(() => {
               properties
             </li>
             <li>
-              <strong>Anthem (89044):</strong> Gated community with strong security and family focus
+              <strong>Anthem (89044):</strong> Gated Anthem listings with clubhouse, golf, and 89044
+              zip code
             </li>
             <li>
               <strong>Inspirada (89044):</strong> Modern master-planned community with new
@@ -215,6 +226,11 @@ export default component$(() => {
           </ul>
 
           <h3>Home Prices in Henderson</h3>
+          <HeadingImage
+            imageKey="home-valuation"
+            heading="Home Prices in Henderson"
+            variant="section"
+          />
           <p>
             Henderson offers diverse housing options from affordable starter homes to luxury
             estates. Entry-level homes start around $300,000-$400,000, while mid-range homes
@@ -224,14 +240,15 @@ export default component$(() => {
           </p>
 
           <h3>Schools in Henderson</h3>
+          <HeadingImage imageKey="map-search" heading="Schools in Henderson" variant="section" />
           <p>
-            Henderson is served by the Clark County School District, with many schools in Green
-            Valley and Seven Hills consistently ranking among the top in the district. Schools like
-            Coronado High School and various elementary and middle schools are highly sought after
-            by families. Private school options are also available throughout Henderson.
+            Henderson listings are served by Clark County School District campuses including
+            Coronado High School and Green Valley High School. Confirm the attendance zone printed
+            on each MLS sheet before you tour. Private campuses are also nearby.
           </p>
 
           <h3>Commute to Las Vegas</h3>
+          <HeadingImage imageKey="map-search" heading="Commute to Las Vegas" variant="section" />
           <p>
             Henderson offers easy access to Las Vegas with a typical commute of 20-30 minutes
             depending on your destination. Highway access via I-215 and I-515 provides efficient
@@ -241,6 +258,7 @@ export default component$(() => {
 
         <div class="sidebar">
           <div class="info-card">
+            <HeadingImage imageKey="henderson" heading="Henderson Quick Facts" variant="card" />
             <h3>Quick Facts</h3>
             <div class="stat-grid">
               <div class="stat-item">
@@ -248,12 +266,12 @@ export default component$(() => {
                 <div class="stat-label">Avg Home Price</div>
               </div>
               <div class="stat-item">
-                <div class="stat-value">#2</div>
-                <div class="stat-label">Safest City NV</div>
+                <div class="stat-value">I-215</div>
+                <div class="stat-label">Beltway Access</div>
               </div>
               <div class="stat-item">
-                <div class="stat-value">4.6/5</div>
-                <div class="stat-label">School Rating</div>
+                <div class="stat-value">Coronado</div>
+                <div class="stat-label">Named High School</div>
               </div>
               <div class="stat-item">
                 <div class="stat-value">25min</div>
@@ -272,6 +290,7 @@ export default component$(() => {
           </div>
 
           <div class="info-card">
+            <HeadingImage imageKey="contact" heading="Contact Dr. Jan Duffy" variant="card" />
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert Henderson real estate guidance</p>
             <p>

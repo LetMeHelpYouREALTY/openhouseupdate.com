@@ -109,11 +109,21 @@ export default component$(() => {
         <h2 style="color: #0A2540; margin-bottom: 1rem; text-align: center;">
           Get Your Instant Home Value
         </h2>
+        <HeadingImage
+          imageKey="home-valuation"
+          heading="Get Your Instant Home Value"
+          variant="section"
+        />
         <realscout-home-value agent-encoded-id="QWdlbnQtMjI1MDUw" />
       </div>
 
       <div class="info-section">
         <h2>Henderson Home Valuation</h2>
+        <HeadingImage
+          imageKey="home-valuation"
+          heading="Henderson Home Valuation"
+          variant="section"
+        />
         <p>
           Get an accurate home valuation for your Henderson property. Located in zip codes 89002,
           89011, 89012, 89014, 89015, 89052, and 89074, Henderson home values vary by community,

@@ -113,6 +113,11 @@ export default component$(() => {
 
       <div class="search-section">
         <h2 style="color: #0A2540; margin-bottom: 1rem;">Search Summerlin Properties</h2>
+        <HeadingImage
+          imageKey="map-search"
+          heading="Search Summerlin Properties"
+          variant="section"
+        />
         <realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw" />
       </div>
 

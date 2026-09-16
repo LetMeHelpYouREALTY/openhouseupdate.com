@@ -171,6 +171,7 @@ export default component$(() => {
 
       <div class="weekend-content">
         <div class="search-section">
+          <HeadingImage imageKey="map-search" heading="Search Properties" variant="section" />
           <h2 class="search-title">Search Properties</h2>
           <p class="search-description">
             Use our advanced search to find properties available this weekend. Filter by location,

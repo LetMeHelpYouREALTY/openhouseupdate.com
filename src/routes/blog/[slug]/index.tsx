@@ -14,6 +14,7 @@ export default component$(() => {
   if (!post) {
     return (
       <section class="container mx-auto px-6 py-16 text-center">
+        <HeadingImage imageKey="people-also-ask" heading="Article not found" variant="section" />
         <h1 class="text-3xl font-bold text-gray-900 mb-4">Article not found</h1>
         <p class="text-gray-600 mb-6">That blog post is not published on Open House Marketplace.</p>
         <a href="/blog" class="text-blue-600 font-semibold">
@@ -81,6 +82,11 @@ export default component$(() => {
       {/* biome-ignore lint/security/noDangerouslySetInnerHtml: HTML is generated from author-controlled blog markdown */}
       <div class="blog-html" dangerouslySetInnerHTML={renderBlogHtml(post.content)} />
       <div class="blog-cta">
+        <HeadingImage
+          imageKey="weekend-open-houses"
+          heading="Tour this weekend’s open houses"
+          variant="section"
+        />
         <h2 class="text-2xl font-bold text-gray-900 mb-2">Tour this weekend’s open houses</h2>
         <p class="text-gray-700 mb-4">
           {business.agentName} at {business.gbpName}, {business.fullAddress}. Call{' '}

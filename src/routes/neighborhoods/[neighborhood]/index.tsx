@@ -90,6 +90,11 @@ export default component$(() => {
       {/* Advanced Search Pre-filtered for Neighborhood */}
       <div class="neighborhood-search">
         <h3>Search Within {neighborhoodName}</h3>
+        <HeadingImage
+          imageKey={neighborhoodImageKey}
+          heading={`Search Within ${neighborhoodName}`}
+          variant="section"
+        />
 
         <style>{`
           .neighborhood-search realscout-advanced-search {

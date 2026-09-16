@@ -156,6 +156,7 @@ export default component$(() => {
           Henderson (89002-89015).
         </p>
         <h3>What You'll Need:</h3>
+        <HeadingImage imageKey="lead-followup" heading="What You'll Need" variant="section" />
         <ul>
           <li>Proof of income (pay stubs, tax returns)</li>
           <li>Bank statements</li>
@@ -186,6 +187,11 @@ export default component$(() => {
           via I-15 / I-215, square footage, and HVAC age.
         </p>
         <h3>Las Vegas Budget Considerations:</h3>
+        <HeadingImage
+          imageKey="home-valuation"
+          heading="Las Vegas Budget Considerations"
+          variant="section"
+        />
         <ul>
           <li>
             <strong>Entry-level ($250K-$400K):</strong> North Las Vegas (89030-89086), Spring Valley
@@ -216,6 +222,11 @@ export default component$(() => {
           drive times. Open House Marketplace does not rank areas as safest.
         </p>
         <h3>First-time buyer inventory by area:</h3>
+        <HeadingImage
+          imageKey="neighborhood-expertise"
+          heading="First-time buyer inventory by area"
+          variant="section"
+        />
         <ul>
           <li>
             <strong>North Las Vegas:</strong> Newer construction in Skye Canyon (89084) and
@@ -255,6 +266,7 @@ export default component$(() => {
           market values.
         </p>
         <h3>What to Look For:</h3>
+        <HeadingImage imageKey="property-staging" heading="What to Look For" variant="section" />
         <ul>
           <li>HVAC system age and condition (critical in Las Vegas heat)</li>
           <li>Roof condition (tile roofs handle sun well)</li>
@@ -276,6 +288,7 @@ export default component$(() => {
           offers, while others offer more negotiation room.
         </p>
         <h3>Your Offer Should Include:</h3>
+        <HeadingImage imageKey="contact" heading="Your Offer Should Include" variant="section" />
         <ul>
           <li>Purchase price</li>
           <li>Down payment amount</li>
@@ -353,6 +366,11 @@ export default component$(() => {
       </div>
 
       <div class="cta-box">
+        <HeadingImage
+          imageKey="first-time-buyer"
+          heading="Ready to Buy Your First Home in Las Vegas?"
+          variant="section"
+        />
         <h2>Ready to Buy Your First Home in Las Vegas?</h2>
         <p>
           Dr. Jan Duffy specializes in helping first-time homebuyers navigate the Las Vegas market.

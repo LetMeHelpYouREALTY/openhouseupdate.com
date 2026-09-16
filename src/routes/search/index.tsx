@@ -237,6 +237,7 @@ export default component$(() => {
 
       <div class="search-results-layout">
         <aside class="sidebar">
+          <HeadingImage imageKey="map-search" heading="Refine Your Search" variant="section" />
           <h3>Refine Your Search</h3>
 
           <realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw" />

@@ -3,6 +3,11 @@
  * Enhanced OG metadata generation for better SEO performance
  */
 
+import { business } from '~/config/business'
+import type { SiteImageKey } from '~/config/images'
+import { canonicalUrlForPageKey, toCanonicalUrl } from '~/lib/canonical'
+import { getAbsoluteImageUrl } from '~/lib/cloudflare-images'
+
 export interface OGSEOConfig {
   pageKey: string
   title: string
@@ -17,34 +22,37 @@ export interface OGSEOConfig {
 }
 
 /**
- * Maps page keys to their specific OG images
- * Falls back to default if image doesn't exist
+ * Maps page keys to heading photos that actually exist in /public/images.
+ * Missing og-*.jpg files 404'd in production and wasted social-share signals.
  */
-const pageOGImages: Record<string, string> = {
-  homepage: 'https://www.openhouseupdate.com/images/og-homepage.jpg',
-  'home-valuation': 'https://www.openhouseupdate.com/images/og-valuation.jpg',
-  'buyer-services': 'https://www.openhouseupdate.com/images/og-buyer-services.jpg',
-  'seller-services': 'https://www.openhouseupdate.com/images/og-seller-services.jpg',
-  'market-analysis': 'https://www.openhouseupdate.com/images/og-market-analysis.jpg',
-  about: 'https://www.openhouseupdate.com/images/og-about.jpg',
-  contact: 'https://www.openhouseupdate.com/images/og-contact.jpg',
-  search: 'https://www.openhouseupdate.com/images/og-search.jpg',
-  'this-weekend': 'https://www.openhouseupdate.com/images/og-open-houses.jpg',
-  summerlin: 'https://www.openhouseupdate.com/images/og-summerlin.jpg',
-  henderson: 'https://www.openhouseupdate.com/images/og-henderson.jpg',
+const pageOGImageKeys: Record<string, SiteImageKey> = {
+  homepage: 'weekend-open-houses',
+  'home-valuation': 'home-valuation',
+  'buyer-services': 'buyer-services',
+  'seller-services': 'seller-services',
+  'market-analysis': 'market-analysis',
+  about: 'about',
+  contact: 'contact',
+  search: 'map-search',
+  'this-weekend': 'weekend-open-houses',
+  summerlin: 'summerlin',
+  henderson: 'henderson',
+  'green-valley': 'green-valley',
+  'north-las-vegas': 'north-las-vegas',
+  'spring-valley': 'spring-valley',
+  enterprise: 'enterprise',
+  'summerlin-vs-henderson': 'comparison',
+  comparison: 'comparison',
+  services: 'buyer-services',
 }
-
-/**
- * Default OG image fallback
- */
-const DEFAULT_OG_IMAGE = 'https://www.openhouseupdate.com/images/og-default.jpg'
 
 /**
  * Get page-specific OG image URL
  */
 export const getOGImage = (pageKey: string, customImage?: string): string => {
   if (customImage) return customImage
-  return pageOGImages[pageKey] || DEFAULT_OG_IMAGE
+  const key = pageOGImageKeys[pageKey] || 'og-default'
+  return getAbsoluteImageUrl(key, { width: 1200 })
 }
 
 /**
@@ -61,7 +69,9 @@ export const generateOGDescription = (
   // Ensure description is compelling for social sharing
   // Add keywords naturally if they enhance the description
   if (keywords && keywords.length > 0) {
-    const primaryKeywords = keywords.slice(0, 3).filter((kw) => !description.toLowerCase().includes(kw.toLowerCase()))
+    const primaryKeywords = keywords
+      .slice(0, 3)
+      .filter((kw) => !description.toLowerCase().includes(kw.toLowerCase()))
     if (primaryKeywords.length > 0 && description.length < 140) {
       // Add primary keyword if space allows and not already present
       const keyword = primaryKeywords[0]
@@ -151,8 +161,9 @@ export const createSEOOptimizedOG = (config: OGSEOConfig) => {
   const ogDescription = customDescription || generateOGDescription(description, keywords, true)
   const ogImageAlt = imageAlt || generateOGImageAlt(title, pageKey, keywords)
   const tags = articleTags || getArticleTags(keywords)
-  const canonicalUrl =
-    url || `https://www.openhouseupdate.com/${pageKey === 'homepage' ? '' : `${pageKey}/`}`
+  const canonicalUrl = url
+    ? toCanonicalUrl(url.startsWith('http') ? new URL(url).pathname : url)
+    : canonicalUrlForPageKey(pageKey)
 
   const meta = [
     // Required OG Properties
@@ -163,7 +174,7 @@ export const createSEOOptimizedOG = (config: OGSEOConfig) => {
 
     // Recommended OG Properties
     { property: 'og:description', content: ogDescription },
-    { property: 'og:site_name', content: 'Open House Update' },
+    { property: 'og:site_name', content: business.gbpName },
     { property: 'og:locale', content: 'en_US' },
     { property: 'og:locale:alternate', content: 'es_US' }, // Spanish for Las Vegas market
 
@@ -209,7 +220,13 @@ export const getPageOGMetadata = (pageKey: string): Partial<OGSEOConfig> => {
         'Open House Expert',
         'Dr. Jan Duffy',
       ],
-      articleTags: ['Las Vegas', 'open houses', 'weekend open houses', 'real estate', 'property search'],
+      articleTags: [
+        'Las Vegas',
+        'open houses',
+        'weekend open houses',
+        'real estate',
+        'property search',
+      ],
     },
     'home-valuation': {
       keywords: ['home valuation', 'property value', 'market analysis', 'CMA'],
@@ -217,11 +234,23 @@ export const getPageOGMetadata = (pageKey: string): Partial<OGSEOConfig> => {
     },
     'buyer-services': {
       keywords: ['buyer representation', 'home buying', 'buyer agent', 'property search'],
-      articleTags: ['buyer services', 'home buying', 'buyer representation', 'property search', 'Las Vegas'],
+      articleTags: [
+        'buyer services',
+        'home buying',
+        'buyer representation',
+        'property search',
+        'Las Vegas',
+      ],
     },
     'seller-services': {
       keywords: ['seller representation', 'home selling', 'seller agent', 'property marketing'],
-      articleTags: ['seller services', 'home selling', 'seller representation', 'property marketing', 'Las Vegas'],
+      articleTags: [
+        'seller services',
+        'home selling',
+        'seller representation',
+        'property marketing',
+        'Las Vegas',
+      ],
     },
     'people-also-ask': {
       keywords: [
@@ -244,4 +273,3 @@ export const getPageOGMetadata = (pageKey: string): Partial<OGSEOConfig> => {
 
   return pageConfigs[pageKey] || {}
 }
-

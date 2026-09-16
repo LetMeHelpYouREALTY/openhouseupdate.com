@@ -70,16 +70,21 @@ export default component$(() => {
         {/* Tips While Loading */}
         <div class="bg-gray-50 rounded-lg p-8 mb-12">
           <h2 class="text-2xl font-bold text-gray-900 mb-6">While You Wait...</h2>
+          <HeadingImage imageKey="market-analysis" heading="While You Wait" variant="section" />
           <div class="grid md:grid-cols-3 gap-6">
             <div class="text-center">
-              <div class="text-4xl mb-4">📊</div>
+              <HeadingImage imageKey="market-analysis" heading="Market Insights" variant="card" />
               <h3 class="text-lg font-semibold text-gray-900 mb-2">Market Insights</h3>
               <p class="text-gray-600 text-sm">
                 Las Vegas home prices have increased 8% year-over-year
               </p>
             </div>
             <div class="text-center">
-              <div class="text-4xl mb-4">🏘️</div>
+              <HeadingImage
+                imageKey="neighborhood-expertise"
+                heading="Popular Areas"
+                variant="card"
+              />
               <h3 class="text-lg font-semibold text-gray-900 mb-2">Popular Areas</h3>
               <p class="text-gray-600 text-sm">
                 Summerlin (89134–89144) and Henderson (89002–89074) hold frequent weekend open
@@ -87,7 +92,7 @@ export default component$(() => {
               </p>
             </div>
             <div class="text-center">
-              <div class="text-4xl mb-4">⏰</div>
+              <HeadingImage imageKey="contact" heading="Quick Response" variant="card" />
               <h3 class="text-lg font-semibold text-gray-900 mb-2">Quick Response</h3>
               <p class="text-gray-600 text-sm">Dr. Duffy responds to inquiries within 24 hours</p>
             </div>
@@ -97,6 +102,7 @@ export default component$(() => {
         {/* Contact Information */}
         <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-lg shadow-lg p-8 text-white">
           <h2 class="text-2xl font-bold mb-4">Need Immediate Assistance?</h2>
+          <HeadingImage imageKey="contact" heading="Need Immediate Assistance?" variant="section" />
           <p class="text-xl mb-6 opacity-90">
             While the page loads, feel free to contact Dr. Jan Duffy directly.
           </p>

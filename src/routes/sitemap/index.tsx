@@ -128,6 +128,7 @@ export default component$(() => {
 
       <div class="sitemap-section">
         <h2>Main Pages</h2>
+        <HeadingImage imageKey="about" heading="Main Pages" variant="section" />
         <div class="sitemap-links">
           <a href="/">Home</a>
           <a href="/neighborhoods/">Las Vegas Neighborhoods</a>
@@ -147,6 +148,7 @@ export default component$(() => {
 
       <div class="sitemap-section">
         <h2>Services</h2>
+        <HeadingImage imageKey="buyer-services" heading="Services" variant="section" />
         <div class="sitemap-links">
           <a href="/services/home-valuation/">Home Valuation</a>
           <a href="/services/buyer-services/">Buyer Services</a>
@@ -157,6 +159,7 @@ export default component$(() => {
 
       <div class="sitemap-section">
         <h2>Open Houses</h2>
+        <HeadingImage imageKey="weekend-open-houses" heading="Open Houses" variant="section" />
         <div class="sitemap-links">
           <a href="/this-weekend/">This Weekend's Open Houses</a>
           <a href="/open-houses-for-sale/under-400k/">Under $400K</a>
@@ -169,6 +172,7 @@ export default component$(() => {
 
       <div class="sitemap-section">
         <h2>Neighborhoods</h2>
+        <HeadingImage imageKey="neighborhood-expertise" heading="Neighborhoods" variant="section" />
         <div class="sitemap-links">
           <a href="/neighborhoods/">All Neighborhoods</a>
           <a href="/neighborhoods/summerlin/">Summerlin</a>
@@ -182,6 +186,7 @@ export default component$(() => {
 
       <div class="sitemap-section">
         <h2>Resources</h2>
+        <HeadingImage imageKey="people-also-ask" heading="Resources" variant="section" />
         <div class="sitemap-links">
           <a href="/faq/">Frequently Asked Questions</a>
           <a href="/blog/">Real Estate Blog</a>
@@ -191,6 +196,11 @@ export default component$(() => {
       </div>
 
       <div class="xml-sitemap">
+        <HeadingImage
+          imageKey="map-search"
+          heading="XML Sitemap for Search Engines"
+          variant="section"
+        />
         <h3>XML Sitemap for Search Engines</h3>
         <p>For search engines and developers:</p>
         <a href="/sitemap-index.xml" target="_blank" rel="noopener">

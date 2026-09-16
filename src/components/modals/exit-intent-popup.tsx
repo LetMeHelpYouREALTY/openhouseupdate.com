@@ -43,7 +43,8 @@ export default component$<ExitIntentPopupProps>(({ isVisible, onClose }) => {
     {
       id: 'neighborhood-guide',
       title: 'Complete Neighborhood Guide',
-      description: 'Detailed guide to Las Vegas neighborhoods with school ratings and amenities',
+      description:
+        'Guide to Las Vegas neighborhoods with named campuses, commute times, and amenities',
       icon: '🗺️',
       value: '$150 value',
     },

@@ -39,7 +39,13 @@ export default component$(() => {
       <div class="container mx-auto px-6 py-16">
         {/* Hero Section */}
         <div class="text-center mb-16">
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <HeadingImage
+            imageKey="contact"
+            heading="Contact Dr. Jan Duffy"
+            variant="hero"
+            priority
+          />
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 mt-6">
             Contact <span class="text-blue-600">Dr. Jan Duffy</span>
           </h1>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
@@ -49,18 +55,13 @@ export default component$(() => {
             </a>{' '}
             to tour Las Vegas open houses this weekend.
           </p>
-          <HeadingImage
-            imageKey="contact"
-            heading="Contact Dr. Jan Duffy"
-            variant="hero"
-            priority
-          />
         </div>
 
         <div class="grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div class="bg-white rounded-lg shadow-lg p-8">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Send a Message</h2>
+            <HeadingImage imageKey="lead-followup" heading="Send a Message" variant="section" />
 
             {!isSubmitted.value ? (
               <form preventdefault:submit onSubmit$={handleSubmit}>
@@ -148,7 +149,7 @@ export default component$(() => {
               </form>
             ) : (
               <div class="text-center py-8">
-                <div class="text-green-600 text-6xl mb-4">✓</div>
+                <HeadingImage imageKey="contact" heading="Message Sent" variant="section" />
                 <h3 class="text-2xl font-bold text-gray-900 mb-4">Message Sent!</h3>
                 <p class="text-gray-600 mb-6">
                   Thank you for reaching out. Dr. Jan Duffy will get back to you within 24 hours.
@@ -175,6 +176,7 @@ export default component$(() => {
           <div class="space-y-8">
             <div class="bg-white rounded-lg shadow-lg p-8">
               <h3 class="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
+              <HeadingImage imageKey="contact" heading="Get in Touch" variant="section" />
 
               <div class="space-y-6">
                 <div class="flex items-start space-x-4">
@@ -226,6 +228,7 @@ export default component$(() => {
             {/* Quick Actions */}
             <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-lg shadow-lg p-8 text-white">
               <h3 class="text-2xl font-bold mb-4">Quick Actions</h3>
+              <HeadingImage imageKey="contact" heading="Quick Actions" variant="section" />
               <div class="space-y-4">
                 <a
                   href={`tel:${business.phoneTel}`}
