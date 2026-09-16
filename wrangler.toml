@@ -4,11 +4,8 @@ compatibility_date = "2026-09-14"
 workers_dev = true
 
 # Git JPEGs in public/images are copied onto Cloudflare as Worker static assets.
+# Hosted Images delivery is https://imagedelivery.net/byE6BTe9lNqo21V57n4aPQ/<id>/public
 # workers.dev cannot be the live <img> origin: Bot Fight Mode challenges it.
-# After claiming the account, attach a DNS-only custom domain such as
-# images.openhouseupdate.com (same Cloudflare account as this zone) and set
-# PUBLIC_CLOUDFLARE_IMAGES_BASE. Until then, the site uses Cloudflare's CDN
-# of the git copies (jsDelivr) with /images on Vercel as onError backup.
 # Do not orange-cloud the Vercel apex.
 [assets]
 directory = "./public/images"

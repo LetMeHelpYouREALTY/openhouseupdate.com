@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik'
 import { type SiteImageKey, siteImages } from '~/config/images'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
+import { getSiteGitCdnUrl, getSiteImageUrl } from '~/lib/cloudflare-images'
 
 type HeadingImageProps = {
   imageKey: SiteImageKey
@@ -17,6 +17,7 @@ export default component$<HeadingImageProps>(
     const src = getSiteImageUrl(imageKey)
     const srcLarge = getSiteImageUrl(imageKey, { width: image.width })
     const srcMedium = getSiteImageUrl(imageKey, { width: Math.min(1200, image.width) })
+    const gitCdnSrc = getSiteGitCdnUrl(imageKey)
     const resolvedAlt = alt || heading || image.alt
 
     const variantClass =
@@ -97,12 +98,20 @@ export default component$<HeadingImageProps>(
           height={image.height}
           loading={priority ? 'eager' : 'lazy'}
           decoding="async"
+          data-cdn-src={gitCdnSrc}
           data-git-src={`/images/${image.file}`}
           onError$={(event) => {
             const el = event.target as HTMLImageElement
+            const cdnSrc = el.dataset.cdnSrc
             const gitSrc = el.dataset.gitSrc
-            if (gitSrc && el.src !== gitSrc && !el.dataset.fallback) {
+            if (!el.dataset.fallback && cdnSrc && el.src !== cdnSrc) {
               el.dataset.fallback = '1'
+              el.removeAttribute('srcset')
+              el.src = cdnSrc
+              return
+            }
+            if (gitSrc && el.src !== gitSrc && el.dataset.fallback !== '2') {
+              el.dataset.fallback = '2'
               el.removeAttribute('srcset')
               el.src = gitSrc
             }
