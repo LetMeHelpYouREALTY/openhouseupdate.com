@@ -1,6 +1,6 @@
 import { $, component$, useSignal } from '@builder.io/qwik'
 import type { SiteImageKey } from '~/config/images'
-import { getSiteImageUrl } from '~/lib/cloudflare-images'
+import { getSiteGitCdnUrl, getSiteImageUrl } from '~/lib/cloudflare-images'
 
 interface NeighborhoodGuide {
   id: string
@@ -233,6 +233,14 @@ export default component$(() => {
                   height={256}
                   loading="lazy"
                   class="h-32 w-full object-cover rounded-lg mb-3"
+                  data-cdn-src={getSiteGitCdnUrl(guide.imageKey)}
+                  onError$={(event) => {
+                    const el = event.target as HTMLImageElement
+                    const cdnSrc = el.dataset.cdnSrc
+                    if (cdnSrc && el.src !== cdnSrc) {
+                      el.src = cdnSrc
+                    }
+                  }}
                 />
                 <h4 class="font-bold text-gray-900 mb-2">{guide.name}</h4>
                 <p class="text-sm text-gray-600 mb-3">{guide.description}</p>
