@@ -226,14 +226,14 @@ export default component$(() => {
         <div class="credentials">
           <h2>Credentials & Achievements</h2>
           <HeadingImage
-            imageKey="industry-recognition"
+            imageKey="credentials"
             heading="Credentials & Achievements"
             variant="section"
           />
 
           <div class="credential-item">
             <HeadingImage
-              imageKey="industry-recognition"
+              imageKey="credentials"
               heading="Doctorate in Business Administration"
               variant="card"
             />
@@ -242,11 +242,7 @@ export default component$(() => {
           </div>
 
           <div class="credential-item">
-            <HeadingImage
-              imageKey="weekend-open-houses"
-              heading="Open House Expert"
-              variant="card"
-            />
+            <HeadingImage imageKey="credentials" heading="Open House Expert" variant="card" />
             <h3>Open House Expert</h3>
             <p>
               Nevada License #S.0197614 with continuing education in market trends and regulations
@@ -255,7 +251,7 @@ export default component$(() => {
 
           <div class="credential-item">
             <HeadingImage
-              imageKey="seller-services"
+              imageKey="credentials"
               heading="Certified Property Manager"
               variant="card"
             />
@@ -264,7 +260,11 @@ export default component$(() => {
           </div>
 
           <div class="credential-item">
-            <HeadingImage imageKey="about" heading="BHHS Nevada Properties" variant="card" />
+            <HeadingImage
+              imageKey="nevada-license"
+              heading="BHHS Nevada Properties"
+              variant="card"
+            />
             <h3>BHHS Nevada Properties</h3>
             <p>
               Affiliated with {business.brokerage}. Nevada license #{business.license}.
@@ -295,7 +295,7 @@ export default component$(() => {
 
       <div class="cta-section">
         <h2>Ready to Work Together?</h2>
-        <HeadingImage imageKey="contact" heading="Ready to Work Together?" variant="section" />
+        <HeadingImage imageKey="need-help" heading="Ready to Work Together?" variant="section" />
         <p>
           Let Dr. Jan Duffy guide you through your real estate journey with professional expertise
           and personalized service.

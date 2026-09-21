@@ -60,7 +60,7 @@ export default component$(() => {
         {/* FAQ Accordion */}
         <div class="max-w-4xl mx-auto mb-16">
           <HeadingImage
-            imageKey="about"
+            imageKey="people-also-ask"
             heading="Common Las Vegas real estate questions"
             variant="section"
           />
@@ -95,7 +95,7 @@ export default component$(() => {
         {/* Expert CTA */}
         <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl shadow-xl p-10 text-white text-center mb-16">
           <h2 class="text-3xl font-bold mb-4">Have More Questions?</h2>
-          <HeadingImage imageKey="contact" heading="Have More Questions?" variant="section" />
+          <HeadingImage imageKey="need-help" heading="Have More Questions?" variant="section" />
           <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             Dr. Jan Duffy is here to provide personalized answers and expert guidance for your Las
             Vegas real estate needs
@@ -118,11 +118,7 @@ export default component$(() => {
 
         {/* Related Topics */}
         <div class="max-w-4xl mx-auto">
-          <HeadingImage
-            imageKey="people-also-ask"
-            heading="Explore More Topics"
-            variant="section"
-          />
+          <HeadingImage imageKey="sitemap" heading="Explore More Topics" variant="section" />
           <h2 class="text-2xl font-bold text-gray-900 text-center mb-8">Explore More Topics</h2>
           <div class="grid md:grid-cols-3 gap-6">
             <a

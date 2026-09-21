@@ -8,7 +8,7 @@ export default component$(() => {
       <div class="container mx-auto px-6 py-16 max-w-4xl">
         <h1 class="text-4xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
         <HeadingImage
-          imageKey="contact"
+          imageKey="privacy-data"
           heading="Privacy Policy"
           variant="section"
           alt="Open House Marketplace office at 760 Windover Ct, Las Vegas NV 89138"
@@ -23,12 +23,12 @@ export default component$(() => {
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">1. Information We Collect</h2>
               <HeadingImage
-                imageKey="lead-followup"
+                imageKey="privacy-data"
                 heading="Information We Collect"
                 variant="section"
               />
               <HeadingImage
-                imageKey="lead-followup"
+                imageKey="privacy-data"
                 heading="Information We Collect"
                 variant="section"
               />
@@ -50,7 +50,7 @@ export default component$(() => {
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">2. How We Use Your Information</h2>
               <HeadingImage
-                imageKey="lead-followup"
+                imageKey="privacy-data"
                 heading="How We Use Your Information"
                 variant="section"
               />
@@ -67,7 +67,7 @@ export default component$(() => {
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">3. Information Sharing</h2>
               <HeadingImage
-                imageKey="lead-followup"
+                imageKey="privacy-data"
                 heading="Information Sharing"
                 variant="section"
               />
@@ -85,7 +85,7 @@ export default component$(() => {
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">4. Cookies and Tracking</h2>
               <HeadingImage
-                imageKey="lead-followup"
+                imageKey="privacy-data"
                 heading="Cookies and Tracking"
                 variant="section"
               />
@@ -105,7 +105,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">5. Data Security</h2>
-              <HeadingImage imageKey="lead-followup" heading="Data Security" variant="section" />
+              <HeadingImage imageKey="privacy-data" heading="Data Security" variant="section" />
               <p class="text-gray-600">
                 We implement appropriate security measures to protect your personal information
                 against unauthorized access, alteration, disclosure, or destruction. However, no
@@ -115,7 +115,7 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">6. Your Rights</h2>
-              <HeadingImage imageKey="lead-followup" heading="Your Rights" variant="section" />
+              <HeadingImage imageKey="privacy-data" heading="Your Rights" variant="section" />
               <p class="text-gray-600 mb-4">You have the right to:</p>
               <ul class="list-disc pl-6 text-gray-600 space-y-2">
                 <li>Access and update your personal information</li>
@@ -128,7 +128,7 @@ export default component$(() => {
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">7. Third-Party Services</h2>
               <HeadingImage
-                imageKey="lead-followup"
+                imageKey="legal-docs"
                 heading="Third-Party Services"
                 variant="section"
               />
@@ -154,7 +154,7 @@ export default component$(() => {
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">8. Children's Privacy</h2>
               <HeadingImage
-                imageKey="lead-followup"
+                imageKey="privacy-data"
                 heading="Children's Privacy"
                 variant="section"
               />
@@ -168,7 +168,7 @@ export default component$(() => {
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">9. Changes to This Policy</h2>
               <HeadingImage
-                imageKey="lead-followup"
+                imageKey="privacy-data"
                 heading="Changes to This Policy"
                 variant="section"
               />
@@ -181,7 +181,6 @@ export default component$(() => {
 
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">10. Contact Us</h2>
-              <HeadingImage imageKey="lead-followup" heading="Contact Us" variant="section" />
               <HeadingImage imageKey="contact" heading="Contact Us" variant="section" />
               <p class="text-gray-600 mb-4">
                 If you have any questions about this Privacy Policy, please contact us:

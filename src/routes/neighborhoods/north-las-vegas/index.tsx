@@ -199,7 +199,7 @@ export default component$(() => {
 
           <h3>Top Communities in North Las Vegas</h3>
           <HeadingImage
-            imageKey="luxury-open-houses"
+            imageKey="nlv-growth"
             heading="Top Communities in North Las Vegas"
             variant="section"
           />
@@ -222,7 +222,7 @@ export default component$(() => {
 
           <h3>Home Prices in North Las Vegas</h3>
           <HeadingImage
-            imageKey="home-valuation"
+            imageKey="housing-prices"
             heading="Home Prices in North Las Vegas"
             variant="section"
           />
@@ -237,7 +237,7 @@ export default component$(() => {
 
           <h3>Schools in North Las Vegas</h3>
           <HeadingImage
-            imageKey="map-search"
+            imageKey="named-schools"
             heading="Schools in North Las Vegas"
             variant="section"
           />
@@ -248,11 +248,7 @@ export default component$(() => {
           </p>
 
           <h3>Growth & Development</h3>
-          <HeadingImage
-            imageKey="north-las-vegas"
-            heading="Growth & Development"
-            variant="section"
-          />
+          <HeadingImage imageKey="nlv-growth" heading="Growth & Development" variant="section" />
           <p>
             North Las Vegas is experiencing significant growth and development, with new shopping
             centers, restaurants, and services opening regularly. This growth brings improved

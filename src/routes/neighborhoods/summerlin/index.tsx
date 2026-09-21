@@ -170,7 +170,7 @@ export default component$(() => {
 
           <h3>Home Prices in Summerlin</h3>
           <HeadingImage
-            imageKey="home-valuation"
+            imageKey="housing-prices"
             heading="Home Prices in Summerlin"
             variant="section"
           />
@@ -183,7 +183,7 @@ export default component$(() => {
 
           <h3>Top Communities in Summerlin</h3>
           <HeadingImage
-            imageKey="luxury-open-houses"
+            imageKey="summerlin"
             heading="Top Communities in Summerlin"
             variant="section"
           />
@@ -207,7 +207,7 @@ export default component$(() => {
           </ul>
 
           <h3>Schools in Summerlin</h3>
-          <HeadingImage imageKey="map-search" heading="Schools in Summerlin" variant="section" />
+          <HeadingImage imageKey="named-schools" heading="Schools in Summerlin" variant="section" />
           <p>
             Summerlin is served by Clark County School District campuses including Bonner
             Elementary, Goolsby Elementary, Rogich Middle School, and Palo Verde High School, plus

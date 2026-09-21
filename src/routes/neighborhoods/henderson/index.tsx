@@ -195,7 +195,7 @@ export default component$(() => {
 
           <h3>Top Henderson Communities</h3>
           <HeadingImage
-            imageKey="luxury-open-houses"
+            imageKey="henderson"
             heading="Top Henderson Communities"
             variant="section"
           />
@@ -227,7 +227,7 @@ export default component$(() => {
 
           <h3>Home Prices in Henderson</h3>
           <HeadingImage
-            imageKey="home-valuation"
+            imageKey="housing-prices"
             heading="Home Prices in Henderson"
             variant="section"
           />
@@ -240,7 +240,7 @@ export default component$(() => {
           </p>
 
           <h3>Schools in Henderson</h3>
-          <HeadingImage imageKey="map-search" heading="Schools in Henderson" variant="section" />
+          <HeadingImage imageKey="named-schools" heading="Schools in Henderson" variant="section" />
           <p>
             Henderson listings are served by Clark County School District campuses including
             Coronado High School and Green Valley High School. Confirm the attendance zone printed
@@ -248,7 +248,11 @@ export default component$(() => {
           </p>
 
           <h3>Commute to Las Vegas</h3>
-          <HeadingImage imageKey="map-search" heading="Commute to Las Vegas" variant="section" />
+          <HeadingImage
+            imageKey="commute-beltway"
+            heading="Commute to Las Vegas"
+            variant="section"
+          />
           <p>
             Henderson offers easy access to Las Vegas with a typical commute of 20-30 minutes
             depending on your destination. Highway access via I-215 and I-515 provides efficient

@@ -118,7 +118,7 @@ export default component$(() => {
       `}</style>
 
       <div class="sitemap-header">
-        <HeadingImage imageKey="map-search" heading="Site Map" variant="background" priority />
+        <HeadingImage imageKey="sitemap" heading="Site Map" variant="background" priority />
         <h1>Site Map</h1>
         <p>
           Find all pages and sections of Open House Marketplace at 760 Windover Ct, Las Vegas NV
@@ -128,7 +128,7 @@ export default component$(() => {
 
       <div class="sitemap-section">
         <h2>Main Pages</h2>
-        <HeadingImage imageKey="about" heading="Main Pages" variant="section" />
+        <HeadingImage imageKey="sitemap" heading="Main Pages" variant="section" />
         <div class="sitemap-links">
           <a href="/">Home</a>
           <a href="/neighborhoods/">Las Vegas Neighborhoods</a>
@@ -186,7 +186,7 @@ export default component$(() => {
 
       <div class="sitemap-section">
         <h2>Resources</h2>
-        <HeadingImage imageKey="people-also-ask" heading="Resources" variant="section" />
+        <HeadingImage imageKey="sitemap" heading="Resources" variant="section" />
         <div class="sitemap-links">
           <a href="/faq/">Frequently Asked Questions</a>
           <a href="/blog/">Real Estate Blog</a>
@@ -197,7 +197,7 @@ export default component$(() => {
 
       <div class="xml-sitemap">
         <HeadingImage
-          imageKey="map-search"
+          imageKey="sitemap"
           heading="XML Sitemap for Search Engines"
           variant="section"
         />

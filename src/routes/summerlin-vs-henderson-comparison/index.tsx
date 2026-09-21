@@ -120,7 +120,7 @@ export default component$(() => {
           <HeadingImage imageKey="summerlin" heading="Summerlin Overview" variant="section" />
           <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
             <h3 class="text-2xl font-semibold text-gray-900 mb-3">Location & Zip Codes</h3>
-            <HeadingImage imageKey="map-search" heading="Location & Zip Codes" variant="section" />
+            <HeadingImage imageKey="zip-codes" heading="Location & Zip Codes" variant="section" />
             <p class="text-lg text-gray-700 mb-4">
               Summerlin is located in the western part of Las Vegas Valley, covering zip codes
               89134, 89135, 89138, and 89144. It's a master-planned community with Downtown
@@ -128,7 +128,7 @@ export default component$(() => {
             </p>
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Housing & Pricing</h3>
-            <HeadingImage imageKey="home-valuation" heading="Housing & Pricing" variant="section" />
+            <HeadingImage imageKey="housing-prices" heading="Housing & Pricing" variant="section" />
             <p class="text-lg text-gray-700 mb-4">Summerlin offers diverse housing options:</p>
             <ul class="list-disc pl-6 text-lg text-gray-700 mb-4">
               <li>
@@ -147,7 +147,11 @@ export default component$(() => {
             </p>
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Schools & Education</h3>
-            <HeadingImage imageKey="map-search" heading="Schools & Education" variant="section" />
+            <HeadingImage
+              imageKey="named-schools"
+              heading="Schools & Education"
+              variant="section"
+            />
             <p class="text-lg text-gray-700 mb-4">
               Summerlin public campuses include Palo Verde High School and West Career and Technical
               Academy. Confirm the campus printed on each listing rather than using a neighborhood
@@ -156,7 +160,7 @@ export default component$(() => {
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Amenities & Recreation</h3>
             <HeadingImage
-              imageKey="neighborhood-expertise"
+              imageKey="amenities-recreation"
               heading="Amenities & Recreation"
               variant="section"
             />
@@ -181,7 +185,7 @@ export default component$(() => {
           <HeadingImage imageKey="henderson" heading="Henderson Overview" variant="section" />
           <div class="bg-green-50 border-l-4 border-green-500 p-6 mb-6">
             <h3 class="text-2xl font-semibold text-gray-900 mb-3">Location & Zip Codes</h3>
-            <HeadingImage imageKey="map-search" heading="Location & Zip Codes" variant="section" />
+            <HeadingImage imageKey="zip-codes" heading="Location & Zip Codes" variant="section" />
             <p class="text-lg text-gray-700 mb-4">
               Henderson is located southeast of Las Vegas, covering zip codes 89002, 89011, 89012,
               89014, 89015, 89052, and 89074. It's Nevada's second-largest city with its own
@@ -189,7 +193,7 @@ export default component$(() => {
             </p>
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Housing & Pricing</h3>
-            <HeadingImage imageKey="home-valuation" heading="Housing & Pricing" variant="section" />
+            <HeadingImage imageKey="housing-prices" heading="Housing & Pricing" variant="section" />
             <p class="text-lg text-gray-700 mb-4">
               Henderson offers diverse housing across different areas:
             </p>
@@ -215,7 +219,11 @@ export default component$(() => {
             </ul>
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Schools & Education</h3>
-            <HeadingImage imageKey="map-search" heading="Schools & Education" variant="section" />
+            <HeadingImage
+              imageKey="named-schools"
+              heading="Schools & Education"
+              variant="section"
+            />
             <p class="text-lg text-gray-700 mb-4">
               Henderson schools, particularly in Green Valley (89012, 89014) and Seven Hills (89052,
               89074), include Coronado High School. Amenities include Green Valley Ranch, Lake Las
@@ -224,7 +232,7 @@ export default component$(() => {
 
             <h3 class="text-2xl font-semibold text-gray-900 mb-3 mt-6">Amenities & Recreation</h3>
             <HeadingImage
-              imageKey="neighborhood-expertise"
+              imageKey="amenities-recreation"
               heading="Amenities & Recreation"
               variant="section"
             />
@@ -280,7 +288,7 @@ export default component$(() => {
             Market Comparison (November 2025)
           </h2>
           <HeadingImage
-            imageKey="market-analysis"
+            imageKey="market-reports"
             heading="Market Comparison (November 2025)"
             variant="section"
           />
@@ -302,7 +310,7 @@ export default component$(() => {
           </ul>
 
           <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-4">Making Your Decision</h2>
-          <HeadingImage imageKey="contact" heading="Making Your Decision" variant="section" />
+          <HeadingImage imageKey="need-help" heading="Making Your Decision" variant="section" />
           <p class="text-lg text-gray-700 mb-6">
             When choosing between Summerlin and Henderson, consider your budget (Summerlin tends to
             be pricier), commute via I-215, named campuses on the MLS sheet, HOA dues, and square

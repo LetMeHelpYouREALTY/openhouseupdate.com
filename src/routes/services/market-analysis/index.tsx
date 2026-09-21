@@ -376,11 +376,7 @@ export default component$(() => {
 
       <div class="analysis-overview">
         <div class="analysis-card">
-          <HeadingImage
-            imageKey="market-analysis"
-            heading="Monthly Market Reports"
-            variant="card"
-          />
+          <HeadingImage imageKey="market-reports" heading="Monthly Market Reports" variant="card" />
           <h3>Monthly Market Reports</h3>
           <p>
             Comprehensive monthly reports covering market trends, inventory levels, and pricing
@@ -416,11 +412,7 @@ export default component$(() => {
         </div>
 
         <div class="analysis-card">
-          <HeadingImage
-            imageKey="luxury-open-houses"
-            heading="Investment Analysis"
-            variant="card"
-          />
+          <HeadingImage imageKey="investment" heading="Investment Analysis" variant="card" />
           <h3>Investment Analysis</h3>
           <p>
             Strategic investment analysis to identify opportunities and assess potential returns in
@@ -454,7 +446,7 @@ export default component$(() => {
 
       <div class="market-data-section">
         <h2>Current Market Data</h2>
-        <HeadingImage imageKey="market-analysis" heading="Current Market Data" variant="section" />
+        <HeadingImage imageKey="market-reports" heading="Current Market Data" variant="section" />
         <div class="data-grid">
           <div class="data-card">
             <div class="metric">$485,000</div>
@@ -496,11 +488,11 @@ export default component$(() => {
 
       <div class="reports-section">
         <h2>Available Reports</h2>
-        <HeadingImage imageKey="lead-followup" heading="Available Reports" variant="section" />
+        <HeadingImage imageKey="market-reports" heading="Available Reports" variant="section" />
         <div class="reports-grid">
           <div class="report-card">
             <HeadingImage
-              imageKey="market-analysis"
+              imageKey="market-reports"
               heading="Monthly Market Summary"
               variant="card"
             />
@@ -527,7 +519,7 @@ export default component$(() => {
           </div>
 
           <div class="report-card">
-            <HeadingImage imageKey="home-valuation" heading="Price Range Analysis" variant="card" />
+            <HeadingImage imageKey="housing-prices" heading="Price Range Analysis" variant="card" />
             <h3>Price Range Analysis</h3>
             <p>
               Detailed breakdown of market performance across different price ranges and property
@@ -537,11 +529,7 @@ export default component$(() => {
           </div>
 
           <div class="report-card">
-            <HeadingImage
-              imageKey="conversion-rates"
-              heading="Investment Opportunities"
-              variant="card"
-            />
+            <HeadingImage imageKey="investment" heading="Investment Opportunities" variant="card" />
             <h3>Investment Opportunities</h3>
             <p>
               Strategic analysis of investment potential including ROI projections and market timing
@@ -551,7 +539,7 @@ export default component$(() => {
           </div>
 
           <div class="report-card">
-            <HeadingImage imageKey="market-analysis" heading="Forecasting Report" variant="card" />
+            <HeadingImage imageKey="market-reports" heading="Forecasting Report" variant="card" />
             <h3>Forecasting Report</h3>
             <p>
               Forward-looking analysis with predictions for market trends, pricing, and investment
@@ -561,7 +549,7 @@ export default component$(() => {
           </div>
 
           <div class="report-card">
-            <HeadingImage imageKey="lead-followup" heading="Custom Analysis" variant="card" />
+            <HeadingImage imageKey="market-reports" heading="Custom Analysis" variant="card" />
             <h3>Custom Analysis</h3>
             <p>
               Tailored market analysis for specific properties, neighborhoods, or investment
@@ -616,7 +604,7 @@ export default component$(() => {
           </div>
 
           <div class="neighborhood-card">
-            <HeadingImage imageKey="weekend-open-houses" heading="Downtown" variant="card" />
+            <HeadingImage imageKey="downtown" heading="Downtown" variant="card" />
             <h3>Downtown</h3>
             <div class="avg-price">$385,000</div>
             <div class="trend up">+5.2% this quarter</div>
@@ -626,7 +614,7 @@ export default component$(() => {
 
       <div class="cta-section">
         <h2>Get Your Market Analysis</h2>
-        <HeadingImage imageKey="contact" heading="Get Your Market Analysis" variant="section" />
+        <HeadingImage imageKey="need-help" heading="Get Your Market Analysis" variant="section" />
         <p>
           Stay ahead of the market with detailed analysis and insights from Dr. Jan Duffy's expert
           market knowledge.

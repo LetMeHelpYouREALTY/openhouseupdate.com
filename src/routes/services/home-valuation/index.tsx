@@ -443,7 +443,7 @@ export default component$(() => {
             </form>
           ) : (
             <div class="success-message">
-              <HeadingImage imageKey="contact" heading="Thank You" variant="section" />
+              <HeadingImage imageKey="thank-you" heading="Thank You" variant="section" />
               <h3>Thank You!</h3>
               <p>
                 Your valuation request has been submitted. Dr. Jan Duffy will contact you within 24

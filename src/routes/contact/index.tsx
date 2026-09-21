@@ -149,7 +149,7 @@ export default component$(() => {
               </form>
             ) : (
               <div class="text-center py-8">
-                <HeadingImage imageKey="contact" heading="Message Sent" variant="section" />
+                <HeadingImage imageKey="thank-you" heading="Message Sent" variant="section" />
                 <h3 class="text-2xl font-bold text-gray-900 mb-4">Message Sent!</h3>
                 <p class="text-gray-600 mb-6">
                   Thank you for reaching out. Dr. Jan Duffy will get back to you within 24 hours.
@@ -228,7 +228,7 @@ export default component$(() => {
             {/* Quick Actions */}
             <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-lg shadow-lg p-8 text-white">
               <h3 class="text-2xl font-bold mb-4">Quick Actions</h3>
-              <HeadingImage imageKey="contact" heading="Quick Actions" variant="section" />
+              <HeadingImage imageKey="need-help" heading="Quick Actions" variant="section" />
               <div class="space-y-4">
                 <a
                   href={`tel:${business.phoneTel}`}

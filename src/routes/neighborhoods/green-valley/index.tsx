@@ -195,7 +195,7 @@ export default component$(() => {
 
           <h3>Green Valley Communities</h3>
           <HeadingImage
-            imageKey="luxury-open-houses"
+            imageKey="green-valley-ranch"
             heading="Green Valley Communities"
             variant="section"
           />
@@ -215,7 +215,7 @@ export default component$(() => {
 
           <h3>Home Prices in Green Valley</h3>
           <HeadingImage
-            imageKey="home-valuation"
+            imageKey="housing-prices"
             heading="Home Prices in Green Valley"
             variant="section"
           />
@@ -228,7 +228,11 @@ export default component$(() => {
           </p>
 
           <h3>Schools in Green Valley</h3>
-          <HeadingImage imageKey="map-search" heading="Schools in Green Valley" variant="section" />
+          <HeadingImage
+            imageKey="named-schools"
+            heading="Schools in Green Valley"
+            variant="section"
+          />
           <p>
             Green Valley listings often fall in the Coronado High School attendance area, with
             nearby elementary and middle campuses in the Clark County School District. Confirm the
@@ -236,7 +240,11 @@ export default component$(() => {
           </p>
 
           <h3>Green Valley Ranch</h3>
-          <HeadingImage imageKey="green-valley" heading="Green Valley Ranch" variant="section" />
+          <HeadingImage
+            imageKey="green-valley-ranch"
+            heading="Green Valley Ranch"
+            variant="section"
+          />
           <p>
             Green Valley Ranch is a major shopping and entertainment destination featuring premium
             retailers, restaurants, movie theater, and events. This hub provides residents with

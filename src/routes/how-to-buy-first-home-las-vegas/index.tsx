@@ -145,7 +145,7 @@ export default component$(() => {
           <span class="step-number">1</span>Get Pre-Approved for a Mortgage
         </h2>
         <HeadingImage
-          imageKey="buyer-services"
+          imageKey="pre-approval"
           heading="Get Pre-Approved for a Mortgage"
           variant="section"
         />
@@ -156,7 +156,7 @@ export default component$(() => {
           Henderson (89002-89015).
         </p>
         <h3>What You'll Need:</h3>
-        <HeadingImage imageKey="lead-followup" heading="What You'll Need" variant="section" />
+        <HeadingImage imageKey="first-time-buyer" heading="What You'll Need" variant="section" />
         <ul>
           <li>Proof of income (pay stubs, tax returns)</li>
           <li>Bank statements</li>
@@ -176,7 +176,7 @@ export default component$(() => {
           <span class="step-number">2</span>Determine Your Budget and Preferences
         </h2>
         <HeadingImage
-          imageKey="home-valuation"
+          imageKey="housing-prices"
           heading="Determine Your Budget and Preferences"
           variant="section"
         />
@@ -188,7 +188,7 @@ export default component$(() => {
         </p>
         <h3>Las Vegas Budget Considerations:</h3>
         <HeadingImage
-          imageKey="home-valuation"
+          imageKey="housing-prices"
           heading="Las Vegas Budget Considerations"
           variant="section"
         />
@@ -266,7 +266,7 @@ export default component$(() => {
           market values.
         </p>
         <h3>What to Look For:</h3>
-        <HeadingImage imageKey="property-staging" heading="What to Look For" variant="section" />
+        <HeadingImage imageKey="inspection" heading="What to Look For" variant="section" />
         <ul>
           <li>HVAC system age and condition (critical in Las Vegas heat)</li>
           <li>Roof condition (tile roofs handle sun well)</li>
@@ -281,14 +281,18 @@ export default component$(() => {
         <h2>
           <span class="step-number">5</span>Make an Offer
         </h2>
-        <HeadingImage imageKey="contact" heading="Make an Offer" variant="section" />
+        <HeadingImage imageKey="negotiation" heading="Make an Offer" variant="section" />
         <p>
           Once you find the right property, work with Dr. Jan Duffy to craft a competitive offer. In
           November 2025, Las Vegas market conditions vary by neighborhood - some areas see multiple
           offers, while others offer more negotiation room.
         </p>
         <h3>Your Offer Should Include:</h3>
-        <HeadingImage imageKey="contact" heading="Your Offer Should Include" variant="section" />
+        <HeadingImage
+          imageKey="negotiation"
+          heading="Your Offer Should Include"
+          variant="section"
+        />
         <ul>
           <li>Purchase price</li>
           <li>Down payment amount</li>
@@ -303,7 +307,7 @@ export default component$(() => {
         <h2>
           <span class="step-number">6</span>Home Inspection
         </h2>
-        <HeadingImage imageKey="property-staging" heading="Home Inspection" variant="section" />
+        <HeadingImage imageKey="inspection" heading="Home Inspection" variant="section" />
         <p>
           After offer acceptance, schedule a professional home inspection. In Las Vegas, pay special
           attention to:
@@ -336,7 +340,7 @@ export default component$(() => {
         <h2>
           <span class="step-number">7</span>Finalize Financing
         </h2>
-        <HeadingImage imageKey="market-analysis" heading="Finalize Financing" variant="section" />
+        <HeadingImage imageKey="financing" heading="Finalize Financing" variant="section" />
         <p>
           Work with your lender to finalize your mortgage. Provide any additional documentation
           requested. The lender will order an appraisal to ensure the property value supports the
@@ -348,7 +352,7 @@ export default component$(() => {
         <h2>
           <span class="step-number">8</span>Closing Process
         </h2>
-        <HeadingImage imageKey="about" heading="Closing Process" variant="section" />
+        <HeadingImage imageKey="closing" heading="Closing Process" variant="section" />
         <p>
           Typically 30-45 days after offer acceptance, you'll close on your new Las Vegas home.
           Closing involves:
@@ -367,7 +371,7 @@ export default component$(() => {
 
       <div class="cta-box">
         <HeadingImage
-          imageKey="first-time-buyer"
+          imageKey="need-help"
           heading="Ready to Buy Your First Home in Las Vegas?"
           variant="section"
         />

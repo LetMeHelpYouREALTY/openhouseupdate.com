@@ -8,7 +8,7 @@ export default component$(() => {
       <div class="container mx-auto px-6 py-16 text-center">
         <div class="mb-12 max-w-3xl mx-auto">
           <HeadingImage
-            imageKey="weekend-open-houses"
+            imageKey="page-not-found"
             heading="Page not found — Las Vegas open houses"
             variant="hero"
           />
@@ -17,7 +17,7 @@ export default component$(() => {
         {/* Error Message */}
         <div class="max-w-2xl mx-auto mb-12">
           <HeadingImage
-            imageKey="weekend-open-houses"
+            imageKey="page-not-found"
             heading="Oops! This Page Doesn't Exist"
             variant="section"
           />
@@ -82,7 +82,7 @@ export default component$(() => {
         {/* Popular Pages */}
         <div class="bg-gray-50 rounded-lg p-8 mb-12">
           <h2 class="text-2xl font-bold text-gray-900 mb-6">Popular Pages</h2>
-          <HeadingImage imageKey="map-search" heading="Popular Pages" variant="section" />
+          <HeadingImage imageKey="sitemap" heading="Popular Pages" variant="section" />
           <div class="grid md:grid-cols-3 gap-6">
             <div>
               <HeadingImage imageKey="buyer-services" heading="Services" variant="card" />
@@ -111,7 +111,7 @@ export default component$(() => {
               </ul>
             </div>
             <div>
-              <HeadingImage imageKey="home-valuation" heading="Browse by Price" variant="card" />
+              <HeadingImage imageKey="housing-prices" heading="Browse by Price" variant="card" />
               <h3 class="text-lg font-semibold text-gray-900 mb-3">Browse by Price</h3>
               <ul class="space-y-2 text-left">
                 <li>
@@ -183,7 +183,7 @@ export default component$(() => {
 
         {/* Search Box */}
         <div class="max-w-md mx-auto mb-12">
-          <HeadingImage imageKey="map-search" heading="Search Our Site" variant="section" />
+          <HeadingImage imageKey="sitemap" heading="Search Our Site" variant="section" />
           <h3 class="text-lg font-semibold text-gray-900 mb-4">Search Our Site</h3>
           <div class="flex gap-2">
             <input
@@ -204,7 +204,7 @@ export default component$(() => {
         <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-lg shadow-lg p-8 text-white">
           <h2 class="text-2xl font-bold mb-4">Need Help Finding Something?</h2>
           <HeadingImage
-            imageKey="contact"
+            imageKey="need-help"
             heading="Need Help Finding Something?"
             variant="section"
           />

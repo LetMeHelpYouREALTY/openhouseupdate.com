@@ -194,7 +194,7 @@ export default component$(() => {
           </div>
 
           <div class="feature-card">
-            <HeadingImage imageKey="summerlin" heading="Location-Based" variant="card" />
+            <HeadingImage imageKey="zip-codes" heading="Location-Based" variant="card" />
             <h3 class="feature-title">Location-Based</h3>
             <p class="feature-description">
               Find properties in your preferred neighborhoods with detailed location information and
@@ -203,7 +203,7 @@ export default component$(() => {
           </div>
 
           <div class="feature-card">
-            <HeadingImage imageKey="weekend-open-houses" heading="Weekend Focused" variant="card" />
+            <HeadingImage imageKey="showings" heading="Weekend Focused" variant="card" />
             <h3 class="feature-title">Weekend Focused</h3>
             <p class="feature-description">
               Discover properties with open houses scheduled for this weekend, making it easy to

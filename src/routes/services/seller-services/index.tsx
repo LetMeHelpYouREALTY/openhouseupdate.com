@@ -339,7 +339,7 @@ export default component$(() => {
       <div class="services-overview">
         <div class="service-card">
           <HeadingImage
-            imageKey="home-valuation"
+            imageKey="housing-prices"
             heading="Market Pricing Strategy"
             variant="card"
           />
@@ -379,7 +379,7 @@ export default component$(() => {
 
         <div class="service-card">
           <HeadingImage
-            imageKey="strategic-marketing"
+            imageKey="marketing-launch"
             heading="Professional Marketing"
             variant="card"
           />
@@ -398,11 +398,7 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <HeadingImage
-            imageKey="weekend-open-houses"
-            heading="Showings Coordination"
-            variant="card"
-          />
+          <HeadingImage imageKey="showings" heading="Showings Coordination" variant="card" />
           <h3>Showings Coordination</h3>
           <p>
             Manage property showings efficiently while maintaining security and maximizing exposure.
@@ -417,7 +413,7 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <HeadingImage imageKey="lead-followup" heading="Transaction Management" variant="card" />
+          <HeadingImage imageKey="closing" heading="Transaction Management" variant="card" />
           <h3>Transaction Management</h3>
           <p>
             Navigate the complex selling process with professional transaction management and
@@ -455,10 +451,10 @@ export default component$(() => {
 
       <div class="pricing-section">
         <h2>Service Packages</h2>
-        <HeadingImage imageKey="seller-services" heading="Service Packages" variant="section" />
+        <HeadingImage imageKey="service-packages" heading="Service Packages" variant="section" />
         <div class="pricing-grid">
           <div class="pricing-card">
-            <HeadingImage imageKey="seller-services" heading="Essential Package" variant="card" />
+            <HeadingImage imageKey="service-packages" heading="Essential Package" variant="card" />
             <h3>Essential Package</h3>
             <div class="price">5.5%</div>
             <ul>
@@ -471,7 +467,7 @@ export default component$(() => {
           </div>
 
           <div class="pricing-card featured">
-            <HeadingImage imageKey="strategic-marketing" heading="Premium Package" variant="card" />
+            <HeadingImage imageKey="service-packages" heading="Premium Package" variant="card" />
             <h3>Premium Package</h3>
             <div class="price">6.0%</div>
             <ul>
@@ -485,7 +481,7 @@ export default component$(() => {
           </div>
 
           <div class="pricing-card">
-            <HeadingImage imageKey="luxury-open-houses" heading="Luxury Package" variant="card" />
+            <HeadingImage imageKey="service-packages" heading="Luxury Package" variant="card" />
             <h3>Luxury Package</h3>
             <div class="price">6.5%</div>
             <ul>
@@ -509,7 +505,7 @@ export default component$(() => {
         />
         <div class="process-steps">
           <div class="process-step">
-            <HeadingImage imageKey="contact" heading="Initial Consultation" variant="card" />
+            <HeadingImage imageKey="consultation" heading="Initial Consultation" variant="card" />
             <h3>Initial Consultation</h3>
             <p>
               We assess your property and discuss your goals to create a customized selling
@@ -539,11 +535,7 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
-            <HeadingImage
-              imageKey="strategic-marketing"
-              heading="Marketing Launch"
-              variant="card"
-            />
+            <HeadingImage imageKey="marketing-launch" heading="Marketing Launch" variant="card" />
             <h3>Marketing Launch</h3>
             <p>
               Execute a comprehensive marketing campaign to reach the maximum number of qualified
@@ -552,11 +544,7 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
-            <HeadingImage
-              imageKey="weekend-open-houses"
-              heading="Showings & Feedback"
-              variant="card"
-            />
+            <HeadingImage imageKey="showings" heading="Showings & Feedback" variant="card" />
             <h3>Showings & Feedback</h3>
             <p>
               Coordinate showings and collect feedback to continuously optimize your selling
@@ -565,19 +553,19 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
-            <HeadingImage imageKey="lead-followup" heading="Offer Negotiation" variant="card" />
+            <HeadingImage imageKey="negotiation" heading="Offer Negotiation" variant="card" />
             <h3>Offer Negotiation</h3>
             <p>Evaluate offers and negotiate on your behalf to secure the best possible terms.</p>
           </div>
 
           <div class="process-step">
-            <HeadingImage imageKey="about" heading="Transaction Management" variant="card" />
+            <HeadingImage imageKey="closing" heading="Transaction Management" variant="card" />
             <h3>Transaction Management</h3>
             <p>Manage all aspects of the transaction from contract to closing.</p>
           </div>
 
           <div class="process-step">
-            <HeadingImage imageKey="home-valuation" heading="Closing & Beyond" variant="card" />
+            <HeadingImage imageKey="closing" heading="Closing & Beyond" variant="card" />
             <h3>Closing & Beyond</h3>
             <p>Ensure a smooth closing and provide ongoing support for any post-sale needs.</p>
           </div>
@@ -585,7 +573,7 @@ export default component$(() => {
       </div>
 
       <div class="cta-section">
-        <HeadingImage imageKey="contact" heading="Ready to Sell Your Home?" variant="section" />
+        <HeadingImage imageKey="need-help" heading="Ready to Sell Your Home?" variant="section" />
         <h2>Ready to Sell Your Home?</h2>
         <p>
           Let Dr. Jan Duffy help you maximize your property's value and achieve a successful sale
