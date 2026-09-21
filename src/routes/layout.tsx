@@ -11,6 +11,7 @@ import JavaScriptCrawling from '~/components/seo/javascript-crawling'
 import Footer from '~/components/starter/footer/footer'
 import Header from '~/components/starter/header/header'
 import { business } from '~/config/business'
+import { toCanonicalUrl } from '~/utils/canonical'
 
 import styles from './styles.css?inline'
 
@@ -81,8 +82,7 @@ export const head: DocumentHead = ({ head, url }) => {
   const title = head.title || defaultTitle
   const hasMeta = (name?: string, property?: string) =>
     head.meta.some((item) => (name ? item.name === name : item.property === property))
-  const hasCanonical = head.links.some((item) => item.rel === 'canonical')
-  const pageUrl = `${business.siteUrl}${url.pathname}`
+  const pageUrl = toCanonicalUrl(url.pathname)
 
   const meta = [
     ...(!hasMeta('description')
@@ -97,10 +97,14 @@ export const head: DocumentHead = ({ head, url }) => {
       name: 'author',
       content: business.agentName,
     },
-    {
-      name: 'robots',
-      content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
-    },
+    ...(!hasMeta('robots')
+      ? [
+          {
+            name: 'robots',
+            content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
+          },
+        ]
+      : []),
     {
       name: 'viewport',
       content: 'width=device-width, initial-scale=1.0',
@@ -220,14 +224,6 @@ export const head: DocumentHead = ({ head, url }) => {
   ]
 
   const links = [
-    ...(!hasCanonical
-      ? [
-          {
-            rel: 'canonical',
-            href: pageUrl,
-          },
-        ]
-      : []),
     {
       rel: 'icon',
       type: 'image/svg+xml',

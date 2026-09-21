@@ -328,4 +328,4 @@ export default component$(() => {
   )
 })
 
-export const head: DocumentHead = createOptimizedHead('summerlin-vs-henderson')
+export const head: DocumentHead = createOptimizedHead('summerlin-vs-henderson-comparison')

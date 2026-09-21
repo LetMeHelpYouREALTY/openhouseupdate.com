@@ -27,7 +27,9 @@ Disallow: /*.json$
 Disallow: /*.xml$
 Allow: /sitemap*.xml
 
-# Allow static assets
+# RSS is a feed, not an HTML document for the index
+Disallow: /rss.xml
+Disallow: /rss.xml/
 Allow: /*.css$
 Allow: /*.js$
 Allow: /*.png$

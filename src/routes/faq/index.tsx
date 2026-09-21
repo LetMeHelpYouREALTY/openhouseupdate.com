@@ -1,6 +1,7 @@
 import { $, component$, useSignal } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
 import HeadingImage from '~/components/media/heading-image'
+import { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import EnhancedStructuredData from '~/components/seo/enhanced-structured-data'
 
 export default component$(() => {
@@ -217,18 +218,4 @@ export default component$(() => {
   )
 })
 
-export const head: DocumentHead = {
-  title: 'FAQ - Las Vegas Real Estate Questions | Dr. Jan Duffy',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Get answers to frequently asked questions about buying and selling real estate in Las Vegas. Expert guidance from Dr. Jan Duffy.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'Las Vegas real estate FAQ, home buying questions, selling home advice, real estate agent help, Nevada property questions',
-    },
-  ],
-}
+export const head: DocumentHead = createOptimizedHead('faq')

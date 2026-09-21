@@ -203,7 +203,7 @@ export default component$(() => {
               properties
             </li>
             <li>
-              <strong>Anthem (89044):</strong> Gated community with strong security and family focus
+              <strong>Anthem (89044):</strong> Gated streets, clubhouse, and trail access
             </li>
             <li>
               <strong>Inspirada (89044):</strong> Modern master-planned community with new
@@ -216,19 +216,18 @@ export default component$(() => {
 
           <h3>Home Prices in Henderson</h3>
           <p>
-            Henderson offers diverse housing options from affordable starter homes to luxury
-            estates. Entry-level homes start around $300,000-$400,000, while mid-range homes
-            typically range from $400,000-$700,000. Luxury communities like Seven Hills, Lake Las
-            Vegas, and Macdonald Highlands feature homes from $700,000 to over $3 million. The
-            average home price in Henderson is approximately $550,000-$650,000 as of November 2025.
+            Henderson inventory includes attached homes and single-family houses from about
+            $300,000–$400,000 at the low end, $400,000–$700,000 in Green Valley and Anthem, and
+            $700,000 to $3 million-plus in Seven Hills, Lake Las Vegas, and Macdonald Highlands.
+            Median asking prices move with MLS inventory — confirm comps with Dr. Jan Duffy before
+            you write an offer.
           </p>
 
-          <h3>Schools in Henderson</h3>
+          <h3>Named schools in Henderson</h3>
           <p>
-            Henderson is served by the Clark County School District, with many schools in Green
-            Valley and Seven Hills consistently ranking among the top in the district. Schools like
-            Coronado High School and various elementary and middle schools are highly sought after
-            by families. Private school options are also available throughout Henderson.
+            Clark County School District campuses include Coronado High School and Green Valley High
+            School. Confirm the elementary and middle campus printed on each MLS listing. Open House
+            Marketplace does not rank school quality.
           </p>
 
           <h3>Commute to Las Vegas</h3>
@@ -248,12 +247,12 @@ export default component$(() => {
                 <div class="stat-label">Avg Home Price</div>
               </div>
               <div class="stat-item">
-                <div class="stat-value">#2</div>
-                <div class="stat-label">Safest City NV</div>
+                <div class="stat-value">89074</div>
+                <div class="stat-label">Green Valley ZIP</div>
               </div>
               <div class="stat-item">
-                <div class="stat-value">4.6/5</div>
-                <div class="stat-label">School Rating</div>
+                <div class="stat-value">Coronado</div>
+                <div class="stat-label">Named High School</div>
               </div>
               <div class="stat-item">
                 <div class="stat-value">25min</div>

@@ -1,6 +1,7 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHeadValue } from '@builder.io/qwik-city'
 import { business } from '~/config/business'
+import { toCanonicalUrl } from '~/utils/canonical'
 import { getOgImageUrl } from '~/lib/cloudflare-images'
 import type { StructuredData } from '../../types/realscout'
 
@@ -61,7 +62,7 @@ export const createSEOHead = (props: SEOHeadProps): DocumentHeadValue => {
     { property: 'og:title', content: fullTitle },
     { property: 'og:description', content: description },
     { property: 'og:type', content: ogType },
-    { property: 'og:url', content: canonicalUrl || 'https://www.openhouseupdate.com' },
+    { property: 'og:url', content: toCanonicalUrl(canonicalUrl || '/') },
     { property: 'og:site_name', content: business.gbpName },
     { property: 'og:locale', content: 'en_US' },
     { property: 'og:locale:alternate', content: 'es_US' }, // Spanish locale for Las Vegas market
@@ -107,7 +108,7 @@ export const createSEOHead = (props: SEOHeadProps): DocumentHeadValue => {
   const links = [
     {
       rel: 'canonical',
-      href: canonicalUrl || 'https://www.openhouseupdate.com',
+      href: toCanonicalUrl(canonicalUrl || '/'),
     },
     {
       rel: 'icon',

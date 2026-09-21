@@ -8,7 +8,9 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [
-      qwikCity(),
+      qwikCity({
+        trailingSlash: true,
+      }),
       qwikVite({
         // Enable faster builds with esbuild
         esbuild: {
