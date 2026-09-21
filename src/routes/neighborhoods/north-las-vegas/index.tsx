@@ -154,7 +154,7 @@ export default component$(() => {
         <div class="main-content">
           <h2>About North Las Vegas</h2>
           <HeadingImage
-            imageKey="north-las-vegas"
+            imageKey="about-north-las-vegas"
             heading="About North Las Vegas"
             variant="section"
           />

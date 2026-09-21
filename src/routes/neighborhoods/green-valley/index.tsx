@@ -154,7 +154,7 @@ export default component$(() => {
       <div class="neighborhood-content">
         <div class="main-content">
           <h2>About Green Valley</h2>
-          <HeadingImage imageKey="green-valley" heading="About Green Valley" variant="section" />
+          <HeadingImage imageKey="about-green-valley" heading="About Green Valley" variant="section" />
           <p>
             Green Valley, located in Henderson zip codes 89012 and 89014, sits around Green Valley
             Ranch. Paseos, parks, and the 215 Beltway put most streets within a 15–20 minute drive

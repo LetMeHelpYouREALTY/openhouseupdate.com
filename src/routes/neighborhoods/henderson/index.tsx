@@ -153,7 +153,7 @@ export default component$(() => {
       <div class="neighborhood-content">
         <div class="main-content">
           <h2>About Henderson</h2>
-          <HeadingImage imageKey="henderson" heading="About Henderson" variant="section" />
+          <HeadingImage imageKey="about-henderson" heading="About Henderson" variant="section" />
           <p>
             Henderson, Nevada covers zip codes 89002, 89011, 89012, 89014, 89015, 89052, and 89074.
             Green Valley Ranch, Lake Las Vegas, and the 215 Beltway give buyers parks, shopping, and

@@ -45,7 +45,7 @@ export default component$(() => {
       <div class="neighborhood-content">
         <div class="main-content">
           <h2>About Spring Valley</h2>
-          <HeadingImage imageKey="spring-valley" heading="About Spring Valley" variant="section" />
+          <HeadingImage imageKey="about-spring-valley" heading="About Spring Valley" variant="section" />
           <p>
             Spring Valley covers unincorporated Clark County west of the Strip in zip codes 89102,
             89103, 89117, 89146, and 89147. Spring Mountain Road (Chinatown), Rainbow Boulevard, and

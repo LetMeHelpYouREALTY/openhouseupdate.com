@@ -45,7 +45,7 @@ export default component$(() => {
       <div class="neighborhood-content">
         <div class="main-content">
           <h2>About Enterprise</h2>
-          <HeadingImage imageKey="enterprise" heading="About Enterprise" variant="section" />
+          <HeadingImage imageKey="about-enterprise" heading="About Enterprise" variant="section" />
           <p>
             Enterprise is unincorporated Clark County south of Harry Reid International Airport, in
             zip codes 89118, 89139, 89141, and 89183. Southern Highlands, Rhodes Ranch, and newer

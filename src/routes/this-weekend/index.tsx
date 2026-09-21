@@ -184,7 +184,7 @@ export default component$(() => {
 
         <div class="features-section">
           <div class="feature-card">
-            <HeadingImage imageKey="map-search" heading="Comprehensive Search" variant="card" />
+            <HeadingImage imageKey="comprehensive-search" heading="Comprehensive Search" variant="card" />
             <h3 class="feature-title">Comprehensive Search</h3>
             <p class="feature-description">
               Search thousands of properties with advanced filters including price range, bedrooms,
@@ -193,7 +193,7 @@ export default component$(() => {
           </div>
 
           <div class="feature-card">
-            <HeadingImage imageKey="summerlin" heading="Location-Based" variant="card" />
+            <HeadingImage imageKey="location-based" heading="Location-Based" variant="card" />
             <h3 class="feature-title">Location-Based</h3>
             <p class="feature-description">
               Find properties in your preferred neighborhoods with detailed location information and
@@ -202,7 +202,7 @@ export default component$(() => {
           </div>
 
           <div class="feature-card">
-            <HeadingImage imageKey="weekend-open-houses" heading="Weekend Focused" variant="card" />
+            <HeadingImage imageKey="weekend-focused" heading="Weekend Focused" variant="card" />
             <h3 class="feature-title">Weekend Focused</h3>
             <p class="feature-description">
               Discover properties with open houses scheduled for this weekend, making it easy to
