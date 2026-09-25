@@ -2,7 +2,6 @@ import { component$, Slot, useStyles$ } from '@builder.io/qwik'
 import { type DocumentHead, routeLoader$ } from '@builder.io/qwik-city'
 import { inject } from '@vercel/analytics'
 import EnhancedAnalytics from '~/components/analytics/enhanced-analytics'
-import StickyHeader from '~/components/layout/header'
 import GbpBar from '~/components/local-seo/gbp-bar'
 import { MobileSearchButton } from '~/components/modals'
 import CrawlerManagement from '~/components/seo/crawler-management'
@@ -11,6 +10,7 @@ import JavaScriptCrawling from '~/components/seo/javascript-crawling'
 import Footer from '~/components/starter/footer/footer'
 import Header from '~/components/starter/header/header'
 import { business } from '~/config/business'
+import { toCanonicalUrl } from '~/utils/canonical'
 
 import styles from './styles.css?inline'
 
@@ -50,7 +50,6 @@ export default component$(() => {
       />
 
       <Header />
-      <StickyHeader />
       <main>
         <Slot />
       </main>
@@ -61,15 +60,6 @@ export default component$(() => {
       {/* Analytics */}
       <script dangerouslySetInnerHTML={`${inject()}`} />
       <EnhancedAnalytics measurementId="G-Q9X8KED9X0" />
-
-      {/* RealScout Script with Enhanced Loading */}
-      <script
-        src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
-        type="module"
-        crossOrigin="anonymous"
-        async
-        defer
-      />
     </>
   )
 })
@@ -81,8 +71,7 @@ export const head: DocumentHead = ({ head, url }) => {
   const title = head.title || defaultTitle
   const hasMeta = (name?: string, property?: string) =>
     head.meta.some((item) => (name ? item.name === name : item.property === property))
-  const hasCanonical = head.links.some((item) => item.rel === 'canonical')
-  const pageUrl = `${business.siteUrl}${url.pathname}`
+  const pageUrl = toCanonicalUrl(url.pathname)
 
   const meta = [
     ...(!hasMeta('description')
@@ -97,10 +86,14 @@ export const head: DocumentHead = ({ head, url }) => {
       name: 'author',
       content: business.agentName,
     },
-    {
-      name: 'robots',
-      content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
-    },
+    ...(!hasMeta('robots')
+      ? [
+          {
+            name: 'robots',
+            content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
+          },
+        ]
+      : []),
     {
       name: 'viewport',
       content: 'width=device-width, initial-scale=1.0',
@@ -220,14 +213,6 @@ export const head: DocumentHead = ({ head, url }) => {
   ]
 
   const links = [
-    ...(!hasCanonical
-      ? [
-          {
-            rel: 'canonical',
-            href: pageUrl,
-          },
-        ]
-      : []),
     {
       rel: 'icon',
       type: 'image/svg+xml',

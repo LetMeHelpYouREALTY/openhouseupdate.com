@@ -127,7 +127,7 @@ export default component$(() => {
       <div class="neighborhood-content">
         <div class="main-content">
           <h2>About Summerlin</h2>
-          <HeadingImage imageKey="summerlin" heading="About Summerlin" variant="section" />
+          <HeadingImage imageKey="about-summerlin" heading="About Summerlin" variant="section" />
           <p>
             Summerlin is a 22,500-acre master-planned community in zip codes 89134, 89135, 89138,
             and 89144. Downtown Summerlin shopping, Red Rock Canyon trailheads, and 200+ miles of
@@ -271,7 +271,7 @@ export default component$(() => {
           {
             title: 'North Las Vegas Properties',
             url: '/neighborhoods/north-las-vegas/',
-            description: 'Growing area with new construction and affordable options',
+            description: 'New construction in Skye Canyon (89084) and Centennial Hills (89031)',
           },
           {
             title: 'Green Valley Real Estate',

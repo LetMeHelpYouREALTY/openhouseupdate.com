@@ -6,6 +6,7 @@ import {
   generateTitle,
   getPageSnippet,
 } from '~/utils/snippet-optimization'
+import { canonicalForPageKey } from '~/utils/canonical'
 import {
   createSEOOptimizedOG,
   getPageOGMetadata,
@@ -75,6 +76,7 @@ export const createOptimizedHead = (
   const keywords = customKeywords || snippet.keywords
 
   // Create SEO-optimized OG metadata
+  const canonicalUrl = canonicalForPageKey(pageKey)
   const ogMeta = createSEOOptimizedOG({
     pageKey,
     title,
@@ -82,6 +84,7 @@ export const createOptimizedHead = (
     keywords: [...keywords, ...(pageOGConfig.keywords || [])],
     type: 'website',
     articleTags: pageOGConfig.articleTags,
+    url: canonicalUrl,
   })
 
   return {
@@ -106,7 +109,7 @@ export const createOptimizedHead = (
     links: [
       {
         rel: 'canonical',
-        href: `https://www.openhouseupdate.com/${pageKey === 'homepage' ? '/' : `${pageKey}/`}`,
+        href: canonicalUrl,
       },
     ],
   }

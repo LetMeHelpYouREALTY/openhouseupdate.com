@@ -119,7 +119,7 @@ export default component$(() => {
       <div class="info-section">
         <h2>About Summerlin Open Houses</h2>
         <HeadingImage
-          imageKey="summerlin"
+          imageKey="about-summerlin"
           heading="About Summerlin Open Houses"
           variant="section"
         />

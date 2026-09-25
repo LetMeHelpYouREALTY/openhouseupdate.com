@@ -1,4 +1,5 @@
 {
+  "trailingSlash": true,
   "headers": [
     {
       "source": "/build/(.*)",
@@ -78,27 +79,57 @@
     },
     {
       "source": "/home-valuation",
-      "destination": "/services/home-valuation",
+      "destination": "/services/home-valuation/",
       "permanent": true
     },
     {
       "source": "/buyer-services",
-      "destination": "/services/buyer-services",
+      "destination": "/services/buyer-services/",
       "permanent": true
     },
     {
       "source": "/seller-services",
-      "destination": "/services/seller-services",
+      "destination": "/services/seller-services/",
       "permanent": true
     },
     {
       "source": "/market-analysis",
-      "destination": "/services/market-analysis",
+      "destination": "/services/market-analysis/",
       "permanent": true
     },
     {
       "source": "/about",
       "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/summerlin",
+      "destination": "/neighborhoods/summerlin/",
+      "permanent": true
+    },
+    {
+      "source": "/summerlin/",
+      "destination": "/neighborhoods/summerlin/",
+      "permanent": true
+    },
+    {
+      "source": "/henderson",
+      "destination": "/neighborhoods/henderson/",
+      "permanent": true
+    },
+    {
+      "source": "/henderson/",
+      "destination": "/neighborhoods/henderson/",
+      "permanent": true
+    },
+    {
+      "source": "/north-las-vegas",
+      "destination": "/neighborhoods/north-las-vegas/",
+      "permanent": true
+    },
+    {
+      "source": "/north-las-vegas/",
+      "destination": "/neighborhoods/north-las-vegas/",
       "permanent": true
     }
   ],

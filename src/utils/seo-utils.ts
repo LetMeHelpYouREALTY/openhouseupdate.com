@@ -1,5 +1,7 @@
 // SEO Utility Functions
 
+import { toCanonicalUrl } from './canonical'
+
 export interface SEOConfig {
   siteName: string
   siteUrl: string
@@ -22,8 +24,7 @@ export const seoConfig: SEOConfig = {
 
 // Generate canonical URL
 export const getCanonicalUrl = (path = ''): string => {
-  const cleanPath = path.startsWith('/') ? path : `/${path}`
-  return `${seoConfig.siteUrl}${cleanPath}`
+  return toCanonicalUrl(path)
 }
 
 // Generate page title

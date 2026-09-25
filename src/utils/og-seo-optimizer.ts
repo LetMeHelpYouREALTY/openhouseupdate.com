@@ -3,6 +3,8 @@
  * Enhanced OG metadata generation for better SEO performance
  */
 
+import { canonicalForPageKey } from '~/utils/canonical'
+
 export interface OGSEOConfig {
   pageKey: string
   title: string
@@ -73,13 +75,7 @@ export const generateOGDescription = (
 
   // Add CTA for better engagement (keep under 155 chars for optimal display)
   if (includeCTA && description.length < 130) {
-    const ctaOptions = [
-      ' Browse listings today.',
-      ' Get expert guidance.',
-      ' Start your search now.',
-      ' Contact us today.',
-    ]
-    const cta = ctaOptions[Math.floor(Math.random() * ctaOptions.length)]
+    const cta = ' Browse listings today.'
     if (description.length + cta.length <= 155) {
       description += cta
     }
@@ -151,8 +147,7 @@ export const createSEOOptimizedOG = (config: OGSEOConfig) => {
   const ogDescription = customDescription || generateOGDescription(description, keywords, true)
   const ogImageAlt = imageAlt || generateOGImageAlt(title, pageKey, keywords)
   const tags = articleTags || getArticleTags(keywords)
-  const canonicalUrl =
-    url || `https://www.openhouseupdate.com/${pageKey === 'homepage' ? '' : `${pageKey}/`}`
+  const canonicalUrl = url || canonicalForPageKey(pageKey)
 
   const meta = [
     // Required OG Properties

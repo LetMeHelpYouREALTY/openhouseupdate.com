@@ -154,7 +154,7 @@ export default component$(() => {
       <div class="neighborhood-content">
         <div class="main-content">
           <h2>About Green Valley</h2>
-          <HeadingImage imageKey="green-valley" heading="About Green Valley" variant="section" />
+          <HeadingImage imageKey="about-green-valley" heading="About Green Valley" variant="section" />
           <p>
             Green Valley, located in Henderson zip codes 89012 and 89014, sits around Green Valley
             Ranch. Paseos, parks, and the 215 Beltway put most streets within a 15–20 minute drive
@@ -237,12 +237,12 @@ export default component$(() => {
                 <div class="stat-label">Avg Home Price</div>
               </div>
               <div class="stat-item">
-                <div class="stat-value">4.8/5</div>
-                <div class="stat-label">School Rating</div>
+                <div class="stat-value">CHS</div>
+                <div class="stat-label">Coronado High</div>
               </div>
               <div class="stat-item">
-                <div class="stat-value">Upscale</div>
-                <div class="stat-label">Community</div>
+                <div class="stat-value">GVR</div>
+                <div class="stat-label">Green Valley Ranch</div>
               </div>
               <div class="stat-item">
                 <div class="stat-value">Est.</div>
@@ -256,7 +256,7 @@ export default component$(() => {
               <strong>City:</strong> Henderson
             </p>
             <p>
-              <strong>Best For:</strong> Families, professionals, luxury buyers
+              <strong>Typical search:</strong> $500,000–$800,000 near Green Valley Ranch
             </p>
           </div>
 

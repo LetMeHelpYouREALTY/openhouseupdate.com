@@ -221,24 +221,60 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
 
   'north-las-vegas': [
     {
-      question: 'What makes North Las Vegas a good place to buy a home?',
+      question: 'What should buyers compare in North Las Vegas?',
       answer:
-        'North Las Vegas offers excellent value for homebuyers with more affordable housing options than many Las Vegas areas. Located in zip codes 89030, 89031, 89032, 89081, 89084, and 89086, North Las Vegas features active new construction in communities like Skye Canyon (89084) and Centennial Hills (89031), providing modern homes with energy-efficient features. The area offers more square footage for your money, good highway access to Las Vegas employment centers, and growing amenities including shopping centers and restaurants. As one of the fastest-growing areas in Las Vegas Valley, North Las Vegas presents good appreciation potential and value for first-time buyers and families seeking affordable options.',
+        'North Las Vegas listings use zip codes 89030, 89031, 89032, 89081, 89084, and 89086. Skye Canyon (89084) is newer construction; Centennial Hills (89031) is 1990s–2000s housing near I-215 shopping. Compare square footage, HVAC age, HOA dues, and the named campus on each MLS sheet. Call Dr. Jan Duffy at (702) 200-3422.',
     },
     {
-      question: 'What are the best neighborhoods in North Las Vegas?',
+      question: 'Which North Las Vegas communities have weekend open houses?',
       answer:
-        'Top neighborhoods in North Las Vegas include Skye Canyon (zip code 89084) - a master-planned community with new construction, Centennial Hills (89031) - 1990s–2000s housing near shopping on the 215 Beltway, Aliante - shopping center, golf, and parks, and Eldorado - lower price-point inventory. Dr. Jan Duffy can match budget and square footage.',
+        'Skye Canyon (89084), Centennial Hills (89031), Aliante, and Eldorado typically have Saturday and Sunday tours. Dr. Jan Duffy can match budget and square footage without ranking one street as better than another.',
     },
     {
-      question: 'Are home prices in North Las Vegas affordable?',
+      question: 'What price ranges appear on North Las Vegas MLS sheets?',
       answer:
-        'Yes, North Las Vegas offers some of the most affordable housing in Las Vegas Valley, making it an excellent option for first-time buyers and those seeking value. Entry-level homes start around $250,000-$350,000, while mid-range homes typically range from $350,000-$500,000. Newer communities like Skye Canyon (89084) may have homes up to $600,000+. The average home price in North Las Vegas is approximately $400,000-$450,000 as of November 2025. Compared to Summerlin (89134-89144) or Henderson (89002-89015), North Las Vegas offers significantly more affordable options while still providing access to Las Vegas employment centers and amenities.',
+        'Many North Las Vegas listings start around $250,000–$350,000, with mid-range homes about $350,000–$500,000 and some Skye Canyon (89084) homes above $600,000. Confirm live comps before you write an offer.',
     },
     {
-      question: 'How are the schools in North Las Vegas?',
+      question: 'Which named schools serve North Las Vegas?',
       answer:
-        "North Las Vegas is served by the Clark County School District. School ratings vary by area, with newer communities like Skye Canyon (89084) and Centennial Hills (89031) having newer schools with improving ratings. Many families are attracted to North Las Vegas for its affordability and new construction options, with schools continuing to develop as the area grows. While school ratings may not be as high as premium areas like Summerlin or Henderson's Green Valley, the area offers good value and families often choose North Las Vegas for the combination of affordable housing and developing school systems. Dr. Jan Duffy can provide specific school information for North Las Vegas neighborhoods you're considering.",
+        'Clark County School District campuses vary by street, including newer campuses in Skye Canyon (89084) and Centennial Hills (89031). Confirm the elementary, middle, and high school printed on the MLS. Open House Marketplace does not rank school quality.',
+    },
+  ],
+
+  'spring-valley': [
+    {
+      question: 'Which zip codes are in Spring Valley, Las Vegas?',
+      answer:
+        'Spring Valley listings commonly use 89102, 89103, 89117, 89146, and 89147. Chinatown / Spring Mountain Road sits on the east side; Desert Breeze Park and I-215 sit toward 89147. Call Dr. Jan Duffy at (702) 200-3422 for a weekend open-house list by zip.',
+    },
+    {
+      question: 'What square footage is typical in Spring Valley?',
+      answer:
+        'Most Spring Valley tracts from the 1970s–1990s list 1,400–2,400 sq ft on 5,000–8,000 sq ft lots. Confirm HVAC age, roof year, and HOA dues (many streets have none) on the MLS sheet before you tour.',
+    },
+    {
+      question: 'Which named schools serve Spring Valley?',
+      answer:
+        'Bonanza High School and Spring Valley High School serve large parts of the area. Confirm the elementary and middle campus printed on each listing. Open House Marketplace does not rank campuses.',
+    },
+  ],
+
+  enterprise: [
+    {
+      question: 'Where is Enterprise in the Las Vegas Valley?',
+      answer:
+        'Enterprise is south of Harry Reid International Airport in zip codes 89118, 89139, 89141, and 89183. Southern Highlands (89141) and Rhodes Ranch (89139) sit on I-15 at Cactus. Dr. Jan Duffy tours weekend open houses from 760 Windover Ct, Las Vegas, NV 89138.',
+    },
+    {
+      question: 'What square footage is typical in Enterprise?',
+      answer:
+        'Two-story stucco homes in Southern Highlands and Rhodes Ranch often list 1,800–3,200 sq ft. Read the HOA resale package for monthly dues before Saturday tours.',
+    },
+    {
+      question: 'Which named schools serve Enterprise?',
+      answer:
+        'Desert Oasis High School and Liberty High School appear on many Enterprise MLS sheets. Confirm the elementary campus on each listing rather than using a ranking.',
     },
   ],
 

@@ -584,7 +584,7 @@ export default component$(() => {
               </div>
               <div class="expertise-item">
                 <HeadingImage
-                  imageKey="market-analysis"
+                  imageKey="market-pricing"
                   heading="Market Analysis & Pricing"
                   variant="section"
                 />

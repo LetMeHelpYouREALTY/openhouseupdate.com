@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik'
 import { useDocumentHead, useLocation } from '@builder.io/qwik-city'
+import { toCanonicalUrl } from '~/utils/canonical'
 
 /**
  * The RouterHead component is placed inside of the document `<head>` element.
@@ -7,12 +8,13 @@ import { useDocumentHead, useLocation } from '@builder.io/qwik-city'
 export const RouterHead = component$(() => {
   const head = useDocumentHead()
   const loc = useLocation()
+  const canonical = toCanonicalUrl(loc.url.pathname)
 
   return (
     <>
       <title>{head.title}</title>
 
-      <link rel="canonical" href={loc.url.href} />
+      <link rel="canonical" href={canonical} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
@@ -20,9 +22,11 @@ export const RouterHead = component$(() => {
         <meta key={m.key} {...m} />
       ))}
 
-      {head.links.map((l) => (
-        <link key={l.key} {...l} />
-      ))}
+      {head.links
+        .filter((l) => l.rel !== 'canonical')
+        .map((l) => (
+          <link key={l.key} {...l} />
+        ))}
 
       {head.styles.map((s) => (
         // biome-ignore lint/security/noDangerouslySetInnerHtml: Qwik's internal style management is safe

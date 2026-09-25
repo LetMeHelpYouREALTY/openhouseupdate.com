@@ -234,10 +234,10 @@ export default component$(() => {
             </tr>
             <tr>
               <td>
-                <strong>Best For</strong>
+                <strong>Typical search</strong>
               </td>
-              <td>Luxury buyers, professionals, families</td>
-              <td>Families, value seekers, retirees</td>
+              <td>Red Rock access, $600K+ mid-range, Palo Verde High</td>
+              <td>Green Valley Ranch, Coronado High, $400K–$700K mix</td>
             </tr>
           </tbody>
         </table>

@@ -1,86 +1,75 @@
-import { component$ } from '@builder.io/qwik'
+import type { RequestHandler } from '@builder.io/qwik-city'
 
-export default component$(() => {
-  return <div style={{ display: 'none' }}>{/* This component renders XML content */}</div>
-})
-
-// Generate RSS feed
-export const onGet = async () => {
+const buildRssFeed = (): string => {
   const currentDate = new Date().toISOString()
-
   const feedItems = [
     {
       title: 'Las Vegas Real Estate Market Update',
       description: 'Latest market trends and insights for Las Vegas real estate',
-      url: 'https://www.openhouseupdate.com/market-analysis',
-      pubDate: currentDate,
+      url: 'https://www.openhouseupdate.com/services/market-analysis/',
       guid: 'market-update-1',
     },
     {
       title: "This Weekend's Open Houses in Las Vegas",
       description: 'Discover the best open houses happening this weekend',
-      url: 'https://www.openhouseupdate.com/this-weekend',
-      pubDate: currentDate,
+      url: 'https://www.openhouseupdate.com/this-weekend/',
       guid: 'open-houses-weekend',
     },
     {
       title: 'Home Buying Guide for Las Vegas',
       description: 'Complete guide to buying a home in Las Vegas with Dr. Jan Duffy',
-      url: 'https://www.openhouseupdate.com/buyer-services',
-      pubDate: currentDate,
+      url: 'https://www.openhouseupdate.com/services/buyer-services/',
       guid: 'buying-guide',
     },
     {
       title: 'Selling Your Home in Las Vegas',
       description: 'Expert tips for selling your home in the Las Vegas market',
-      url: 'https://www.openhouseupdate.com/seller-services',
-      pubDate: currentDate,
+      url: 'https://www.openhouseupdate.com/services/seller-services/',
       guid: 'selling-guide',
     },
   ]
 
-  const rssFeed = `<?xml version="1.0" encoding="UTF-8"?>
+  return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open House Update - Las Vegas Real Estate</title>
     <description>Professional real estate services in Las Vegas with Dr. Jan Duffy</description>
-    <link>https://www.openhouseupdate.com</link>
+    <link>https://www.openhouseupdate.com/</link>
     <language>en-US</language>
     <copyright>Copyright ${new Date().getFullYear()} Dr. Jan Duffy</copyright>
     <managingEditor>DrDuffy@OpenHouseUpdate.com (Dr. Jan Duffy)</managingEditor>
     <webMaster>DrDuffy@OpenHouseUpdate.com (Dr. Jan Duffy)</webMaster>
     <lastBuildDate>${currentDate}</lastBuildDate>
     <category>Real Estate</category>
-    <category>Las Vegas</category>
-    <category>Nevada</category>
     <atom:link href="https://www.openhouseupdate.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <image>
-      <url>https://www.openhouseupdate.com/images/og-default.jpg</url>
-      <title>Open House Update</title>
-      <link>https://www.openhouseupdate.com</link>
-      <width>144</width>
-      <height>144</height>
-    </image>
 ${feedItems
   .map(
     (item) => `    <item>
       <title><![CDATA[${item.title}]]></title>
       <description><![CDATA[${item.description}]]></description>
       <link>${item.url}</link>
-      <guid isPermaLink="false">${item.guid}</guid>
-      <pubDate>${item.pubDate}</pubDate>
-      <category>Real Estate</category>
-      <category>Las Vegas</category>
+      <guid isPermaLink="true">${item.url}</guid>
+      <pubDate>${currentDate}</pubDate>
     </item>`
   )
   .join('\n')}
   </channel>
 </rss>`
+}
 
-  return new Response(rssFeed, {
-    headers: {
-      'Content-Type': 'application/rss+xml; charset=utf-8',
-      'Cache-Control': 'public, max-age=3600, s-maxage=3600',
-    },
-  })
+/**
+ * Serve RSS as XML only. HTML chrome here was crawled as a homepage duplicate.
+ */
+export const onGet: RequestHandler = async (requestEvent) => {
+  const xml = buildRssFeed()
+  requestEvent.send(
+    new Response(xml, {
+      status: 200,
+      headers: {
+        'Content-Type': 'application/rss+xml; charset=utf-8',
+        'X-Robots-Tag': 'noindex, follow',
+        'Cache-Control': 'public, max-age=3600, s-maxage=3600',
+      },
+    })
+  )
 }
