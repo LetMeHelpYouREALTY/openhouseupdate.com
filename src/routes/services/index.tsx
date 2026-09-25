@@ -289,6 +289,7 @@ export default component$(() => {
       </div>
 
       <div class="cta-section">
+        <HeadingImage imageKey="need-help" heading="Ready to Get Started?" variant="section" />
         <h2>Ready to Get Started?</h2>
         <p>
           Whether you're buying, selling, or just exploring the market, Dr. Jan Duffy is here to

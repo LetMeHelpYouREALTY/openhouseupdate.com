@@ -146,8 +146,7 @@ export default component$(() => {
         />
         <h1>Green Valley Real Estate - Henderson</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
-          Upscale Henderson community near Green Valley Ranch, Coronado High School, and zip codes
-          89012–89014
+          Henderson homes near Green Valley Ranch, Coronado High School, and zip codes 89012–89014
         </p>
       </div>
 
@@ -162,6 +161,11 @@ export default component$(() => {
           </p>
 
           <h3>Why Choose Green Valley?</h3>
+          <HeadingImage
+            imageKey="neighborhood-expertise"
+            heading="Why Choose Green Valley?"
+            variant="section"
+          />
           <ul>
             <li>
               <strong>Schools:</strong> Coronado High School and nearby elementary campuses —
@@ -190,6 +194,11 @@ export default component$(() => {
           </ul>
 
           <h3>Green Valley Communities</h3>
+          <HeadingImage
+            imageKey="green-valley-ranch"
+            heading="Green Valley Communities"
+            variant="section"
+          />
           <ul>
             <li>
               <strong>Green Valley Ranch:</strong> Master-planned community with resort-style
@@ -199,12 +208,17 @@ export default component$(() => {
               <strong>Coronado Country Club:</strong> Golf community with championship course
             </li>
             <li>
-              <strong>Various Established Neighborhoods:</strong> Well-maintained communities
-              throughout Green Valley
+              <strong>Various 1980s–2000s streets:</strong> Mature landscaping and 1,800–3,500 sq ft
+              floor plans throughout Green Valley
             </li>
           </ul>
 
           <h3>Home Prices in Green Valley</h3>
+          <HeadingImage
+            imageKey="housing-prices"
+            heading="Home Prices in Green Valley"
+            variant="section"
+          />
           <p>
             Green Valley offers a range of housing options from established mid-range homes to
             luxury properties. Entry-level homes start around $400,000-$500,000, while mid-range
@@ -214,6 +228,11 @@ export default component$(() => {
           </p>
 
           <h3>Schools in Green Valley</h3>
+          <HeadingImage
+            imageKey="named-schools"
+            heading="Schools in Green Valley"
+            variant="section"
+          />
           <p>
             Green Valley listings often fall in the Coronado High School attendance area, with
             nearby elementary and middle campuses in the Clark County School District. Confirm the
@@ -221,6 +240,11 @@ export default component$(() => {
           </p>
 
           <h3>Green Valley Ranch</h3>
+          <HeadingImage
+            imageKey="green-valley-ranch"
+            heading="Green Valley Ranch"
+            variant="section"
+          />
           <p>
             Green Valley Ranch is a major shopping and entertainment destination featuring premium
             retailers, restaurants, movie theater, and events. This hub provides residents with
@@ -230,6 +254,11 @@ export default component$(() => {
 
         <div class="sidebar">
           <div class="info-card">
+            <HeadingImage
+              imageKey="green-valley"
+              heading="Green Valley Quick Facts"
+              variant="card"
+            />
             <h3>Quick Facts</h3>
             <div class="stat-grid">
               <div class="stat-item">
@@ -237,12 +266,12 @@ export default component$(() => {
                 <div class="stat-label">Avg Home Price</div>
               </div>
               <div class="stat-item">
-                <div class="stat-value">4.8/5</div>
-                <div class="stat-label">School Rating</div>
+                <div class="stat-value">Coronado</div>
+                <div class="stat-label">Named High School</div>
               </div>
               <div class="stat-item">
-                <div class="stat-value">Upscale</div>
-                <div class="stat-label">Community</div>
+                <div class="stat-value">GVR</div>
+                <div class="stat-label">Green Valley Ranch</div>
               </div>
               <div class="stat-item">
                 <div class="stat-value">Est.</div>
@@ -256,11 +285,12 @@ export default component$(() => {
               <strong>City:</strong> Henderson
             </p>
             <p>
-              <strong>Best For:</strong> Families, professionals, luxury buyers
+              <strong>Typical inventory:</strong> 1,800–3,500 sq ft homes near Green Valley Ranch
             </p>
           </div>
 
           <div class="info-card">
+            <HeadingImage imageKey="contact" heading="Contact Dr. Jan Duffy" variant="card" />
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert Green Valley real estate guidance</p>
             <p>
@@ -289,7 +319,7 @@ export default component$(() => {
           {
             title: 'Summerlin Properties',
             url: '/neighborhoods/summerlin/',
-            description: 'Premier master-planned community',
+            description: 'Red Rock Canyon views and Downtown Summerlin retail in 89134–89144',
           },
           {
             title: 'Seven Hills Real Estate',

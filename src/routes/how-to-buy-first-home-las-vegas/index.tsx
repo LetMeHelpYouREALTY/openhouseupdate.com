@@ -145,7 +145,7 @@ export default component$(() => {
           <span class="step-number">1</span>Get Pre-Approved for a Mortgage
         </h2>
         <HeadingImage
-          imageKey="buyer-services"
+          imageKey="pre-approval"
           heading="Get Pre-Approved for a Mortgage"
           variant="section"
         />
@@ -156,6 +156,7 @@ export default component$(() => {
           Henderson (89002-89015).
         </p>
         <h3>What You'll Need:</h3>
+        <HeadingImage imageKey="first-time-buyer" heading="What You'll Need" variant="section" />
         <ul>
           <li>Proof of income (pay stubs, tax returns)</li>
           <li>Bank statements</li>
@@ -175,7 +176,7 @@ export default component$(() => {
           <span class="step-number">2</span>Determine Your Budget and Preferences
         </h2>
         <HeadingImage
-          imageKey="home-valuation"
+          imageKey="housing-prices"
           heading="Determine Your Budget and Preferences"
           variant="section"
         />
@@ -186,6 +187,11 @@ export default component$(() => {
           via I-15 / I-215, square footage, and HVAC age.
         </p>
         <h3>Las Vegas Budget Considerations:</h3>
+        <HeadingImage
+          imageKey="housing-prices"
+          heading="Las Vegas Budget Considerations"
+          variant="section"
+        />
         <ul>
           <li>
             <strong>Entry-level ($250K-$400K):</strong> North Las Vegas (89030-89086), Spring Valley
@@ -216,6 +222,11 @@ export default component$(() => {
           drive times. Open House Marketplace does not rank areas as safest.
         </p>
         <h3>First-time buyer inventory by area:</h3>
+        <HeadingImage
+          imageKey="neighborhood-expertise"
+          heading="First-time buyer inventory by area"
+          variant="section"
+        />
         <ul>
           <li>
             <strong>North Las Vegas:</strong> Newer construction in Skye Canyon (89084) and
@@ -244,7 +255,7 @@ export default component$(() => {
           <span class="step-number">4</span>Start Your Property Search
         </h2>
         <HeadingImage
-          imageKey="weekend-open-houses"
+          imageKey="map-search"
           heading="Start Your Property Search"
           variant="section"
         />
@@ -255,6 +266,7 @@ export default component$(() => {
           market values.
         </p>
         <h3>What to Look For:</h3>
+        <HeadingImage imageKey="inspection" heading="What to Look For" variant="section" />
         <ul>
           <li>HVAC system age and condition (critical in Las Vegas heat)</li>
           <li>Roof condition (tile roofs handle sun well)</li>
@@ -269,13 +281,18 @@ export default component$(() => {
         <h2>
           <span class="step-number">5</span>Make an Offer
         </h2>
-        <HeadingImage imageKey="contact" heading="Make an Offer" variant="section" />
+        <HeadingImage imageKey="negotiation" heading="Make an Offer" variant="section" />
         <p>
           Once you find the right property, work with Dr. Jan Duffy to craft a competitive offer. In
           November 2025, Las Vegas market conditions vary by neighborhood - some areas see multiple
           offers, while others offer more negotiation room.
         </p>
         <h3>Your Offer Should Include:</h3>
+        <HeadingImage
+          imageKey="negotiation"
+          heading="Your Offer Should Include"
+          variant="section"
+        />
         <ul>
           <li>Purchase price</li>
           <li>Down payment amount</li>
@@ -290,7 +307,7 @@ export default component$(() => {
         <h2>
           <span class="step-number">6</span>Home Inspection
         </h2>
-        <HeadingImage imageKey="property-staging" heading="Home Inspection" variant="section" />
+        <HeadingImage imageKey="inspection" heading="Home Inspection" variant="section" />
         <p>
           After offer acceptance, schedule a professional home inspection. In Las Vegas, pay special
           attention to:
@@ -323,7 +340,7 @@ export default component$(() => {
         <h2>
           <span class="step-number">7</span>Finalize Financing
         </h2>
-        <HeadingImage imageKey="market-analysis" heading="Finalize Financing" variant="section" />
+        <HeadingImage imageKey="financing" heading="Finalize Financing" variant="section" />
         <p>
           Work with your lender to finalize your mortgage. Provide any additional documentation
           requested. The lender will order an appraisal to ensure the property value supports the
@@ -335,7 +352,7 @@ export default component$(() => {
         <h2>
           <span class="step-number">8</span>Closing Process
         </h2>
-        <HeadingImage imageKey="about" heading="Closing Process" variant="section" />
+        <HeadingImage imageKey="closing" heading="Closing Process" variant="section" />
         <p>
           Typically 30-45 days after offer acceptance, you'll close on your new Las Vegas home.
           Closing involves:
@@ -353,6 +370,11 @@ export default component$(() => {
       </div>
 
       <div class="cta-box">
+        <HeadingImage
+          imageKey="need-help"
+          heading="Ready to Buy Your First Home in Las Vegas?"
+          variant="section"
+        />
         <h2>Ready to Buy Your First Home in Las Vegas?</h2>
         <p>
           Dr. Jan Duffy specializes in helping first-time homebuyers navigate the Las Vegas market.

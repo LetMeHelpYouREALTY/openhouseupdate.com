@@ -12,12 +12,13 @@ export interface InternalLinkingProps {
   className?: string
 }
 
-export default component$<InternalLinkingProps>(({ title = 'Related Content', links, className = '' }) => {
-  if (links.length === 0) return null
+export default component$<InternalLinkingProps>(
+  ({ title = 'Related Content', links, className = '' }) => {
+    if (links.length === 0) return null
 
-  return (
-    <div class={`related-content ${className}`}>
-      <style>{`
+    return (
+      <div class={`related-content ${className}`}>
+        <style>{`
         .related-content {
           background: #F7F9FC;
           border-radius: 12px;
@@ -77,17 +78,17 @@ export default component$<InternalLinkingProps>(({ title = 'Related Content', li
           }
         }
       `}</style>
-      
-      <h3>{title}</h3>
-      <div class="related-links">
-        {links.map((link) => (
-          <a key={link.url} href={link.url} class="related-link">
-            <span class="related-link-title">{link.title}</span>
-            {link.description && <p class="related-link-description">{link.description}</p>}
-          </a>
-        ))}
-      </div>
-    </div>
-  )
-})
 
+        <h3>{title}</h3>
+        <div class="related-links">
+          {links.map((link) => (
+            <a key={link.url} href={link.url} class="related-link">
+              <span class="related-link-title">{link.title}</span>
+              {link.description && <p class="related-link-description">{link.description}</p>}
+            </a>
+          ))}
+        </div>
+      </div>
+    )
+  }
+)

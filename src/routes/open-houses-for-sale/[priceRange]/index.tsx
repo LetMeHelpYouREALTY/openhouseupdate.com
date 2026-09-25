@@ -100,6 +100,11 @@ export default component$(() => {
       {/* Advanced Search with Price Pre-set */}
       <div class="price-search">
         <h3>Search Homes {priceInfo.display}</h3>
+        <HeadingImage
+          imageKey={priceImageKey}
+          heading={`Search Homes ${priceInfo.display}`}
+          variant="section"
+        />
 
         <style>{`
           .price-search realscout-advanced-search {
@@ -333,7 +338,7 @@ export default component$(() => {
           </p>
           <p>
             Get expert market insights, comprehensive property analysis, and skilled negotiation
-            support to secure your dream home. Dr. Duffy's experience with {priceInfo.display}{' '}
+            support to close on a listing. Dr. Duffy's experience with {priceInfo.display}{' '}
             properties ensures you understand all aspects of potential purchases, from initial
             search through closing, making your home buying journey smooth and successful.
           </p>

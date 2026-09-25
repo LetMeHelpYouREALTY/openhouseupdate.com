@@ -66,15 +66,23 @@ export default component$(() => {
         .service-card {
           background: white;
           border-radius: 12px;
-          padding: 2rem;
+          padding: 0 0 2rem;
           box-shadow: 0 4px 20px rgba(0,0,0,0.08);
           transition: transform 0.3s ease, box-shadow 0.3s ease;
           border-top: 4px solid #3A8DDE;
+          overflow: hidden;
         }
         
         .service-card:hover {
           transform: translateY(-4px);
           box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .service-card h3,
+        .service-card p,
+        .service-card ul {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
         }
         
         .service-card h3 {
@@ -249,9 +257,10 @@ export default component$(() => {
 
       <div class="services-overview">
         <div class="service-card">
-          <h3>🔍 Property Search & Matching</h3>
+          <HeadingImage imageKey="map-search" heading="Property Search & Matching" variant="card" />
+          <h3>Property Search & Matching</h3>
           <p>
-            Find the perfect home that matches your criteria, lifestyle, and budget with our
+            Find a home that matches square footage, commute, HVAC age, and budget with our
             comprehensive search services.
           </p>
           <ul>
@@ -264,7 +273,12 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <h3>📊 Market Analysis & Insights</h3>
+          <HeadingImage
+            imageKey="market-analysis"
+            heading="Market Analysis & Insights"
+            variant="card"
+          />
+          <h3>Market Analysis & Insights</h3>
           <p>
             Make informed decisions with detailed market analysis and neighborhood insights tailored
             to your needs.
@@ -279,7 +293,12 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <h3>🤝 Negotiation & Offer Strategy</h3>
+          <HeadingImage
+            imageKey="negotiation"
+            heading="Negotiation & Offer Strategy"
+            variant="card"
+          />
+          <h3>Negotiation & Offer Strategy</h3>
           <p>
             Secure the best deal with expert negotiation strategies and professional offer
             management.
@@ -294,7 +313,8 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <h3>🔧 Inspection & Due Diligence</h3>
+          <HeadingImage imageKey="inspection" heading="Inspection & Due Diligence" variant="card" />
+          <h3>Inspection & Due Diligence</h3>
           <p>
             Ensure your investment is sound with comprehensive inspection coordination and due
             diligence support.
@@ -309,7 +329,12 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <h3>📋 Closing & Transaction Management</h3>
+          <HeadingImage
+            imageKey="closing"
+            heading="Closing & Transaction Management"
+            variant="card"
+          />
+          <h3>Closing & Transaction Management</h3>
           <p>
             Navigate the closing process smoothly with professional transaction management and
             support.
@@ -324,7 +349,12 @@ export default component$(() => {
         </div>
 
         <div class="service-card">
-          <h3>🏠 Post-Purchase Support</h3>
+          <HeadingImage
+            imageKey="first-time-buyer"
+            heading="Post-Purchase Support"
+            variant="card"
+          />
+          <h3>Post-Purchase Support</h3>
           <p>
             Continue to receive support even after closing with our comprehensive post-purchase
             services.
@@ -341,8 +371,10 @@ export default component$(() => {
 
       <div class="process-section">
         <h2>Our Buyer Process</h2>
+        <HeadingImage imageKey="first-time-buyer" heading="Our Buyer Process" variant="section" />
         <div class="process-steps">
           <div class="process-step">
+            <HeadingImage imageKey="consultation" heading="Initial Consultation" variant="card" />
             <h3>Initial Consultation</h3>
             <p>
               We start with understanding your needs, budget, and preferences to create a
@@ -351,6 +383,7 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="pre-approval" heading="Pre-Approval & Budget" variant="card" />
             <h3>Pre-Approval & Budget</h3>
             <p>
               Help you get pre-approved and establish a realistic budget based on your financial
@@ -359,14 +392,16 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="map-search" heading="Property Search" variant="card" />
             <h3>Property Search</h3>
             <p>
-              Set up custom searches and alerts to find properties that match your criteria and
-              lifestyle.
+              Set up custom searches and alerts to find properties that match your criteria,
+              commute, and budget.
             </p>
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="showings" heading="Property Tours" variant="card" />
             <h3>Property Tours</h3>
             <p>
               Schedule and accompany you on property tours, providing expert insights and analysis.
@@ -374,6 +409,7 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="negotiation" heading="Offer & Negotiation" variant="card" />
             <h3>Offer & Negotiation</h3>
             <p>
               Develop competitive offer strategies and negotiate on your behalf to secure the best
@@ -382,11 +418,17 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage
+              imageKey="inspection"
+              heading="Inspection & Due Diligence"
+              variant="card"
+            />
             <h3>Inspection & Due Diligence</h3>
             <p>Coordinate inspections and ensure all due diligence is completed before closing.</p>
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="closing" heading="Closing" variant="card" />
             <h3>Closing</h3>
             <p>
               Guide you through the closing process and ensure all documents are properly executed.
@@ -394,6 +436,7 @@ export default component$(() => {
           </div>
 
           <div class="process-step">
+            <HeadingImage imageKey="closing" heading="Post-Closing" variant="card" />
             <h3>Post-Closing</h3>
             <p>Provide ongoing support and referrals for services you may need in your new home.</p>
           </div>
@@ -401,6 +444,11 @@ export default component$(() => {
       </div>
 
       <div class="cta-section">
+        <HeadingImage
+          imageKey="need-help"
+          heading="Ready to Start Your Home Search?"
+          variant="section"
+        />
         <h2>Ready to Start Your Home Search?</h2>
         <p>
           Let Dr. Jan Duffy guide you through the entire home buying process with personalized

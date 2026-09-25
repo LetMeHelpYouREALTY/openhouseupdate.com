@@ -203,6 +203,7 @@ export default component$(() => {
       <div class="about-content">
         <div class="about-info">
           <h2>Professional Background</h2>
+          <HeadingImage imageKey="about" heading="Professional Background" variant="section" />
           <p>
             Dr. Jan Duffy brings a unique combination of academic excellence and real-world
             experience to the Las Vegas real estate market. With a doctorate in business
@@ -224,13 +225,24 @@ export default component$(() => {
 
         <div class="credentials">
           <h2>Credentials & Achievements</h2>
+          <HeadingImage
+            imageKey="credentials"
+            heading="Credentials & Achievements"
+            variant="section"
+          />
 
           <div class="credential-item">
+            <HeadingImage
+              imageKey="credentials"
+              heading="Doctorate in Business Administration"
+              variant="card"
+            />
             <h3>Doctorate in Business Administration</h3>
             <p>Specialized focus on real estate market analysis and investment strategies</p>
           </div>
 
           <div class="credential-item">
+            <HeadingImage imageKey="credentials" heading="Open House Expert" variant="card" />
             <h3>Open House Expert</h3>
             <p>
               Nevada License #S.0197614 with continuing education in market trends and regulations
@@ -238,11 +250,21 @@ export default component$(() => {
           </div>
 
           <div class="credential-item">
+            <HeadingImage
+              imageKey="credentials"
+              heading="Certified Property Manager"
+              variant="card"
+            />
             <h3>Certified Property Manager</h3>
             <p>Professional certification in property management and investment analysis</p>
           </div>
 
           <div class="credential-item">
+            <HeadingImage
+              imageKey="nevada-license"
+              heading="BHHS Nevada Properties"
+              variant="card"
+            />
             <h3>BHHS Nevada Properties</h3>
             <p>
               Affiliated with {business.brokerage}. Nevada license #{business.license}.
@@ -250,6 +272,7 @@ export default component$(() => {
           </div>
 
           <div class="credential-item">
+            <HeadingImage imageKey="contact" heading="Google Reviews" variant="card" />
             <h3>Google Reviews</h3>
             <p>
               Read Google reviews for Open House Marketplace or write one after your tour at{' '}
@@ -272,6 +295,7 @@ export default component$(() => {
 
       <div class="cta-section">
         <h2>Ready to Work Together?</h2>
+        <HeadingImage imageKey="need-help" heading="Ready to Work Together?" variant="section" />
         <p>
           Let Dr. Jan Duffy guide you through your real estate journey with professional expertise
           and personalized service.

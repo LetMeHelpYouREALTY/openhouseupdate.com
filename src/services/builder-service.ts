@@ -82,7 +82,7 @@ export async function getBuilderPage(
           },
         })
         .promise()
-      
+
       if (altPage) {
         return altPage as unknown as BuilderPageData
       }
@@ -101,7 +101,7 @@ export async function getBuilderPage(
         // biome-ignore lint/suspicious/noConsole: Fallback API error logging
         console.error('Builder.io REST API fallback failed:', apiError)
       }
-      
+
       return null
     }
 

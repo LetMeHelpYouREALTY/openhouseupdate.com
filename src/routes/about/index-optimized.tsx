@@ -221,8 +221,9 @@ export default component$(() => {
           <h2>Professional Background</h2>
           <p>
             Dr. Jan Duffy brings over two decades of real estate expertise to the Las Vegas market.
-            As an Open House Expert with Nevada License #S.0197614, she has helped hundreds of
-            families find their dream homes and achieve their real estate goals.
+            As an Open House Expert with Nevada License #S.0197614, she has helped buyers and
+            sellers tour weekend open houses and close transactions across Summerlin, Henderson, and
+            North Las Vegas.
           </p>
           <p>
             Her deep understanding of the Las Vegas Valley market, combined with her personalized

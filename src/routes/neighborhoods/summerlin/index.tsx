@@ -136,6 +136,11 @@ export default component$(() => {
           </p>
 
           <h3>Why Choose Summerlin?</h3>
+          <HeadingImage
+            imageKey="neighborhood-expertise"
+            heading="Why Choose Summerlin?"
+            variant="section"
+          />
           <ul>
             <li>
               <strong>Master-Planned Community:</strong> Parks, trails, and village amenities
@@ -164,6 +169,11 @@ export default component$(() => {
           </ul>
 
           <h3>Home Prices in Summerlin</h3>
+          <HeadingImage
+            imageKey="housing-prices"
+            heading="Home Prices in Summerlin"
+            variant="section"
+          />
           <p>
             Summerlin offers diverse housing options from entry-level homes to luxury estates.
             Prices typically range from $400,000 to over $2 million, with premium communities like
@@ -172,6 +182,11 @@ export default component$(() => {
           </p>
 
           <h3>Top Communities in Summerlin</h3>
+          <HeadingImage
+            imageKey="summerlin"
+            heading="Top Communities in Summerlin"
+            variant="section"
+          />
           <ul>
             <li>
               <strong>The Ridges:</strong> Ultra-luxury gated community with resort-style living
@@ -187,12 +202,12 @@ export default component$(() => {
               stock
             </li>
             <li>
-              <strong>Trails Village:</strong> Active lifestyle community with extensive trail
-              system
+              <strong>Trails Village:</strong> Village with 200+ miles of connected trails
             </li>
           </ul>
 
           <h3>Schools in Summerlin</h3>
+          <HeadingImage imageKey="named-schools" heading="Schools in Summerlin" variant="section" />
           <p>
             Summerlin is served by Clark County School District campuses including Bonner
             Elementary, Goolsby Elementary, Rogich Middle School, and Palo Verde High School, plus
@@ -201,15 +216,20 @@ export default component$(() => {
           </p>
 
           <h3>Search Summerlin Properties</h3>
+          <HeadingImage
+            imageKey="map-search"
+            heading="Search Summerlin Properties"
+            variant="section"
+          />
           <p>
-            Ready to find your dream home in Summerlin? Use our advanced search to browse available
-            properties, view open houses, and get expert guidance from Dr. Jan Duffy, your Summerlin
-            real estate specialist.
+            Ready to tour Summerlin listings in 89134–89144? Use our advanced search to browse
+            available properties, view open houses, and get expert guidance from Dr. Jan Duffy.
           </p>
         </div>
 
         <div class="sidebar">
           <div class="info-card">
+            <HeadingImage imageKey="summerlin" heading="Summerlin Quick Facts" variant="card" />
             <h3>Quick Facts</h3>
             <div class="stat-grid">
               <div class="stat-item">
@@ -241,6 +261,7 @@ export default component$(() => {
           </div>
 
           <div class="info-card">
+            <HeadingImage imageKey="contact" heading="Contact Dr. Jan Duffy" variant="card" />
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert Summerlin real estate guidance</p>
             <p>
@@ -276,7 +297,7 @@ export default component$(() => {
           {
             title: 'Green Valley Real Estate',
             url: '/neighborhoods/green-valley/',
-            description: 'Upscale Henderson community with luxury homes',
+            description: 'Green Valley Ranch, Coronado High, and 89012–89014 listings',
           },
           {
             title: 'Search All Properties',

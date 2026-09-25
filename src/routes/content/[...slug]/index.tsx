@@ -42,7 +42,7 @@ export default component$(() => {
       <div class="container mx-auto px-6 py-16 text-center">
         <h1 class="text-4xl font-bold text-gray-900 mb-4">Page Not Found</h1>
         <HeadingImage
-          imageKey="weekend-open-houses"
+          imageKey="page-not-found"
           heading="Page Not Found"
           variant="section"
           alt="Las Vegas weekend open houses while this content page is missing"

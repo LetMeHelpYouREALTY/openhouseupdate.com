@@ -42,7 +42,7 @@ As of November 2025, Las Vegas Valley has experienced moderate price appreciatio
 - **North Las Vegas** (89030-89086): More affordable options $350,000-$550,000, with newer developments like Skye Canyon (89084) and Centennial Hills (89031) gaining popularity
 - **Spring Valley** (89103-89147): Diverse pricing $400,000-$600,000
 
-**Days on Market**: Average 30-45 days for well-priced properties, faster in desirable neighborhoods.
+**Days on Market**: Average 30-45 days for well-priced properties, often faster in Summerlin (89134–89144) and Henderson (89002–89074) when list price matches recent comps.
 
 ## Neighborhood Spotlight
 
@@ -53,7 +53,7 @@ Summerlin continues to be the premier master-planned community in Las Vegas Vall
 Henderson (89002-89015) continues to draw buyers to Green Valley (89012, 89014) and Seven Hills (89052, 89074).
 
 ### North Las Vegas Growth
-North Las Vegas (89030-89086) offers excellent value with newer construction in Skye Canyon (89084) and Centennial Hills (89031), attracting first-time buyers and families.
+North Las Vegas (89030-89086) offers newer construction in Skye Canyon (89084) and Centennial Hills (89031) at lower entry prices than 89134–89138.
 
 ## What This Means for Buyers and Sellers
 
@@ -93,7 +93,7 @@ Contact Dr. Jan Duffy at (702) 200-3422 for a personalized market analysis of yo
     content: `
 # First-Time Homebuyer Guide: Las Vegas Edition
 
-Buying your first home in Las Vegas is an exciting journey! This comprehensive guide walks you through every step, from getting pre-approved to closing on your dream home.
+Buying your first home in Las Vegas is an exciting journey! This comprehensive guide walks you through every step, from getting pre-approved to closing on a listing.
 
 ## Step 1: Get Pre-Approved
 
@@ -204,7 +204,7 @@ Contact Dr. Jan Duffy at (702) 200-3422 for personalized guidance on buying your
   },
   {
     id: 3,
-    slug: 'top-5-neighborhoods-families-las-vegas',
+    slug: 'las-vegas-neighborhoods-to-tour',
     title: '5 Las Vegas Neighborhoods to Tour: Schools, Commutes, and Amenities',
     excerpt:
       'Compare Summerlin, Green Valley, Seven Hills, Anthem, and Skye Canyon by named schools, square footage, commute times, and amenities.',
@@ -422,7 +422,7 @@ Contact Dr. Jan Duffy at (702) 200-3422 for a professional market analysis and p
     slug: 'investment-properties-las-vegas-2025-outlook',
     title: 'Investment Properties in Las Vegas: 2025 Outlook',
     excerpt:
-      'Analysis of rental market trends and investment opportunities in the Las Vegas area. ROI analysis, best neighborhoods for investors, and market outlook for 2025.',
+      'Analysis of rental market trends and investment opportunities in the Las Vegas area. ROI analysis, lower-entry-price zip codes, and market outlook for 2025.',
     content: `
 # Investment Properties in Las Vegas: 2025 Outlook
 
@@ -451,7 +451,7 @@ As of November 2025, Las Vegas investment property market offers:
 
 ### 2. Spring Valley (Zip Codes 89103-89147)
 **Investment Appeal**:
-- Established neighborhoods with steady demand
+- 1980s–2000s housing stock with steady rental demand
 - Diverse housing options
 - Central location
 - Affordable entry points
@@ -463,7 +463,7 @@ As of November 2025, Las Vegas investment property market offers:
 **Investment Appeal**:
 - More affordable than premium Henderson areas
 - Growing rental market
-- Family-friendly attracts long-term tenants
+- Longer average tenancy on 3-bedroom floor plans
 - Potential for appreciation
 
 **ROI Considerations**: Moderate cash flow, good for long-term appreciation strategy
@@ -482,7 +482,7 @@ As of November 2025, Las Vegas investment property market offers:
 ### Single-Family Homes
 **Pros**: 
 - Strong appreciation potential
-- Attractive to families (long-term tenants)
+- Longer typical leases on 3-bedroom homes
 - Easier financing
 
 **Best For**: Long-term buy-and-hold investors
@@ -625,7 +625,7 @@ Contact Dr. Jan Duffy at (702) 200-3422 for investment property analysis and opp
       'Las Vegas rental market',
     ],
     metaDescription:
-      'Comprehensive guide to investment properties in Las Vegas for 2025. Analysis of rental market, best neighborhoods, ROI factors, and investment strategies.',
+      'Comprehensive guide to investment properties in Las Vegas for 2025. Analysis of rental market, lower-entry-price zip codes, ROI factors, and investment strategies.',
     author: 'Dr. Jan Duffy',
     imageKey: 'luxury-open-houses',
   },

@@ -45,7 +45,7 @@ export default component$(() => {
       `}</style>
       <div class="google-reviews-card">
         <HeadingImage
-          imageKey="about"
+          imageKey="contact"
           heading="Google reviews for Open House Marketplace"
           variant="section"
         />

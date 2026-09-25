@@ -11,7 +11,12 @@ export interface PageSnippetConfig {
   description: string
   keywords: string[]
   faqKey?: string
-  structuredDataType?: 'RealEstateAgent' | 'RealEstateService' | 'LocalBusiness' | 'WebSite' | 'FAQPage'
+  structuredDataType?:
+    | 'RealEstateAgent'
+    | 'RealEstateService'
+    | 'LocalBusiness'
+    | 'WebSite'
+    | 'FAQPage'
   breadcrumbs?: Array<{ name: string; url: string }>
 }
 
@@ -183,7 +188,7 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
   summerlin: {
     title: 'Summerlin Real Estate - Homes for Sale | Dr. Jan Duffy',
     description:
-      'Find your dream home in Summerlin, Las Vegas. Browse Summerlin homes for sale, learn about neighborhoods, and work with Dr. Jan Duffy for expert guidance.',
+      'Tour Summerlin open houses in 89134–89144. Compare Palo Verde High, Red Rock Canyon access, square footage, and list prices with Dr. Jan Duffy.',
     keywords: [
       'Summerlin real estate',
       'Summerlin homes for sale',
@@ -332,7 +337,10 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
     structuredDataType: 'RealEstateService',
     breadcrumbs: [
       { name: 'Home', url: 'https://www.openhouseupdate.com/' },
-      { name: 'Open Houses by Price', url: 'https://www.openhouseupdate.com/open-houses-for-sale/' },
+      {
+        name: 'Open Houses by Price',
+        url: 'https://www.openhouseupdate.com/open-houses-for-sale/',
+      },
     ],
   },
 
@@ -374,18 +382,21 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
     breadcrumbs: [
       { name: 'Home', url: 'https://www.openhouseupdate.com/' },
       { name: 'Guides', url: 'https://www.openhouseupdate.com/blog/' },
-      { name: 'How to Buy Your First Home', url: 'https://www.openhouseupdate.com/how-to-buy-first-home-las-vegas/' },
+      {
+        name: 'How to Buy Your First Home',
+        url: 'https://www.openhouseupdate.com/how-to-buy-first-home-las-vegas/',
+      },
     ],
   },
 
   'summerlin-vs-henderson': {
     title: 'Summerlin vs Henderson: Complete Comparison Guide | Dr. Jan Duffy',
     description:
-      'Detailed comparison of Summerlin and Henderson neighborhoods in Las Vegas. Compare prices, schools, amenities, and lifestyle to choose the right community for you.',
+      'Detailed comparison of Summerlin and Henderson in Las Vegas Valley. Compare prices, named school campuses, commute via I-215, and weekend open-house inventory.',
     keywords: [
       'Summerlin vs Henderson',
       'compare Summerlin Henderson',
-      'best neighborhood Las Vegas',
+      'Las Vegas neighborhood comparison',
       'Summerlin real estate',
       'Henderson real estate',
       'Las Vegas neighborhoods comparison',
@@ -395,7 +406,10 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
     breadcrumbs: [
       { name: 'Home', url: 'https://www.openhouseupdate.com/' },
       { name: 'Neighborhoods', url: 'https://www.openhouseupdate.com/neighborhoods/' },
-      { name: 'Summerlin vs Henderson', url: 'https://www.openhouseupdate.com/summerlin-vs-henderson-comparison/' },
+      {
+        name: 'Summerlin vs Henderson',
+        url: 'https://www.openhouseupdate.com/summerlin-vs-henderson/',
+      },
     ],
   },
 }
