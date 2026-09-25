@@ -419,7 +419,7 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
       'Browse open houses by price range in Las Vegas. Find open houses under $400K, $400K-$600K, $600K-$800K, $800K-$1M, and over $1M across Las Vegas Valley.',
     keywords: [
       'open houses by price',
-      'affordable open houses',
+      'entry-price open houses',
       'luxury open houses',
       'open houses under 400k',
       'open houses 400k-600k',

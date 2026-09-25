@@ -13,6 +13,11 @@
       <image:title>Open House Marketplace Las Vegas</image:title>
       <image:caption>Las Vegas weekend open houses with Dr. Jan Duffy</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-market-pricing.jpg</image:loc>
+      <image:title>Las Vegas Market Pricing</image:title>
+      <image:caption>Las Vegas Valley home pricing context for weekend open houses</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.openhouseupdate.com/this-weekend/</loc>
@@ -20,6 +25,21 @@
       <image:loc>https://www.openhouseupdate.com/images/hero-weekend-open-houses.jpg</image:loc>
       <image:title>This Weekend's Open Houses</image:title>
       <image:caption>Las Vegas homes holding weekend open houses</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-comprehensive-search.jpg</image:loc>
+      <image:title>Comprehensive Search</image:title>
+      <image:caption>Search open houses across Las Vegas Valley by price and zip code</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-location-based.jpg</image:loc>
+      <image:title>Location-Based Open Houses</image:title>
+      <image:caption>Open houses mapped by Summerlin, Henderson, and North Las Vegas streets</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-weekend-focused.jpg</image:loc>
+      <image:title>Weekend Focused Tours</image:title>
+      <image:caption>Saturday and Sunday open house schedule in Las Vegas</image:caption>
     </image:image>
   </url>
   <url>
@@ -45,6 +65,11 @@
       <image:title>Summerlin Real Estate</image:title>
       <image:caption>Summerlin Las Vegas homes along Red Rock Canyon</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-about-summerlin.jpg</image:loc>
+      <image:title>About Summerlin</image:title>
+      <image:caption>Summerlin streets near Red Rock Canyon in zip codes 89134 to 89138</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.openhouseupdate.com/neighborhoods/henderson/</loc>
@@ -52,6 +77,11 @@
       <image:loc>https://www.openhouseupdate.com/images/heading-henderson-homes.jpg</image:loc>
       <image:title>Henderson Real Estate</image:title>
       <image:caption>Henderson Nevada homes with mountain views</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-about-henderson.jpg</image:loc>
+      <image:title>About Henderson</image:title>
+      <image:caption>Henderson Nevada homes near the McCullough Mountains</image:caption>
     </image:image>
   </url>
   <url>
@@ -61,6 +91,11 @@
       <image:title>North Las Vegas Real Estate</image:title>
       <image:caption>Newer North Las Vegas homes in a master-planned community</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-about-north-las-vegas.jpg</image:loc>
+      <image:title>About North Las Vegas</image:title>
+      <image:caption>New construction in North Las Vegas zip codes 89084 and 89031</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.openhouseupdate.com/neighborhoods/green-valley/</loc>
@@ -68,6 +103,11 @@
       <image:loc>https://www.openhouseupdate.com/images/heading-green-valley-homes.jpg</image:loc>
       <image:title>Green Valley Real Estate</image:title>
       <image:caption>Green Valley Henderson homes with desert landscaping</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-about-green-valley.jpg</image:loc>
+      <image:title>About Green Valley</image:title>
+      <image:caption>Green Valley Henderson homes near Green Valley Ranch</image:caption>
     </image:image>
   </url>
   <url>
@@ -117,6 +157,11 @@
       <image:title>Spring Valley Real Estate</image:title>
       <image:caption>Spring Valley Las Vegas homes with tile roofs and desert landscaping</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-about-spring-valley.jpg</image:loc>
+      <image:title>About Spring Valley</image:title>
+      <image:caption>Spring Valley Las Vegas homes in zip codes 89103, 89113, 89146, and 89147</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.openhouseupdate.com/neighborhoods/enterprise/</loc>
@@ -124,6 +169,11 @@
       <image:loc>https://www.openhouseupdate.com/images/heading-enterprise-homes.jpg</image:loc>
       <image:title>Enterprise Real Estate</image:title>
       <image:caption>Enterprise Las Vegas homes on larger lots near the Spring Mountains</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.openhouseupdate.com/images/heading-about-enterprise.jpg</image:loc>
+      <image:title>About Enterprise</image:title>
+      <image:caption>Enterprise Las Vegas homes near Mountain's Edge and the 215 Beltway</image:caption>
     </image:image>
   </url>
   <url>

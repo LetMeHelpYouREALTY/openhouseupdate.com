@@ -271,7 +271,7 @@ export default component$(() => {
           {
             title: 'North Las Vegas Properties',
             url: '/neighborhoods/north-las-vegas/',
-            description: 'Growing area with new construction and affordable options',
+            description: 'New construction in Skye Canyon (89084) and Centennial Hills (89031)',
           },
           {
             title: 'Green Valley Real Estate',

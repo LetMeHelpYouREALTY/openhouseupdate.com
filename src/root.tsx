@@ -29,7 +29,6 @@ export default component$(() => {
             crossOrigin="anonymous"
           />
           <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
 
           {/* DNS prefetch for additional performance */}
           <link rel="dns-prefetch" href="https://em.realscout.com" />
@@ -40,18 +39,7 @@ export default component$(() => {
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
           <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
 
-          {/* Google tag (gtag.js) */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9X8KED9X0" />
-          <script
-            dangerouslySetInnerHTML={`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-Q9X8KED9X0');
-            `}
-          />
-
-          {/* Enhanced RealScout script loading with error handling */}
+          {/* Single RealScout loader for the whole site */}
           <script
             src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
             type="module"
@@ -64,6 +52,16 @@ export default component$(() => {
         <body>
           <RouterOutlet />
           <ServiceWorkerRegister />
+
+          <script defer src="https://www.googletagmanager.com/gtag/js?id=G-Q9X8KED9X0" />
+          <script
+            dangerouslySetInnerHTML={`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-Q9X8KED9X0');
+            `}
+          />
 
           {/* Performance and error monitoring */}
           <script

@@ -2,7 +2,6 @@ import { component$, Slot, useStyles$ } from '@builder.io/qwik'
 import { type DocumentHead, routeLoader$ } from '@builder.io/qwik-city'
 import { inject } from '@vercel/analytics'
 import EnhancedAnalytics from '~/components/analytics/enhanced-analytics'
-import StickyHeader from '~/components/layout/header'
 import GbpBar from '~/components/local-seo/gbp-bar'
 import { MobileSearchButton } from '~/components/modals'
 import CrawlerManagement from '~/components/seo/crawler-management'
@@ -51,7 +50,6 @@ export default component$(() => {
       />
 
       <Header />
-      <StickyHeader />
       <main>
         <Slot />
       </main>
@@ -62,15 +60,6 @@ export default component$(() => {
       {/* Analytics */}
       <script dangerouslySetInnerHTML={`${inject()}`} />
       <EnhancedAnalytics measurementId="G-Q9X8KED9X0" />
-
-      {/* RealScout Script with Enhanced Loading */}
-      <script
-        src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
-        type="module"
-        crossOrigin="anonymous"
-        async
-        defer
-      />
     </>
   )
 })

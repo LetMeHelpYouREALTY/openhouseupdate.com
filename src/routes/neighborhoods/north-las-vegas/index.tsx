@@ -146,7 +146,7 @@ export default component$(() => {
         />
         <h1>North Las Vegas Real Estate</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
-          Growing community with new construction, affordable homes, and excellent value
+          Growing community with new construction and listings often $250,000–$500,000
         </p>
       </div>
 
@@ -161,15 +161,15 @@ export default component$(() => {
           <p>
             North Las Vegas, located in zip codes 89030, 89031, 89032, 89081, 89084, and 89086, is
             one of the fastest-growing areas in Las Vegas Valley. Known for its new construction,
-            affordable housing options, and improving amenities, North Las Vegas offers excellent
-            value for homebuyers.
+            listings typically $250,000–$500,000, and expanding retail along I-15 and the 215
+            Beltway.
           </p>
 
           <h3>Why Choose North Las Vegas?</h3>
           <ul>
             <li>
-              <strong>Affordability:</strong> More affordable housing options than many Las Vegas
-              areas
+              <strong>List prices:</strong> Many homes $250,000–$500,000 versus $600,000+ in
+              89134–89138
             </li>
             <li>
               <strong>New Construction:</strong> Active new home construction in communities like
@@ -206,18 +206,16 @@ export default component$(() => {
               <strong>Aliante:</strong> Community with shopping center, golf course, and parks
             </li>
             <li>
-              <strong>Eldorado:</strong> Established neighborhood with affordable options
+              <strong>Eldorado:</strong> Established streets with 1990s–2000s floor plans
             </li>
           </ul>
 
           <h3>Home Prices in North Las Vegas</h3>
           <p>
-            North Las Vegas offers some of the most affordable housing in Las Vegas Valley.
             Entry-level homes start around $250,000-$350,000, while mid-range homes typically range
             from $350,000-$500,000. Newer communities like Skye Canyon may have homes up to
-            $600,000+. The average home price in North Las Vegas is approximately $400,000-$450,000
-            as of November 2025, making it an excellent option for first-time buyers and those
-            seeking value.
+            $600,000+. The average list price in North Las Vegas is approximately $400,000-$450,000
+            as of November 2025, below the $600,000+ mid-range common in 89134–89138.
           </p>
 
           <h3>Schools in North Las Vegas</h3>
@@ -253,7 +251,7 @@ export default component$(() => {
               </div>
               <div class="stat-item">
                 <div class="stat-value">Value</div>
-                <div class="stat-label">Affordable</div>
+                <div class="stat-label">Entry Price</div>
               </div>
             </div>
             <p>
@@ -263,7 +261,7 @@ export default component$(() => {
               <strong>Population:</strong> ~260,000
             </p>
             <p>
-              <strong>Best For:</strong> First-time buyers, families seeking value
+              <strong>Typical search:</strong> First-time buyers comparing $250K–$500K listings
             </p>
           </div>
 
