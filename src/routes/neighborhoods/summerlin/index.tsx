@@ -217,7 +217,7 @@ export default component$(() => {
 
           <h3>Search Summerlin Properties</h3>
           <HeadingImage
-            imageKey="weekend-open-houses"
+            imageKey="map-search"
             heading="Search Summerlin Properties"
             variant="section"
           />

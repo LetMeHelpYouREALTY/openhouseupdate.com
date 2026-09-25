@@ -11,22 +11,35 @@ import { type SiteImageKey, siteImages } from '~/config/images'
  *
  * Git JPEGs in /public/images remain the backup. jsDelivr is Cloudflare CDN
  * in front of those git copies until hosted uploads return HTTP 200.
+ * Pin jsDelivr to the git SHA (PUBLIC_CLOUDFLARE_GIT_CDN_BASE) — @main 404s
+ * for files that have not landed on GitHub main yet.
  * Do not use *.workers.dev or trycloudflare.com as the live <img> origin.
  * Do not orange-cloud the Vercel apex.
  */
 export const CLOUDFLARE_IMAGES_ACCOUNT_HASH = 'byE6BTe9lNqo21V57n4aPQ'
 export const CLOUDFLARE_IMAGES_DELIVERY_BASE = `https://imagedelivery.net/${CLOUDFLARE_IMAGES_ACCOUNT_HASH}`
-export const CLOUDFLARE_GIT_CDN_BASE =
-  'https://cdn.jsdelivr.net/gh/LetMeHelpYouREALTY/openhouseupdate.com@main/public/images'
+const GIT_CDN_REPO = 'LetMeHelpYouREALTY/openhouseupdate.com'
+const GIT_CDN_MAIN = `https://cdn.jsdelivr.net/gh/${GIT_CDN_REPO}@main/public/images`
+
+const readPublicEnv = (key: string): string => {
+  const env = import.meta.env as Record<string, string | undefined>
+  return (env[key] || '').trim().replace(/\/$/, '')
+}
 
 const isUnusableImgOrigin = (base: string): boolean =>
   base.includes('workers.dev') || base.includes('trycloudflare.com')
 
+export const CLOUDFLARE_GIT_CDN_BASE = (() => {
+  const configured = readPublicEnv('PUBLIC_CLOUDFLARE_GIT_CDN_BASE')
+  if (configured && !isUnusableImgOrigin(configured)) {
+    return configured
+  }
+  return GIT_CDN_MAIN
+})()
+
 const getEnvBase = (): string => {
-  const env = import.meta.env as Record<string, string | undefined>
-  const configured = (env.PUBLIC_CLOUDFLARE_IMAGES_BASE || env.VITE_CLOUDFLARE_IMAGES_BASE || '')
-    .trim()
-    .replace(/\/$/, '')
+  const configured =
+    readPublicEnv('PUBLIC_CLOUDFLARE_IMAGES_BASE') || readPublicEnv('VITE_CLOUDFLARE_IMAGES_BASE')
 
   if (!configured || isUnusableImgOrigin(configured)) {
     return CLOUDFLARE_IMAGES_DELIVERY_BASE

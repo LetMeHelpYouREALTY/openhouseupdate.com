@@ -255,7 +255,7 @@ export default component$(() => {
           <span class="step-number">4</span>Start Your Property Search
         </h2>
         <HeadingImage
-          imageKey="weekend-open-houses"
+          imageKey="map-search"
           heading="Start Your Property Search"
           variant="section"
         />
