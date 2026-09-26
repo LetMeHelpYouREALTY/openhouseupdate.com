@@ -87,6 +87,11 @@ export default component$(() => {
                   This Weekend's Open Houses
                 </a>
               </li>
+              <li>
+                <a href="#book-a-tour" class={styles.footerLink}>
+                  Book a Tour
+                </a>
+              </li>
             </ul>
           </div>
 

@@ -61,6 +61,8 @@ export const business = {
     'https://www.bhhsnv.com/real-estate-agent/4986/dr-jan-duffy',
   ],
   realScoutOnboarding: 'http://drjanduffy.realscout.com/onboarding',
+  /** Confirmed live on 2026-09-26 from the Open House Marketplace booking page. */
+  calendlyUrl: 'https://calendly.com/drjanduffy/open-house-tour',
   /** Office Listings embed already used on this site. Do not swap without a fresh RealScout dashboard copy. */
   realScoutAgentEncodedId: 'QWdlbnQtMjI1MDUw',
 } as const

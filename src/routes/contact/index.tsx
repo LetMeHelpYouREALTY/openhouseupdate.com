@@ -1,6 +1,7 @@
 import { $, component$, useSignal } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
 import FeaturedRealtor from '~/components/agent/featured-realtor'
+import { CalendlyBookButton } from '~/components/calendly/calendly-booking'
 import HeadingImage from '~/components/media/heading-image'
 import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
@@ -48,6 +49,19 @@ export default component$(() => {
             are in the footer.
           </p>
           <FeaturedRealtor variant="profile" />
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto mt-6">
+            Prefer a time on the calendar? Book a private showing, or jump to the scheduler on this
+            page.
+          </p>
+          <p class="mt-4">
+            <CalendlyBookButton
+              class="inline-flex items-center justify-center min-h-[44px] px-4 py-3 rounded-lg bg-[#0c4a84] text-white font-bold"
+              label="Book a Tour"
+            />
+            <a href="#book-a-tour" class="ml-4 font-bold text-[#0c4a84]">
+              Go to the calendar
+            </a>
+          </p>
           <HeadingImage
             imageKey="contact"
             heading="Contact Dr. Jan Duffy"

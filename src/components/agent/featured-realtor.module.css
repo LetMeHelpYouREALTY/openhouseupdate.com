@@ -66,6 +66,14 @@
   color: #fff;
 }
 
+.book {
+  background: #0a2540;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
 .about {
   background: transparent;
   color: #0a2540;
