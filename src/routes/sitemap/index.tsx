@@ -183,6 +183,31 @@ export default component$(() => {
       </div>
 
       <div class="sitemap-section">
+        <h2>Guides</h2>
+        <div class="sitemap-links">
+          <a href="/how-to-buy-first-home-las-vegas/">First-Time Homebuyer Guide</a>
+          <a href="/summerlin-vs-henderson/">Summerlin vs Henderson</a>
+          <a href="/summerlin-vs-henderson-comparison/">Summerlin and Henderson Comparison</a>
+          <a href="/summerlin-open-houses/">Summerlin Open Houses</a>
+          <a href="/henderson-home-valuation/">Henderson Home Valuation</a>
+          <a href="/people-also-ask/">People Also Ask</a>
+          <a href="/blog/las-vegas-real-estate-market-update-november-2025/">
+            Las Vegas Market Update
+          </a>
+          <a href="/blog/first-time-homebuyer-guide-las-vegas/">Las Vegas Homebuyer Guide</a>
+          <a href="/blog/top-5-neighborhoods-families-las-vegas/">
+            Neighborhoods to Tour: Schools, Commutes, and Amenities
+          </a>
+          <a href="/blog/selling-your-home-las-vegas-pricing-strategy/">
+            Selling Your Home: Pricing
+          </a>
+          <a href="/blog/investment-properties-las-vegas-2025-outlook/">
+            Investment Properties Outlook
+          </a>
+        </div>
+      </div>
+
+      <div class="sitemap-section">
         <h2>Resources</h2>
         <div class="sitemap-links">
           <a href="/faq/">Frequently Asked Questions</a>
@@ -197,6 +222,9 @@ export default component$(() => {
         <p>For search engines and developers:</p>
         <a href="/sitemap-index.xml" target="_blank" rel="noopener">
           View XML Sitemap Index
+        </a>
+        <a href="/sitemap-content.xml" target="_blank" rel="noopener">
+          View Content Sitemap
         </a>
       </div>
     </div>

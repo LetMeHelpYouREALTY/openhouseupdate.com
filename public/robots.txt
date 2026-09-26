@@ -3,6 +3,7 @@ Allow: /
 
 # Sitemap
 Sitemap: https://www.openhouseupdate.com/sitemap-index.xml
+Sitemap: https://www.openhouseupdate.com/sitemap-content.xml
 Sitemap: https://www.openhouseupdate.com/sitemap-images.xml
 
 # Crawl delay
