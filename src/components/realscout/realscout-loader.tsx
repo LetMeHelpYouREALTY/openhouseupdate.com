@@ -1,9 +1,9 @@
-import { component$, type JSXNode, useSignal, useVisibleTask$ } from '@builder.io/qwik'
+import { component$, type JSXOutput, useSignal, useVisibleTask$ } from '@builder.io/qwik'
 
 interface RealScoutLoaderProps {
   agentId: string
   widgetType: 'listings' | 'home-value' | 'simple-search' | 'advanced-search'
-  children?: JSXNode
+  children?: JSXOutput
   className?: string
 }
 

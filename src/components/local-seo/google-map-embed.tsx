@@ -44,7 +44,7 @@ export default component$<GoogleMapEmbedProps>(
           height={height}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          allowFullScreen
+          allowFullscreen
         />
         <p class="gbp-map-caption">
           {business.gbpName} · {business.fullAddress} · Pin on{' '}

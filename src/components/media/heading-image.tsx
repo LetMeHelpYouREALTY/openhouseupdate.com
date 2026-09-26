@@ -94,14 +94,14 @@ export default component$<HeadingImageProps>(
         `}</style>
         <img
           src={src}
-          srcSet={srcSet}
+          srcset={srcSet}
           sizes={sizes}
           alt={resolvedAlt}
           width={image.width}
           height={image.height}
           loading={priority ? 'eager' : 'lazy'}
           decoding={priority ? 'sync' : 'async'}
-          {...({ fetchpriority: priority ? 'high' : 'auto' } as unknown as Record<string, never>)}
+          fetchPriority={priority ? 'high' : 'auto'}
         />
       </figure>
     )

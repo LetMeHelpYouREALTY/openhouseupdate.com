@@ -11,13 +11,7 @@ export default defineConfig(({ mode }) => {
       qwikCity({
         trailingSlash: true,
       }),
-      qwikVite({
-        // Enable faster builds with esbuild
-        esbuild: {
-          target: 'es2020',
-          minify: isProduction,
-        },
-      }),
+      qwikVite(),
       tsconfigPaths(),
     ],
 
@@ -26,13 +20,6 @@ export default defineConfig(({ mode }) => {
       target: 'es2020',
       minify: isProduction ? 'esbuild' : false,
       sourcemap: !isProduction,
-      rollupOptions: {
-        output: {
-          manualChunks: {
-            vendor: ['@builder.io/qwik', '@builder.io/qwik-city'],
-          },
-        },
-      },
       chunkSizeWarningLimit: 1000,
     },
 

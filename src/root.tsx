@@ -20,9 +20,9 @@ const HomeLcpPreload = component$(() => {
       rel="preload"
       as="image"
       href="/images/hero-weekend-open-houses-800.webp"
-      imageSrcSet={heroLcp.srcSet}
+      imageSrcset={heroLcp.srcSet}
       imageSizes={heroLcp.sizes}
-      {...({ fetchpriority: 'high' } as unknown as Record<string, never>)}
+      fetchPriority="high"
     />
   )
 })
@@ -39,7 +39,10 @@ export default component$(() => {
 
   return (
     <QwikCityProvider>
-      <html prefix="og: https://ogp.me/ns#" lang="en">
+      <html
+        lang="en"
+        {...({ prefix: 'og: https://ogp.me/ns#' } as unknown as Record<string, never>)}
+      >
         <head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
