@@ -208,18 +208,17 @@ export default component$(() => {
               <strong>Coronado Country Club:</strong> Golf community with championship course
             </li>
             <li>
-              <strong>Various Established Neighborhoods:</strong> Well-maintained communities
-              throughout Green Valley
+              <strong>1980s–2000s housing:</strong> Mid-range and custom homes throughout Green
+              Valley
             </li>
           </ul>
 
           <h3>Home Prices in Green Valley</h3>
           <p>
-            Green Valley offers a range of housing options from established mid-range homes to
-            luxury properties. Entry-level homes start around $400,000-$500,000, while mid-range
-            homes typically range from $500,000-$800,000. Luxury homes and custom estates can exceed
-            $1 million. The average home price in Green Valley is approximately $650,000-$750,000 as
-            of November 2025.
+            Green Valley lists mid-range homes and custom properties. Entry-level homes start around
+            $400,000-$500,000, while mid-range homes typically range from $500,000-$800,000. Luxury
+            homes and custom estates can exceed $1 million. The average home price in Green Valley
+            is approximately $650,000-$750,000 as of November 2025.
           </p>
 
           <h3>Schools in Green Valley</h3>

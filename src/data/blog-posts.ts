@@ -42,12 +42,12 @@ As of November 2025, Las Vegas Valley has experienced moderate price appreciatio
 - **North Las Vegas** (89030-89086): More affordable options $350,000-$550,000, with newer developments like Skye Canyon (89084) and Centennial Hills (89031) gaining popularity
 - **Spring Valley** (89103-89147): Diverse pricing $400,000-$600,000
 
-**Days on Market**: Average 30-45 days for well-priced properties, faster in desirable neighborhoods.
+**Days on Market**: Average 30-45 days for well-priced properties. Days on market vary by list price and zip code.
 
 ## Neighborhood Spotlight
 
 ### Summerlin Real Estate Market
-Summerlin continues to be the premier master-planned community in Las Vegas Valley, with strong demand for homes in zip codes 89134, 89135, 89138, and 89144. The Ridges and other premium communities maintain strong values.
+Summerlin is a master-planned community in the Las Vegas Valley, with listings in zip codes 89134, 89135, 89138, and 89144. The Ridges lists higher-priced homes against Red Rock Canyon.
 
 ### Henderson Market Trends
 Henderson (89002-89015) continues to draw buyers to Green Valley (89012, 89014) and Seven Hills (89052, 89074).
@@ -116,28 +116,28 @@ In Las Vegas, factor in:
 
 ## Step 3: Choose the Right Neighborhood
 
-Las Vegas Valley offers diverse neighborhoods for first-time buyers:
+Compare these Las Vegas Valley areas by price, year built, and the campus named on the MLS sheet:
 
-### Best Neighborhoods for First-Time Buyers:
+### Open-house areas to compare:
 
 **North Las Vegas** (zip codes 89030-89086):
-- More affordable entry-level homes ($350,000-$550,000)
+- List prices often $350,000-$550,000
 - Newer construction in Skye Canyon (89084) and Centennial Hills (89031)
-- Growing community amenities
+- I-215 commute to the northwest valley
 
 **Spring Valley** (89103-89147):
-- Established neighborhoods with good value
-- Diverse housing options
-- Central location
+- 1970s–2000s housing, often $400,000-$600,000
+- Single-family homes and condos
+- Central access via Rainbow Boulevard and I-215
 
 **Henderson** (89002-89015):
-- Some affordable areas for first-time buyers
-- Excellent schools in Green Valley (89012, 89014)
-- Family-friendly communities
+- Green Valley (89012, 89014) list prices often $500,000-$700,000
+- Named campuses include Coronado High and Green Valley High; confirm the sheet
+- Green Valley Ranch retail and parks
 
 **Enterprise** (89118-89123):
-- Newer developments like Mountain's Edge (89178)
-- Good value for first-time buyers
+- Newer construction such as Mountain's Edge (89178)
+- Many homes about 1,800–3,200 sq ft near I-15 at Cactus
 
 ## Step 4: Find the Right Home
 
@@ -330,7 +330,7 @@ Dr. Jan Duffy provides comprehensive market analysis including:
 - **Green Valley** (89012, 89014): $500,000-$800,000
 - **Seven Hills** (89052, 89074): $600,000-$1.5M
 - **General**: $400,000-$700,000
-- **Strategy**: Family-friendly areas attract buyers, price at market value
+- **Strategy**: Price from recent sales of similar square footage in that zip code
 
 ### North Las Vegas (89030-89086)
 - **Skye Canyon** (89084): $400,000-$600,000
@@ -370,9 +370,9 @@ Price above market for unique properties. Only use when:
 - **Major repairs needed**: Significant price reduction required
 
 ### Location Factors
-- **Desirable neighborhoods** (The Ridges, Green Valley): Premium pricing
+- **Higher list prices** (The Ridges, Green Valley): Price from recent sales in that zip
 - **Growing areas** (Skye Canyon, Centennial Hills): Competitive pricing
-- **Established areas**: Market value pricing
+- **Older housing**: Price from recent sales of similar square footage
 
 ### Market Timing
 - **November 2025**: Active market, price competitively
@@ -422,7 +422,7 @@ Contact Dr. Jan Duffy using the office phone in the footer for a professional ma
     slug: 'investment-properties-las-vegas-2025-outlook',
     title: 'Investment Properties in Las Vegas: 2025 Outlook',
     excerpt:
-      'Analysis of rental market trends and investment opportunities in the Las Vegas area. ROI analysis, best neighborhoods for investors, and market outlook for 2025.',
+      'Analysis of rental market trends and investment opportunities in the Las Vegas area. ROI analysis, zip codes investors compare, and market outlook for 2025.',
     content: `
 # Investment Properties in Las Vegas: 2025 Outlook
 
@@ -437,52 +437,49 @@ As of November 2025, Las Vegas investment property market offers:
 - **Appreciation Potential**: Long-term growth outlook remains positive
 - **Diverse Opportunities**: From single-family to condos to multi-unit
 
-## Best Neighborhoods for Investment
+## Zip codes investors compare
 
 ### 1. North Las Vegas (Zip Codes 89030-89086)
-**Investment Appeal**:
-- Lower entry prices ($300,000-$500,000)
-- Growing population and job market
-- New construction in Skye Canyon (89084), Centennial Hills (89031)
-- Strong rental demand
-- Potential for appreciation
+**Numbers to check**:
+- List prices often $300,000-$500,000
+- Job centers and commute via I-15 and I-215
+- Newer construction in Skye Canyon (89084) and Centennial Hills (89031)
+- Ask for current rent comps before underwriting
+- Past sale prices for that zip, not a neighborhood ranking
 
-**ROI Considerations**: Good cash flow potential, newer properties require less maintenance
+**ROI Considerations**: Cash flow depends on rent, taxes, insurance, and HOA. Newer houses often need less immediate repair.
 
 ### 2. Spring Valley (Zip Codes 89103-89147)
-**Investment Appeal**:
-- Established neighborhoods with steady demand
-- Diverse housing options
-- Central location
-- Affordable entry points
-- Consistent rental market
+**Numbers to check**:
+- 1970s–2000s single-family homes and condos
+- Central access via Rainbow Boulevard and I-215
+- List prices often below Summerlin
+- Rent comps vary by bedrooms and year built
 
-**ROI Considerations**: Stable returns, established area with predictable performance
+**ROI Considerations**: Returns depend on rent, expenses, and the sales history for that zip code
 
-### 3. Henderson (Some Areas - 89002, 89015)
-**Investment Appeal**:
-- More affordable than premium Henderson areas
-- Growing rental market
-- Family-friendly attracts long-term tenants
-- Potential for appreciation
+### 3. Henderson (89002, 89015)
+**Numbers to check**:
+- List prices are often below Green Valley (89012, 89014) and Seven Hills (89052, 89074)
+- Confirm rent comps and HOA dues on each address
+- Named campuses include Green Valley High; confirm the MLS sheet
 
-**ROI Considerations**: Moderate cash flow, good for long-term appreciation strategy
+**ROI Considerations**: Cash flow and resale both depend on the rent roll and the comparable sales, not a label for the area.
 
 ### 4. Enterprise (Zip Codes 89118-89123)
-**Investment Appeal**:
-- Newer developments like Mountain's Edge (89178)
-- Growing community
-- Affordable options
-- Potential for growth
+**Numbers to check**:
+- Newer construction such as Mountain's Edge (89178)
+- Many homes about 1,800–3,200 sq ft
+- I-15 access near Cactus
 
-**ROI Considerations**: Growth potential, newer properties with modern features
+**ROI Considerations**: Underwrite repairs, HOA dues, and rent for that floor plan.
 
 ## Investment Property Types
 
 ### Single-Family Homes
 **Pros**: 
 - Strong appreciation potential
-- Attractive to families (long-term tenants)
+- One lease per house; confirm the lease term and rent comps
 - Easier financing
 
 **Best For**: Long-term buy-and-hold investors
@@ -511,7 +508,7 @@ As of November 2025, Las Vegas investment property market offers:
 - Higher initial investment
 - More management required
 
-**Areas**: Central Las Vegas, established neighborhoods
+**Areas**: Central Las Vegas, including 1970s–1990s housing stock
 
 ## ROI Analysis Factors
 
@@ -625,7 +622,7 @@ Contact Dr. Jan Duffy using the office phone in the footer for investment proper
       'Las Vegas rental market',
     ],
     metaDescription:
-      'Comprehensive guide to investment properties in Las Vegas for 2025. Analysis of rental market, best neighborhoods, ROI factors, and investment strategies.',
+      'Guide to Las Vegas investment properties for 2025. Rent comps, zip-code price bands, ROI factors, and underwriting checks.',
     author: 'Dr. Jan Duffy',
     imageKey: 'luxury-open-houses',
   },

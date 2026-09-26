@@ -228,7 +228,7 @@ export default component$(() => {
                 <strong>Established</strong>
               </td>
               <td>1990</td>
-              <td>1953 (older, more established)</td>
+              <td>1953 (older housing stock)</td>
             </tr>
             <tr>
               <td>
@@ -312,7 +312,7 @@ export default component$(() => {
               <li>Slightly longer commute to Las Vegas (20-30 min)</li>
               <li>Less centralized shopping than Downtown Summerlin</li>
               <li>School ratings slightly lower than Summerlin</li>
-              <li>Older established areas may need updates</li>
+              <li>Older houses may need updates</li>
             </ul>
           </div>
         </div>

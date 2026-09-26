@@ -133,7 +133,7 @@ export default component$(() => {
             <p class="text-lg text-gray-700 mb-4">Summerlin offers diverse housing options:</p>
             <ul class="list-disc pl-6 text-lg text-gray-700 mb-4">
               <li>
-                <strong>Entry-Level</strong>: $400,000-$600,000 in established areas
+                <strong>Entry-Level</strong>: $400,000-$600,000 in 1990s–2000s housing
               </li>
               <li>
                 <strong>Mid-Range</strong>: $600,000-$1,000,000 in prime locations
@@ -193,8 +193,7 @@ export default component$(() => {
                 <strong>Seven Hills</strong> (89052, 89074): $600,000-$1.5M - luxury gated community
               </li>
               <li>
-                <strong>Lake Las Vegas</strong> (89011): $800,000-$2M+ - upscale waterfront
-                community
+                <strong>Lake Las Vegas</strong> (89011): $800,000-$2M+ waterfront homes community
               </li>
               <li>
                 <strong>General Henderson</strong> (89002, 89015): $400,000-$700,000 - diverse
