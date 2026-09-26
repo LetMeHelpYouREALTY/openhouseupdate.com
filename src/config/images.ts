@@ -94,6 +94,12 @@ export const siteImages = {
     width: 1280,
     height: 720,
   },
+  'og-homepage': {
+    file: 'og-homepage.jpg',
+    alt: 'Las Vegas open houses this weekend with Dr. Jan Duffy',
+    width: 1200,
+    height: 630,
+  },
   'conversion-rates': {
     file: 'heading-conversion-rates.jpg',
     alt: 'Open house guest table inside a Las Vegas home foyer',

@@ -3,6 +3,7 @@
  * Enhanced OG metadata generation for better SEO performance
  */
 
+import { business } from '~/config/business'
 import { canonicalForPageKey } from '~/utils/canonical'
 
 export interface OGSEOConfig {
@@ -50,43 +51,25 @@ export const getOGImage = (pageKey: string, customImage?: string): string => {
 }
 
 /**
- * Generate SEO-optimized OG description with call-to-action
- * Optimized for social sharing and click-through rates
+ * Social description matches the page description.
+ * Do not append a keyword or a second sentence. That produced
+ * "Las Vegas open houses in Las Vegas" and a doubled period.
  */
 export const generateOGDescription = (
   baseDescription: string,
-  keywords?: string[],
-  includeCTA = true
+  _keywords?: string[],
+  _includeCTA = true
 ): string => {
-  let description = baseDescription.trim()
+  const description = baseDescription
+    .trim()
+    .replace(/\s+/g, ' ')
+    .replace(/\.{2,}/g, '.')
+  if (description.length <= 155) return description
 
-  // Ensure description is compelling for social sharing
-  // Add keywords naturally if they enhance the description
-  if (keywords && keywords.length > 0) {
-    const primaryKeywords = keywords.slice(0, 3).filter((kw) => !description.toLowerCase().includes(kw.toLowerCase()))
-    if (primaryKeywords.length > 0 && description.length < 140) {
-      // Add primary keyword if space allows and not already present
-      const keyword = primaryKeywords[0]
-      if (description.length + keyword.length + 2 < 155) {
-        description = `${description}. ${keyword} in Las Vegas.`
-      }
-    }
-  }
-
-  // Add CTA for better engagement (keep under 155 chars for optimal display)
-  if (includeCTA && description.length < 130) {
-    const cta = ' Browse listings today.'
-    if (description.length + cta.length <= 155) {
-      description += cta
-    }
-  }
-
-  // Truncate to optimal length (155 chars for OG, leaves room for ellipsis)
-  if (description.length > 155) {
-    description = `${description.substring(0, 152).trim()}...`
-  }
-
-  return description
+  const cut = description.slice(0, 152)
+  const lastSpace = cut.lastIndexOf(' ')
+  const shortened = (lastSpace > 80 ? cut.slice(0, lastSpace) : cut).trim()
+  return `${shortened}...`
 }
 
 /**
@@ -158,7 +141,7 @@ export const createSEOOptimizedOG = (config: OGSEOConfig) => {
 
     // Recommended OG Properties
     { property: 'og:description', content: ogDescription },
-    { property: 'og:site_name', content: 'Open House Update' },
+    { property: 'og:site_name', content: business.gbpName },
     { property: 'og:locale', content: 'en_US' },
     { property: 'og:locale:alternate', content: 'es_US' }, // Spanish for Las Vegas market
 
@@ -204,7 +187,14 @@ export const getPageOGMetadata = (pageKey: string): Partial<OGSEOConfig> => {
         'Open House Expert',
         'Dr. Jan Duffy',
       ],
-      articleTags: ['Las Vegas', 'open houses', 'weekend open houses', 'real estate', 'property search'],
+      imageAlt: 'Las Vegas open houses this weekend with Dr. Jan Duffy',
+      articleTags: [
+        'Las Vegas',
+        'open houses',
+        'weekend open houses',
+        'real estate',
+        'property search',
+      ],
     },
     'home-valuation': {
       keywords: ['home valuation', 'property value', 'market analysis', 'CMA'],
@@ -212,11 +202,23 @@ export const getPageOGMetadata = (pageKey: string): Partial<OGSEOConfig> => {
     },
     'buyer-services': {
       keywords: ['buyer representation', 'home buying', 'buyer agent', 'property search'],
-      articleTags: ['buyer services', 'home buying', 'buyer representation', 'property search', 'Las Vegas'],
+      articleTags: [
+        'buyer services',
+        'home buying',
+        'buyer representation',
+        'property search',
+        'Las Vegas',
+      ],
     },
     'seller-services': {
       keywords: ['seller representation', 'home selling', 'seller agent', 'property marketing'],
-      articleTags: ['seller services', 'home selling', 'seller representation', 'property marketing', 'Las Vegas'],
+      articleTags: [
+        'seller services',
+        'home selling',
+        'seller representation',
+        'property marketing',
+        'Las Vegas',
+      ],
     },
     'people-also-ask': {
       keywords: [
@@ -239,4 +241,3 @@ export const getPageOGMetadata = (pageKey: string): Partial<OGSEOConfig> => {
 
   return pageConfigs[pageKey] || {}
 }
-

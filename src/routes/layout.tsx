@@ -146,10 +146,14 @@ export const head: DocumentHead = ({ head, url }) => {
           },
         ]
       : []),
-    {
-      property: 'og:type',
-      content: 'website',
-    },
+    ...(!hasMeta(undefined, 'og:type')
+      ? [
+          {
+            property: 'og:type',
+            content: 'website',
+          },
+        ]
+      : []),
     ...(!hasMeta(undefined, 'og:url')
       ? [
           {
@@ -158,30 +162,42 @@ export const head: DocumentHead = ({ head, url }) => {
           },
         ]
       : []),
-    {
-      property: 'og:site_name',
-      content: business.gbpName,
-    },
-    {
-      property: 'og:locale',
-      content: 'en_US',
-    },
-    {
-      property: 'og:image',
-      content: `${business.siteUrl}/images/og-default.jpg`,
-    },
-    {
-      property: 'og:image:width',
-      content: '1200',
-    },
-    {
-      property: 'og:image:height',
-      content: '630',
-    },
-    {
-      property: 'og:image:alt',
-      content: 'Weekend open houses in Las Vegas with Open House Marketplace',
-    },
+    ...(!hasMeta(undefined, 'og:site_name')
+      ? [
+          {
+            property: 'og:site_name',
+            content: business.gbpName,
+          },
+        ]
+      : []),
+    ...(!hasMeta(undefined, 'og:locale')
+      ? [
+          {
+            property: 'og:locale',
+            content: 'en_US',
+          },
+        ]
+      : []),
+    ...(!hasMeta(undefined, 'og:image')
+      ? [
+          {
+            property: 'og:image',
+            content: `${business.siteUrl}/images/og-default.jpg`,
+          },
+          {
+            property: 'og:image:width',
+            content: '1200',
+          },
+          {
+            property: 'og:image:height',
+            content: '630',
+          },
+          {
+            property: 'og:image:alt',
+            content: 'Weekend open houses in Las Vegas with Open House Marketplace',
+          },
+        ]
+      : []),
     ...(!hasMeta('twitter:title')
       ? [
           {
@@ -190,10 +206,14 @@ export const head: DocumentHead = ({ head, url }) => {
           },
         ]
       : []),
-    {
-      name: 'twitter:card',
-      content: 'summary_large_image',
-    },
+    ...(!hasMeta('twitter:card')
+      ? [
+          {
+            name: 'twitter:card',
+            content: 'summary_large_image',
+          },
+        ]
+      : []),
     {
       name: 'twitter:site',
       content: '@drjanetduffy',

@@ -25,7 +25,7 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
   homepage: {
     title: 'Las Vegas Open Houses - This Weekend | Dr. Jan Duffy',
     description:
-      "Find this weekend's open houses in Las Vegas with featured Open House Expert Dr. Jan Duffy. Discover properties in Summerlin, Henderson, North Las Vegas and all Las Vegas Valley neighborhoods.",
+      "This weekend's open houses in Las Vegas with Dr. Jan Duffy, from Summerlin through Henderson.",
     keywords: [
       'Las Vegas open houses',
       'weekend open houses',

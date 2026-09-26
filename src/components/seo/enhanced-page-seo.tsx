@@ -1,16 +1,13 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
 import { getPageFAQs } from '~/data/page-faqs'
+import { canonicalForPageKey } from '~/utils/canonical'
+import { createSEOOptimizedOG, getPageOGMetadata } from '~/utils/og-seo-optimizer'
 import {
   generateMetaDescription,
   generateTitle,
   getPageSnippet,
 } from '~/utils/snippet-optimization'
-import { canonicalForPageKey } from '~/utils/canonical'
-import {
-  createSEOOptimizedOG,
-  getPageOGMetadata,
-} from '~/utils/og-seo-optimizer'
 import EnhancedStructuredData from './enhanced-structured-data'
 import FAQSection from './faq-section'
 
@@ -82,6 +79,7 @@ export const createOptimizedHead = (
     title,
     description,
     keywords: [...keywords, ...(pageOGConfig.keywords || [])],
+    imageAlt: pageOGConfig.imageAlt,
     type: 'website',
     articleTags: pageOGConfig.articleTags,
     url: canonicalUrl,
