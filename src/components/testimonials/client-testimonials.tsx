@@ -39,7 +39,7 @@ export default component$(() => {
           border-radius: 8px;
           font-weight: 600;
           text-decoration: none;
-          background: #3A8DDE;
+          background: #0c4a84;
           color: white;
         }
       `}</style>

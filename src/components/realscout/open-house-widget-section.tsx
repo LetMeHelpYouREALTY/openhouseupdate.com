@@ -57,6 +57,8 @@ export default component$<OpenHouseWidgetSectionProps>((props) => {
           max-width: 1100px;
           margin: 0 auto 2.5rem;
           padding: 1.5rem 1.25rem 2rem;
+          background: #ffffff;
+          color: #0a2540;
         }
         .ohu-widget-heading {
           display: flex;

@@ -127,7 +127,7 @@ export default component$(() => {
       <button
         onClick$={openModal}
         class="mobile-search-trigger"
-        aria-label="Open advanced property search"
+        aria-label="Advanced Search"
         type="button"
       >
         <span class="search-icon" aria-hidden="true">

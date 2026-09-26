@@ -9,16 +9,21 @@ html {
 }
 
 body {
-  background: var(--qwik-dark-background);
-  color: var(--qwik-dark-text);
+  background: #ffffff;
+  color: #0a2540;
   overflow-x: hidden;
+}
+
+main {
+  background: #ffffff;
+  color: #0a2540;
 }
 
 /* HEADINGS ------------------------------------- */
 h1,
 h2,
 h3 {
-  color: white;
+  color: inherit;
   margin: 0;
 }
 
@@ -58,7 +63,7 @@ h3 {
 /* TAGS ----------------------------------------- */
 a {
   text-decoration: none;
-  color: var(--qwik-light-blue);
+  color: #0c4a84;
 }
 
 code {
@@ -111,7 +116,7 @@ ul {
 /* BUTTONS -------------------------------------- */
 a.button,
 button {
-  background: var(--qwik-light-blue);
+  background: #0c4a84;
   border: none;
   border-radius: 8px;
   color: white;

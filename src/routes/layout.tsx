@@ -259,10 +259,6 @@ export const head: DocumentHead = ({ head, url }) => {
       href: 'https://imagedelivery.net',
     },
     {
-      rel: 'preconnect',
-      href: 'https://www.googletagmanager.com',
-    },
-    {
       rel: 'dns-prefetch',
       href: 'https://em.realscout.com',
     },

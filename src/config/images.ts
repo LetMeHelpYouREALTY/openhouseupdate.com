@@ -1,9 +1,17 @@
 /** Local portrait. Do not route this file through Cloudflare Images — it ships from /public/images. */
 export const agentPortrait = {
-  src: '/images/dr-jan-duffy.png',
+  src: '/images/dr-jan-duffy.webp',
   alt: 'Dr. Jan Duffy, Featured Realtor and Las Vegas Open House Expert',
   width: 180,
   height: 180,
+} as const
+
+/** Homepage LCP image. Preload this exact srcset so the browser does not wait on layout. */
+export const heroLcp = {
+  src: '/images/hero-weekend-open-houses.jpg',
+  srcSet:
+    '/images/hero-weekend-open-houses-800.webp 800w, /images/hero-weekend-open-houses.webp 1280w',
+  sizes: '(max-width: 768px) 100vw, 1200px',
 } as const
 
 export const getAgentPortraitAbsoluteUrl = (siteUrl: string): string =>
@@ -235,6 +243,18 @@ export const siteImages = {
 } as const
 
 export type SiteImageKey = keyof typeof siteImages
+
+/** Smaller WebP files for homepage images that Lighthouse flagged as oversized JPEGs. */
+export const optimizedImageSources: Partial<
+  Record<SiteImageKey, { src: string; width: number }[]>
+> = {
+  'weekend-open-houses': [
+    { src: '/images/hero-weekend-open-houses-800.webp', width: 800 },
+    { src: '/images/hero-weekend-open-houses.webp', width: 1280 },
+  ],
+  'strategic-marketing': [{ src: '/images/heading-strategic-marketing-800.webp', width: 800 }],
+  'conversion-rates': [{ src: '/images/heading-conversion-rates-800.webp', width: 800 }],
+}
 
 export const getNeighborhoodImageKey = (slug: string): SiteImageKey => {
   switch (slug.toLowerCase()) {

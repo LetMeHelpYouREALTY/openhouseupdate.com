@@ -192,7 +192,7 @@ export default component$(() => {
       <button
         onClick$={openModal}
         class="mobile-search-trigger"
-        aria-label="Open property search"
+        aria-label="Search Properties"
         type="button"
       >
         <span class="search-icon" aria-hidden="true">

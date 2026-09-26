@@ -1,6 +1,31 @@
 import { component$ } from '@builder.io/qwik'
-import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from '@builder.io/qwik-city'
+import {
+  QwikCityProvider,
+  RouterOutlet,
+  ServiceWorkerRegister,
+  useLocation,
+} from '@builder.io/qwik-city'
+import { heroLcp } from '~/config/images'
 import { RouterHead } from './components/router-head/router-head'
+
+/** Discover the homepage hero before the listing script so LCP is not delayed. */
+const HomeLcpPreload = component$(() => {
+  const loc = useLocation()
+  if (loc.url.pathname !== '/') {
+    return null
+  }
+
+  return (
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero-weekend-open-houses-800.webp"
+      imageSrcSet={heroLcp.srcSet}
+      imageSizes={heroLcp.sizes}
+      {...({ fetchpriority: 'high' } as unknown as Record<string, never>)}
+    />
+  )
+})
 
 import './global.css'
 
@@ -19,8 +44,9 @@ export default component$(() => {
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta name="theme-color" content="#3A8DDE" />
+          <HomeLcpPreload />
 
-          {/* Preconnect to external domains for performance */}
+          {/* Preconnect to the listing widget. Analytics loads after the page. */}
           <link rel="preconnect" href="https://em.realscout.com" crossOrigin="anonymous" />
           <link rel="preconnect" href="https://imagedelivery.net" crossOrigin="anonymous" />
           <link
@@ -28,9 +54,7 @@ export default component$(() => {
             href="https://images.openhouseupdate.com"
             crossOrigin="anonymous"
           />
-          <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
 
-          {/* DNS prefetch for additional performance */}
           <link rel="dns-prefetch" href="https://em.realscout.com" />
           <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
@@ -51,13 +75,18 @@ export default component$(() => {
           <RouterOutlet />
           <ServiceWorkerRegister />
 
-          <script defer src="https://www.googletagmanager.com/gtag/js?id=G-Q9X8KED9X0" />
           <script
             dangerouslySetInnerHTML={`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-Q9X8KED9X0');
+              window.addEventListener('load', function () {
+                var script = document.createElement('script');
+                script.src = 'https://www.googletagmanager.com/gtag/js?id=G-Q9X8KED9X0';
+                script.async = true;
+                document.head.appendChild(script);
+              });
             `}
           />
 

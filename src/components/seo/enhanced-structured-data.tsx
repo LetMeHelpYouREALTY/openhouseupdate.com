@@ -2,6 +2,7 @@ import { component$ } from '@builder.io/qwik'
 import { business } from '~/config/business'
 import { getAgentPortraitAbsoluteUrl } from '~/config/images'
 import { getAbsoluteImageUrl } from '~/lib/cloudflare-images'
+import { CANONICAL_HOME, CANONICAL_ORIGIN } from '~/utils/canonical'
 
 interface EnhancedStructuredDataProps {
   type:
@@ -54,7 +55,7 @@ export default component$<EnhancedStructuredDataProps>(
             jobTitle: 'Open House Expert',
             description:
               'Professional Open House Expert specializing in Las Vegas properties with over 20 years of experience in open house marketing, lead generation, and buyer conversion',
-            url: business.siteUrl,
+            url: CANONICAL_HOME,
             telephone: business.phoneE164,
             email: business.email,
             image: getAgentPortraitAbsoluteUrl(business.siteUrl),
@@ -167,7 +168,7 @@ export default component$<EnhancedStructuredDataProps>(
             alternateName: [business.siteName, business.agentName],
             description:
               'Professional real estate services in Las Vegas, Nevada. Expert guidance for buying and selling homes.',
-            url: business.siteUrl,
+            url: CANONICAL_HOME,
             logo: getAbsoluteImageUrl('logo'),
             image: getAbsoluteImageUrl('og-default'),
             provider: {
@@ -175,7 +176,7 @@ export default component$<EnhancedStructuredDataProps>(
               name: 'Dr. Jan Duffy',
               jobTitle: 'Open House Expert',
               image: getAgentPortraitAbsoluteUrl(business.siteUrl),
-              url: 'https://www.openhouseupdate.com/about',
+              url: `${CANONICAL_ORIGIN}/about/`,
             },
             areaServed: {
               '@type': 'City',
@@ -230,7 +231,7 @@ export default component$<EnhancedStructuredDataProps>(
             '@type': 'WebSite',
             name: business.gbpName,
             alternateName: business.siteName,
-            url: business.siteUrl,
+            url: CANONICAL_HOME,
             description:
               'Las Vegas real estate services - Find your perfect home with expert guidance',
             inLanguage: 'en-US',
@@ -238,14 +239,14 @@ export default component$<EnhancedStructuredDataProps>(
               '@type': 'SearchAction',
               target: {
                 '@type': 'EntryPoint',
-                urlTemplate: 'https://www.openhouseupdate.com/search?q={search_term_string}',
+                urlTemplate: `${CANONICAL_ORIGIN}/search/?q={search_term_string}`,
               },
               'query-input': 'required name=search_term_string',
             },
             publisher: {
               '@type': 'RealEstateAgent',
               name: 'Dr. Jan Duffy',
-              url: 'https://www.openhouseupdate.com/about',
+              url: `${CANONICAL_ORIGIN}/about/`,
             },
             mainEntity: {
               '@type': 'RealEstateService',
@@ -259,7 +260,7 @@ export default component$<EnhancedStructuredDataProps>(
             '@type': 'Organization',
             name: business.gbpName,
             alternateName: business.siteName,
-            url: business.siteUrl,
+            url: CANONICAL_HOME,
             logo: getAbsoluteImageUrl('logo'),
             description: business.description,
             address: {
@@ -284,7 +285,7 @@ export default component$<EnhancedStructuredDataProps>(
           return {
             '@context': 'https://schema.org',
             '@type': ['RealEstateAgent', 'LocalBusiness'],
-            '@id': `${business.siteUrl}/#localbusiness`,
+            '@id': `${CANONICAL_HOME}#localbusiness`,
             name: business.gbpName,
             alternateName: [business.siteName, business.agentName],
             image: [
@@ -299,7 +300,7 @@ export default component$<EnhancedStructuredDataProps>(
               jobTitle: 'Featured Realtor, Open House Expert',
               image: getAgentPortraitAbsoluteUrl(business.siteUrl),
               telephone: business.phoneE164,
-              url: `${business.siteUrl}/about`,
+              url: `${CANONICAL_ORIGIN}/about/`,
             },
             logo: getAbsoluteImageUrl('logo'),
             telephone: business.phoneE164,
@@ -313,7 +314,7 @@ export default component$<EnhancedStructuredDataProps>(
               addressCountry: business.addressCountry,
             },
             hasMap: business.mapsUrl,
-            url: business.siteUrl,
+            url: CANONICAL_HOME,
             openingHours: business.openingHours,
             openingHoursSpecification: business.openingHoursSpecification.map((hours) => ({
               '@type': 'OpeningHoursSpecification',
@@ -367,7 +368,7 @@ export default component$<EnhancedStructuredDataProps>(
               itemReviewed: {
                 '@type': 'RealEstateAgent',
                 name: 'Dr. Jan Duffy',
-                url: 'https://www.openhouseupdate.com/about',
+                url: `${CANONICAL_ORIGIN}/about/`,
               },
               reviewRating: {
                 '@type': 'Rating',
@@ -396,7 +397,7 @@ export default component$<EnhancedStructuredDataProps>(
             itemReviewed: {
               '@type': 'RealEstateAgent',
               name: 'Dr. Jan Duffy',
-              url: 'https://www.openhouseupdate.com/about',
+              url: `${CANONICAL_ORIGIN}/about/`,
             },
             reviewRating: {
               '@type': 'Rating',

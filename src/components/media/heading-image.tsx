@@ -1,5 +1,5 @@
 import { component$ } from '@builder.io/qwik'
-import { type SiteImageKey, siteImages } from '~/config/images'
+import { heroLcp, optimizedImageSources, type SiteImageKey, siteImages } from '~/config/images'
 import { getSiteImageUrl } from '~/lib/cloudflare-images'
 
 type HeadingImageProps = {
@@ -15,8 +15,16 @@ export default component$<HeadingImageProps>(
   ({ imageKey, alt, variant = 'section', priority = false, class: className = '', heading }) => {
     const image = siteImages[imageKey]
     const src = getSiteImageUrl(imageKey)
-    const srcLarge = getSiteImageUrl(imageKey, { width: image.width })
-    const srcMedium = getSiteImageUrl(imageKey, { width: Math.min(1200, image.width) })
+    const sources = optimizedImageSources[imageKey]
+    const srcSet = sources
+      ? sources.map((item) => `${item.src} ${item.width}w`).join(', ')
+      : `${getSiteImageUrl(imageKey, { width: Math.min(1200, image.width) })} ${Math.min(1200, image.width)}w, ${getSiteImageUrl(imageKey, { width: image.width })} ${image.width}w`
+    const sizes =
+      imageKey === 'weekend-open-houses'
+        ? heroLcp.sizes
+        : variant === 'card'
+          ? '(max-width: 768px) 100vw, 400px'
+          : '(max-width: 768px) 100vw, 1200px'
     const resolvedAlt = alt || heading || image.alt
 
     const variantClass =
@@ -86,17 +94,14 @@ export default component$<HeadingImageProps>(
         `}</style>
         <img
           src={src}
-          srcSet={`${srcMedium} 1200w, ${srcLarge} ${image.width}w`}
-          sizes={
-            variant === 'card'
-              ? '(max-width: 768px) 100vw, 400px'
-              : '(max-width: 768px) 100vw, 1200px'
-          }
+          srcSet={srcSet}
+          sizes={sizes}
           alt={resolvedAlt}
           width={image.width}
           height={image.height}
           loading={priority ? 'eager' : 'lazy'}
-          decoding="async"
+          decoding={priority ? 'sync' : 'async'}
+          {...({ fetchpriority: priority ? 'high' : 'auto' } as unknown as Record<string, never>)}
         />
       </figure>
     )
