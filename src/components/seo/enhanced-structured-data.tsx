@@ -53,7 +53,7 @@ export default component$<EnhancedStructuredDataProps>(
             alternateName: 'Janet Duffy',
             jobTitle: 'Open House Expert',
             description:
-              'Professional Open House Expert with Nevada License #S.0197614 specializing in Las Vegas properties with over 20 years of experience in open house marketing, lead generation, and buyer conversion',
+              'Professional Open House Expert specializing in Las Vegas properties with over 20 years of experience in open house marketing, lead generation, and buyer conversion',
             url: business.siteUrl,
             telephone: business.phoneE164,
             email: business.email,

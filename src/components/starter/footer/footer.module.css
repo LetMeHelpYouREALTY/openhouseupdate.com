@@ -147,6 +147,14 @@
   color: #3a8dde;
 }
 
+.licenseBlock {
+  margin: 0.75rem 0 0;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
 /* Builder Credit */
 .builderCredit {
   text-align: center;

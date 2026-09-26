@@ -8,7 +8,6 @@ import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-sec
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 import ClientTestimonials from '~/components/testimonials/client-testimonials'
-import { business } from '~/config/business'
 
 export default component$(() => {
   const showAdvanced = useSignal(true)
@@ -528,10 +527,6 @@ export default component$(() => {
 
           <div class="specialist-stats">
             <div class="stats-grid">
-              <div class="stat-item">
-                <div class="stat-number">{business.license}</div>
-                <div class="stat-label">Nevada License</div>
-              </div>
               <div class="stat-item">
                 <div class="stat-number">9–5</div>
                 <div class="stat-label">Daily Office Hours</div>

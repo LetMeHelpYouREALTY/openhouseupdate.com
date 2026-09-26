@@ -9,7 +9,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'What is an Open House Expert?',
       answer:
-        'An Open House Expert is a real estate professional specifically trained in staging, hosting, and converting open house events. Dr. Jan Duffy is a recognized Open House Expert with Nevada License #S.0197614 and over 20 years of experience maximizing buyer engagement and lead generation through strategic open house management.',
+        'An Open House Expert is a real estate professional specifically trained in staging, hosting, and converting open house events. Dr. Jan Duffy is a recognized Open House Expert with over 20 years of experience maximizing buyer engagement and lead generation through strategic open house management.',
     },
     {
       question: 'How do I search for open houses in Las Vegas?',
@@ -43,7 +43,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: "What is Dr. Jan Duffy's background in real estate?",
       answer:
-        'Dr. Jan Duffy is an Open House Expert with over 20 years of experience in Las Vegas real estate. She holds Nevada License #S.0197614 and specializes in residential properties throughout the Las Vegas Valley.',
+        'Dr. Jan Duffy is an Open House Expert with over 20 years of experience in Las Vegas real estate. She specializes in residential properties throughout the Las Vegas Valley.',
     },
     {
       question: 'What services does Dr. Jan Duffy provide?',

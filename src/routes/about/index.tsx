@@ -197,8 +197,8 @@ export default component$(() => {
         />
         <h1>About Dr. Jan Duffy</h1>
         <p>
-          Open House Marketplace at {business.fullAddress}. Licensed Nevada REALTOR® #
-          {business.license} helping buyers tour Las Vegas open houses this weekend.
+          Open House Marketplace at {business.fullAddress}. Dr. Jan Duffy helps buyers tour Las
+          Vegas open houses this weekend.
         </p>
         <FeaturedRealtor variant="profile" tone="dark" />
       </div>
@@ -237,9 +237,7 @@ export default component$(() => {
 
           <div class="credential-item">
             <h3>Open House Expert</h3>
-            <p>
-              Nevada License #S.0197614 with continuing education in market trends and regulations
-            </p>
+            <p>Continuing education in market trends and Nevada real estate regulations</p>
           </div>
 
           <div class="credential-item">
@@ -249,9 +247,7 @@ export default component$(() => {
 
           <div class="credential-item">
             <h3>BHHS Nevada Properties</h3>
-            <p>
-              Affiliated with {business.brokerage}. Nevada license #{business.license}.
-            </p>
+            <p>Affiliated with {business.brokerage}.</p>
           </div>
 
           <div class="credential-item">

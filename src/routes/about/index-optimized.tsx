@@ -221,7 +221,7 @@ export default component$(() => {
           <h2>Professional Background</h2>
           <p>
             Dr. Jan Duffy brings over two decades of real estate expertise to the Las Vegas market.
-            As an Open House Expert with Nevada License #S.0197614, she has helped hundreds of
+            As an Open House Expert, she has helped hundreds of
             families find their dream homes and achieve their real estate goals.
           </p>
           <p>
@@ -257,7 +257,7 @@ export default component$(() => {
         <div class="credentials-grid">
           <div class="credential-item">
             <h3>Nevada Real Estate License</h3>
-            <p>Open House Expert - Nevada License #S.0197614</p>
+            <p>Open House Expert</p>
           </div>
           <div class="credential-item">
             <h3>Berkshire Hathaway</h3>

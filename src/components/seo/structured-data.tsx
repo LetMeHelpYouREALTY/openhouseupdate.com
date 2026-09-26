@@ -15,8 +15,7 @@ export default component$<StructuredDataProps>(({ type, data }) => {
           '@context': 'https://schema.org',
           '@type': 'RealEstateAgent',
           name: 'Dr. Jan Duffy',
-          description:
-            'Open House Expert with Nevada License #S.0197614 specializing in Las Vegas properties',
+          description: 'Open House Expert specializing in Las Vegas properties',
           image: getAgentPortraitAbsoluteUrl(business.siteUrl),
           jobTitle: 'Featured Realtor, Open House Expert',
           url: business.siteUrl,

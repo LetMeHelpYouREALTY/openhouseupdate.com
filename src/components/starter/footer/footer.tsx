@@ -14,7 +14,7 @@ export default component$(() => {
             <h3 class={styles.footerTitle}>{business.gbpName}</h3>
             <p class={styles.footerDescription}>
               Weekend open houses and Las Vegas property viewing with {business.agentName},{' '}
-              {business.brokerage}. Nevada License #{business.license}.
+              {business.brokerage}.
             </p>
             <div class={styles.contactInfo}>
               <FeaturedRealtor variant="footer" />
@@ -228,8 +228,12 @@ export default component$(() => {
               <p>
                 &copy; {new Date().getFullYear()} {business.gbpName}. All rights reserved.
               </p>
-              <p>
-                {business.agentName} · {business.brokerage} · Nevada License #{business.license}
+              <p class={styles.licenseBlock}>
+                {business.license}
+                <br />
+                Nevada License
+                <br />
+                9–5
               </p>
               <p>
                 Listing information is provided for consumer convenience and is deemed reliable but
