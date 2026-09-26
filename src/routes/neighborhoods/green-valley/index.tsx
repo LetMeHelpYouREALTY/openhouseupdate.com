@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 
@@ -149,12 +151,19 @@ export default component$(() => {
           Upscale Henderson community near Green Valley Ranch, Coronado High School, and zip codes
           89012–89014
         </p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="neighborhood-green-valley" />
 
       <div class="neighborhood-content">
         <div class="main-content">
           <h2>About Green Valley</h2>
-          <HeadingImage imageKey="about-green-valley" heading="About Green Valley" variant="section" />
+          <HeadingImage
+            imageKey="about-green-valley"
+            heading="About Green Valley"
+            variant="section"
+          />
           <p>
             Green Valley, located in Henderson zip codes 89012 and 89014, sits around Green Valley
             Ranch. Paseos, parks, and the 215 Beltway put most streets within a 15–20 minute drive
@@ -261,6 +270,7 @@ export default component$(() => {
           </div>
 
           <div class="info-card">
+            <FeaturedRealtor variant="sidebar" />
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert Green Valley real estate guidance</p>
             <p>

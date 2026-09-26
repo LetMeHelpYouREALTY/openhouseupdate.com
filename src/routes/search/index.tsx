@@ -1,6 +1,8 @@
 import { $, component$, useSignal, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 
 export default component$(() => {
@@ -233,7 +235,10 @@ export default component$(() => {
           variant="hero"
           priority
         />
+        <FeaturedRealtor variant="hero" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="search" />
 
       <div class="search-results-layout">
         <aside class="sidebar">
@@ -269,11 +274,11 @@ export default component$(() => {
         <main class="results">
           <realscout-office-listings
             agent-encoded-id="QWdlbnQtMjI1MDUw"
-            sort-order="NEWEST"
+            sort-order="PRICE_LOW"
             listing-status="For Sale"
             property-types=",SFR"
-            price-min="500000"
-            price-max="600000"
+            price-min="600000"
+            price-max="900000"
           />
         </main>
       </div>

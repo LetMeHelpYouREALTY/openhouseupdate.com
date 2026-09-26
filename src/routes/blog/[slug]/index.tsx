@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik'
 import { type DocumentHead, useLocation } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import { createSEOHead } from '~/components/seo/seo-head'
 import { business } from '~/config/business'
 import { getBlogPostBySlug } from '~/data/blog-posts'
@@ -16,6 +18,8 @@ export default component$(() => {
       <section class="container mx-auto px-6 py-16 text-center">
         <h1 class="text-3xl font-bold text-gray-900 mb-4">Article not found</h1>
         <p class="text-gray-600 mb-6">That blog post is not published on Open House Marketplace.</p>
+        <FeaturedRealtor variant="hero" />
+        <OpenHouseWidgetSection pageKey="blog-post" h2="Missing Article Open House Update" />
         <a href="/blog" class="text-blue-600 font-semibold">
           Back to the Las Vegas real estate blog
         </a>
@@ -78,6 +82,8 @@ export default component$(() => {
       <p class="blog-post-meta">
         {post.date} · {post.readTime} · {post.author}
       </p>
+      <FeaturedRealtor variant="byline" />
+      <OpenHouseWidgetSection pageKey="blog-post" h2={`${post.title} Open House Update`} />
       {/* biome-ignore lint/security/noDangerouslySetInnerHtml: HTML is generated from author-controlled blog markdown */}
       <div class="blog-html" dangerouslySetInnerHTML={renderBlogHtml(post.content)} />
       <div class="blog-cta">

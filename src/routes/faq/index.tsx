@@ -1,6 +1,8 @@
 import { $, component$, useSignal } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import EnhancedStructuredData from '~/components/seo/enhanced-structured-data'
 
@@ -77,6 +79,7 @@ export default component$(() => {
             Get answers to common questions about buying and selling real estate in Las Vegas. Can't
             find what you're looking for? Contact Dr. Jan Duffy for personalized assistance.
           </p>
+          <FeaturedRealtor variant="hero" />
           <HeadingImage
             imageKey="about"
             heading="Frequently Asked Questions"
@@ -84,6 +87,8 @@ export default component$(() => {
             priority
           />
         </div>
+
+        <OpenHouseWidgetSection pageKey="faq" />
 
         {/* FAQ Accordion */}
         <div class="max-w-4xl mx-auto mb-16">

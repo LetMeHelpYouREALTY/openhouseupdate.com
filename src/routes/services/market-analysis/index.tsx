@@ -1,6 +1,8 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 
 export default component$(() => {
@@ -362,7 +364,10 @@ export default component$(() => {
           Stay informed with detailed market reports, trends analysis, and neighborhood insights for
           informed decision-making.
         </p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="market-analysis" />
 
       <div class="analysis-overview">
         <div class="analysis-card">

@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 
@@ -170,7 +172,10 @@ export default component$(() => {
           Which Las Vegas community is right for you? Compare Summerlin and Henderson to make an
           informed decision.
         </p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="summerlin-vs-henderson" />
 
       <div class="comparison-table">
         <h2 style="margin-bottom: 1.5rem; color: #0A2540;">Quick Comparison</h2>

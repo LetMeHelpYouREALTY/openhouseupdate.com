@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 
@@ -138,7 +140,10 @@ export default component$(() => {
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Step-by-step guide from pre-approval to closing with expert tips from Dr. Jan Duffy
         </p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="first-home" />
 
       <div class="step-section">
         <h2>

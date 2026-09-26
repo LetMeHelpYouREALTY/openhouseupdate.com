@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik'
 import { business } from '~/config/business'
+import { getAgentPortraitAbsoluteUrl } from '~/config/images'
 import { getAbsoluteImageUrl } from '~/lib/cloudflare-images'
 
 interface EnhancedStructuredDataProps {
@@ -56,7 +57,7 @@ export default component$<EnhancedStructuredDataProps>(
             url: business.siteUrl,
             telephone: business.phoneE164,
             email: business.email,
-            image: getAbsoluteImageUrl('about'),
+            image: getAgentPortraitAbsoluteUrl(business.siteUrl),
             logo: getAbsoluteImageUrl('logo'),
             address: {
               '@type': 'PostalAddress',
@@ -172,6 +173,8 @@ export default component$<EnhancedStructuredDataProps>(
             provider: {
               '@type': 'RealEstateAgent',
               name: 'Dr. Jan Duffy',
+              jobTitle: 'Open House Expert',
+              image: getAgentPortraitAbsoluteUrl(business.siteUrl),
               url: 'https://www.openhouseupdate.com/about',
             },
             areaServed: {
@@ -285,10 +288,19 @@ export default component$<EnhancedStructuredDataProps>(
             name: business.gbpName,
             alternateName: [business.siteName, business.agentName],
             image: [
+              getAgentPortraitAbsoluteUrl(business.siteUrl),
               getAbsoluteImageUrl('og-default'),
               getAbsoluteImageUrl('about'),
               getAbsoluteImageUrl('weekend-open-houses'),
             ],
+            employee: {
+              '@type': 'Person',
+              name: business.agentName,
+              jobTitle: 'Featured Realtor, Open House Expert',
+              image: getAgentPortraitAbsoluteUrl(business.siteUrl),
+              telephone: business.phoneE164,
+              url: `${business.siteUrl}/about`,
+            },
             logo: getAbsoluteImageUrl('logo'),
             telephone: business.phoneE164,
             email: business.email,

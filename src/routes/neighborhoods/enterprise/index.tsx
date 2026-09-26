@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 import { business } from '~/config/business'
@@ -40,7 +42,10 @@ export default component$(() => {
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Southern Highlands, Rhodes Ranch, and Cactus Avenue listings south of the airport
         </p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="neighborhood-enterprise" />
 
       <div class="neighborhood-content">
         <div class="main-content">
@@ -63,8 +68,8 @@ export default component$(() => {
               with golf and guard gates on some streets
             </li>
             <li>
-              <strong>Commute:</strong> I-15 at Cactus or Sloan; 15–25 minutes to the Strip depending
-              on traffic
+              <strong>Commute:</strong> I-15 at Cactus or Sloan; 15–25 minutes to the Strip
+              depending on traffic
             </li>
             <li>
               <strong>Recreation:</strong> Exploration Peak Park and the Southern Highlands trail
@@ -111,6 +116,7 @@ export default component$(() => {
             </p>
           </div>
           <div class="info-card">
+            <FeaturedRealtor variant="sidebar" />
             <h3>Contact {business.agentName}</h3>
             <p>
               <a href={`tel:${business.phoneTel}`}>{business.phoneDisplay}</a>

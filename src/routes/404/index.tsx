@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 
 export default component$(() => {
   return (
@@ -23,7 +25,10 @@ export default component$(() => {
             The page you're looking for might have been moved, deleted, or doesn't exist. But don't
             worry - we can help you find what you need!
           </p>
+          <FeaturedRealtor variant="hero" />
         </div>
+
+        <OpenHouseWidgetSection pageKey="not-found" />
 
         {/* Quick Actions */}
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
@@ -181,6 +186,7 @@ export default component$(() => {
         {/* Contact CTA */}
         <div class="bg-gradient-to-r from-blue-600 to-green-600 rounded-lg shadow-lg p-8 text-white">
           <h2 class="text-2xl font-bold mb-4">Need Help Finding Something?</h2>
+          <FeaturedRealtor variant="hero" tone="dark" />
           <p class="text-xl mb-6 opacity-90">
             Dr. Jan Duffy is here to help you find exactly what you're looking for.
           </p>

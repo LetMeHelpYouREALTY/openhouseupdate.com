@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import RelatedContent from '~/components/seo/related-content'
 
@@ -21,6 +23,9 @@ export default component$(() => {
           Comparing Las Vegas's two premier communities - Summerlin and Henderson - to help you
           choose the right neighborhood for your lifestyle and budget.
         </p>
+        <FeaturedRealtor variant="hero" />
+
+        <OpenHouseWidgetSection pageKey="comparison-guide" />
 
         <div class="prose prose-lg max-w-none">
           {/* Overview Table */}

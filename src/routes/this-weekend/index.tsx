@@ -1,6 +1,8 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 
 export default component$(() => {
@@ -167,7 +169,10 @@ export default component$(() => {
         />
         <h1 class="weekend-title">This Weekend's Open Houses</h1>
         <p class="weekend-subtitle">Find the perfect properties to visit this weekend</p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="this-weekend" />
 
       <div class="weekend-content">
         <div class="search-section">
@@ -184,7 +189,11 @@ export default component$(() => {
 
         <div class="features-section">
           <div class="feature-card">
-            <HeadingImage imageKey="comprehensive-search" heading="Comprehensive Search" variant="card" />
+            <HeadingImage
+              imageKey="comprehensive-search"
+              heading="Comprehensive Search"
+              variant="card"
+            />
             <h3 class="feature-title">Comprehensive Search</h3>
             <p class="feature-description">
               Search thousands of properties with advanced filters including price range, bedrooms,

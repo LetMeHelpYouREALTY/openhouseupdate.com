@@ -1,7 +1,9 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import GoogleMapEmbed from '~/components/local-seo/google-map-embed'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 import { business } from '~/config/business'
@@ -198,7 +200,10 @@ export default component$(() => {
           Open House Marketplace at {business.fullAddress}. Licensed Nevada REALTOR® #
           {business.license} helping buyers tour Las Vegas open houses this weekend.
         </p>
+        <FeaturedRealtor variant="profile" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="about" />
 
       <div class="about-content">
         <div class="about-info">

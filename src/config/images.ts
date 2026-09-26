@@ -1,3 +1,14 @@
+/** Local portrait. Do not route this file through Cloudflare Images — it ships from /public/images. */
+export const agentPortrait = {
+  src: '/images/dr-jan-duffy.png',
+  alt: 'Dr. Jan Duffy, Featured Realtor and Las Vegas Open House Expert',
+  width: 180,
+  height: 180,
+} as const
+
+export const getAgentPortraitAbsoluteUrl = (siteUrl: string): string =>
+  `${siteUrl.replace(/\/$/, '')}${agentPortrait.src}`
+
 export const siteImages = {
   'weekend-open-houses': {
     file: 'hero-weekend-open-houses.jpg',

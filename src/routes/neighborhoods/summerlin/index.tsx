@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 
@@ -122,7 +124,10 @@ export default component$(() => {
           Open houses in Summerlin Centre, The Paseos, The Vistas, and Stonebridge — zip codes
           89134, 89135, 89138, and 89144
         </p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="neighborhood-summerlin" />
 
       <div class="neighborhood-content">
         <div class="main-content">
@@ -241,6 +246,7 @@ export default component$(() => {
           </div>
 
           <div class="info-card">
+            <FeaturedRealtor variant="sidebar" />
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert Summerlin real estate guidance</p>
             <p>

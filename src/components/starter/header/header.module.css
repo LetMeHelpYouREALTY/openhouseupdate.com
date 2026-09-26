@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.75rem 1.25rem;
   background: #0A2540;
   border-bottom: 3px solid #3A8DDE;
 }

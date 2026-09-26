@@ -61,6 +61,8 @@ export const business = {
     'https://www.bhhsnv.com/real-estate-agent/4986/dr-jan-duffy',
   ],
   realScoutOnboarding: 'http://drjanduffy.realscout.com/onboarding',
+  /** Office Listings embed already used on this site. Do not swap without a fresh RealScout dashboard copy. */
+  realScoutAgentEncodedId: 'QWdlbnQtMjI1MDUw',
 } as const
 
 export type BusinessConfig = typeof business

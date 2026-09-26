@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 import { business } from '~/config/business'
@@ -40,12 +42,19 @@ export default component$(() => {
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Weekend tours near Chinatown, Desert Breeze Park, and the 215 Beltway
         </p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="neighborhood-spring-valley" />
 
       <div class="neighborhood-content">
         <div class="main-content">
           <h2>About Spring Valley</h2>
-          <HeadingImage imageKey="about-spring-valley" heading="About Spring Valley" variant="section" />
+          <HeadingImage
+            imageKey="about-spring-valley"
+            heading="About Spring Valley"
+            variant="section"
+          />
           <p>
             Spring Valley covers unincorporated Clark County west of the Strip in zip codes 89102,
             89103, 89117, 89146, and 89147. Spring Mountain Road (Chinatown), Rainbow Boulevard, and
@@ -110,6 +119,7 @@ export default component$(() => {
             </p>
           </div>
           <div class="info-card">
+            <FeaturedRealtor variant="sidebar" />
             <h3>Contact {business.agentName}</h3>
             <p>
               <a href={`tel:${business.phoneTel}`}>{business.phoneDisplay}</a>

@@ -1,4 +1,5 @@
 import { component$ } from '@builder.io/qwik'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import styles from './header.module.css'
 
 export default component$(() => {
@@ -34,6 +35,7 @@ export default component$(() => {
             </a>
           </li>
         </ul>
+        <FeaturedRealtor variant="header" />
       </div>
     </header>
   )

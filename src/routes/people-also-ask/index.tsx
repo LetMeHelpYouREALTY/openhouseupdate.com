@@ -1,6 +1,8 @@
 import { $, component$, useSignal } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import { getPageFAQs } from '~/data/page-faqs'
 
@@ -50,12 +52,15 @@ export default component$(() => {
               Get answers to the most common questions about Las Vegas real estate, open houses, and
               the housing market
             </p>
+            <FeaturedRealtor variant="hero" tone="dark" />
           </div>
           <p class="text-gray-600 max-w-3xl mx-auto text-lg">
             Expert insights from Dr. Jan Duffy, your trusted Las Vegas Open House Expert with over
             20 years of experience
           </p>
         </div>
+
+        <OpenHouseWidgetSection pageKey="people-also-ask" />
 
         {/* FAQ Accordion */}
         <div class="max-w-4xl mx-auto mb-16">

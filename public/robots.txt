@@ -49,24 +49,33 @@ User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
-# Block AI crawlers
+# AI answer and search crawlers may read public open-house pages
 User-agent: GPTBot
-Disallow: /
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
 
 User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
+Allow: /
 
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
 
 User-agent: Claude-Web
-Disallow: /
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
 
 User-agent: PerplexityBot
-Disallow: /
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
 
 # Block aggressive crawlers
 User-agent: AhrefsBot

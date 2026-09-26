@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 
@@ -148,7 +150,10 @@ export default component$(() => {
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Weekend open houses in Green Valley, Anthem, Seven Hills, and Lake Las Vegas
         </p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="neighborhood-henderson" />
 
       <div class="neighborhood-content">
         <div class="main-content">
@@ -271,6 +276,7 @@ export default component$(() => {
           </div>
 
           <div class="info-card">
+            <FeaturedRealtor variant="sidebar" />
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert Henderson real estate guidance</p>
             <p>

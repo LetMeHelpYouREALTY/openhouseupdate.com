@@ -1,6 +1,7 @@
 import { component$, Slot, useStyles$ } from '@builder.io/qwik'
 import { type DocumentHead, routeLoader$ } from '@builder.io/qwik-city'
 import { inject } from '@vercel/analytics'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import EnhancedAnalytics from '~/components/analytics/enhanced-analytics'
 import GbpBar from '~/components/local-seo/gbp-bar'
 import { MobileSearchButton } from '~/components/modals'
@@ -53,6 +54,7 @@ export default component$(() => {
       <main>
         <Slot />
       </main>
+      <FeaturedRealtor variant="band" />
       <GbpBar />
       <Footer />
       <MobileSearchButton />

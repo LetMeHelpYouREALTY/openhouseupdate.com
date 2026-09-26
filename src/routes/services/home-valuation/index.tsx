@@ -1,6 +1,8 @@
 import { $, component$, useSignal, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 
@@ -271,7 +273,10 @@ export default component$(() => {
           Get an accurate assessment of your property's current market value with our comprehensive
           home valuation service.
         </p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="home-valuation" />
 
       <div class="valuation-content">
         <div class="valuation-info">

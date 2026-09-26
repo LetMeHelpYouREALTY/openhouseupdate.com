@@ -1,6 +1,8 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 
 export default component$(() => {
@@ -326,7 +328,10 @@ export default component$(() => {
           Maximize your property's value and ensure a smooth selling process with our comprehensive
           seller services.
         </p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="seller-services" />
 
       <div class="services-overview">
         <div class="service-card">

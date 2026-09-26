@@ -1,6 +1,8 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 
@@ -103,7 +105,10 @@ export default component$(() => {
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Get an accurate home valuation for your Henderson property
         </p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="henderson-valuation" />
 
       <div class="valuation-section">
         <h2 style="color: #0A2540; margin-bottom: 1rem; text-align: center;">

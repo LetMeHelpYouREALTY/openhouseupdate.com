@@ -1,18 +1,23 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 
 export default component$(() => {
   return (
     <section class="privacy-policy-page">
       <div class="container mx-auto px-6 py-16 max-w-4xl">
         <h1 class="text-4xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
+        <FeaturedRealtor variant="hero" />
         <HeadingImage
           imageKey="contact"
           heading="Privacy Policy"
           variant="section"
           alt="Open House Marketplace office at 760 Windover Ct, Las Vegas NV 89138"
         />
+
+        <OpenHouseWidgetSection pageKey="privacy" />
 
         <div class="prose prose-lg max-w-none">
           <p class="text-gray-600 mb-8">

@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 
 export default component$(() => {
   return (
@@ -124,7 +126,10 @@ export default component$(() => {
           Find all pages and sections of Open House Marketplace at 760 Windover Ct, Las Vegas NV
           89138
         </p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="sitemap" />
 
       <div class="sitemap-section">
         <h2>Main Pages</h2>

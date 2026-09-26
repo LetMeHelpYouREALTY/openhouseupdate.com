@@ -1,7 +1,9 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import GoogleMapEmbed from '~/components/local-seo/google-map-embed'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import { business } from '~/config/business'
 import type { SiteImageKey } from '~/config/images'
 
@@ -160,7 +162,10 @@ export default component$(() => {
           this weekend with {business.agentName} at {business.gbpName}, {business.fullAddress}. Call{' '}
           {business.phoneDisplay}.
         </p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey="neighborhoods" />
 
       <div class="hub-grid">
         {neighborhoods.map((area) => (

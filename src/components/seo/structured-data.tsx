@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik'
 import { business } from '~/config/business'
+import { getAgentPortraitAbsoluteUrl } from '~/config/images'
 
 interface StructuredDataProps {
   type: 'RealEstateAgent' | 'RealEstateService' | 'WebSite'
@@ -16,6 +17,8 @@ export default component$<StructuredDataProps>(({ type, data }) => {
           name: 'Dr. Jan Duffy',
           description:
             'Open House Expert with Nevada License #S.0197614 specializing in Las Vegas properties',
+          image: getAgentPortraitAbsoluteUrl(business.siteUrl),
+          jobTitle: 'Featured Realtor, Open House Expert',
           url: business.siteUrl,
           telephone: business.phoneE164,
           email: business.email,

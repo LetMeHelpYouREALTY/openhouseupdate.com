@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 
 export default component$(() => {
   return (
@@ -32,6 +34,7 @@ export default component$(() => {
           <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Loading Your Perfect Home Search
           </h1>
+          <FeaturedRealtor variant="hero" />
           <HeadingImage
             imageKey="map-search"
             heading="Loading Your Perfect Home Search"
@@ -42,6 +45,8 @@ export default component$(() => {
             We're gathering the latest Las Vegas property listings and market data for you...
           </p>
         </div>
+
+        <OpenHouseWidgetSection pageKey="loading" />
 
         {/* Progress Indicators */}
         <div class="max-w-md mx-auto mb-12">

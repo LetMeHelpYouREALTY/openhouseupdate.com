@@ -1,4 +1,5 @@
 import { component$ } from '@builder.io/qwik'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import { business } from '~/config/business'
 import styles from './footer.module.css'
 
@@ -16,9 +17,7 @@ export default component$(() => {
               {business.brokerage}. Nevada License #{business.license}.
             </p>
             <div class={styles.contactInfo}>
-              <p>
-                <strong>{business.agentName}</strong>
-              </p>
+              <FeaturedRealtor variant="footer" />
               <p>
                 <a href={`tel:${business.phoneTel}`} class={styles.footerLink}>
                   {business.phoneDisplay}

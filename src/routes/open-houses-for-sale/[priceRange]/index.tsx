@@ -1,7 +1,10 @@
 import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import { type DocumentHead, useLocation } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import type { SiteImageKey } from '~/config/images'
+import { priceRangeWidgetKey } from '~/data/open-house-widget-copy'
 
 export default component$(() => {
   const location = useLocation()
@@ -95,7 +98,10 @@ export default component$(() => {
         />
         <h1>{priceInfo.title}</h1>
         <p class="price-subtitle">Discover quality homes in your price range in Las Vegas</p>
+        <FeaturedRealtor variant="hero" tone="dark" />
       </div>
+
+      <OpenHouseWidgetSection pageKey={priceRangeWidgetKey(priceRange)} />
 
       {/* Advanced Search with Price Pre-set */}
       <div class="price-search">
@@ -324,6 +330,7 @@ export default component$(() => {
         </div>
 
         <div class="info-card">
+          <FeaturedRealtor variant="sidebar" />
           <h4>Expert Guidance</h4>
           <p>
             Dr. Jan Duffy specializes in helping buyers find the perfect home in this price range.

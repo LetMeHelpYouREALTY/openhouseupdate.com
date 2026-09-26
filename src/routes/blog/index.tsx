@@ -1,6 +1,8 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import RelatedContent from '~/components/seo/related-content'
 import { blogPosts } from '~/data/blog-posts'
@@ -21,6 +23,7 @@ export default component$(() => {
             Stay informed with the latest market insights, neighborhood updates, and expert advice
             from Dr. Jan Duffy.
           </p>
+          <FeaturedRealtor variant="hero" />
           <HeadingImage
             imageKey="market-analysis"
             heading="Las Vegas Real Estate Blog"
@@ -28,6 +31,8 @@ export default component$(() => {
             priority
           />
         </div>
+
+        <OpenHouseWidgetSection pageKey="blog" />
 
         {/* Featured Post */}
         {featuredPost && (

@@ -1,8 +1,10 @@
 import { $, component$, useSignal, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import GoogleMapEmbed from '~/components/local-seo/google-map-embed'
 import HeadingImage from '~/components/media/heading-image'
 import PerformanceMonitor from '~/components/performance/performance-monitor'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import InternalLinking from '~/components/seo/internal-linking'
 import ClientTestimonials from '~/components/testimonials/client-testimonials'
@@ -427,16 +429,7 @@ export default component$(() => {
           <p class="hero-subtitle">
             Discover Las Vegas open houses happening this weekend with our advanced property search
           </p>
-          <a
-            href="http://drjanduffy.realscout.com/onboarding"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="featured-agent-badge"
-          >
-            <span class="badge-text">Featured Open House Expert</span>
-            <span class="agent-name">Dr. Jan Duffy</span>
-            <span class="badge-month">This Month</span>
-          </a>
+          <FeaturedRealtor variant="badge" />
         </div>
 
         <div class="search-toggle">
@@ -475,10 +468,13 @@ export default component$(() => {
         </div>
       </section>
 
+      <OpenHouseWidgetSection pageKey="home" />
+
       {/* Open House Expert Section - EEAT Content */}
       <section class="specialist-section">
         <div class="container mx-auto px-6 py-16 max-w-6xl">
           <div class="text-center mb-12">
+            <FeaturedRealtor variant="profile" />
             <h2 class="text-4xl font-bold text-gray-900 mb-4">
               Why Choose Dr. Jan Duffy as Your Open House Expert?
             </h2>

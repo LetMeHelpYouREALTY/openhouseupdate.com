@@ -1,7 +1,9 @@
 import { $, component$, useSignal } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
+import FeaturedRealtor from '~/components/agent/featured-realtor'
 import GoogleMapEmbed from '~/components/local-seo/google-map-embed'
 import HeadingImage from '~/components/media/heading-image'
+import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
 import { business } from '~/config/business'
 
@@ -49,6 +51,7 @@ export default component$(() => {
             </a>{' '}
             to tour Las Vegas open houses this weekend.
           </p>
+          <FeaturedRealtor variant="profile" />
           <HeadingImage
             imageKey="contact"
             heading="Contact Dr. Jan Duffy"
@@ -56,6 +59,8 @@ export default component$(() => {
             priority
           />
         </div>
+
+        <OpenHouseWidgetSection pageKey="contact" />
 
         <div class="grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
