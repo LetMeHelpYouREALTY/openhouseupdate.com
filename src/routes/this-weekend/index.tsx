@@ -163,12 +163,14 @@ export default component$(() => {
       <div class="weekend-header">
         <HeadingImage
           imageKey="weekend-open-houses"
-          heading="This Weekend's Open Houses"
+          heading="Open Houses in Las Vegas This Weekend"
           variant="background"
           priority
         />
-        <h1 class="weekend-title">This Weekend's Open Houses</h1>
-        <p class="weekend-subtitle">Find the perfect properties to visit this weekend</p>
+        <h1 class="weekend-title">Open Houses in Las Vegas This Weekend</h1>
+        <p class="weekend-subtitle">
+          Saturday and Sunday tours in Summerlin, Henderson, and North Las Vegas
+        </p>
         <FeaturedRealtor variant="hero" tone="dark" />
       </div>
 

@@ -73,18 +73,18 @@ export default component$(() => {
                 </a>
               </li>
               <li>
-                <a href="/search" class={styles.footerLink}>
+                <a href="/search/" class={styles.footerLink}>
                   Advanced Search
                 </a>
               </li>
               <li>
-                <a href="/map" class={styles.footerLink}>
+                <a href="/map/" class={styles.footerLink}>
                   Map Search
                 </a>
               </li>
               <li>
-                <a href="/this-weekend" class={styles.footerLink}>
-                  This Weekend's Open Houses
+                <a href="/this-weekend/" class={styles.footerLink}>
+                  Las Vegas open houses this weekend
                 </a>
               </li>
               <li>
@@ -100,27 +100,27 @@ export default component$(() => {
             <h4 class={styles.footerSubtitle}>Browse by Price</h4>
             <ul class={styles.footerLinks}>
               <li>
-                <a href="/open-houses-for-sale/under-400k" class={styles.footerLink}>
+                <a href="/open-houses-for-sale/under-400k/" class={styles.footerLink}>
                   Under $400K
                 </a>
               </li>
               <li>
-                <a href="/open-houses-for-sale/400k-600k" class={styles.footerLink}>
+                <a href="/open-houses-for-sale/400k-600k/" class={styles.footerLink}>
                   $400K - $600K
                 </a>
               </li>
               <li>
-                <a href="/open-houses-for-sale/600k-800k" class={styles.footerLink}>
+                <a href="/open-houses-for-sale/600k-800k/" class={styles.footerLink}>
                   $600K - $800K
                 </a>
               </li>
               <li>
-                <a href="/open-houses-for-sale/800k-1m" class={styles.footerLink}>
+                <a href="/open-houses-for-sale/800k-1m/" class={styles.footerLink}>
                   $800K - $1M
                 </a>
               </li>
               <li>
-                <a href="/open-houses-for-sale/over-1m" class={styles.footerLink}>
+                <a href="/open-houses-for-sale/over-1m/" class={styles.footerLink}>
                   Over $1M
                 </a>
               </li>
@@ -129,7 +129,7 @@ export default component$(() => {
 
           {/* Neighborhoods */}
           <div class={styles.footerSection}>
-            <h4 class={styles.footerSubtitle}>Popular Neighborhoods</h4>
+            <h4 class={styles.footerSubtitle}>Open Houses by Area</h4>
             <ul class={styles.footerLinks}>
               <li>
                 <a href="/neighborhoods/" class={styles.footerLink}>
@@ -137,33 +137,33 @@ export default component$(() => {
                 </a>
               </li>
               <li>
-                <a href="/neighborhoods/summerlin" class={styles.footerLink}>
-                  Summerlin
+                <a href="/neighborhoods/summerlin/" class={styles.footerLink}>
+                  Summerlin open houses
                 </a>
               </li>
               <li>
-                <a href="/neighborhoods/henderson" class={styles.footerLink}>
-                  Henderson
+                <a href="/neighborhoods/henderson/" class={styles.footerLink}>
+                  Henderson open houses
                 </a>
               </li>
               <li>
-                <a href="/neighborhoods/green-valley" class={styles.footerLink}>
-                  Green Valley
+                <a href="/neighborhoods/green-valley/" class={styles.footerLink}>
+                  Green Valley open houses
                 </a>
               </li>
               <li>
-                <a href="/neighborhoods/north-las-vegas" class={styles.footerLink}>
-                  North Las Vegas
+                <a href="/neighborhoods/north-las-vegas/" class={styles.footerLink}>
+                  North Las Vegas open houses
                 </a>
               </li>
               <li>
-                <a href="/neighborhoods/spring-valley" class={styles.footerLink}>
-                  Spring Valley
+                <a href="/neighborhoods/spring-valley/" class={styles.footerLink}>
+                  Spring Valley open houses
                 </a>
               </li>
               <li>
-                <a href="/neighborhoods/enterprise" class={styles.footerLink}>
-                  Enterprise
+                <a href="/neighborhoods/enterprise/" class={styles.footerLink}>
+                  Enterprise open houses
                 </a>
               </li>
             </ul>
@@ -174,32 +174,32 @@ export default component$(() => {
             <h4 class={styles.footerSubtitle}>Services</h4>
             <ul class={styles.footerLinks}>
               <li>
-                <a href="/about" class={styles.footerLink}>
+                <a href="/about/" class={styles.footerLink}>
                   About Dr. Duffy
                 </a>
               </li>
               <li>
-                <a href="/home-valuation" class={styles.footerLink}>
+                <a href="/services/home-valuation/" class={styles.footerLink}>
                   Home Valuation
                 </a>
               </li>
               <li>
-                <a href="/buyer-services" class={styles.footerLink}>
+                <a href="/services/buyer-services/" class={styles.footerLink}>
                   Buyer Services
                 </a>
               </li>
               <li>
-                <a href="/seller-services" class={styles.footerLink}>
+                <a href="/services/seller-services/" class={styles.footerLink}>
                   Seller Services
                 </a>
               </li>
               <li>
-                <a href="/market-analysis" class={styles.footerLink}>
+                <a href="/services/market-analysis/" class={styles.footerLink}>
                   Market Analysis
                 </a>
               </li>
               <li>
-                <a href="/contact" class={styles.footerLink}>
+                <a href="/contact/" class={styles.footerLink}>
                   Contact Us
                 </a>
               </li>
@@ -253,13 +253,13 @@ export default component$(() => {
               </p>
             </div>
             <div class={styles.footerBottomLinks}>
-              <a href="/privacy-policy" class={styles.footerBottomLink}>
+              <a href="/privacy-policy/" class={styles.footerBottomLink}>
                 Privacy Policy
               </a>
-              <a href="/terms-of-service" class={styles.footerBottomLink}>
+              <a href="/terms-of-service/" class={styles.footerBottomLink}>
                 Terms of Service
               </a>
-              <a href="/sitemap" class={styles.footerBottomLink}>
+              <a href="/sitemap/" class={styles.footerBottomLink}>
                 Sitemap
               </a>
             </div>

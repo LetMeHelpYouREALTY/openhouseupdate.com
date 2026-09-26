@@ -115,11 +115,11 @@ export default component$(() => {
       <div class="neighborhood-hero">
         <HeadingImage
           imageKey="summerlin"
-          heading="Summerlin Real Estate - Las Vegas"
+          heading="Summerlin Open Houses This Weekend"
           variant="background"
           priority
         />
-        <h1>Summerlin Real Estate - Las Vegas</h1>
+        <h1>Summerlin Open Houses This Weekend</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Open houses in Summerlin Centre, The Paseos, The Vistas, and Stonebridge — zip codes
           89134, 89135, 89138, and 89144
@@ -263,28 +263,27 @@ export default component$(() => {
 
       {/* Internal Linking */}
       <InternalLinking
-        title="Explore More Las Vegas Neighborhoods"
+        title="Open houses by area"
         links={[
           {
-            title: 'Henderson Real Estate',
+            title: 'Henderson open houses',
             url: '/neighborhoods/henderson/',
-            description:
-              'Green Valley, Anthem, and Lake Las Vegas homes with parks and trail systems',
+            description: 'Weekend tours in Green Valley, Anthem, Seven Hills, and Lake Las Vegas',
           },
           {
-            title: 'North Las Vegas Properties',
+            title: 'North Las Vegas open houses',
             url: '/neighborhoods/north-las-vegas/',
-            description: 'New construction in Skye Canyon (89084) and Centennial Hills (89031)',
+            description: 'Weekend tours in Skye Canyon (89084), Aliante, and Centennial Hills',
           },
           {
-            title: 'Green Valley Real Estate',
+            title: 'Green Valley open houses',
             url: '/neighborhoods/green-valley/',
-            description: 'Upscale Henderson community with luxury homes',
+            description: 'Weekend tours in 89012–89014, including Green Valley Ranch',
           },
           {
-            title: 'Search All Properties',
-            url: '/search/',
-            description: 'Browse all Las Vegas Valley homes and open houses',
+            title: 'Las Vegas open houses this weekend',
+            url: '/this-weekend/',
+            description: 'Saturday and Sunday tours across the Las Vegas Valley',
           },
         ]}
         className="mt-8"

@@ -235,13 +235,13 @@ export default component$(() => {
         </div>
 
         <div class="sticky-header-actions">
-          <a href="/search" class="sticky-header-link">
+          <a href="/search/" class="sticky-header-link">
             Advanced
           </a>
-          <a href="/map" class="sticky-header-link">
+          <a href="/map/" class="sticky-header-link">
             Map
           </a>
-          <a href="/this-weekend" class="sticky-header-link primary">
+          <a href="/this-weekend/" class="sticky-header-link primary">
             Open Houses
           </a>
         </div>

@@ -186,17 +186,17 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
   },
 
   summerlin: {
-    title: 'Summerlin Real Estate - Homes for Sale | Dr. Jan Duffy',
+    title: 'Summerlin Open Houses This Weekend | Dr. Jan Duffy',
     description:
-      'Find your dream home in Summerlin, Las Vegas. Browse Summerlin homes for sale, learn about neighborhoods, and work with Dr. Jan Duffy for expert guidance.',
+      'Weekend open houses in Summerlin zip codes 89134, 89135, 89138, and 89144. Dr. Jan Duffy lists Saturday and Sunday tours.',
     keywords: [
-      'Summerlin real estate',
-      'Summerlin homes for sale',
-      'Summerlin neighborhoods',
-      'Las Vegas Summerlin',
-      'Summerlin properties',
-      'Summerlin homes',
-      'Summerlin real estate agent',
+      'Summerlin open houses this weekend',
+      'Summerlin open houses',
+      '89134 open houses',
+      '89135 open houses',
+      '89138 open houses',
+      '89144 open houses',
+      'Summerlin weekend tours',
     ],
     faqKey: 'summerlin',
     structuredDataType: 'LocalBusiness',
@@ -309,17 +309,17 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
   },
 
   henderson: {
-    title: 'Henderson Real Estate - Homes for Sale | Dr. Jan Duffy',
+    title: 'Henderson Open Houses This Weekend | Dr. Jan Duffy',
     description:
-      'Discover Henderson real estate opportunities. Browse Henderson homes for sale, explore neighborhoods, and get expert guidance from Dr. Jan Duffy.',
+      'Weekend open houses in Henderson: Green Valley, Anthem, Seven Hills, and Lake Las Vegas. Dr. Jan Duffy lists Saturday and Sunday tours.',
     keywords: [
-      'Henderson real estate',
-      'Henderson homes for sale',
-      'Henderson neighborhoods',
-      'Las Vegas Henderson',
-      'Henderson properties',
-      'Henderson homes',
-      'Henderson real estate agent',
+      'Henderson open houses this weekend',
+      'Henderson open houses',
+      'Green Valley open houses',
+      'Anthem open houses',
+      'Seven Hills open houses',
+      'Lake Las Vegas open houses',
+      'Henderson weekend tours',
     ],
     faqKey: 'henderson',
     structuredDataType: 'LocalBusiness',

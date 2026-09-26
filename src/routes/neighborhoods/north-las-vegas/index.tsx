@@ -142,11 +142,11 @@ export default component$(() => {
       <div class="neighborhood-hero">
         <HeadingImage
           imageKey="north-las-vegas"
-          heading="North Las Vegas Real Estate"
+          heading="North Las Vegas Open Houses This Weekend"
           variant="background"
           priority
         />
-        <h1>North Las Vegas Real Estate</h1>
+        <h1>North Las Vegas Open Houses This Weekend</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Growing community with new construction and listings often $250,000–$500,000
         </p>
@@ -289,28 +289,27 @@ export default component$(() => {
 
       {/* Internal Linking */}
       <InternalLinking
-        title="Explore More Las Vegas Neighborhoods"
+        title="Open houses by area"
         links={[
           {
-            title: 'Summerlin Real Estate',
+            title: 'Summerlin open houses',
             url: '/neighborhoods/summerlin/',
-            description: 'Premier master-planned community with luxury amenities',
+            description: 'Weekend tours in zip codes 89134, 89135, 89138, and 89144',
           },
           {
-            title: 'Henderson Properties',
+            title: 'Henderson open houses',
             url: '/neighborhoods/henderson/',
-            description:
-              'Green Valley, Anthem, and Lake Las Vegas homes with parks and trail systems',
+            description: 'Weekend tours in Green Valley, Anthem, Seven Hills, and Lake Las Vegas',
           },
           {
-            title: 'Green Valley Real Estate',
+            title: 'Green Valley open houses',
             url: '/neighborhoods/green-valley/',
-            description: 'Upscale Henderson community',
+            description: 'Weekend tours in 89012–89014, including Green Valley Ranch',
           },
           {
-            title: 'Search All Properties',
-            url: '/search/',
-            description: 'Browse all North Las Vegas homes and open houses',
+            title: 'Las Vegas open houses this weekend',
+            url: '/this-weekend/',
+            description: 'Saturday and Sunday tours across the Las Vegas Valley',
           },
         ]}
         className="mt-8"

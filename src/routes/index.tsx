@@ -418,14 +418,15 @@ export default component$(() => {
 
         <HeadingImage
           imageKey="weekend-open-houses"
-          heading="Find This Weekend's Open Houses"
+          heading="Las Vegas Open Houses This Weekend"
           variant="background"
           priority
         />
         <div class="hero-content">
-          <h1 class="hero-title">Find This Weekend's Open Houses</h1>
+          <h1 class="hero-title">Las Vegas Open Houses This Weekend</h1>
           <p class="hero-subtitle">
-            Discover Las Vegas open houses happening this weekend with our advanced property search
+            Saturday and Sunday open houses in Summerlin, Henderson, and North Las Vegas. Times and
+            prices are on each listing.
           </p>
           <FeaturedRealtor variant="badge" />
         </div>
@@ -467,6 +468,52 @@ export default component$(() => {
       </section>
 
       <OpenHouseWidgetSection pageKey="home" />
+
+      <section aria-labelledby="weekend-areas" class="bg-white">
+        <div class="container mx-auto px-6 py-12 max-w-6xl">
+          <h2 id="weekend-areas" class="text-3xl font-bold text-gray-900 mb-4">
+            Las Vegas open houses this weekend
+          </h2>
+          <p class="text-lg text-gray-700 mb-6">
+            Dr. Jan Duffy lists weekend open houses for Summerlin, Henderson, and North Las Vegas.
+            Times and prices are on each listing.
+          </p>
+          <ul class="grid gap-4 md:grid-cols-2">
+            <li>
+              <a
+                href="/this-weekend/"
+                class="block rounded-lg border border-gray-200 bg-white p-4 text-lg font-semibold text-gray-900 hover:border-blue-600"
+              >
+                Las Vegas open houses this weekend
+              </a>
+            </li>
+            <li>
+              <a
+                href="/neighborhoods/summerlin/"
+                class="block rounded-lg border border-gray-200 bg-white p-4 text-lg font-semibold text-gray-900 hover:border-blue-600"
+              >
+                Summerlin open houses this weekend
+              </a>
+            </li>
+            <li>
+              <a
+                href="/neighborhoods/henderson/"
+                class="block rounded-lg border border-gray-200 bg-white p-4 text-lg font-semibold text-gray-900 hover:border-blue-600"
+              >
+                Henderson open houses this weekend
+              </a>
+            </li>
+            <li>
+              <a
+                href="/neighborhoods/north-las-vegas/"
+                class="block rounded-lg border border-gray-200 bg-white p-4 text-lg font-semibold text-gray-900 hover:border-blue-600"
+              >
+                North Las Vegas open houses this weekend
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       {/* Open House Expert Section - EEAT Content */}
       <section class="specialist-section">
@@ -603,27 +650,38 @@ export default component$(() => {
 
       {/* Internal Linking */}
       <InternalLinking
-        title="Explore Las Vegas Real Estate"
+        title="Open houses by area"
         links={[
           {
-            title: 'This Weekend Open Houses',
+            title: 'Las Vegas open houses this weekend',
             url: '/this-weekend/',
-            description: 'Find open houses happening this weekend',
+            description: 'Saturday and Sunday open houses across the Las Vegas Valley',
           },
           {
-            title: 'Summerlin vs Henderson Comparison',
+            title: 'Summerlin open houses this weekend',
+            url: '/neighborhoods/summerlin/',
+            description: 'Weekend tours in zip codes 89134, 89135, 89138, and 89144',
+          },
+          {
+            title: 'Henderson open houses this weekend',
+            url: '/neighborhoods/henderson/',
+            description: 'Weekend tours in Green Valley, Anthem, Seven Hills, and Lake Las Vegas',
+          },
+          {
+            title: 'North Las Vegas open houses this weekend',
+            url: '/neighborhoods/north-las-vegas/',
+            description: 'Weekend tours in Skye Canyon, Aliante, and Centennial Hills',
+          },
+          {
+            title: 'Summerlin vs Henderson',
             url: '/summerlin-vs-henderson/',
-            description: "Compare two of Las Vegas's top communities",
+            description:
+              'Compare Summerlin and Henderson open houses, square footage, and commute times',
           },
           {
             title: 'First-Time Homebuyer Guide',
             url: '/how-to-buy-first-home-las-vegas/',
-            description: 'Complete guide to buying your first home',
-          },
-          {
-            title: 'Search All Properties',
-            url: 'http://drjanduffy.realscout.com/onboarding',
-            description: 'Browse all Las Vegas Valley homes',
+            description: 'Steps to buy a first home in Las Vegas',
           },
         ]}
         className="mt-12"

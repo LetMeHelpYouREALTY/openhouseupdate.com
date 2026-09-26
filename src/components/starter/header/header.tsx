@@ -15,17 +15,17 @@ export default component$(() => {
         </div>
         <ul>
           <li>
-            <a href="/search" class={styles.navLink}>
+            <a href="/search/" class={styles.navLink}>
               Search Properties
             </a>
           </li>
           <li>
-            <a href="/this-weekend" class={styles.navLink}>
+            <a href="/this-weekend/" class={styles.navLink}>
               Open Houses
             </a>
           </li>
           <li>
-            <a href="/contact" class={styles.navLink}>
+            <a href="/contact/" class={styles.navLink}>
               Contact
             </a>
           </li>

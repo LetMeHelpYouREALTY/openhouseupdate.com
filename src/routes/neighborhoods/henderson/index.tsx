@@ -142,11 +142,11 @@ export default component$(() => {
       <div class="neighborhood-hero">
         <HeadingImage
           imageKey="henderson"
-          heading="Henderson Real Estate - Las Vegas"
+          heading="Henderson Open Houses This Weekend"
           variant="background"
           priority
         />
-        <h1>Henderson Real Estate - Las Vegas</h1>
+        <h1>Henderson Open Houses This Weekend</h1>
         <p style="font-size: 1.2rem; opacity: 0.9;">
           Weekend open houses in Green Valley, Anthem, Seven Hills, and Lake Las Vegas
         </p>
@@ -294,28 +294,28 @@ export default component$(() => {
 
       {/* Internal Linking */}
       <InternalLinking
-        title="Explore More Las Vegas Neighborhoods"
+        title="Open houses by area"
         links={[
           {
-            title: 'Summerlin Real Estate',
+            title: 'Summerlin open houses',
             url: '/neighborhoods/summerlin/',
-            description: 'Premier master-planned community with luxury amenities',
+            description: 'Weekend tours in zip codes 89134, 89135, 89138, and 89144',
           },
           {
-            title: 'North Las Vegas Properties',
+            title: 'North Las Vegas open houses',
             url: '/neighborhoods/north-las-vegas/',
-            description: 'Growing area with new construction and value',
+            description: 'Weekend tours in Skye Canyon, Aliante, and Centennial Hills',
           },
           {
-            title: 'Green Valley Real Estate',
+            title: 'Green Valley open houses',
             url: '/neighborhoods/green-valley/',
             description:
               'Green Valley Ranch, Coronado High School area, and 89012–89014 open houses',
           },
           {
-            title: 'Search Henderson Properties',
-            url: '/search/',
-            description: 'Browse all Henderson homes and open houses',
+            title: 'Las Vegas open houses this weekend',
+            url: '/this-weekend/',
+            description: 'Saturday and Sunday tours across the Las Vegas Valley',
           },
         ]}
         className="mt-8"
