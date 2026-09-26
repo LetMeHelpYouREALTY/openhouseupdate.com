@@ -33,6 +33,10 @@ export default component$<GoogleMapEmbedProps>(
             color: #475569;
             font-size: 0.95rem;
           }
+          .gbp-map-caption a {
+            color: #0c4a84;
+            font-weight: 700;
+          }
         `}</style>
         <iframe
           src={embedSrc}

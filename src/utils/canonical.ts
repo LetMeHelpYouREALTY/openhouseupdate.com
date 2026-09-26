@@ -3,6 +3,9 @@ import { business } from '~/config/business'
 /** Production origin. Always www + https — never the request host. */
 export const CANONICAL_ORIGIN = business.siteUrl.replace(/\/$/, '')
 
+/** Homepage canonical. Root with a trailing slash matches rel=canonical. */
+export const CANONICAL_HOME = `${CANONICAL_ORIGIN}/`
+
 /**
  * Maps snippet/page keys to the live path Google should index.
  * Nested service and neighborhood URLs must not collapse to `/{pageKey}/`.

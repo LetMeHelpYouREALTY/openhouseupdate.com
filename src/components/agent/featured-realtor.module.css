@@ -13,7 +13,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #b8860b;
+  color: #6b4f00;
   line-height: 1.2;
 }
 
@@ -57,12 +57,12 @@
 }
 
 .call {
-  background: #16b286;
+  background: #0e6b4c;
   color: #fff;
 }
 
 .weekend {
-  background: #3a8dde;
+  background: #0c4a84;
   color: #fff;
 }
 

@@ -1,6 +1,7 @@
 import { component$ } from '@builder.io/qwik'
 import { business } from '~/config/business'
 import { getAgentPortraitAbsoluteUrl } from '~/config/images'
+import { CANONICAL_HOME, CANONICAL_ORIGIN } from '~/utils/canonical'
 
 interface StructuredDataProps {
   type: 'RealEstateAgent' | 'RealEstateService' | 'WebSite'
@@ -18,7 +19,7 @@ export default component$<StructuredDataProps>(({ type, data }) => {
           description: 'Open House Expert specializing in Las Vegas properties',
           image: getAgentPortraitAbsoluteUrl(business.siteUrl),
           jobTitle: 'Featured Realtor, Open House Expert',
-          url: business.siteUrl,
+          url: CANONICAL_HOME,
           telephone: business.phoneE164,
           email: business.email,
           address: {
@@ -72,7 +73,7 @@ export default component$<StructuredDataProps>(({ type, data }) => {
           '@type': 'RealEstateService',
           name: 'Open House Update - Las Vegas Real Estate',
           description: 'Professional real estate services in Las Vegas, Nevada',
-          url: 'https://www.openhouseupdate.com',
+          url: CANONICAL_HOME,
           provider: {
             '@type': 'RealEstateAgent',
             name: 'Dr. Jan Duffy',
@@ -98,11 +99,11 @@ export default component$<StructuredDataProps>(({ type, data }) => {
           '@context': 'https://schema.org',
           '@type': 'WebSite',
           name: 'Open House Update',
-          url: 'https://www.openhouseupdate.com',
+          url: CANONICAL_HOME,
           description: 'Las Vegas real estate services - Find your perfect home',
           potentialAction: {
             '@type': 'SearchAction',
-            target: 'https://www.openhouseupdate.com/search?q={search_term_string}',
+            target: `${CANONICAL_ORIGIN}/search/?q={search_term_string}`,
             'query-input': 'required name=search_term_string',
           },
           publisher: {
