@@ -219,7 +219,7 @@ export default component$(() => {
             comprehensive home valuation service.
           </p>
           <ul>
-            <li>Comparative Market Analysis (CMA)</li>
+            <li>A comparison of similar homes that recently sold</li>
             <li>Current market trends analysis</li>
             <li>Property condition assessment</li>
             <li>Neighborhood market insights</li>

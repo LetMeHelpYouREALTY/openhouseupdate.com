@@ -78,7 +78,7 @@ export default component$(() => {
       downloadUrl: '/downloads/spring-valley-guide.pdf',
       features: ['1970s–2000s housing', 'Rhodes Ranch', 'I-215 access', 'List prices vary by zip'],
       priceRange: '$200K - $700K',
-      schools: 'Confirm the campus on each MLS listing',
+      schools: 'Confirm the campus named on each listing',
       amenities: ['Red Rock Casino', 'Spring Valley', 'Rhodes Ranch', "Mountain's Edge"],
     },
     {
@@ -90,7 +90,7 @@ export default component$(() => {
       downloadUrl: '/downloads/enterprise-guide.pdf',
       features: ['Larger lots', 'Southern Highlands', 'Mountain’s Edge', 'I-15 at Cactus'],
       priceRange: '$400K - $1.2M',
-      schools: 'Confirm campus on each MLS listing',
+      schools: 'Confirm the campus named on each listing',
       amenities: ["Mountain's Edge", 'Inspirada', 'Southern Highlands', 'Enterprise'],
     },
   ]

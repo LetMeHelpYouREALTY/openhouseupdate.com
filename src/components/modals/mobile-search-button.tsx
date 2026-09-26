@@ -263,7 +263,7 @@ export default component$(() => {
           min-height: 480px;
         }
 
-        /* RealScout Advanced Search Widget Mobile Styling */
+        /* Home search widget styling */
         realscout-advanced-search {
           --rs-as-widget-width: 100% !important;
           --rs-as-mobile-optimized: true;

@@ -75,7 +75,7 @@ export default component$(() => {
               </p>
               <ul class="list-disc pl-6 text-gray-600 space-y-2">
                 <li>Google Analytics for website performance analysis</li>
-                <li>RealScout widgets for property search functionality</li>
+                <li>The home search on this site, which shows listings and open houses</li>
                 <li>Session cookies for form functionality</li>
               </ul>
               <p class="text-gray-600 mt-4">
@@ -110,7 +110,7 @@ export default component$(() => {
               </p>
               <ul class="list-disc pl-6 text-gray-600 space-y-2">
                 <li>
-                  <strong>RealScout:</strong> Property search and listing services
+                  <strong>Home search:</strong> Shows listings and open houses on this website
                 </li>
                 <li>
                   <strong>Google Analytics:</strong> Website analytics and performance tracking

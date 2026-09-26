@@ -224,14 +224,14 @@ export default component$(() => {
             Henderson inventory includes attached homes and single-family houses from about
             $300,000–$400,000 at the low end, $400,000–$700,000 in Green Valley and Anthem, and
             $700,000 to $3 million-plus in Seven Hills, Lake Las Vegas, and Macdonald Highlands.
-            Median asking prices move with MLS inventory — confirm comps with Dr. Jan Duffy before
-            you write an offer.
+            Asking prices move with how many homes are for sale. Confirm recent sales of similar
+            homes with Dr. Jan Duffy before you write an offer.
           </p>
 
           <h3>Named schools in Henderson</h3>
           <p>
             Clark County School District campuses include Coronado High School and Green Valley High
-            School. Confirm the elementary and middle campus printed on each MLS listing. Open House
+            School. Confirm the elementary and middle campus printed on each listing. Open House
             Marketplace does not rank school quality.
           </p>
 

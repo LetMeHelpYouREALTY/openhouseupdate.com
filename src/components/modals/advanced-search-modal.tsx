@@ -213,7 +213,7 @@ export default component$(() => {
           transform: translateY(0);
         }
 
-        /* RealScout Advanced Search Widget Styling */
+        /* Home search widget styling */
         realscout-advanced-search {
           --rs-as-widget-width: 100% !important;
           --rs-as-show-all-filters: true;

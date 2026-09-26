@@ -129,9 +129,8 @@ export default component$(() => {
             <section>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">10. Third-Party Services</h2>
               <p class="text-gray-600 mb-4">
-                This website integrates with third-party services including RealScout for property
-                listings. These services have their own terms and conditions, which users should
-                review independently.
+                This website uses a home-search tool to show listings and open houses. That tool has
+                its own terms, which you can review separately.
               </p>
             </section>
 

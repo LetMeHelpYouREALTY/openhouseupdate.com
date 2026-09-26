@@ -187,8 +187,8 @@ export default component$(() => {
         <p>
           Calculate your total monthly housing budget (mortgage, insurance, property taxes, HOA
           fees, utilities). In Las Vegas, property taxes are low (0.6%-1.2% of assessed value), but
-          HOA fees vary by neighborhood. Compare named school campuses on each MLS sheet, commute
-          via I-15 / I-215, square footage, and HVAC age.
+          HOA fees vary by neighborhood. Compare named school campuses on each listing, commute via
+          I-15 / I-215, square footage, and HVAC age.
         </p>
         <h3>Las Vegas Budget Considerations:</h3>
         <ul>

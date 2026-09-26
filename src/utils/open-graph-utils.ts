@@ -146,7 +146,13 @@ export const openGraphConfigs = {
       url: 'https://www.openhouseupdate.com/services/home-valuation',
       image: 'https://www.openhouseupdate.com/images/og-valuation.jpg',
       imageAlt: 'Free Home Valuation - Las Vegas Real Estate',
-      articleTag: ['home valuation', 'property assessment', 'market analysis', 'CMA', 'Las Vegas'],
+      articleTag: [
+        'home valuation',
+        'property assessment',
+        'market analysis',
+        'home price estimate',
+        'Las Vegas',
+      ],
     }),
 
   buyerServices: (): DocumentMeta[] =>

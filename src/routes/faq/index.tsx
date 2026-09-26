@@ -42,7 +42,7 @@ export default component$(() => {
     {
       question: 'Do I need a real estate agent to buy or sell?',
       answer:
-        "While not legally required, having a professional agent provides significant advantages. Agents have access to MLS listings, market expertise, negotiation skills, and can handle complex paperwork. Dr. Duffy's local market knowledge and professional network can save you time, money, and stress.",
+        "While not legally required, having a professional agent provides significant advantages. Agents have access to current listings, market expertise, negotiation skills, and can handle complex paperwork. Dr. Duffy's local market knowledge and professional network can save you time, money, and stress.",
     },
     {
       question: 'What should I look for in a Las Vegas home?',
@@ -57,7 +57,7 @@ export default component$(() => {
     {
       question: 'What financing options are available for Las Vegas homes?',
       answer:
-        'Common options include conventional loans, FHA loans (great for first-time buyers), VA loans (for veterans), and jumbo loans (for higher-priced homes). Dr. Duffy works with trusted lenders who can explain all options and help you find the best rates and terms for your situation.',
+        'Common options include a standard bank loan, a government-backed loan with a smaller down payment, a loan for eligible veterans, and a loan for higher-priced homes. Dr. Duffy works with lenders who can explain the choices and the rate for your situation.',
     },
     {
       question: 'How can I prepare my home for sale?',

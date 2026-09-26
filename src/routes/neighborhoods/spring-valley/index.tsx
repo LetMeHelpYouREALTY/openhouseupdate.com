@@ -65,7 +65,7 @@ export default component$(() => {
           <ul>
             <li>
               <strong>Named campuses:</strong> Bonanza High School, Spring Valley High School, and
-              the elementary listed on the MLS sheet
+              the elementary listed on the listing
             </li>
             <li>
               <strong>Parks:</strong> Desert Breeze Park (soccer fields, skate park) and Spring
@@ -79,8 +79,8 @@ export default component$(() => {
               <strong>Shopping:</strong> Chinatown Plaza, Boca Park, and Rainbow / Flamingo retail
             </li>
             <li>
-              <strong>HOA:</strong> Many 1970s–1990s tracts have no HOA; confirm dues on each MLS
-              sheet
+              <strong>HOA:</strong> Many 1970s–1990s tracts have no HOA; confirm dues on each
+              listing
             </li>
           </ul>
           <h3>Weekend open houses</h3>

@@ -282,7 +282,7 @@ export default component$(() => {
         <div class="valuation-info">
           <h2>What You'll Receive</h2>
           <ul>
-            <li>Detailed Comparative Market Analysis (CMA)</li>
+            <li>A comparison of similar homes that recently sold</li>
             <li>Current market trends and pricing insights</li>
             <li>Property condition assessment</li>
             <li>Neighborhood market analysis</li>

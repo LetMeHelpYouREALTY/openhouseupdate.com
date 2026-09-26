@@ -101,9 +101,9 @@ Before you start looking at homes, get pre-approved for a mortgage. This tells y
 
 **First-Time Buyer Programs Available**:
 - **Home Is Possible (HIP)**: Down payment assistance up to 5% of loan amount
-- **FHA Loans**: 3.5% down payment (vs. typical 20%)
+- **Government-backed loans**: about 3.5% down (compared with a typical 20%)
 - **VA Loans**: No down payment for eligible veterans
-- **USDA Loans**: Available for rural areas (some North Las Vegas areas qualify)
+- **Rural-area loans**: Available for some areas, including parts of North Las Vegas
 
 ## Step 2: Understand Your Budget
 
@@ -116,7 +116,7 @@ In Las Vegas, factor in:
 
 ## Step 3: Choose the Right Neighborhood
 
-Compare these Las Vegas Valley areas by price, year built, and the campus named on the MLS sheet:
+Compare these Las Vegas Valley areas by price, year built, and the campus named on the listing:
 
 ### Open-house areas to compare:
 
@@ -360,7 +360,7 @@ Price at current market value. Ideal when:
 Price above market for unique properties. Only use when:
 - Exceptional condition or features
 - Unique location (The Ridges, Lake Las Vegas)
-- Luxury market with fewer comps
+- Luxury market with fewer recent sales of similar homes
 
 ## Factors Affecting Price
 
@@ -384,7 +384,7 @@ Price above market for unique properties. Only use when:
 1. **Emotional Pricing**: Don't let personal attachment inflate price
 2. **Ignoring Condition**: Price must reflect actual condition
 3. **Not Updating**: If not selling, adjust price after 30 days
-4. **Comparing to Old Sales**: Use recent comps (last 3-6 months)
+4. **Comparing to Old Sales**: Use recent sales of similar homes (last 3-6 months)
 5. **Ignoring Competition**: Monitor active listings in your area
 
 ## Get Your Home Valuation
@@ -444,7 +444,7 @@ As of November 2025, Las Vegas investment property market offers:
 - List prices often $300,000-$500,000
 - Job centers and commute via I-15 and I-215
 - Newer construction in Skye Canyon (89084) and Centennial Hills (89031)
-- Ask for current rent comps before underwriting
+- Ask for current rents for similar homes before you compare rent with expenses
 - Past sale prices for that zip, not a neighborhood ranking
 
 **ROI Considerations**: Cash flow depends on rent, taxes, insurance, and HOA. Newer houses often need less immediate repair.
@@ -454,15 +454,15 @@ As of November 2025, Las Vegas investment property market offers:
 - 1970s–2000s single-family homes and condos
 - Central access via Rainbow Boulevard and I-215
 - List prices often below Summerlin
-- Rent comps vary by bedrooms and year built
+- Rents for similar homes vary by bedrooms and year built
 
 **ROI Considerations**: Returns depend on rent, expenses, and the sales history for that zip code
 
 ### 3. Henderson (89002, 89015)
 **Numbers to check**:
 - List prices are often below Green Valley (89012, 89014) and Seven Hills (89052, 89074)
-- Confirm rent comps and HOA dues on each address
-- Named campuses include Green Valley High; confirm the MLS sheet
+- Confirm rents for similar homes and HOA dues on each address
+- Named campuses include Green Valley High; confirm the listing
 
 **ROI Considerations**: Cash flow and resale both depend on the rent roll and the comparable sales, not a label for the area.
 
@@ -479,7 +479,7 @@ As of November 2025, Las Vegas investment property market offers:
 ### Single-Family Homes
 **Pros**: 
 - Strong appreciation potential
-- One lease per house; confirm the lease term and rent comps
+- One lease per house; confirm the lease term and rents for similar homes
 - Easier financing
 
 **Best For**: Long-term buy-and-hold investors
@@ -525,7 +525,7 @@ As of November 2025, Las Vegas investment property market offers:
 ### Tax Benefits
 - **Depreciation**: Write-off property value over time
 - **Deductions**: Interest, repairs, maintenance, travel
-- **1031 Exchange**: Defer capital gains by reinvesting
+- **Tax-deferred sale**: Defer capital gains by buying another rental
 
 ## Market Trends for Investors
 
@@ -622,7 +622,7 @@ Contact Dr. Jan Duffy using the office phone in the footer for investment proper
       'Las Vegas rental market',
     ],
     metaDescription:
-      'Guide to Las Vegas investment properties for 2025. Rent comps, zip-code price bands, ROI factors, and underwriting checks.',
+      'Guide to Las Vegas investment properties for 2025. Rents for similar homes, zip-code price bands, ROI factors, and rent and expense checks.',
     author: 'Dr. Jan Duffy',
     imageKey: 'luxury-open-houses',
   },

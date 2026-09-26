@@ -227,7 +227,7 @@ export default component$(() => {
           <p>
             North Las Vegas is served by the Clark County School District, including campuses near
             Skye Canyon (89084) and Centennial Hills (89031). Confirm the specific school listed on
-            each MLS sheet before you tour.
+            each listing before you tour.
           </p>
 
           <h3>Growth & Development</h3>

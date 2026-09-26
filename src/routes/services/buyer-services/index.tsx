@@ -261,7 +261,7 @@ export default component$(() => {
           </p>
           <ul>
             <li>Custom property search setup</li>
-            <li>MLS access and alerts</li>
+            <li>Alerts when a matching home is listed</li>
             <li>Neighborhood analysis</li>
             <li>Market trend insights</li>
             <li>Property comparison reports</li>
@@ -275,7 +275,7 @@ export default component$(() => {
             to your needs.
           </p>
           <ul>
-            <li>Comparative Market Analysis (CMA)</li>
+            <li>A comparison of similar homes that recently sold</li>
             <li>Neighborhood market trends</li>
             <li>Price trend analysis</li>
             <li>Investment potential assessment</li>

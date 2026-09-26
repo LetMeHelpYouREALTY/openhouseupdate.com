@@ -87,7 +87,7 @@ export default component$(() => {
         <div class="map-wrapper">
           <div class="map-title-section">
             <h2>Interactive Property Map</h2>
-            <p>Explore properties in Las Vegas with our interactive map powered by RealScout</p>
+            <p>Explore Las Vegas homes on the map. Filter by price, beds, and neighborhood.</p>
             <FeaturedRealtor variant="hero" />
             <HeadingImage
               imageKey="map-search"

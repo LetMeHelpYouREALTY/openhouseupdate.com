@@ -197,8 +197,14 @@ export const getPageOGMetadata = (pageKey: string): Partial<OGSEOConfig> => {
       ],
     },
     'home-valuation': {
-      keywords: ['home valuation', 'property value', 'market analysis', 'CMA'],
-      articleTags: ['home valuation', 'property assessment', 'market analysis', 'CMA', 'Las Vegas'],
+      keywords: ['home valuation', 'property value', 'market analysis', 'home price estimate'],
+      articleTags: [
+        'home valuation',
+        'property assessment',
+        'market analysis',
+        'home price estimate',
+        'Las Vegas',
+      ],
     },
     'buyer-services': {
       keywords: ['buyer representation', 'home buying', 'buyer agent', 'property search'],

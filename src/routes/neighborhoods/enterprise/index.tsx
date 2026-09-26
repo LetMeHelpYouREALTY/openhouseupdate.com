@@ -61,7 +61,7 @@ export default component$(() => {
           <ul>
             <li>
               <strong>Named campuses:</strong> Desert Oasis High School, Liberty High School, and
-              the elementary printed on the MLS
+              the elementary printed on the listing
             </li>
             <li>
               <strong>Master plans:</strong> Southern Highlands (89141) and Rhodes Ranch (89139)

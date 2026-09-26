@@ -106,8 +106,7 @@ export default component$<RealScoutMapProps>(
         <div class="map-placeholder">
           <h3>Interactive Property Map</h3>
           <p>
-            View properties on an interactive map powered by RealScout. Click the link below to
-            access the full map experience.
+            See Las Vegas homes on a map. Open the full map to filter by price and neighborhood.
           </p>
           <a
             href={`https://drjanduffy.realscout.com/homesearch/map?geo_type=${geoType}&geo_id=${geoId}`}

@@ -164,8 +164,8 @@ export default component$<FreeHomeValuationCTAProps>(
 
             <div class="text-center">
               <p class="text-gray-600 mb-4">
-                Click below to access our professional home valuation tool powered by RealScout. Get
-                an instant estimate and detailed market analysis.
+                Get a free estimate of what your Las Vegas home could sell for, based on similar
+                homes that sold nearby.
               </p>
               <button
                 type="button"
@@ -175,7 +175,7 @@ export default component$<FreeHomeValuationCTAProps>(
                 Open Valuation Tool →
               </button>
               <p class="text-xs text-gray-500 mt-2">
-                ✓ Connected to your CRM ✓ Instant results ✓ Professional analysis
+                ✓ Free estimate ✓ Similar homes nearby ✓ No obligation
               </p>
             </div>
           </div>

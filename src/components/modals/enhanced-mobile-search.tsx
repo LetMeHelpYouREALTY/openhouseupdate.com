@@ -414,7 +414,7 @@ export default component$(() => {
           font-weight: 500;
         }
 
-        /* Enhanced RealScout Widget Styling */
+        /* Home search widget styling */
         realscout-advanced-search,
         realscout-simple-search {
           --rs-as-widget-width: 100% !important;

@@ -487,13 +487,13 @@ export default component$(() => {
             <div class="specialist-card">
               <HeadingImage
                 imageKey="conversion-rates"
-                heading="Proven Conversion Rates"
+                heading="Weekend Follow-Up"
                 variant="card"
               />
-              <h3 class="card-title">Proven Conversion Rates</h3>
+              <h3 class="card-title">Weekend Follow-Up</h3>
               <p class="card-description">
-                Weekend open-house hosting with follow-up on every sign-in so Summerlin, Henderson,
-                and North Las Vegas buyers can tour the same week.
+                Dr. Jan Duffy follows up with every open-house guest so Summerlin, Henderson, and
+                North Las Vegas buyers can tour the same week.
               </p>
             </div>
 

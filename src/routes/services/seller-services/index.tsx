@@ -341,7 +341,7 @@ export default component$(() => {
             strategy.
           </p>
           <ul>
-            <li>Comparative Market Analysis (CMA)</li>
+            <li>A comparison of similar homes that recently sold</li>
             <li>Market trend analysis</li>
             <li>Competitive pricing strategy</li>
             <li>Price optimization recommendations</li>
@@ -373,7 +373,7 @@ export default component$(() => {
           <ul>
             <li>Professional photography</li>
             <li>Virtual tours and videos</li>
-            <li>MLS listing optimization</li>
+            <li>How the home shows up when people search online</li>
             <li>Online marketing campaigns</li>
             <li>Social media promotion</li>
           </ul>
@@ -386,7 +386,7 @@ export default component$(() => {
           </p>
           <ul>
             <li>Showing scheduling</li>
-            <li>Buyer qualification</li>
+            <li>Confirm the buyer can afford the home</li>
             <li>Security protocols</li>
             <li>Feedback collection</li>
             <li>Follow-up coordination</li>
@@ -432,7 +432,7 @@ export default component$(() => {
             <div class="price">5.5%</div>
             <ul>
               <li>Market analysis & pricing</li>
-              <li>MLS listing</li>
+              <li>The public home listing</li>
               <li>Basic marketing</li>
               <li>Showing coordination</li>
               <li>Transaction management</li>
