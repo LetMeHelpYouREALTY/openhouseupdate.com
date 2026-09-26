@@ -1,4 +1,5 @@
 import { component$ } from '@builder.io/qwik'
+import { CalendlyBookButton } from '~/components/calendly/calendly-booking'
 import { business } from '~/config/business'
 import { agentPortrait } from '~/config/images'
 import styles from './featured-realtor.module.css'
@@ -93,6 +94,7 @@ export default component$<FeaturedRealtorProps>(({ variant = 'band', tone = 'lig
               <a class={`${styles.action} ${styles.call}`} href={`tel:${business.phoneTel}`}>
                 Call
               </a>
+              <CalendlyBookButton class={`${styles.action} ${styles.book}`} label="Book a Tour" />
               <a class={`${styles.action} ${styles.weekend}`} href="/this-weekend/">
                 This Weekend's Open Houses
               </a>
@@ -117,6 +119,7 @@ export default component$<FeaturedRealtorProps>(({ variant = 'band', tone = 'lig
           <a class={`${styles.action} ${styles.call}`} href={`tel:${business.phoneTel}`}>
             Call
           </a>
+          <CalendlyBookButton class={`${styles.action} ${styles.book}`} label="Book a Tour" />
           <a class={`${styles.action} ${styles.about}`} href="/contact/">
             Contact Dr. Duffy
           </a>

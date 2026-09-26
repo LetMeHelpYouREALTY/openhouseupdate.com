@@ -1,4 +1,5 @@
 import { component$ } from '@builder.io/qwik'
+import { CalendlyBookButton } from '~/components/calendly/calendly-booking'
 import { business } from '~/config/business'
 import { type OpenHouseWidgetKey, openHouseWidgetCopy } from '~/data/open-house-widget-copy'
 
@@ -103,10 +104,44 @@ export default component$<OpenHouseWidgetSectionProps>((props) => {
           width: 100%;
           min-height: 720px;
         }
+        .ohu-book {
+          margin-top: 1.25rem;
+          padding: 1.25rem;
+          border-radius: 12px;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+        }
+        .ohu-book h3 {
+          margin: 0 0 0.35rem;
+        }
+        .ohu-book p {
+          margin: 0 0 0.9rem;
+        }
+        .ohu-book-button {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 44px;
+          padding: 0.65rem 1rem;
+          border: none;
+          border-radius: 8px;
+          background: #0c4a84;
+          color: #ffffff;
+          font-weight: 700;
+          font-family: inherit;
+          cursor: pointer;
+        }
+        .ohu-book a {
+          display: inline-block;
+          margin-left: 0.85rem;
+          color: #0c4a84;
+          font-weight: 700;
+        }
         @media (max-width: 768px) {
           .ohu-widget h2 { font-size: 1.5rem; }
           .ohu-frame,
           .ohu-frame realscout-office-listings { min-height: 640px; }
+          .ohu-book a { display: block; margin: 0.75rem 0 0; }
         }
       `}</style>
       <div class="ohu-widget-heading">
@@ -131,6 +166,15 @@ export default component$<OpenHouseWidgetSectionProps>((props) => {
             footer.
           </p>
         </noscript>
+      </div>
+      <div class="ohu-book">
+        <h3>Book a private showing</h3>
+        <p>
+          Found a home above? Pick a time with {business.agentName}. Weekend open houses stay on the
+          public schedule.
+        </p>
+        <CalendlyBookButton class="ohu-book-button" label="Book a Tour" />
+        <a href="#book-a-tour">Use the calendar on this page</a>
       </div>
     </section>
   )

@@ -29,6 +29,11 @@ export default component$(() => {
               Contact
             </a>
           </li>
+          <li>
+            <a href="#book-a-tour" class={styles.navLink}>
+              Book a Tour
+            </a>
+          </li>
         </ul>
         <FeaturedRealtor variant="header" />
       </div>

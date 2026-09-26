@@ -3,6 +3,7 @@ import { type DocumentHead, routeLoader$ } from '@builder.io/qwik-city'
 import { inject } from '@vercel/analytics'
 import FeaturedRealtor from '~/components/agent/featured-realtor'
 import EnhancedAnalytics from '~/components/analytics/enhanced-analytics'
+import { CalendlyInline } from '~/components/calendly/calendly-booking'
 import { MobileSearchButton } from '~/components/modals'
 import CrawlerManagement from '~/components/seo/crawler-management'
 import EnhancedStructuredData from '~/components/seo/enhanced-structured-data'
@@ -54,6 +55,7 @@ export default component$(() => {
         <Slot />
       </main>
       <FeaturedRealtor variant="band" />
+      <CalendlyInline />
       <Footer />
       <MobileSearchButton />
 
