@@ -2,6 +2,7 @@ import { component$, Slot, useStyles$ } from '@builder.io/qwik'
 import { type DocumentHead, routeLoader$ } from '@builder.io/qwik-city'
 import { inject } from '@vercel/analytics'
 import EnhancedAnalytics from '~/components/analytics/enhanced-analytics'
+import SpeedInsights from '~/components/analytics/speed-insights'
 import StickyHeader from '~/components/layout/header'
 import GbpBar from '~/components/local-seo/gbp-bar'
 import { MobileSearchButton } from '~/components/modals'
@@ -61,6 +62,7 @@ export default component$(() => {
 
       {/* Analytics */}
       <script dangerouslySetInnerHTML={`${inject()}`} />
+      <SpeedInsights />
       <EnhancedAnalytics measurementId="G-Q9X8KED9X0" />
 
       {/* RealScout Script with Enhanced Loading */}

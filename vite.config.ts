@@ -111,7 +111,7 @@ export default defineConfig(async ({ mode }) => {
 
     // Optimize dependencies
     optimizeDeps: {
-      include: ['@builder.io/qwik', '@builder.io/qwik-city', '@vercel/analytics'],
+      include: ['@builder.io/qwik', '@builder.io/qwik-city', '@vercel/analytics', '@vercel/speed-insights'],
     },
 
     envPrefix: ['VITE_', 'PUBLIC_'],
