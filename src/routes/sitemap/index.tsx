@@ -122,10 +122,7 @@ export default component$(() => {
       <div class="sitemap-header">
         <HeadingImage imageKey="map-search" heading="Site Map" variant="background" priority />
         <h1>Site Map</h1>
-        <p>
-          Find all pages and sections of Open House Marketplace at 760 Windover Ct, Las Vegas NV
-          89138
-        </p>
+        <p>Find all pages and sections of Open House Marketplace</p>
         <FeaturedRealtor variant="hero" tone="dark" />
       </div>
 

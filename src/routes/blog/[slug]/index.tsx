@@ -89,9 +89,8 @@ export default component$(() => {
       <div class="blog-cta">
         <h2 class="text-2xl font-bold text-gray-900 mb-2">Tour this weekend’s open houses</h2>
         <p class="text-gray-700 mb-4">
-          {business.agentName} at {business.gbpName}, {business.fullAddress}. Call{' '}
-          <a href={`tel:${business.phoneTel}`}>{business.phoneDisplay}</a> or get{' '}
-          <a href={business.directionsUrl}>directions</a>.
+          {business.agentName} at {business.gbpName}. Office hours, phone, and the map are in the
+          footer.
         </p>
         <a
           href="/this-weekend"

@@ -136,8 +136,8 @@ export default component$(() => {
           <p>
             Summerlin is a 22,500-acre master-planned community in zip codes 89134, 89135, 89138,
             and 89144. Downtown Summerlin shopping, Red Rock Canyon trailheads, and 200+ miles of
-            paths sit minutes from most villages. Open House Marketplace at 760 Windover Ct (89138)
-            is the local base for weekend property tours with Dr. Jan Duffy.
+            paths sit minutes from most villages. Dr. Jan Duffy tours weekend open houses across
+            those villages.
           </p>
 
           <h3>Why Choose Summerlin?</h3>
@@ -248,10 +248,7 @@ export default component$(() => {
           <div class="info-card">
             <FeaturedRealtor variant="sidebar" />
             <h3>Contact Dr. Jan Duffy</h3>
-            <p>Expert Summerlin real estate guidance</p>
-            <p>
-              <strong>Phone:</strong> (702) 200-3422
-            </p>
+            <p>Expert Summerlin real estate guidance. Office phone and hours are in the footer.</p>
             <a
               href="http://drjanduffy.realscout.com/onboarding"
               target="_blank"

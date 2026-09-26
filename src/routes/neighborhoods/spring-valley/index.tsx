@@ -85,9 +85,8 @@ export default component$(() => {
           </ul>
           <h3>Weekend open houses</h3>
           <p>
-            Dr. Jan Duffy hosts and tours Spring Valley open houses from Open House Marketplace at{' '}
-            {business.fullAddress}. Call {business.phoneDisplay} for a Saturday route that matches
-            your price cap and square footage.
+            Dr. Jan Duffy hosts and tours Spring Valley open houses. Ask for a Saturday route that
+            matches your price cap and square footage.
           </p>
         </div>
         <div class="sidebar">
@@ -114,16 +113,10 @@ export default component$(() => {
             <p>
               <strong>Zip codes:</strong> 89102, 89103, 89117, 89146, 89147
             </p>
-            <p>
-              <strong>Office:</strong> {business.fullAddress}
-            </p>
           </div>
           <div class="info-card">
             <FeaturedRealtor variant="sidebar" />
             <h3>Contact {business.agentName}</h3>
-            <p>
-              <a href={`tel:${business.phoneTel}`}>{business.phoneDisplay}</a>
-            </p>
             <a
               href={business.realScoutOnboarding}
               target="_blank"

@@ -125,8 +125,8 @@ export default component$<OpenHouseWidgetSectionProps>((props) => {
         <noscript>
           <p>
             Listing cards need JavaScript. Search Las Vegas homes at{' '}
-            <a href="/search/">the Open House Update search page</a> or call{' '}
-            <a href={`tel:${business.phoneTel}`}>{business.phoneDisplay}</a>.
+            <a href="/search/">the Open House Update search page</a>. The office phone is in the
+            footer.
           </p>
         </noscript>
       </div>

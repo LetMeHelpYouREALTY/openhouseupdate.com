@@ -147,6 +147,13 @@
   color: #3a8dde;
 }
 
+.footerMap {
+  background: #f8fafc;
+  border-radius: 12px;
+  margin: 0 0 1.5rem;
+  padding-top: 1rem;
+}
+
 .licenseBlock {
   margin: 0.75rem 0 0;
   color: #e2e8f0;

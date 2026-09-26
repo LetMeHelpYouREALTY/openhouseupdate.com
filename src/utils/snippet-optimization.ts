@@ -11,7 +11,12 @@ export interface PageSnippetConfig {
   description: string
   keywords: string[]
   faqKey?: string
-  structuredDataType?: 'RealEstateAgent' | 'RealEstateService' | 'LocalBusiness' | 'WebSite' | 'FAQPage'
+  structuredDataType?:
+    | 'RealEstateAgent'
+    | 'RealEstateService'
+    | 'LocalBusiness'
+    | 'WebSite'
+    | 'FAQPage'
   breadcrumbs?: Array<{ name: string; url: string }>
 }
 
@@ -163,7 +168,7 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
   contact: {
     title: 'Contact Dr. Jan Duffy - Las Vegas Real Estate Agent',
     description:
-      'Contact Dr. Jan Duffy for all your Las Vegas real estate needs. Call (702) 200-3422 or use our contact form for expert real estate guidance and consultation.',
+      'Contact Dr. Jan Duffy for Las Vegas weekend open houses. Use the contact form, or the office phone in the footer, for a consultation.',
     keywords: [
       'contact Dr. Jan Duffy',
       'Las Vegas real estate contact',
@@ -205,7 +210,7 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
   'north-las-vegas': {
     title: 'North Las Vegas Open Houses | Skye Canyon & 89084 | Dr. Jan Duffy',
     description:
-      'Tour North Las Vegas open houses in Skye Canyon (89084), Aliante, and Centennial Hills. Square footage, I-215 commute times, and weekend viewing with Dr. Jan Duffy at (702) 200-3422.',
+      'Tour North Las Vegas open houses in Skye Canyon (89084), Aliante, and Centennial Hills. Square footage, I-215 commute times, and weekend viewing with Dr. Jan Duffy.',
     keywords: [
       'North Las Vegas open houses',
       'Skye Canyon homes',
@@ -228,7 +233,7 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
   'green-valley': {
     title: 'Green Valley Henderson Open Houses | 89012–89014 | Dr. Jan Duffy',
     description:
-      'Green Valley Ranch, Coronado High School attendance area, and 89012–89014 weekend open houses. Call Dr. Jan Duffy at (702) 200-3422 from Open House Marketplace.',
+      'Green Valley Ranch, Coronado High School attendance area, and 89012–89014 weekend open houses with Dr. Jan Duffy at Open House Marketplace.',
     keywords: [
       'Green Valley open houses',
       'Green Valley Ranch homes',
@@ -247,7 +252,7 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
   'spring-valley': {
     title: 'Spring Valley Open Houses | 89147 Las Vegas | Dr. Jan Duffy',
     description:
-      'Spring Valley weekend open houses near Chinatown, Desert Breeze Park, and I-215 in 89102–89147. Compare square footage and HVAC age with Dr. Jan Duffy at (702) 200-3422.',
+      'Spring Valley weekend open houses near Chinatown, Desert Breeze Park, and I-215 in 89102–89147. Compare square footage and HVAC age with Dr. Jan Duffy.',
     keywords: [
       'Spring Valley Las Vegas open houses',
       '89147 homes',
@@ -259,14 +264,17 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
     breadcrumbs: [
       { name: 'Home', url: 'https://www.openhouseupdate.com/' },
       { name: 'Neighborhoods', url: 'https://www.openhouseupdate.com/neighborhoods/' },
-      { name: 'Spring Valley', url: 'https://www.openhouseupdate.com/neighborhoods/spring-valley/' },
+      {
+        name: 'Spring Valley',
+        url: 'https://www.openhouseupdate.com/neighborhoods/spring-valley/',
+      },
     ],
   },
 
   enterprise: {
     title: 'Enterprise Open Houses | Southern Highlands 89141 | Dr. Jan Duffy',
     description:
-      'Enterprise, Southern Highlands, and Rhodes Ranch weekend open houses in 89118–89183. I-15 at Cactus, 1,800–3,200 sq ft homes. Call Dr. Jan Duffy at (702) 200-3422.',
+      'Enterprise, Southern Highlands, and Rhodes Ranch weekend open houses in 89118–89183. I-15 at Cactus, 1,800–3,200 sq ft homes with Dr. Jan Duffy.',
     keywords: [
       'Enterprise Las Vegas open houses',
       'Southern Highlands homes',
@@ -285,7 +293,7 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
   faq: {
     title: 'Las Vegas Real Estate FAQ | Open Houses & Buying | Dr. Jan Duffy',
     description:
-      'Answers on Las Vegas weekend open houses, buying timelines, selling costs, and named Clark County campuses. Call Open House Marketplace at (702) 200-3422.',
+      'Answers on Las Vegas weekend open houses, buying timelines, selling costs, and named Clark County campuses with Dr. Jan Duffy.',
     keywords: [
       'Las Vegas real estate FAQ',
       'open house questions Las Vegas',
@@ -430,7 +438,10 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
     structuredDataType: 'RealEstateService',
     breadcrumbs: [
       { name: 'Home', url: 'https://www.openhouseupdate.com/' },
-      { name: 'Open Houses by Price', url: 'https://www.openhouseupdate.com/open-houses-for-sale/' },
+      {
+        name: 'Open Houses by Price',
+        url: 'https://www.openhouseupdate.com/open-houses-for-sale/',
+      },
     ],
   },
 
@@ -472,7 +483,10 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
     breadcrumbs: [
       { name: 'Home', url: 'https://www.openhouseupdate.com/' },
       { name: 'Guides', url: 'https://www.openhouseupdate.com/blog/' },
-      { name: 'How to Buy Your First Home', url: 'https://www.openhouseupdate.com/how-to-buy-first-home-las-vegas/' },
+      {
+        name: 'How to Buy Your First Home',
+        url: 'https://www.openhouseupdate.com/how-to-buy-first-home-las-vegas/',
+      },
     ],
   },
 
@@ -502,7 +516,7 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
   'summerlin-vs-henderson-comparison': {
     title: 'Summerlin vs Henderson Side-by-Side | Open House Marketplace',
     description:
-      'Side-by-side notes on Summerlin (89134–89138) and Henderson (89002–89074): I-215 commute, named campuses, and typical square footage. Call Dr. Jan Duffy at (702) 200-3422.',
+      'Side-by-side notes on Summerlin (89134–89138) and Henderson (89002–89074): I-215 commute, named campuses, and typical square footage with Dr. Jan Duffy.',
     keywords: [
       'Summerlin vs Henderson comparison',
       'Las Vegas neighborhood comparison',

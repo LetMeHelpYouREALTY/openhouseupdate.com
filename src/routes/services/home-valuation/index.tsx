@@ -337,7 +337,7 @@ export default component$(() => {
                   id="propertyAddress"
                   bind:value={propertyAddress}
                   required
-                  placeholder="760 Windover Ct, Las Vegas, NV 89138"
+                  placeholder="Property street address, Las Vegas, NV"
                 />
               </div>
 
@@ -365,7 +365,7 @@ export default component$(() => {
 
               <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" bind:value={phone} placeholder="(702) 200-3422" />
+                <input type="tel" id="phone" bind:value={phone} placeholder="Your phone number" />
               </div>
 
               <div class="form-group">

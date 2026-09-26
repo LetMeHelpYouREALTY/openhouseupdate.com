@@ -224,7 +224,7 @@ export default component$(() => {
             <div class="logo-text">Open House Update</div>
             <div class="logo-phone">
               <a href="tel:+17022003422" class="phone-link" title="Call Dr. Jan Duffy">
-                (702) 200-3422
+                Call
               </a>
             </div>
           </a>

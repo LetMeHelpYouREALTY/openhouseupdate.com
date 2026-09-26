@@ -3,7 +3,6 @@ import { type DocumentHead, routeLoader$ } from '@builder.io/qwik-city'
 import { inject } from '@vercel/analytics'
 import FeaturedRealtor from '~/components/agent/featured-realtor'
 import EnhancedAnalytics from '~/components/analytics/enhanced-analytics'
-import GbpBar from '~/components/local-seo/gbp-bar'
 import { MobileSearchButton } from '~/components/modals'
 import CrawlerManagement from '~/components/seo/crawler-management'
 import EnhancedStructuredData from '~/components/seo/enhanced-structured-data'
@@ -55,7 +54,6 @@ export default component$(() => {
         <Slot />
       </main>
       <FeaturedRealtor variant="band" />
-      <GbpBar />
       <Footer />
       <MobileSearchButton />
 
@@ -67,7 +65,7 @@ export default component$(() => {
 })
 
 const defaultTitle = 'Open House Marketplace | Weekend Open Houses Las Vegas | Dr. Jan Duffy'
-const defaultDescription = `Weekend open houses and Las Vegas property viewing with ${business.gbpName}. ${business.agentName}, ${business.brokerage}, ${business.fullAddress}. Call ${business.phoneDisplay}.`
+const defaultDescription = `Weekend open houses and Las Vegas property viewing with ${business.gbpName}. ${business.agentName}, ${business.brokerage}.`
 
 export const head: DocumentHead = ({ head, url }) => {
   const title = head.title || defaultTitle

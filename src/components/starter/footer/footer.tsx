@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik'
 import FeaturedRealtor from '~/components/agent/featured-realtor'
+import GoogleMapEmbed from '~/components/local-seo/google-map-embed'
 import { business } from '~/config/business'
 import styles from './footer.module.css'
 
@@ -30,7 +31,7 @@ export default component$(() => {
                   {business.addressLocality}, {business.addressRegion} {business.postalCode}
                 </a>
               </p>
-              <p>{business.hoursDisplay}</p>
+              <p>Office hours: {business.hoursDisplay}</p>
               <p>
                 <a href={`tel:${business.phoneTel}`} class={styles.footerLink}>
                   Call
@@ -221,6 +222,10 @@ export default component$(() => {
           <realscout-advanced-search agent-encoded-id="QWdlbnQtMjI1MDUw" />
         </div>
 
+        <div class={styles.footerMap}>
+          <GoogleMapEmbed title="Open House Marketplace office on Google Maps" height="280px" />
+        </div>
+
         {/* Footer Bottom */}
         <div class={styles.footerBottom}>
           <div class={styles.footerBottomContent}>
@@ -233,7 +238,7 @@ export default component$(() => {
                 <br />
                 Nevada License
                 <br />
-                9–5
+                {business.hoursDisplay}
               </p>
               <p>
                 Listing information is provided for consumer convenience and is deemed reliable but

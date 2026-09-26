@@ -82,9 +82,8 @@ export default component$(() => {
           </ul>
           <h3>Weekend open houses</h3>
           <p>
-            {business.agentName} maps Saturday Enterprise tours from {business.gbpName} at{' '}
-            {business.fullAddress}. Call {business.phoneDisplay} with your price cap and bedroom
-            count.
+            {business.agentName} maps Saturday Enterprise tours. Share your price cap and bedroom
+            count when you ask for a route.
           </p>
         </div>
         <div class="sidebar">
@@ -111,16 +110,10 @@ export default component$(() => {
             <p>
               <strong>Zip codes:</strong> 89118, 89139, 89141, 89183
             </p>
-            <p>
-              <strong>Office:</strong> {business.fullAddress}
-            </p>
           </div>
           <div class="info-card">
             <FeaturedRealtor variant="sidebar" />
             <h3>Contact {business.agentName}</h3>
-            <p>
-              <a href={`tel:${business.phoneTel}`}>{business.phoneDisplay}</a>
-            </p>
             <a
               href={business.realScoutOnboarding}
               target="_blank"

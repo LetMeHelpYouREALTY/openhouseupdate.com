@@ -65,7 +65,7 @@ North Las Vegas (89030-89086) offers excellent value with newer construction in 
 
 Market fundamentals remain strong with population growth, diverse job market, and relative affordability compared to California markets. Working with an experienced agent like Dr. Jan Duffy ensures you understand current market conditions specific to your neighborhood.
 
-Contact Dr. Jan Duffy at (702) 200-3422 for a personalized market analysis of your Las Vegas Valley neighborhood.
+Contact Dr. Jan Duffy using the office phone in the footer for a personalized market analysis of your Las Vegas Valley neighborhood.
     `,
     date: 'November 2, 2025',
     category: 'Market Updates',
@@ -183,7 +183,7 @@ Your agent will guide you through:
 
 ## Ready to Start Your Search?
 
-Contact Dr. Jan Duffy at (702) 200-3422 for personalized guidance on buying your first home in Las Vegas. She specializes in working with first-time buyers and can help you navigate the entire process.
+Contact Dr. Jan Duffy using the office phone in the footer for personalized guidance on buying your first home in Las Vegas. She specializes in working with first-time buyers and can help you navigate the entire process.
     `,
     date: 'November 1, 2025',
     category: 'Buyer Tips',
@@ -211,7 +211,7 @@ Contact Dr. Jan Duffy at (702) 200-3422 for personalized guidance on buying your
     content: `
 # 5 Las Vegas Neighborhoods to Tour: Schools, Commutes, and Amenities
 
-Compare housing type, named Clark County schools, commute, and recreation. Dr. Jan Duffy maps weekend open-house routes from Open House Marketplace at 760 Windover Ct, Las Vegas, NV 89138.
+Compare housing type, named Clark County schools, commute, and recreation. Dr. Jan Duffy maps weekend open-house routes across the Las Vegas Valley.
 
 ## 1. Summerlin (Zip Codes 89134, 89135, 89138, 89144)
 
@@ -252,7 +252,7 @@ Compare housing type, named Clark County schools, commute, and recreation. Dr. J
 
 ## How to choose
 
-Tour square footage, HVAC age, HOA dues, and the specific school campus on the listing. Call Dr. Jan Duffy at (702) 200-3422 to build a Saturday–Sunday open-house list.
+Tour square footage, HVAC age, HOA dues, and the specific school campus on the listing. Call Dr. Jan Duffy using the office phone in the footer to build a Saturday–Sunday open-house list.
     `,
     date: 'October 28, 2025',
     category: 'Neighborhoods',
@@ -267,7 +267,7 @@ Tour square footage, HVAC age, HOA dues, and the specific school campus on the l
       'Henderson vs Summerlin commute',
     ],
     metaDescription:
-      'Tour Summerlin, Green Valley, Seven Hills, Anthem, and Skye Canyon using named schools, square footage, commute times, and amenities. Call (702) 200-3422.',
+      'Tour Summerlin, Green Valley, Seven Hills, Anthem, and Skye Canyon using named schools, square footage, commute times, and amenities. The office phone is in the footer.',
     author: 'Dr. Jan Duffy',
     imageKey: 'neighborhood-expertise',
   },
@@ -398,7 +398,7 @@ Dr. Jan Duffy provides free, comprehensive home valuations including:
 
 ## Ready to Price Your Home?
 
-Contact Dr. Jan Duffy at (702) 200-3422 for a professional market analysis and pricing strategy for your Las Vegas Valley home. Her expertise in Summerlin, Henderson, North Las Vegas, and all Las Vegas neighborhoods ensures you price correctly for maximum return.
+Contact Dr. Jan Duffy using the office phone in the footer for a professional market analysis and pricing strategy for your Las Vegas Valley home. Her expertise in Summerlin, Henderson, North Las Vegas, and all Las Vegas neighborhoods ensures you price correctly for maximum return.
     `,
     date: 'October 25, 2025',
     category: 'Seller Tips',
@@ -610,7 +610,7 @@ Dr. Jan Duffy understands investment property dynamics across Las Vegas Valley. 
 
 ## Ready to Invest?
 
-Contact Dr. Jan Duffy at (702) 200-3422 for investment property analysis and opportunities in Las Vegas Valley neighborhoods from North Las Vegas to Summerlin, from Skye Canyon to Green Valley.
+Contact Dr. Jan Duffy using the office phone in the footer for investment property analysis and opportunities in Las Vegas Valley neighborhoods from North Las Vegas to Summerlin, from Skye Canyon to Green Valley.
     `,
     date: 'October 20, 2025',
     category: 'Investment',

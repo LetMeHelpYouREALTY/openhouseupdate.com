@@ -51,8 +51,8 @@ export default component$(() => {
         />
         <h2>Read Google reviews for {business.gbpName}</h2>
         <p>
-          {business.agentName} · {business.fullAddress} · {business.phoneDisplay}. Reviews live on
-          Google Maps — this site does not publish invented star ratings.
+          {business.agentName}. Reviews live on Google Maps — this site does not publish invented
+          star ratings.
         </p>
         <a href={business.reviewsUrl} target="_blank" rel="noopener noreferrer">
           View Google Reviews

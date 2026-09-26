@@ -24,12 +24,12 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'How can I get a free home valuation?',
       answer:
-        "Contact Dr. Jan Duffy directly at (702) 200-3422 or use our home valuation service to get an accurate estimate of your property's current market value.",
+        "Contact Dr. Jan Duffy using the office phone in the footer, or use our home valuation service to get an accurate estimate of your property's current market value.",
     },
     {
       question: 'What makes Dr. Jan Duffy different as an Open House Expert?',
       answer:
-        'Dr. Jan Duffy hosts weekend open houses across Summerlin, Henderson, and North Las Vegas, with follow-up on every sign-in. Compare square footage, HVAC age, and named school campuses on each MLS sheet. Call (702) 200-3422.',
+        'Dr. Jan Duffy hosts weekend open houses across Summerlin, Henderson, and North Las Vegas, with follow-up on every sign-in. Compare square footage, HVAC age, and named school campuses on each MLS sheet. The office phone is in the footer.',
     },
     {
       question: 'What services does an Open House Expert provide?',
@@ -163,7 +163,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: "What's the best way to contact Dr. Jan Duffy?",
       answer:
-        'Call (702) 200-3422 for immediate assistance, or use our contact form for non-urgent inquiries. We typically respond within 2 hours during business hours.',
+        'Use the office phone in the footer for immediate assistance, or use our contact form for non-urgent inquiries. We typically respond within 2 hours during business hours.',
     },
     {
       question: 'What are your business hours?',
@@ -187,7 +187,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'What makes Summerlin a desirable neighborhood?',
       answer:
-        'Summerlin offers Howard Hughes master-planned villages, Downtown Summerlin shopping, Red Rock Canyon access, golf, and named high schools including Palo Verde High and West Career and Technical Academy. Zip codes include 89134, 89135, 89138, and 89144. The Ridges and The Summit list luxury inventory; other villages cover mid-range square footage. Call Dr. Jan Duffy at (702) 200-3422 to tour weekend open houses from 760 Windover Ct.',
+        'Summerlin offers Howard Hughes master-planned villages, Downtown Summerlin shopping, Red Rock Canyon access, golf, and named high schools including Palo Verde High and West Career and Technical Academy. Zip codes include 89134, 89135, 89138, and 89144. The Ridges and The Summit list luxury inventory; other villages cover mid-range square footage. Call Dr. Jan Duffy to tour weekend open houses.',
     },
     {
       question: "What's the average home price in Summerlin?",
@@ -223,7 +223,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'What should buyers compare in North Las Vegas?',
       answer:
-        'North Las Vegas listings use zip codes 89030, 89031, 89032, 89081, 89084, and 89086. Skye Canyon (89084) is newer construction; Centennial Hills (89031) is 1990s–2000s housing near I-215 shopping. Compare square footage, HVAC age, HOA dues, and the named campus on each MLS sheet. Call Dr. Jan Duffy at (702) 200-3422.',
+        'North Las Vegas listings use zip codes 89030, 89031, 89032, 89081, 89084, and 89086. Skye Canyon (89084) is newer construction; Centennial Hills (89031) is 1990s–2000s housing near I-215 shopping. Compare square footage, HVAC age, HOA dues, and the named campus on each MLS sheet. The office phone for Dr. Jan Duffy is in the footer.',
     },
     {
       question: 'Which North Las Vegas communities have weekend open houses?',
@@ -246,7 +246,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'Which zip codes are in Spring Valley, Las Vegas?',
       answer:
-        'Spring Valley listings commonly use 89102, 89103, 89117, 89146, and 89147. Chinatown / Spring Mountain Road sits on the east side; Desert Breeze Park and I-215 sit toward 89147. Call Dr. Jan Duffy at (702) 200-3422 for a weekend open-house list by zip.',
+        'Spring Valley listings commonly use 89102, 89103, 89117, 89146, and 89147. Chinatown / Spring Mountain Road sits on the east side; Desert Breeze Park and I-215 sit toward 89147. The office phone for a weekend open-house list by zip is in the footer.',
     },
     {
       question: 'What square footage is typical in Spring Valley?',
@@ -264,7 +264,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'Where is Enterprise in the Las Vegas Valley?',
       answer:
-        'Enterprise is south of Harry Reid International Airport in zip codes 89118, 89139, 89141, and 89183. Southern Highlands (89141) and Rhodes Ranch (89139) sit on I-15 at Cactus. Dr. Jan Duffy tours weekend open houses from 760 Windover Ct, Las Vegas, NV 89138.',
+        'Enterprise is south of Harry Reid International Airport in zip codes 89118, 89139, 89141, and 89183. Southern Highlands (89141) and Rhodes Ranch (89139) sit on I-15 at Cactus. Dr. Jan Duffy tours weekend open houses in Enterprise.',
     },
     {
       question: 'What square footage is typical in Enterprise?',
@@ -282,7 +282,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'What is Green Valley known for?',
       answer:
-        'Green Valley, in Henderson zip codes 89012 and 89014, is known for Green Valley Ranch retail, Coronado High School, parks, and a mix of 1980s–2000s housing. Listings range from mid-range square footage to larger custom homes. Call Dr. Jan Duffy at (702) 200-3422 to tour this weekend.',
+        'Green Valley, in Henderson zip codes 89012 and 89014, is known for Green Valley Ranch retail, Coronado High School, parks, and a mix of 1980s–2000s housing. Listings range from mid-range square footage to larger custom homes. The office phone to tour this weekend is in the footer.',
     },
     {
       question: 'What is the average home price in Green Valley?',
@@ -345,7 +345,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'What neighborhoods can I search in Las Vegas?',
       answer:
-        "You can search across all Las Vegas Valley neighborhoods including: **Summerlin** (zip codes 89134, 89135, 89138, 89144) - Howard Hughes master-planned villages, **Henderson** (89002, 89011, 89012, 89014, 89015, 89052, 89074) - Green Valley Ranch and Coronado High School, **North Las Vegas** (89030, 89031, 89032, 89081, 89084, 89086) - new construction including Skye Canyon, **Spring Valley** (89103, 89113, 89146, 89147), **Enterprise** (89118, 89123, 89139, 89148), The Ridges, Anthem, Inspirada, Centennial Hills, Mountain's Edge, The Lakes, and Lake Las Vegas. Dr. Jan Duffy can map a weekend open-house route from 760 Windover Ct.",
+        "You can search across all Las Vegas Valley neighborhoods including: **Summerlin** (zip codes 89134, 89135, 89138, 89144) - Howard Hughes master-planned villages, **Henderson** (89002, 89011, 89012, 89014, 89015, 89052, 89074) - Green Valley Ranch and Coronado High School, **North Las Vegas** (89030, 89031, 89032, 89081, 89084, 89086) - new construction including Skye Canyon, **Spring Valley** (89103, 89113, 89146, 89147), **Enterprise** (89118, 89123, 89139, 89148), The Ridges, Anthem, Inspirada, Centennial Hills, Mountain's Edge, The Lakes, and Lake Las Vegas. Dr. Jan Duffy can map a weekend open-house route.",
     },
     {
       question: 'How often are search results updated?',
@@ -497,7 +497,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'What part of Vegas to stay away from?',
       answer:
-        'Open House Marketplace does not rank Las Vegas neighborhoods as places to avoid or as safest. Compare named school campuses (Palo Verde High, Coronado High, Green Valley High), square footage, HVAC age, HOA dues, and commute via I-15 / I-215. Tour Summerlin (89134–89144), Henderson (89002–89074), North Las Vegas (89084 Skye Canyon), Spring Valley (89103–89147), and Enterprise (89178 Mountain’s Edge) with Dr. Jan Duffy at (702) 200-3422. Check official sources for any statistic you need; this site will not steer buyers with crime rankings.',
+        'Open House Marketplace does not rank Las Vegas neighborhoods as places to avoid or as safest. Compare named school campuses (Palo Verde High, Coronado High, Green Valley High), square footage, HVAC age, HOA dues, and commute via I-15 / I-215. Tour Summerlin (89134–89144), Henderson (89002–89074), North Las Vegas (89084 Skye Canyon), Spring Valley (89103–89147), and Enterprise (89178 Mountain’s Edge) with Dr. Jan Duffy. The office phone is in the footer. Check official sources for any statistic you need; this site will not steer buyers with crime rankings.',
     },
     {
       question: 'What salary do you need to live comfortably in Las Vegas?',
@@ -522,7 +522,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'How should I compare Las Vegas areas besides crime rankings?',
       answer:
-        'Compare named school campuses (Palo Verde High, Coronado High, Green Valley High), commute via I-15 / I-215, HOA dues, square footage, HVAC age, and weekend open-house inventory. Open House Marketplace does not rank neighborhoods as safest or least safe. Tour Summerlin (89134–89144), Henderson (89002–89074), and North Las Vegas (89084 Skye Canyon) with Dr. Jan Duffy at (702) 200-3422.',
+        'Compare named school campuses (Palo Verde High, Coronado High, Green Valley High), commute via I-15 / I-215, HOA dues, square footage, HVAC age, and weekend open-house inventory. Open House Marketplace does not rank neighborhoods as safest or least safe. Tour Summerlin (89134–89144), Henderson (89002–89074), and North Las Vegas (89084 Skye Canyon) with Dr. Jan Duffy. The office phone is in the footer.',
     },
     {
       question: 'Should I buy a condo or single-family home in Las Vegas?',
@@ -547,12 +547,12 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'Is it safe to walk around downtown Las Vegas at night?',
       answer:
-        'Open House Marketplace does not rank downtown Las Vegas or any suburb as safe or unsafe. Fremont Street Experience (89101) is a lit pedestrian mall with casino security. For housing, compare 89101 / 89104 listings against Summerlin (89134–89144), Henderson (89002–89074), Spring Valley (89103–89147), and North Las Vegas (89030–89086) using square footage, HOA dues, HVAC age, and commute. Tour with Dr. Jan Duffy at (702) 200-3422.',
+        'Open House Marketplace does not rank downtown Las Vegas or any suburb as safe or unsafe. Fremont Street Experience (89101) is a lit pedestrian mall with casino security. For housing, compare 89101 / 89104 listings against Summerlin (89134–89144), Henderson (89002–89074), Spring Valley (89103–89147), and North Las Vegas (89030–89086) using square footage, HOA dues, HVAC age, and commute. Tour with Dr. Jan Duffy. The office phone is in the footer.',
     },
     {
       question: 'Which Las Vegas neighborhoods have the most amenities?',
       answer:
-        '**Summerlin** (89134–89144): Downtown Summerlin, Red Rock Canyon, 200+ miles of trails, Palo Verde High. **Green Valley / Seven Hills** (89012, 89014, 89052, 89074): Green Valley Ranch, Coronado High, McCullough views. **The Ridges**: Luxury inventory against Red Rock. **Lake Las Vegas** (89011): Waterfront HOA amenities. **Inspirada / Anthem** (89044): 2000s master-planned parks and pools. Tour with Dr. Jan Duffy at (702) 200-3422.',
+        '**Summerlin** (89134–89144): Downtown Summerlin, Red Rock Canyon, 200+ miles of trails, Palo Verde High. **Green Valley / Seven Hills** (89012, 89014, 89052, 89074): Green Valley Ranch, Coronado High, McCullough views. **The Ridges**: Luxury inventory against Red Rock. **Lake Las Vegas** (89011): Waterfront HOA amenities. **Inspirada / Anthem** (89044): 2000s master-planned parks and pools. Tour with Dr. Jan Duffy. The office phone is in the footer.',
     },
     {
       question: 'Can I afford $1000 rent making $20 an hour?',
@@ -587,7 +587,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'Which named schools serve Las Vegas neighborhoods?',
       answer:
-        'Clark County School District campuses vary by street. Examples: **Summerlin** — Palo Verde High School and West Career and Technical Academy; **Green Valley** — Coronado High School; **Henderson** — Green Valley High and Coronado High. Confirm the campus printed on each MLS listing. Open House Marketplace does not rank school quality. Call (702) 200-3422 for a tour list filtered by campus name.',
+        'Clark County School District campuses vary by street. Examples: **Summerlin** — Palo Verde High School and West Career and Technical Academy; **Green Valley** — Coronado High School; **Henderson** — Green Valley High and Coronado High. Confirm the campus printed on each MLS listing. Open House Marketplace does not rank school quality. Use the office phone in the footer for a tour list filtered by campus name.',
     },
     {
       question: 'Should I buy an investment property or primary residence in Las Vegas?',

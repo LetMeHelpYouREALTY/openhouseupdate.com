@@ -72,7 +72,7 @@ export type OpenHouseWidgetCopy = {
 }
 
 const answerFor = (place: string): string =>
-  `This section shows current for-sale listings in ${place} on Open House Update. Cards load from the MLS through RealScout when the page renders. Weekend open houses are commonly Saturday and Sunday. Confirm the start time on each listing. Call Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties, (702) 200-3422, for a tour.`
+  `This section shows current for-sale listings in ${place} on Open House Update. Cards load from the MLS through RealScout when the page renders. Weekend open houses are commonly Saturday and Sunday. Confirm the start time on each listing. Call Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. The office phone is in the footer.`
 
 export const openHouseWidgetCopy: Record<OpenHouseWidgetKey, OpenHouseWidgetCopy> = {
   home: {
@@ -191,7 +191,7 @@ export const openHouseWidgetCopy: Record<OpenHouseWidgetKey, OpenHouseWidgetCopy
   contact: {
     h2: 'Contact Open House Update',
     h3: 'Tour These Las Vegas Listings with Dr. Jan Duffy',
-    answer: answerFor('Las Vegas, starting from 760 Windover Ct'),
+    answer: answerFor('Las Vegas'),
   },
   faq: {
     h2: 'Open House Questions Update',

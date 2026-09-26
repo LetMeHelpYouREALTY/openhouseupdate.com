@@ -1,7 +1,6 @@
 import { $, component$, useSignal, useVisibleTask$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
 import FeaturedRealtor from '~/components/agent/featured-realtor'
-import GoogleMapEmbed from '~/components/local-seo/google-map-embed'
 import HeadingImage from '~/components/media/heading-image'
 import PerformanceMonitor from '~/components/performance/performance-monitor'
 import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
@@ -528,14 +527,6 @@ export default component$(() => {
           <div class="specialist-stats">
             <div class="stats-grid">
               <div class="stat-item">
-                <div class="stat-number">9–5</div>
-                <div class="stat-label">Daily Office Hours</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number">89138</div>
-                <div class="stat-label">760 Windover Ct</div>
-              </div>
-              <div class="stat-item">
                 <div class="stat-number">6</div>
                 <div class="stat-label">Valley Neighborhood Hubs</div>
               </div>
@@ -601,8 +592,6 @@ export default component$(() => {
           </div>
         </div>
       </section>
-
-      <GoogleMapEmbed title="Open House Marketplace — 760 Windover Ct, Las Vegas, NV 89138" />
 
       {/* FAQ Section */}
       <EnhancedPageSEO

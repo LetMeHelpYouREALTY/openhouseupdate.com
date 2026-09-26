@@ -274,9 +274,7 @@ export default component$(() => {
             <FeaturedRealtor variant="sidebar" />
             <h3>Contact Dr. Jan Duffy</h3>
             <p>Expert North Las Vegas real estate guidance</p>
-            <p>
-              <strong>Phone:</strong> (702) 200-3422
-            </p>
+            <p>Office phone and hours are in the footer.</p>
             <a
               href="http://drjanduffy.realscout.com/onboarding"
               target="_blank"

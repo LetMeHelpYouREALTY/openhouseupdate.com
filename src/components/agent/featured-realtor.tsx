@@ -86,12 +86,12 @@ export default component$<FeaturedRealtorProps>(({ variant = 'band', tone = 'lig
             {label}
             <p class={styles.bio}>
               Dr. Jan Duffy is the Featured Realtor for Las Vegas open houses. She hosts weekend
-              tours from {business.streetAddress} in {business.addressLocality}.
+              tours across the Las Vegas Valley.
             </p>
             <p class={styles.bio}>{business.brokerage}.</p>
             <div class={styles.actions}>
               <a class={`${styles.action} ${styles.call}`} href={`tel:${business.phoneTel}`}>
-                Call {business.phoneDisplay}
+                Call
               </a>
               <a class={`${styles.action} ${styles.weekend}`} href="/this-weekend/">
                 This Weekend's Open Houses
@@ -112,13 +112,10 @@ export default component$<FeaturedRealtorProps>(({ variant = 'band', tone = 'lig
       <div class={`${styles.profile} ${toneClass}`.trim()}>
         <Portrait priority={portraitPriority} />
         {label}
-        <p class={styles.bio}>
-          Dr. Jan Duffy is the Featured Realtor for Las Vegas open houses. Call{' '}
-          {business.phoneDisplay}.
-        </p>
+        <p class={styles.bio}>Dr. Jan Duffy is the Featured Realtor for Las Vegas open houses.</p>
         <div class={styles.actions}>
           <a class={`${styles.action} ${styles.call}`} href={`tel:${business.phoneTel}`}>
-            Call {business.phoneDisplay}
+            Call
           </a>
           <a class={`${styles.action} ${styles.about}`} href="/contact/">
             Contact Dr. Duffy

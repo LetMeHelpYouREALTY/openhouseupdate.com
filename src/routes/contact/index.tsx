@@ -1,7 +1,6 @@
 import { $, component$, useSignal } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
 import FeaturedRealtor from '~/components/agent/featured-realtor'
-import GoogleMapEmbed from '~/components/local-seo/google-map-embed'
 import HeadingImage from '~/components/media/heading-image'
 import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
@@ -45,11 +44,8 @@ export default component$(() => {
             Contact <span class="text-blue-600">Dr. Jan Duffy</span>
           </h1>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Visit {business.gbpName} at {business.fullAddress}. Call{' '}
-            <a class="text-blue-600 underline" href={`tel:${business.phoneTel}`}>
-              {business.phoneDisplay}
-            </a>{' '}
-            to tour Las Vegas open houses this weekend.
+            Send a note about Las Vegas open houses this weekend. Office hours, phone, and the map
+            are in the footer.
           </p>
           <FeaturedRealtor variant="profile" />
           <HeadingImage
@@ -107,7 +103,7 @@ export default component$(() => {
                       id="phone"
                       bind:value={phone}
                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="(702) 200-3422"
+                      placeholder="Your phone number"
                     />
                   </div>
 
@@ -191,34 +187,6 @@ export default component$(() => {
                 </div>
 
                 <div class="flex items-start space-x-4">
-                  <div class="text-blue-600 text-2xl">📱</div>
-                  <div>
-                    <h4 class="font-semibold text-gray-900">Phone</h4>
-                    <p class="text-gray-600">(702) 200-3422</p>
-                  </div>
-                </div>
-
-                <div class="flex items-start space-x-4">
-                  <div class="text-blue-600 text-2xl">📍</div>
-                  <div>
-                    <h4 class="font-semibold text-gray-900">Office</h4>
-                    <p class="text-gray-600">
-                      {business.gbpName}
-                      <br />
-                      {business.streetAddress}
-                      <br />
-                      {business.addressLocality}, {business.addressRegion} {business.postalCode}
-                    </p>
-                    <p class="text-gray-600 mt-2">
-                      <a class="text-blue-600 underline" href={`tel:${business.phoneTel}`}>
-                        {business.phoneDisplay}
-                      </a>
-                    </p>
-                    <p class="text-gray-600">{business.hoursDisplay}</p>
-                  </div>
-                </div>
-
-                <div class="flex items-start space-x-4">
                   <div class="text-blue-600 text-2xl">⏰</div>
                   <div>
                     <h4 class="font-semibold text-gray-900">Response Time</h4>
@@ -233,22 +201,6 @@ export default component$(() => {
               <h3 class="text-2xl font-bold mb-4">Quick Actions</h3>
               <div class="space-y-4">
                 <a
-                  href={`tel:${business.phoneTel}`}
-                  class="block bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg p-4 transition-colors"
-                >
-                  <div class="font-semibold">Call {business.phoneDisplay}</div>
-                  <div class="text-sm opacity-90">Talk with Dr. Jan Duffy</div>
-                </a>
-                <a
-                  href={business.directionsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="block bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg p-4 transition-colors"
-                >
-                  <div class="font-semibold">Get Directions</div>
-                  <div class="text-sm opacity-90">{business.fullAddress}</div>
-                </a>
-                <a
                   href={business.reviewsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -262,8 +214,6 @@ export default component$(() => {
           </div>
         </div>
       </div>
-
-      <GoogleMapEmbed title="Open House Marketplace Google Map pin at 760 Windover Ct, Las Vegas NV 89138" />
 
       {/* FAQ Section */}
       <EnhancedPageSEO

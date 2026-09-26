@@ -1,7 +1,6 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
 import FeaturedRealtor from '~/components/agent/featured-realtor'
-import GoogleMapEmbed from '~/components/local-seo/google-map-embed'
 import HeadingImage from '~/components/media/heading-image'
 import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import EnhancedPageSEO, { createOptimizedHead } from '~/components/seo/enhanced-page-seo'
@@ -196,10 +195,7 @@ export default component$(() => {
           priority
         />
         <h1>About Dr. Jan Duffy</h1>
-        <p>
-          Open House Marketplace at {business.fullAddress}. Dr. Jan Duffy helps buyers tour Las
-          Vegas open houses this weekend.
-        </p>
+        <p>Dr. Jan Duffy helps buyers tour Las Vegas open houses this weekend.</p>
         <FeaturedRealtor variant="profile" tone="dark" />
       </div>
 
@@ -268,8 +264,6 @@ export default component$(() => {
         alt="Dr. Jan Duffy office for Open House Marketplace in Summerlin Las Vegas"
         variant="section"
       />
-
-      <GoogleMapEmbed title="Visit Open House Marketplace at 760 Windover Ct, Las Vegas NV 89138" />
 
       <div class="cta-section">
         <h2>Ready to Work Together?</h2>

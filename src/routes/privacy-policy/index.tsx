@@ -14,7 +14,7 @@ export default component$(() => {
           imageKey="contact"
           heading="Privacy Policy"
           variant="section"
-          alt="Open House Marketplace office at 760 Windover Ct, Las Vegas NV 89138"
+          alt="Open House Marketplace contact heading for the privacy policy"
         />
 
         <OpenHouseWidgetSection pageKey="privacy" />
@@ -153,7 +153,7 @@ export default component$(() => {
                 </p>
                 <p class="text-gray-600 mb-2">Open House Expert</p>
                 <p class="text-gray-600 mb-2">Email: DrDuffy@OpenHouseUpdate.com</p>
-                <p class="text-gray-600">Phone: (702) 200-3422</p>
+                <p class="text-gray-600">Phone, address, and office hours are in the footer.</p>
               </div>
             </section>
           </div>

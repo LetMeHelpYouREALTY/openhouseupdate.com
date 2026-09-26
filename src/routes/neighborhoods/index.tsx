@@ -1,7 +1,6 @@
 import { component$ } from '@builder.io/qwik'
 import type { DocumentHead } from '@builder.io/qwik-city'
 import FeaturedRealtor from '~/components/agent/featured-realtor'
-import GoogleMapEmbed from '~/components/local-seo/google-map-embed'
 import HeadingImage from '~/components/media/heading-image'
 import OpenHouseWidgetSection from '~/components/realscout/open-house-widget-section'
 import { business } from '~/config/business'
@@ -159,8 +158,7 @@ export default component$(() => {
         <h1>Las Vegas Neighborhood Open Houses</h1>
         <p>
           Tour Summerlin, Henderson, Green Valley, North Las Vegas, Spring Valley, and Enterprise
-          this weekend with {business.agentName} at {business.gbpName}, {business.fullAddress}. Call{' '}
-          {business.phoneDisplay}.
+          this weekend with {business.agentName}.
         </p>
         <FeaturedRealtor variant="hero" tone="dark" />
       </div>
@@ -184,14 +182,8 @@ export default component$(() => {
           Compare named school campuses, square footage, HVAC age, HOA dues, and I-15 / I-215
           commute.
         </p>
-        <a href={`tel:${business.phoneTel}`}>Call {business.phoneDisplay}</a>
         <a href="/this-weekend/">This Weekend’s Open Houses</a>
-        <a href={business.directionsUrl} target="_blank" rel="noopener noreferrer">
-          Directions
-        </a>
       </div>
-
-      <GoogleMapEmbed title="Open House Marketplace at 760 Windover Ct, Las Vegas NV 89138" />
     </div>
   )
 })
@@ -202,7 +194,7 @@ export const head: DocumentHead = {
     {
       name: 'description',
       content:
-        'Weekend open houses by Las Vegas neighborhood: Summerlin 89134–89144, Henderson, Green Valley, North Las Vegas, Spring Valley, and Enterprise. Open House Marketplace, 760 Windover Ct, Las Vegas NV 89138. Call (702) 200-3422.',
+        'Weekend open houses by Las Vegas neighborhood: Summerlin 89134–89144, Henderson, Green Valley, North Las Vegas, Spring Valley, and Enterprise. Tour with Dr. Jan Duffy at Open House Marketplace.',
     },
     {
       name: 'robots',

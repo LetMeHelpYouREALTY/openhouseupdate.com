@@ -78,7 +78,7 @@ export const siteImages = {
   },
   contact: {
     file: 'heading-contact-office.jpg',
-    alt: 'Open House Marketplace office serving 760 Windover Ct, Las Vegas NV 89138',
+    alt: 'Open House Marketplace contact page for Las Vegas weekend open houses',
     width: 1280,
     height: 720,
   },
