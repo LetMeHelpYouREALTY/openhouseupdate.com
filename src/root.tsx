@@ -1,6 +1,7 @@
-import { component$ } from '@builder.io/qwik'
+import { component$, useVisibleTask$ } from '@builder.io/qwik'
 import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from '@builder.io/qwik-city'
 import { RouterHead } from './components/router-head/router-head'
+import { inject } from '@vercel/analytics'
 
 import './global.css'
 
@@ -11,6 +12,12 @@ export default component$(() => {
    *
    * Don't remove the `<head>` and `<body>` elements.
    */
+
+  // Initialize Vercel Web Analytics
+  // eslint-disable-next-line qwik/no-use-visible-task
+  useVisibleTask$(() => {
+    inject()
+  })
 
   return (
     <QwikCityProvider>
