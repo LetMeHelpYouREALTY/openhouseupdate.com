@@ -31,11 +31,13 @@ type OpenHouseWidgetSectionProps = {
  * TODO: Event schema. No open-house feed exists beyond this widget.
  * Do not add a second RealScout script tag in this component.
  */
-export default component$<OpenHouseWidgetSectionProps>(({ pageKey, h2, h3, answer }) => {
-  const copy = openHouseWidgetCopy[pageKey]
-  const heading = h2 ?? copy.h2
-  const subhead = h3 ?? copy.h3
-  const summary = answer ?? copy.answer
+export default component$<OpenHouseWidgetSectionProps>((props) => {
+  // Do not destructure props. Qwik's optimizer drops `pageKey` and SSR throws
+  // "pageKey is not defined" on every page.
+  const copy = openHouseWidgetCopy[props.pageKey]
+  const heading = props.h2 ?? copy.h2
+  const subhead = props.h3 ?? copy.h3
+  const summary = props.answer ?? copy.answer
   const priceMin = copy.priceMin ?? (copy.priceMax ? undefined : '600000')
   const priceMax = copy.priceMax ?? (copy.priceMin ? undefined : '900000')
   const updated = new Date()
@@ -46,7 +48,7 @@ export default component$<OpenHouseWidgetSectionProps>(({ pageKey, h2, h3, answe
     day: 'numeric',
     year: 'numeric',
   }).format(updated)
-  const headingId = `open-house-update-${pageKey}`
+  const headingId = `open-house-update-${props.pageKey}`
 
   return (
     <section class="ohu-widget" aria-labelledby={headingId}>
