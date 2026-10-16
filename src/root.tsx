@@ -72,7 +72,19 @@ export default component$(() => {
             type="module"
           />
 
-          <RouterHead />
+                  {/* Google Tag — inert until NEXT_PUBLIC_GOOGLE_TAG_ID is set */}
+        {typeof process !== 'undefined' && process.env.NEXT_PUBLIC_GOOGLE_TAG_ID && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_TAG_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${process.env.NEXT_PUBLIC_GOOGLE_TAG_ID}');`}
+            />
+          </>
+        )}
+        <RouterHead />
         </head>
         <body>
           <RouterOutlet />
