@@ -84,6 +84,7 @@ export default component$(() => {
             />
           </>
         )}
+        <script src="/ads-conversions.js" defer />
         <RouterHead />
         </head>
         <body>
