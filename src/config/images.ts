@@ -122,7 +122,7 @@ export const siteImages = {
   },
   'industry-recognition': {
     file: 'heading-industry-recognition.jpg',
-    alt: 'Professional Las Vegas real estate office affiliated with Berkshire Hathaway HomeServices',
+    alt: 'Professional Las Vegas real estate office',
     width: 1152,
     height: 864,
   },

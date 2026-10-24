@@ -565,8 +565,7 @@ export default component$(() => {
               />
               <h3 class="card-title">Industry Recognition</h3>
               <p class="card-description">
-                Licensed Nevada real estate agent affiliated with Berkshire Hathaway HomeServices,
-                recognized for excellence in open house management and client satisfaction.
+                Licensed Nevada real estate agent, in real estate since 1983, recognized for excellence in open house management and client satisfaction.
               </p>
             </div>
           </div>

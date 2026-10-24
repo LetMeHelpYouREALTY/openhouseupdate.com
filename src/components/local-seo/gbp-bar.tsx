@@ -73,7 +73,7 @@ export default component$(() => {
         <div>
           <h2>{business.gbpName}</h2>
           <p>
-            {business.agentName} · {business.brokerage}
+            {business.agentName} · REALTOR®
           </p>
           <p>
             <a href={business.mapsUrl}>

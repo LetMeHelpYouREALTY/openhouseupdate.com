@@ -55,7 +55,7 @@ export const pageSnippets: Record<string, PageSnippetConfig> = {
   about: {
     title: 'About Dr. Jan Duffy - Las Vegas Real Estate Agent | Open House Update',
     description:
-      'Meet Dr. Jan Duffy, your trusted Las Vegas real estate agent with over 20 years of experience. Licensed in Nevada, specializing in residential properties throughout the Las Vegas Valley.',
+      'Meet Dr. Jan Duffy, your trusted Las Vegas real estate agent, in real estate since 1983. Licensed in Nevada, specializing in residential properties throughout the Las Vegas Valley.',
     keywords: [
       'Dr. Jan Duffy',
       'Las Vegas real estate agent',

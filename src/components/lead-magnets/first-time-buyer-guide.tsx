@@ -171,7 +171,7 @@ export default component$<FirstTimeBuyerGuideProps>(({ variant = 'card', classNa
               <h4 class="font-semibold text-blue-800 mb-2">Why This Guide?</h4>
               <ul class="text-sm text-blue-700 space-y-1">
                 <li>
-                  • Written by Dr. Jan Duffy with 15+ years of Las Vegas real estate experience
+                  • Written by Dr. Jan Duffy, in real estate since 1983
                 </li>
                 <li>• Updated with current market conditions and programs</li>
                 <li>• Includes exclusive first-time buyer incentives and programs</li>

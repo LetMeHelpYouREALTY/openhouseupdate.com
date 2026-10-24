@@ -9,7 +9,7 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: 'What is an Open House Expert?',
       answer:
-        'An Open House Expert is a real estate professional specifically trained in staging, hosting, and converting open house events. Dr. Jan Duffy is a recognized Open House Expert with over 20 years of experience maximizing buyer engagement and lead generation through strategic open house management.',
+        'An Open House Expert is a real estate professional specifically trained in staging, hosting, and converting open house events. Dr. Jan Duffy is a recognized Open House Expert, in real estate since 1983, maximizing buyer engagement and lead generation through strategic open house management.',
     },
     {
       question: 'How do I search for open houses in Las Vegas?',
@@ -43,17 +43,12 @@ export const pageFAQs: Record<string, PageFAQ[]> = {
     {
       question: "What is Dr. Jan Duffy's background in real estate?",
       answer:
-        'Dr. Jan Duffy is an Open House Expert with over 20 years of experience in Las Vegas real estate. She specializes in residential properties throughout the Las Vegas Valley.',
+        'Dr. Jan Duffy is an Open House Expert who has been in real estate since 1983. She specializes in residential properties throughout the Las Vegas Valley.',
     },
     {
       question: 'What services does Dr. Jan Duffy provide?',
       answer:
         'Dr. Jan Duffy provides comprehensive real estate services including buyer representation, seller representation, home valuations, market analysis, and property search assistance.',
-    },
-    {
-      question: 'Is Dr. Jan Duffy affiliated with a brokerage?',
-      answer:
-        'Yes, Dr. Jan Duffy is affiliated with Berkshire Hathaway HomeServices Nevada Properties, one of the most respected real estate brokerages in Las Vegas.',
     },
     {
       question: 'What areas does Dr. Jan Duffy specialize in?',

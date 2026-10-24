@@ -210,7 +210,7 @@ export default component$(() => {
       <div class="about-hero">
         <h1>Meet Dr. Jan Duffy</h1>
         <p>
-          Your trusted Las Vegas real estate professional with over 20 years of experience helping
+          Your trusted Las Vegas real estate professional, in real estate since 1983, helping
           clients find their perfect home.
         </p>
       </div>
@@ -260,12 +260,8 @@ export default component$(() => {
             <p>Open House Expert</p>
           </div>
           <div class="credential-item">
-            <h3>Berkshire Hathaway</h3>
-            <p>Affiliated with Berkshire Hathaway HomeServices Nevada Properties</p>
-          </div>
-          <div class="credential-item">
-            <h3>20+ Years Experience</h3>
-            <p>Over two decades of real estate expertise in Las Vegas</p>
+            <h3>In Real Estate Since 1983</h3>
+            <p>Real estate expertise in Las Vegas</p>
           </div>
           <div class="credential-item">
             <h3>Local Market Expert</h3>

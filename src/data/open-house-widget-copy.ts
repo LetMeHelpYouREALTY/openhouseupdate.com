@@ -72,7 +72,7 @@ export type OpenHouseWidgetCopy = {
 }
 
 const answerFor = (place: string): string =>
-  `This section shows homes for sale in ${place} on Open House Update. Weekend open houses are commonly Saturday and Sunday. Confirm the start time on each listing. Call Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. The office phone is in the footer.`
+  `This section shows homes for sale in ${place} on Open House Update. Weekend open houses are commonly Saturday and Sunday. Confirm the start time on each listing. Call Dr. Jan Duffy. The office phone is in the footer.`
 
 export const openHouseWidgetCopy: Record<OpenHouseWidgetKey, OpenHouseWidgetCopy> = {
   home: {

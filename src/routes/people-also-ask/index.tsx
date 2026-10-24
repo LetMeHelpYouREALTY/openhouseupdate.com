@@ -55,8 +55,7 @@ export default component$(() => {
             <FeaturedRealtor variant="hero" tone="dark" />
           </div>
           <p class="text-gray-600 max-w-3xl mx-auto text-lg">
-            Expert insights from Dr. Jan Duffy, your trusted Las Vegas Open House Expert with over
-            20 years of experience
+            Expert insights from Dr. Jan Duffy, your trusted Las Vegas Open House Expert, in real estate since 1983
           </p>
         </div>
 

@@ -227,8 +227,8 @@ export default component$(() => {
           <h2>Credentials & Achievements</h2>
 
           <div class="credential-item">
-            <h3>Doctorate in Business Administration</h3>
-            <p>Specialized focus on real estate market analysis and investment strategies</p>
+            <h3>Ph.D. in Research</h3>
+            <p>Applied to real estate market analysis and investment strategies</p>
           </div>
 
           <div class="credential-item">
@@ -242,8 +242,8 @@ export default component$(() => {
           </div>
 
           <div class="credential-item">
-            <h3>BHHS Nevada Properties</h3>
-            <p>Affiliated with {business.brokerage}.</p>
+            <h3>In Real Estate Since 1983</h3>
+            <p>Top 1% Las Vegas REALTOR®.</p>
           </div>
 
           <div class="credential-item">

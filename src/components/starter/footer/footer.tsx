@@ -14,8 +14,7 @@ export default component$(() => {
           <div class={styles.footerSection}>
             <h3 class={styles.footerTitle}>{business.gbpName}</h3>
             <p class={styles.footerDescription}>
-              Weekend open houses and Las Vegas property viewing with {business.agentName},{' '}
-              {business.brokerage}.
+              Weekend open houses and Las Vegas property viewing with {business.agentName}.
             </p>
             <div class={styles.contactInfo}>
               <FeaturedRealtor variant="footer" />
@@ -239,9 +238,7 @@ export default component$(() => {
                 &copy; {new Date().getFullYear()} {business.gbpName}. All rights reserved.
               </p>
               <p class={styles.licenseBlock}>
-                {business.license}
-                <br />
-                Nevada License
+                Berkshire Hathaway HomeServices Nevada Properties since September 2008 · License S.0197614.LLC
                 <br />
                 {business.hoursDisplay}
               </p>

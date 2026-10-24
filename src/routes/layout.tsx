@@ -67,7 +67,7 @@ export default component$(() => {
 })
 
 const defaultTitle = 'Open House Marketplace | Weekend Open Houses Las Vegas | Dr. Jan Duffy'
-const defaultDescription = `Weekend open houses and Las Vegas property viewing with ${business.gbpName}. ${business.agentName}, ${business.brokerage}.`
+const defaultDescription = `Weekend open houses and Las Vegas property viewing with ${business.gbpName}. ${business.agentName}, REALTOR®.`
 
 export const head: DocumentHead = ({ head, url }) => {
   const title = head.title || defaultTitle
