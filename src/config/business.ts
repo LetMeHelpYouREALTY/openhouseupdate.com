@@ -24,11 +24,11 @@ export const business = {
   fullAddress: '760 Windover Ct, Las Vegas, NV 89138',
   siteUrl: 'https://www.openhouseupdate.com',
   mapsCid: '10510033543364017077',
-  mapsUrl: 'https://maps.google.com/maps?cid=10510033543364017077',
+  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Open+House+Marketplace&query_place_id=ChIJjQ0mcEy_yIARtfumudIj25E',
   directionsUrl:
     'https://www.google.com/maps/dir/?api=1&destination=760+Windover+Ct,+Las+Vegas,+NV+89138',
-  reviewsUrl: 'https://www.google.com/maps?cid=10510033543364017077',
-  writeReviewUrl: 'https://search.google.com/local/writereview?cid=10510033543364017077',
+  reviewsUrl: 'https://www.google.com/maps/search/?api=1&query=Open+House+Marketplace&query_place_id=ChIJjQ0mcEy_yIARtfumudIj25E',
+  writeReviewUrl: 'https://search.google.com/local/writereview?placeid=ChIJjQ0mcEy_yIARtfumudIj25E',
   geo: {
     // GBP did not return lat/lng. Do not use downtown Las Vegas coords — they mismatch 89138.
     latitude: null as number | null,
@@ -54,7 +54,7 @@ export const business = {
     'Spring Valley',
   ],
   sameAs: [
-    'https://maps.google.com/maps?cid=10510033543364017077',
+    'https://www.google.com/maps/search/?api=1&query=Open+House+Marketplace&query_place_id=ChIJjQ0mcEy_yIARtfumudIj25E',
     'https://www.facebook.com/drjanetduffy',
     'https://www.linkedin.com/in/drjanetduffy',
     'https://www.instagram.com/drjanetduffy',
