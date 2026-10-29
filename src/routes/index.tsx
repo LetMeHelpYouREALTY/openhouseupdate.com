@@ -565,7 +565,7 @@ export default component$(() => {
               />
               <h3 class="card-title">Industry Recognition</h3>
               <p class="card-description">
-                Licensed Nevada real estate agent, in real estate since 1983, recognized for excellence in open house management and client satisfaction.
+                Licensed Nevada real estate agent, licensed since 2008 · 35 years in Las Vegas, recognized for excellence in open house management and client satisfaction.
               </p>
             </div>
           </div>

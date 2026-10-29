@@ -89,7 +89,7 @@ export default component$<FeaturedRealtorProps>(({ variant = 'band', tone = 'lig
               Dr. Jan Duffy is the Featured Realtor for Las Vegas open houses. She hosts weekend
               tours across the Las Vegas Valley.
             </p>
-            <p class={styles.bio}>In real estate since 1983.</p>
+            <p class={styles.bio}>Licensed since 2008 · 35 years in Las Vegas.</p>
             <div class={styles.actions}>
               <a class={`${styles.action} ${styles.call}`} href={`tel:${business.phoneTel}`}>
                 Call
