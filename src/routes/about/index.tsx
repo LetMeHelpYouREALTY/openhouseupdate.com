@@ -242,8 +242,8 @@ export default component$(() => {
           </div>
 
           <div class="credential-item">
-            <h3>In Real Estate Since 1983</h3>
-            <p>Top 1% Las Vegas REALTOR®.</p>
+            <h3>Licensed Since 2008</h3>
+            <p>Las Vegas REALTOR®.</p>
           </div>
 
           <div class="credential-item">
