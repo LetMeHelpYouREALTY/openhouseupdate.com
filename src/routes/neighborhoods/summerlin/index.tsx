@@ -182,7 +182,7 @@ export default component$(() => {
               <strong>The Ridges:</strong> Ultra-luxury gated community with resort-style living
             </li>
             <li>
-              <strong>The Summit:</strong> Exclusive community with custom homes and mountain views
+              <strong>The Summit:</strong> Community with custom homes and mountain views
             </li>
             <li>
               <strong>Red Rock Country Club:</strong> Golf community with championship course

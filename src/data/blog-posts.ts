@@ -573,7 +573,7 @@ As of November 2025, Las Vegas investment property market offers:
 - **Job Growth**: Areas near employment centers
 - **School Quality**: Affects tenant quality and property values
 - **Infrastructure**: New development and improvements
-- **Crime Rates**: Safety affects desirability
+- **Crime data**: LVMPD and Henderson Police publish crime maps online
 
 ### Property Analysis
 - **Condition**: Factor in renovation costs
