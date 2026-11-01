@@ -142,7 +142,7 @@ export default component$(() => {
             });
           `}
           />
-          <script defer src="/_vercel/speed-insights/script.js"></script>
+          <script defer src="/_vercel/speed-insights/script.js" />
         </body>
       </html>
     </QwikCityProvider>
