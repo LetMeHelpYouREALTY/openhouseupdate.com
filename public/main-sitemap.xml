@@ -133,18 +133,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.openhouseupdate.com/privacy-policy/</loc>
-    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.openhouseupdate.com/terms-of-service/</loc>
-    <lastmod>2026-09-21T00:00:00.000Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://www.openhouseupdate.com/faq/</loc>
     <lastmod>2026-09-21T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
